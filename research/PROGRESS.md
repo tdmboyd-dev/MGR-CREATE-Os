@@ -1,19 +1,28 @@
-# Research Progress — Corrected
+# Research Progress
 
-48 canonical categories.
+## Canonical architecture categories
+48 total.
 
-Status:
-SYNTHESIZED = internal repo read + architecture hypothesis.
-BEAST-RESEARCHED = substantial multi-source external University pass with evidence ledger, competing approaches, failure modes and architecture consequences.
-SPECIFIED / IMPLEMENTED / TESTED / VERIFIED remain later states.
+## Current status
+- Categories 1–35: BEAST research pass completed and backed by research/EVIDENCE-LEDGER-01-35.md + research/DEEP-WAVE-01-35.md.
+- Categories 36–48: Wave 3 BEAST research pass completed in research/wave3/ with research/WAVE3-EVIDENCE.md.
+- Canonical category research: 48 / 48 = 100%.
 
-Current:
-- Categories 1–35: BEAST-RESEARCHED first deep pass.
-- Categories 36–48: seed dossiers/SYNTHESIZED; not yet BEAST-RESEARCHED.
-- Progress: 35 / 48 = 72.9%.
-- Remaining: 13.
+## Important meaning of 100%
+This means all 48 currently known architecture/build categories have received a substantive research pass. It does NOT mean:
+- every possible source on Earth has been exhausted;
+- dependency bake-offs are complete;
+- specifications are complete;
+- code is implemented;
+- tests are run;
+- Creation OS is verified.
 
-Integrity correction:
-The earlier Wave 1/2 “researched” labels were too generous because those files were primarily architecture synthesis. research/RESEARCH-INTEGRITY.md records the correction. Categories 1–35 were then re-run through an actual external multi-source research sweep and consolidated in research/EVIDENCE-LEDGER-01-35.md and research/DEEP-WAVE-01-35.md.
+Research can and should deepen when specification/implementation exposes a question. If a genuinely independent subsystem is discovered, add it to the denominator.
 
-Next: deeply research the 12 factories and cross-factory objective orchestrator. Increase the denominator if genuinely independent subsystems are discovered.
+## Next status gate
+SPECIFICATION:
+1. lock canonical domain contracts and state machines;
+2. run dependency bake-offs;
+3. define acceptance tests;
+4. establish implementation order/dependency graph;
+5. begin vertical-slice implementation under BuildList.md.
