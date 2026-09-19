@@ -6,43 +6,43 @@ This is the canonical implementation list. Research explains what to build; this
 [ ] QUEUED  [R] RESEARCHED  [S] SPECIFIED  [I] IMPLEMENTED  [T] TESTED  [V] VERIFIED
 
 ## A. Creation OS Kernel
-- [R] 01 Durable Orchestrator / CINEFORGE runtime
-- [R] 02 Creation Graph (separate semantic, execution and lineage graphs)
-- [R] 03 UCOS layered Context Resolver
-- [R] 04 Continuity Engine with explainable rule evidence
-- [R] 05 UCT provenance + artifact lineage + integrity
-- [R] 06 Approval / Policy Gateway with exact-action digest binding
-- [R] 07 Event / Signal Bus
-- [R] 08 Sandbox Runtime and risk-tiered SandboxProfiles
-- [R] 09 Operator / Capability Registry
-- [R] 10 Pattern / Composition Engine
-- [R] 11 Model / Provider Capability Router
-- [R] 12 Tool / Connector SDK and registry
-- [R] 13 Cost / Usage / Budget Ledger
-- [R] 14 Rollback / Compensation Engine
-- [R] 15 Durable Worker / Queue / Scheduler layer
-- [R] 16 Checkpoint / Replay / Branching
-- [R] 17 Agent / Crew Runtime
-- [R] 18 API + SDK + Events + Webhooks + MCP adapter
-- [R] 19 Observability / Trace / Evidence system
-- [R] 20 Security / Auth / Permissions / Secrets / Tenancy foundation
+- [S] 01 Durable Orchestrator / CINEFORGE runtime
+- [S] 02 Creation Graph (separate semantic, execution and lineage graphs)
+- [S] 03 UCOS layered Context Resolver
+- [S] 04 Continuity Engine with explainable rule evidence
+- [S] 05 UCT provenance + artifact lineage + integrity
+- [S] 06 Approval / Policy Gateway with exact-action digest binding
+- [S] 07 Event / Signal Bus
+- [S] 08 Sandbox Runtime and risk-tiered SandboxProfiles
+- [S] 09 Operator / Capability Registry
+- [S] 10 Pattern / Composition Engine
+- [S] 11 Model / Provider Capability Router
+- [S] 12 Tool / Connector SDK and registry
+- [S] 13 Cost / Usage / Budget Ledger
+- [S] 14 Rollback / Compensation Engine
+- [S] 15 Durable Worker / Queue / Scheduler layer
+- [S] 16 Checkpoint / Replay / Branching
+- [S] 17 Agent / Crew Runtime
+- [S] 18 API + SDK + Events + Webhooks + MCP adapter
+- [S] 19 Observability / Trace / Evidence system
+- [S] 20 Security / Auth / Permissions / Secrets / Tenancy foundation
 
 ## B. Creation Substrate
-- [R] 21 Asset Registry / immutable Versions / Derivatives
-- [R] 22 Identity locks: face, body, anatomy, wardrobe, voice, character, logo, brand, canon
-- [R] 23 Dataset / Training / Model / LoRA / Adapter lifecycle
-- [R] 24 Provider-neutral Media Generation Runtime
-- [R] 25 Verification / Evaluation Engine
-- [R] 26 Causal Repair / bounded Convergence Engine
-- [R] 27 Research / Evidence / Citation Engine
-- [R] 28 Template / Package / Marketplace system
-- [R] 29 Collaboration / Review / Annotation / exact-version Approval
-- [R] 30 Catalog / Metadata / Search
-- [R] 31 Artifact hashes / signatures / attestations
-- [R] 32 Rights / License / Consent Engine
-- [R] 33 Compliance / Safety / Policy Packs
-- [R] 34 Tenant / Organization / Workspace / Project hierarchy
-- [R] 35 Relational State + Object Storage + Search + Cache + Memory architecture
+- [S] 21 Asset Registry / immutable Versions / Derivatives
+- [S] 22 Identity locks: face, body, anatomy, wardrobe, voice, character, logo, brand, canon
+- [S] 23 Dataset / Training / Model / LoRA / Adapter lifecycle
+- [S] 24 Provider-neutral Media Generation Runtime
+- [S] 25 Verification / Evaluation Engine
+- [S] 26 Causal Repair / bounded Convergence Engine
+- [S] 27 Research / Evidence / Citation Engine
+- [S] 28 Template / Package / Marketplace system
+- [S] 29 Collaboration / Review / Annotation / exact-version Approval
+- [S] 30 Catalog / Metadata / Search
+- [S] 31 Artifact hashes / signatures / attestations
+- [S] 32 Rights / License / Consent Engine
+- [S] 33 Compliance / Safety / Policy Packs
+- [S] 34 Tenant / Organization / Workspace / Project hierarchy
+- [S] 35 Relational State + Object Storage + Search + Cache + Memory architecture
 
 ## C. Factories
 - [R] 36 Product Factory
@@ -134,3 +134,13 @@ This is the canonical implementation list. Research explains what to build; this
 Wave 3 factory dossiers are in `research/wave3/`.
 
 Research completion does NOT mean implementation completion. Next gate is specification/bake-off: convert research conclusions into canonical contracts, acceptance tests and dependency decisions, then build vertical slices.
+
+
+## Specification Gate Status
+- Canonical contract specifications created under spec/ for all listed shared primitives.
+- State machines documented in architecture/STATE-MACHINES.md.
+- 30 product acceptance tests cataloged in architecture/ACCEPTANCE-TESTS.md.
+- Dependency/build order defined in architecture/DEPENDENCY-ORDER.md.
+- Dependency bake-offs defined in architecture/BAKEOFFS.md; no dependency falsely marked selected.
+- First executable vertical-slice bootstrap implemented: TypeScript package, CreationRun/StageRun state transitions, CloudEvents-shaped EventEnvelope types, policy/evidence primitives, canonical ActionDigest, and initial unit tests.
+- Bootstrap code is IMPLEMENTED but NOT yet marked TESTED/VERIFIED because connected GitHub writes do not execute npm/typecheck. Runtime proof remains required.
