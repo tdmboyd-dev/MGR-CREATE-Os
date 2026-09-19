@@ -1,27 +1,19 @@
-# Research Progress
+# Research Progress — Corrected
 
-## Current
-- Total canonical categories: 48
-- Wave 1 complete: 20
-- Wave 2 complete: 15
-- BEAST-researched total: 35
-- Remaining: 13
-- Completion: 72.9%
+48 canonical categories.
 
-## Remaining Wave 3
-36 Product Factory
-37 Media Factory
-38 Web Factory
-39 Campaign Factory
-40 Course Factory
-41 Brand Factory
-42 Research Factory
-43 Document Factory
-44 Audio Factory
-45 Automation Factory
-46 App/Tool Factory
-47 Data/Analytics Factory
-48 Cross-Factory Objective Orchestration
+Status:
+SYNTHESIZED = internal repo read + architecture hypothesis.
+BEAST-RESEARCHED = substantial multi-source external University pass with evidence ledger, competing approaches, failure modes and architecture consequences.
+SPECIFIED / IMPLEMENTED / TESTED / VERIFIED remain later states.
 
-## Scope rule
-If Wave 3 uncovers a truly separate required subsystem, add it to the denominator transparently. Do not hide scope growth.
+Current:
+- Categories 1–35: BEAST-RESEARCHED first deep pass.
+- Categories 36–48: seed dossiers/SYNTHESIZED; not yet BEAST-RESEARCHED.
+- Progress: 35 / 48 = 72.9%.
+- Remaining: 13.
+
+Integrity correction:
+The earlier Wave 1/2 “researched” labels were too generous because those files were primarily architecture synthesis. research/RESEARCH-INTEGRITY.md records the correction. Categories 1–35 were then re-run through an actual external multi-source research sweep and consolidated in research/EVIDENCE-LEDGER-01-35.md and research/DEEP-WAVE-01-35.md.
+
+Next: deeply research the 12 factories and cross-factory objective orchestrator. Increase the denominator if genuinely independent subsystems are discovered.
