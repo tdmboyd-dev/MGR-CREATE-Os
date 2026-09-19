@@ -45,21 +45,21 @@ This is the canonical implementation list. Research explains what to build; this
 - [R] 35 Relational State + Object Storage + Search + Cache + Memory architecture
 
 ## C. Factories
-- [ ] 36 Product Factory
-- [ ] 37 Media Factory
-- [ ] 38 Web Factory
-- [ ] 39 Campaign Factory
-- [ ] 40 Course Factory
-- [ ] 41 Brand Factory
-- [ ] 42 Research Factory
-- [ ] 43 Document Factory
-- [ ] 44 Audio Factory
-- [ ] 45 Automation Factory
-- [ ] 46 App / Tool Factory
-- [ ] 47 Data / Analytics Factory
+- [R] 36 Product Factory
+- [R] 37 Media Factory
+- [R] 38 Web Factory
+- [R] 39 Campaign Factory
+- [R] 40 Course Factory
+- [R] 41 Brand Factory
+- [R] 42 Research Factory
+- [R] 43 Document Factory
+- [R] 44 Audio Factory
+- [R] 45 Automation Factory
+- [R] 46 App / Tool Factory
+- [R] 47 Data / Analytics Factory
 
 ## D. Objective Brain
-- [ ] 48 Cross-Factory Objective Orchestrator
+- [R] 48 Cross-Factory Objective Orchestrator
 
 ## E. Required shared primitives discovered so far
 - [R] CreationRun / StageRun state machine
@@ -130,5 +130,7 @@ This is the canonical implementation list. Research explains what to build; this
 - [ ] Cost ledger reconciliation proof
 
 ## Research counter
-35 / 48 BEAST-researched.
-13 remaining: the 12 factories + Cross-Factory Objective Orchestrator.
+48 / 48 canonical categories have now received a BEAST research pass.
+Wave 3 factory dossiers are in `research/wave3/`.
+
+Research completion does NOT mean implementation completion. Next gate is specification/bake-off: convert research conclusions into canonical contracts, acceptance tests and dependency decisions, then build vertical slices.
