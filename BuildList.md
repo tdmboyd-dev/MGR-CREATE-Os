@@ -292,3 +292,17 @@ This upgrades the current committed unit/contract test suite from merely written
 - [V] GitHub Actions run 35688136838: install PASS, typecheck PASS, full committed test suite PASS on commit cb340b6140389638a74fa325f2ea5b4f61f20e97.
 
 Next trust boundary: production DB/object-store adapters, browser-backed research snapshots, PDF/DOCX/EPUB render+validators, durable engine prototype, real external publish reconciliation.
+
+
+## Production Boundary BEAST Wave — CI GREEN
+- [I/T] SQL migration runner transaction/rollback/idempotency
+- [I/T] S3-compatible ObjectStore adapter contract
+- [I/T] HTTP PageReader protocol restriction/timeout/snapshot digest
+- [I/T] PDF/DOCX/EPUB renderer adapters with payload signature guards
+- [I/T] PDF + ZIP-container validators
+- [I/T] durable workflow prototype wait/signal/resume/complete/cancel
+- [I/T] external publish-once + reconciliation
+- [I/T] recursive secret redaction
+- [V] GitHub Actions run 35689296971 SUCCESS on a88dcda4f8f323fa60723fb4358236e6c8100122
+
+Live PostgreSQL/S3/browser/render-engine/provider integrations remain separate verification gates; deterministic adapter tests do not falsely prove live infrastructure.
