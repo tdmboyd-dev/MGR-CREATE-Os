@@ -1,1 +1,1 @@
-export * from "./content-addressed.js";
+export * from "./content-addressed.js";export * from "./s3-compatible.js";
