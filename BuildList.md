@@ -180,3 +180,35 @@ Research completion does NOT mean implementation completion. Next gate is specif
 
 ### Test truth
 GitHub CI is now configured to execute typecheck + tests on push/PR. Do not mark [T] or [V] until an actual workflow run is observed green.
+
+## BEAST Research Expansion 49–58
+Implementation-depth audit expanded the known architecture from 48 to 58 categories rather than hiding missing systems.
+- [S] 49 Schema Registry / contract evolution
+- [S] 50 Capability Evaluation Registry
+- [S] 51 Secret Broker / short-lived credentials
+- [I] 52 Artifact Validator Registry (first primitive implemented)
+- [S] 53 Dependency & License Resolver
+- [S] 54 Experiment / Feature Flag service
+- [S] 55 Retention / Deletion Orchestrator
+- [I] 56 Provider / Connector Health & Circuit Breakers (first primitive implemented)
+- [I] 57 Migration Registry (first primitive implemented)
+- [S] 58 Evidence Bundle / Audit Exporter
+
+Research: categories 49–58 received dedicated deep pass in research/DEEP-WAVE-49-58.md. Known-category research coverage is now 58/58 first-pass, while dependency-specific research continues during implementation.
+
+## Big BEAST Wave D/E checkpoint
+- [I] Research Ledger with Sources/Claims/Evidence/Contradictions
+- [I] Rights/Consent/License expression primitives
+- [I] versioned PolicyPack evaluator
+- [I] tenant-scoped Catalog search primitive
+- [I] tiered MemoryStore primitive
+- [I] exact-version Review/Annotation/Decision primitive
+- [I] DatasetSnapshot/TrainingRun/ModelArtifact/Promotion primitive
+- [I] tested-template package manifest/digest primitive
+- [I] AgentRole/CrewPlan/Delegation guard primitive
+- [I] SchemaRegistry primitive
+- [I] Health/CircuitBreaker primitive
+- [I] ValidatorRegistry primitive
+- [I] MigrationRegistry primitive
+
+Still not TESTED/VERIFIED until executable CI/runtime evidence is observed.
