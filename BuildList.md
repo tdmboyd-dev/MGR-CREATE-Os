@@ -270,3 +270,11 @@ Production adapters remain required before this vertical can be TESTED/VERIFIED 
 - [ ] PDF/DOCX/EPUB renderers
 - [ ] durable Temporal/native engine prototype
 - [ ] observed CI green evidence
+
+
+## CI / Test Evidence — VERIFIED 2026-09-22
+GitHub Actions run 35687452672 on commit ad8e7e6e92131db7c4ea16a78fdef77fb1d9a0ed completed SUCCESS.
+- npm install: PASS
+- npm run typecheck: PASS
+- npm test: PASS
+This upgrades the current committed unit/contract test suite from merely written to executed-green. It does NOT verify production adapters or full product behavior.
