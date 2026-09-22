@@ -1,0 +1,1 @@
+import type {EvidenceRecord} from "./types.js";export class EvidenceStore{private items:EvidenceRecord[]=[];add(e:EvidenceRecord){this.items.push(Object.freeze({...e}));return e}forCriterion(c:string){return this.items.filter(x=>x.criterion===c)}isVerified(criteria:string[]){return criteria.every(c=>this.forCriterion(c).some(e=>e.passed))}}
