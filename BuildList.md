@@ -230,3 +230,23 @@ TASK-LEDGER.md establishes a baseline 1,735 granular engineering tasks: 500 kern
 
 ## Factory BEAST Wave checkpoint
 All 12 factories now have first executable contract/guardrail scaffolds and dedicated tests. These are not full production factories: provider adapters, persistence, real rendering/export/publishing and end-to-end verification remain. Objective Orchestrator is implemented as first dependency/budget/blocking scaffold.
+
+
+## Big Product Vertical BEAST Wave
+- [I] Research→Product→Document vertical pipeline
+- [I] evidence propagation from research into product/document
+- [I] unsupported research blocks downstream creation
+- [I] Product Intelligence market signals/opportunity ranking
+- [I] Offer validation
+- [I] Export Engine with READY vs NEEDS_ADAPTER truth states
+- [I] Product Package integrity/duplicate-path guard
+- [I] Distribution manifest validation
+- [I] Publishing approval-readiness gate
+- [I] Performance measurement primitives
+- [I] Improvement proposal signals
+- [I] Quality Gate
+- [I] ObjectStore/SearchIndex/Telemetry adapter interfaces
+- [I] in-memory object/search/telemetry adapters for contract development
+- [I] product vertical tests
+
+Production adapters remain required before this vertical can be TESTED/VERIFIED end-to-end with real PDF/DOCX/EPUB/store publishing/search/browser systems.
