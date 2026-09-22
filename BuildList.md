@@ -250,3 +250,23 @@ All 12 factories now have first executable contract/guardrail scaffolds and dedi
 - [I] product vertical tests
 
 Production adapters remain required before this vertical can be TESTED/VERIFIED end-to-end with real PDF/DOCX/EPUB/store publishing/search/browser systems.
+
+
+## Runtime/Persistence BEAST Wave
+- [I] Persistence SQL schema for runs/stages/events/assets/UCT/evidence
+- [I] Repository interfaces for Creation/Event/Asset/Provenance persistence
+- [I] in-memory repository with clone/idempotency/version guards
+- [I] CINEFORGE nine-stage engine bootstrap
+- [I] ordered stage advancement
+- [I] outbox publisher with success-only acknowledgement
+- [I] Research SearchAdapter/PageReader/ResearchCollector contracts
+- [I] DocumentRenderer contract
+- [I] real HTML renderer producing bytes and escaping content
+- [I] runtime/persistence contract tests
+- [I] CI broadened to every push + pull request + manual dispatch
+- [ ] production PostgreSQL adapter
+- [ ] production S3-compatible object store adapter
+- [ ] real web research/search/page snapshot adapter
+- [ ] PDF/DOCX/EPUB renderers
+- [ ] durable Temporal/native engine prototype
+- [ ] observed CI green evidence
