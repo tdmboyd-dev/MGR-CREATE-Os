@@ -45,21 +45,21 @@ This is the canonical implementation list. Research explains what to build; this
 - [S] 35 Relational State + Object Storage + Search + Cache + Memory architecture
 
 ## C. Factories
-- [R] 36 Product Factory
-- [R] 37 Media Factory
-- [R] 38 Web Factory
-- [R] 39 Campaign Factory
-- [R] 40 Course Factory
-- [R] 41 Brand Factory
-- [R] 42 Research Factory
-- [R] 43 Document Factory
-- [R] 44 Audio Factory
-- [R] 45 Automation Factory
-- [R] 46 App / Tool Factory
-- [R] 47 Data / Analytics Factory
+- [I] 36 Product Factory
+- [I] 37 Media Factory
+- [I] 38 Web Factory
+- [I] 39 Campaign Factory
+- [I] 40 Course Factory
+- [I] 41 Brand Factory
+- [I] 42 Research Factory
+- [I] 43 Document Factory
+- [I] 44 Audio Factory
+- [I] 45 Automation Factory
+- [I] 46 App / Tool Factory
+- [I] 47 Data / Analytics Factory
 
 ## D. Objective Brain
-- [R] 48 Cross-Factory Objective Orchestrator
+- [I] 48 Cross-Factory Objective Orchestrator
 
 ## E. Required shared primitives discovered so far
 - [R] CreationRun / StageRun state machine
@@ -226,3 +226,7 @@ TASK-LEDGER.md establishes a baseline 1,735 granular engineering tasks: 500 kern
 - [I] ObjectiveOrchestrator dependency-driven execution
 - [I] downstream blocking after failed factory
 - [I] objective orchestration contract tests
+
+
+## Factory BEAST Wave checkpoint
+All 12 factories now have first executable contract/guardrail scaffolds and dedicated tests. These are not full production factories: provider adapters, persistence, real rendering/export/publishing and end-to-end verification remain. Objective Orchestrator is implemented as first dependency/budget/blocking scaffold.
