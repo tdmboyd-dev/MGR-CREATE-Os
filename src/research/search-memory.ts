@@ -1,0 +1,1 @@
+import type {SearchAdapter,SearchResult} from "./adapters.js";export class StaticSearchAdapter implements SearchAdapter{constructor(private results:SearchResult[]){}async search(q:string,limit:number){const s=q.toLowerCase();return this.results.filter(x=>(x.title+" "+x.snippet).toLowerCase().includes(s)).slice(0,limit)}}
