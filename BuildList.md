@@ -183,16 +183,16 @@ GitHub CI is now configured to execute typecheck + tests on push/PR. Do not mark
 
 ## BEAST Research Expansion 49–58
 Implementation-depth audit expanded the known architecture from 48 to 58 categories rather than hiding missing systems.
-- [S] 49 Schema Registry / contract evolution
-- [S] 50 Capability Evaluation Registry
-- [S] 51 Secret Broker / short-lived credentials
+- [I] 49 Schema Registry / contract evolution
+- [I] 50 Capability Evaluation Registry
+- [I] 51 Secret Broker / short-lived credentials
 - [I] 52 Artifact Validator Registry (first primitive implemented)
-- [S] 53 Dependency & License Resolver
-- [S] 54 Experiment / Feature Flag service
-- [S] 55 Retention / Deletion Orchestrator
+- [I] 53 Dependency & License Resolver
+- [I] 54 Experiment / Feature Flag service
+- [I] 55 Retention / Deletion Orchestrator
 - [I] 56 Provider / Connector Health & Circuit Breakers (first primitive implemented)
 - [I] 57 Migration Registry (first primitive implemented)
-- [S] 58 Evidence Bundle / Audit Exporter
+- [I] 58 Evidence Bundle / Audit Exporter
 
 Research: categories 49–58 received dedicated deep pass in research/DEEP-WAVE-49-58.md. Known-category research coverage is now 58/58 first-pass, while dependency-specific research continues during implementation.
 
@@ -212,3 +212,6 @@ Research: categories 49–58 received dedicated deep pass in research/DEEP-WAVE-
 - [I] MigrationRegistry primitive
 
 Still not TESTED/VERIFIED until executable CI/runtime evidence is observed.
+
+## BEAST Expansion implementation checkpoint
+All categories 49–58 now have first implementation primitives except that production-grade backends/adapters remain open. New code includes Capability Eval suites/runs, SecretBroker grants, dependency/license resolution, deterministic experiments, deletion fan-out with verification, and EvidenceBundle export/digest. Tests committed in test/beast-expansion-49-58.test.ts.
