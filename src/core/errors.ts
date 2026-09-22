@@ -1,0 +1,1 @@
+export type ErrorKind="VALIDATION"|"AUTH"|"POLICY"|"RATE_LIMIT"|"TIMEOUT"|"PROVIDER"|"CONFLICT"|"NOT_FOUND"|"INTEGRITY"|"INTERNAL";export class CreationOSError extends Error{constructor(public kind:ErrorKind,message:string,public retryable=false,public details?:Record<string,unknown>){super(message);this.name="CreationOSError"}}
