@@ -1,1 +1,1 @@
-export * from "./json-validator.js";export * from "./html-validator.js";export * from "./runner.js";
+export * from "./json-validator.js";export * from "./html-validator.js";export * from "./runner.js";export * from "./pdf-validator.js";export * from "./zip-validator.js";
