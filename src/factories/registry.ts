@@ -1,0 +1,1 @@
+import type {Factory,FactoryKind} from "./contracts.js";export class FactoryRegistry{private items=new Map<FactoryKind,Factory>();register(x:Factory){if(this.items.has(x.kind))throw new Error("factory already registered");this.items.set(x.kind,x)}get(k:FactoryKind){const x=this.items.get(k);if(!x)throw new Error("factory missing");return x}kinds(){return [...this.items.keys()]}}
