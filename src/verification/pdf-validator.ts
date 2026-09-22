@@ -1,0 +1,1 @@
+import type {ArtifactValidator} from "../core/validators.js";export const PdfSignatureValidator:ArtifactValidator<Uint8Array>={id:"pdf-signature",version:"1",artifactType:"application/pdf",validate(b){const pass=b.length>=5&&new TextDecoder().decode(b.slice(0,5))==="%PDF-";return{pass,evidence:pass?"PDF signature present":"invalid PDF signature"}}};
