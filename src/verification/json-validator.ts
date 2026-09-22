@@ -1,0 +1,1 @@
+import type {ArtifactValidator} from "../core/validators.js";export const JsonValidator:ArtifactValidator<Uint8Array>={id:"json-parse",version:"1",artifactType:"application/json",validate(bytes){try{JSON.parse(new TextDecoder().decode(bytes));return{pass:true,evidence:"valid JSON"}}catch(e){return{pass:false,evidence:String(e)}}}};
