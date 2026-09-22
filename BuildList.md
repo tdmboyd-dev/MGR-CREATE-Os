@@ -306,3 +306,16 @@ Next trust boundary: production DB/object-store adapters, browser-backed researc
 - [V] GitHub Actions run 35689296971 SUCCESS on a88dcda4f8f323fa60723fb4358236e6c8100122
 
 Live PostgreSQL/S3/browser/render-engine/provider integrations remain separate verification gates; deterministic adapter tests do not falsely prove live infrastructure.
+
+
+## Reliability / Security / Service BEAST Wave — GREEN
+- [I/T] IdempotencyStore rejects key reuse with different request digest
+- [I/T] TokenBucket rate limiting/refill
+- [I/T] exponential retry/backoff with bounded attempts
+- [I/T] CreationOSError typed error taxonomy
+- [I/T] role/resource permission enforcement with default deny
+- [I/T] immutable chained AuditLog with digest verification
+- [I/T] SSRF guard denies localhost/private/link-local/credential URLs
+- [I/T] all-12-factory default registry + Creation OS bootstrap
+- [I/T] idempotent CreationOSService objective execution
+- [V] CI initially found a bad audit mutation test; test was corrected to assert immutable audit records, then run 35689816187 passed full install/typecheck/test suite on cd243a671a56064c3fadb2fd23ae09006efda17d.
