@@ -144,3 +144,39 @@ Research completion does NOT mean implementation completion. Next gate is specif
 - Dependency bake-offs defined in architecture/BAKEOFFS.md; no dependency falsely marked selected.
 - First executable vertical-slice bootstrap implemented: TypeScript package, CreationRun/StageRun state transitions, CloudEvents-shaped EventEnvelope types, policy/evidence primitives, canonical ActionDigest, and initial unit tests.
 - Bootstrap code is IMPLEMENTED but NOT yet marked TESTED/VERIFIED because connected GitHub writes do not execute npm/typecheck. Runtime proof remains required.
+
+
+## Wave A/B Implementation Checkpoint
+### Wave A executable spine — IMPLEMENTED first vertical slice
+- [I] EventEnvelope + in-memory deduplicating event bus
+- [I] OperatorManifest + versioned registry
+- [I] CreationRun/StageRun runtime state transitions
+- [I] PolicyEngine + canonical ActionDigest
+- [I] append-only in-memory UsageEvent/CostLedger primitive
+- [I] EvidenceStore primitive
+- [I] core IDs/digest exports
+- [I] contract tests committed
+- [I] GitHub Actions CI committed (Node 22, typecheck, tests)
+- [ ] Durable engine adapter (bake-off/prototype required)
+- [ ] persistent database/event outbox
+- [ ] real approval durable pause/resume
+- [ ] OpenTelemetry/evidence persistence
+- [ ] auth/tenant enforcement beyond types
+
+### Wave B creation truth — IMPLEMENTED first vertical slice
+- [I] AssetRegistry + immutable version uniqueness/digest primitive
+- [I] UCOS ContextLayer/Lock resolver + blocking hard-conflict report
+- [I] Continuity Rule evaluator + Violation output
+- [I] UCT issuance + artifact digest verification primitive
+- [I] VerificationPlan-style blocking criteria executor
+- [I] bounded repair convergence stop primitive
+- [I] Wave B contract tests committed
+- [ ] persistent Asset/UCT/Context/Violation storage
+- [ ] multimodal continuity adapters
+- [ ] signed attestations
+- [ ] full lineage graph
+- [ ] causal root-cause engine
+- [ ] real artifact validators
+
+### Test truth
+GitHub CI is now configured to execute typecheck + tests on push/PR. Do not mark [T] or [V] until an actual workflow run is observed green.
