@@ -1,0 +1,1 @@
+import type {ArtifactValidator} from "../core/validators.js";export function zipSignatureValidator(id:string,artifactType:string):ArtifactValidator<Uint8Array>{return{id,version:"1",artifactType,validate(b){const pass=b.length>=4&&b[0]===0x50&&b[1]===0x4b;return{pass,evidence:pass?"ZIP container signature present":"invalid ZIP signature"}}}}
