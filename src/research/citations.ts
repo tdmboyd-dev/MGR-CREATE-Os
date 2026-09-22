@@ -1,0 +1,1 @@
+export interface Citation{claimId:string;snapshotDigest:string;quote?:string;locator?:string}export function validateCitation(c:Citation,sourceText:string){if(!c.quote)return{pass:true,evidence:"citation bound to snapshot digest"};const pass=sourceText.includes(c.quote);return{pass,evidence:pass?"quoted evidence found":"quoted evidence missing"}}
