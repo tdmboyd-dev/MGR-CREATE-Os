@@ -1,0 +1,1 @@
+import type {DocumentRenderer} from "./renderers.js";export class JsonDocumentRenderer implements DocumentRenderer{format="JSON";async render(x:{title:string;sections:{heading:string;body:string}[]}){return{format:this.format,bytes:new TextEncoder().encode(JSON.stringify(x,null,2)),mime:"application/json",extension:"json"}}}
