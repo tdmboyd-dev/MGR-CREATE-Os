@@ -278,3 +278,17 @@ GitHub Actions run 35687452672 on commit ad8e7e6e92131db7c4ea16a78fdef77fb1d9a0e
 - npm run typecheck: PASS
 - npm test: PASS
 This upgrades the current committed unit/contract test suite from merely written to executed-green. It does NOT verify production adapters or full product behavior.
+
+
+## Artifact Trust BEAST Wave — VERIFIED CI
+- [I/T] JSON deterministic artifact validator
+- [I/T] HTML structure validator
+- [I/T] ValidatorRegistry execution runner; missing validator cannot produce VERIFIED
+- [I/T] Research page snapshot digest + mutation detection
+- [I/T] citation quote presence check
+- [I/T] HTML/Markdown/JSON renderer registry
+- [I/T] content-addressed object storage wrapper with SHA-256 verification
+- [I/T] external publishing operation idempotency ledger
+- [V] GitHub Actions run 35688136838: install PASS, typecheck PASS, full committed test suite PASS on commit cb340b6140389638a74fa325f2ea5b4f61f20e97.
+
+Next trust boundary: production DB/object-store adapters, browser-backed research snapshots, PDF/DOCX/EPUB render+validators, durable engine prototype, real external publish reconciliation.
