@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS creation_runs(id TEXT PRIMARY KEY,schema_version INTEGER NOT NULL,tenant_id TEXT NOT NULL,workspace_id TEXT NOT NULL,pipeline_id TEXT NOT NULL,pipeline_version TEXT NOT NULL,status TEXT NOT NULL,trace_id TEXT NOT NULL,current_stage_id TEXT,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS stage_runs(id TEXT PRIMARY KEY,creation_run_id TEXT NOT NULL REFERENCES creation_runs(id),stage_key TEXT NOT NULL,attempt INTEGER NOT NULL,status TEXT NOT NULL,input_refs TEXT NOT NULL,output_refs TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS events(id TEXT PRIMARY KEY,source TEXT NOT NULL,type TEXT NOT NULL,tenant_id TEXT NOT NULL,workspace_id TEXT NOT NULL,trace_id TEXT NOT NULL,idempotency_key TEXT UNIQUE,payload TEXT NOT NULL,created_at TEXT NOT NULL,published_at TEXT);
+CREATE TABLE IF NOT EXISTS asset_versions(id TEXT PRIMARY KEY,asset_id TEXT NOT NULL,version INTEGER NOT NULL,digest TEXT NOT NULL,blob_ref TEXT NOT NULL,mime TEXT NOT NULL,parent_version_ids TEXT NOT NULL,created_at TEXT NOT NULL,UNIQUE(asset_id,version));
+CREATE TABLE IF NOT EXISTS uct_records(id TEXT PRIMARY KEY,artifact_version_id TEXT NOT NULL,artifact_digest TEXT NOT NULL,creation_run_id TEXT NOT NULL,stage_run_id TEXT NOT NULL,record_json TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS evidence_records(id TEXT PRIMARY KEY,tenant_id TEXT NOT NULL,criterion TEXT NOT NULL,passed INTEGER NOT NULL,record_json TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_runs_tenant ON creation_runs(tenant_id,workspace_id);
+CREATE INDEX IF NOT EXISTS idx_assets_asset ON asset_versions(asset_id,version);
