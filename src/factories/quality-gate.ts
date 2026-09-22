@@ -1,0 +1,1 @@
+export interface QualityCheck{id:string;blocking:boolean;passed:boolean;evidenceRef?:string}export function qualityGate(checks:QualityCheck[]){const failed=checks.filter(c=>c.blocking&&!c.passed);return{passed:failed.length===0,failed:failed.map(x=>x.id),evidenceRefs:checks.flatMap(x=>x.evidenceRef?[x.evidenceRef]:[])}}
