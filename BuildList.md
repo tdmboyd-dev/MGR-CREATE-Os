@@ -215,3 +215,14 @@ Still not TESTED/VERIFIED until executable CI/runtime evidence is observed.
 
 ## BEAST Expansion implementation checkpoint
 All categories 49–58 now have first implementation primitives except that production-grade backends/adapters remain open. New code includes Capability Eval suites/runs, SecretBroker grants, dependency/license resolution, deterministic experiments, deletion fan-out with verification, and EvidenceBundle export/digest. Tests committed in test/beast-expansion-49-58.test.ts.
+
+## 1,000+ Task Program
+TASK-LEDGER.md establishes a baseline 1,735 granular engineering tasks: 500 kernel, 375 creation substrate, 420 factory, 40 objective orchestrator, 200 BEAST expansion, 200 legacy/adapters/release/security/performance. This is a decomposition/counting framework; tasks are only marked complete when their actual artifact/evidence exists.
+
+## Factory / Objective scaffold checkpoint
+- [I] FactoryKind/FactoryRequest/FactoryResult/Factory contracts
+- [I] FactoryRegistry
+- [I] ObjectivePlan dependency/budget validation
+- [I] ObjectiveOrchestrator dependency-driven execution
+- [I] downstream blocking after failed factory
+- [I] objective orchestration contract tests
