@@ -1,0 +1,1 @@
+export interface ScopedResource{tenantId:string;workspaceId:string}export interface ActorContext{actorId:string;tenantId:string;workspaceId:string;roles:string[]}export function assertScope(a:ActorContext,r:ScopedResource){if(a.tenantId!==r.tenantId||a.workspaceId!==r.workspaceId)throw new Error("cross-tenant/workspace access denied")}
