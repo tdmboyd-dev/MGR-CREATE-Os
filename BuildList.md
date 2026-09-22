@@ -319,3 +319,15 @@ Live PostgreSQL/S3/browser/render-engine/provider integrations remain separate v
 - [I/T] all-12-factory default registry + Creation OS bootstrap
 - [I/T] idempotent CreationOSService objective execution
 - [V] CI initially found a bad audit mutation test; test was corrected to assert immutable audit records, then run 35689816187 passed full install/typecheck/test suite on cd243a671a56064c3fadb2fd23ae09006efda17d.
+
+
+## Live Infrastructure Preparation Wave — GREEN
+- [I/T] current Supabase 2026 security/storage behavior researched before integration design
+- [I] private creation_os Postgres/Supabase migration committed
+- [I] core runs/stages/outbox/assets/UCT/evidence schema + indexes
+- [I] public schema access intentionally avoided for core OS data
+- [I] Supabase deployment decision documented: no unrelated connected project was modified
+- [I] live integration gates documented for DB/storage/research/render/durable/publishing
+- [V] CI run 35690524587 SUCCESS on e996619a79b00c460383afae57af1a46f0b93134
+
+Live DB deployment remains blocked on selecting/creating a dedicated Creation OS database/project. This is an environment decision, not a missing code primitive.
