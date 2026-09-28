@@ -59,3 +59,49 @@ test("Jev provider sends the official System One request shape", async () => {
   assert.equal(result.model, "jev-1.13.0");
   assert.equal(result.usage?.inputTokens, 12);
 });
+
+
+test("DecisionEngine emits trace for low-confidence fallback", async () => {
+  const traces: Array<{ selectedProvider?: string; attempts: Array<{ provider: string; status: string }> }> = [];
+  const low: DecisionProvider = {
+    name: "low",
+    canHandle: () => true,
+    async decide() {
+      return {
+        provider: "low",
+        model: "low",
+        answers: { route: { type: "choice", choice: "cheap", confidence: 0.51, probabilities: { cheap: 0.51, frontier: 0.49 } } },
+        durationMs: 1,
+      };
+    },
+  };
+  const high: DecisionProvider = {
+    name: "high",
+    canHandle: () => true,
+    async decide() {
+      return {
+        provider: "high",
+        model: "high",
+        answers: { route: { type: "choice", choice: "frontier", confidence: 0.95, probabilities: { cheap: 0.05, frontier: 0.95 } } },
+        durationMs: 1,
+      };
+    },
+  };
+
+  const engine = new DecisionEngine([low, high], {
+    minimumConfidence: 0.7,
+    fallbackOnLowConfidence: true,
+    failClosed: true,
+    observer: (trace) => { traces.push(trace); },
+  });
+
+  await engine.decide({
+    state: { task: "hard" },
+    questions: { route: { type: "choice", criteria: { cheap: "simple", frontier: "hard" } } },
+    metadata: { project: "test" },
+  });
+
+  assert.equal(traces.length, 1);
+  assert.equal(traces[0]?.selectedProvider, "high");
+  assert.deepEqual(traces[0]?.attempts.map((attempt) => attempt.status), ["low_confidence", "accepted"]);
+});
