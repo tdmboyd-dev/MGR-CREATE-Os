@@ -40,10 +40,30 @@ export type DecisionProvider = {
   decide(request: DecisionRequest): Promise<DecisionResult>;
 };
 
+export type DecisionAttempt = {
+  provider: string;
+  status: "accepted" | "low_confidence" | "error";
+  durationMs: number;
+  minimumObservedConfidence?: number;
+  error?: string;
+};
+
+export type DecisionTrace = {
+  startedAt: string;
+  finishedAt: string;
+  selectedProvider?: string;
+  selectedModel?: string;
+  attempts: DecisionAttempt[];
+  metadata?: Record<string, unknown>;
+};
+
+export type DecisionObserver = (trace: DecisionTrace) => void | Promise<void>;
+
 export type DecisionPolicy = {
   minimumConfidence?: number;
   failClosed?: boolean;
   fallbackOnLowConfidence?: boolean;
+  observer?: DecisionObserver;
 };
 
 export function answerConfidence(answer: DecisionAnswer): number {
