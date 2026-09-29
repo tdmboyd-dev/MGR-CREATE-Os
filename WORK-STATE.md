@@ -35,7 +35,10 @@ The original windows' complete transfer packets are pending. Their private local
 
 ## Work ownership
 
-Current claim: UNCLAIMED for product implementation.
+Current claim: ACTIVE — continuity-recovery-2026-09-29; functional decomposition and native-performance research.
+Scope: WORK-STATE.md, BuildList.md, AUDIT-LEDGER.md, docs/BEAST-WAVE-STATUS.md, research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md, evidence/avatar-function-audit-2026-09-29.json.
+Branch: main; base: 67c6c7518f66d551e97de9c37ae5b9464b1fc15d; claimed: 2026-09-29T13:31:45.302Z; review: 2026-09-29T14:31:45.302Z.
+Acceptance: explicit child research paths, source-read boundaries, executable diagnostic evidence, preserved product ownership.
 This documentation recovery claims no ongoing runtime or exclusive ownership over another window.
 Before edits, record task, owner/session, branch, exact path scope, fresh base SHA, claimed UTC time and review/expiry UTC time; check other claims. A recorded claim is advisory, not a technical lock. A stale claim requires reconciliation, not an overwrite.
 
