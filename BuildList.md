@@ -108,7 +108,7 @@ This is the canonical implementation list. Research explains what to build; this
 ## G. Legacy migration
 - [ ] Map every extracted MGR Agents concept to KEEP / REDESIGN / RETIRE
 - [ ] Build compatibility adapter for MGR Agents
-- [ ] Build Create Loco integration adapter
+- [I] Build Create Loco integration adapter
 - [ ] Prove parity before removing legacy behavior
 - [ ] Migration tests + rollback
 
@@ -125,7 +125,7 @@ This is the canonical implementation list. Research explains what to build; this
 - [ ] Real artifact generation + verification
 - [ ] Cross-factory objective proof
 - [ ] MGR Agents consumes standalone Creation OS
-- [ ] Create Loco consumes/provides capability through stable adapter
+- [I] Create Loco capability contract/adapter exists; live Create Loco service consumption still needs end-to-end proof
 - [ ] Security/tenant isolation proof
 - [ ] Cost ledger reconciliation proof
 
@@ -389,5 +389,16 @@ New proof gates:
 - [ ] TensorZero/LiteLLM/managed gateway bake-off
 - [ ] OTIO export/import adapter prototype
 - [ ] OCIO/ACES color metadata/transform prototype
-- [ ] CameraTrajectory deterministic planner + renderer adapter contract
-- [ ] SAM2-style ObjectTrack -> EditOperation prototype
+- [I] CameraTrajectory/SceneGraph/ShotIntent contracts + validators; deterministic planner/renderer adapters still open
+- [R] SAM2-style ObjectTrack -> EditOperation prototype
+
+
+## Current implementation additions — 2026-09-29
+- [I] ProviderCapabilityRegistry with source/date/confidence/rights/health/status.
+- [I] commercial routing fails closed without explicit commercial-use clearance.
+- [I] provider freshness gates can reject stale capability snapshots.
+- [I] Create Loco stable reconstruction capability adapter + contract tests.
+- [I] SceneGraph / WorldVersion / CameraTrajectory / ShotIntent contracts + structural validators.
+- [I] CreativeDNA / ProductKnowledgeObject / PerformanceObservation contracts.
+- [I] sandbox policy expanded to tenant isolation, egress, scoped secrets and persistence.
+- [R] Forward discovery wave: TensorZero, modern agent sandboxes, World Labs/Marble, Runway Aleph, ad-performance category.
