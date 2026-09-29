@@ -363,3 +363,31 @@ New bake-offs now required before dependency lock:
 - MCP auth/security conformance against current OAuth 2.1/resource-binding requirements
 - C2PA signing/manifest integration with UCT
 - ad-performance learning: first-party outcome corpus + channel APIs; public/noncommercial datasets limited by license
+
+
+## BEAST Backwards-Forwards Wave — 2026-09-29
+New deep passes committed:
+- [R] Brain / agent evaluation university
+- [R] Routing gateway bake-off
+- [R] Film/VFX standards deep pass
+- [R] Camera-control deep pass
+- [R] Media perception/editing deep pass
+
+Architecture decisions from this wave:
+- Brain/CoI is a model-independent controller, initially colocated with MGR-API-MCP; do not create another repo yet.
+- Creation OS stays the shared internal creation/control-plane engine.
+- Create Loco stays a distinct user-facing visual/web reconstruction product that consumes Creation OS.
+- Product repos remain separate unless lifecycle/deployment/release needs truly converge; unify through contracts/services, not repo count.
+- Gateway infrastructure is a bake-off: MGR retains provider/cost/eval/policy truth while TensorZero/LiteLLM/Vercel/HF are candidate adapters rather than reimplementing every gateway feature.
+- Film standards are interoperability universities/adapters, not automatic core dependencies.
+- Specialized perception/camera models can serve narrow capabilities; frontier models remain valid escalation providers where smaller/open models fail MGR acceptance tests.
+
+New proof gates:
+- [ ] Brain protected tool-use eval suite
+- [ ] Brain long-term memory eval suite
+- [ ] Brain baseline vs Qwen3-8B pilot comparison
+- [ ] TensorZero/LiteLLM/managed gateway bake-off
+- [ ] OTIO export/import adapter prototype
+- [ ] OCIO/ACES color metadata/transform prototype
+- [ ] CameraTrajectory deterministic planner + renderer adapter contract
+- [ ] SAM2-style ObjectTrack -> EditOperation prototype
