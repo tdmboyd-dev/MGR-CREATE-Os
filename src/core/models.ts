@@ -30,6 +30,9 @@ export interface ModelVersion {
   healthy: boolean;
   evals: EvalSnapshot[];
   rights?: ModelRights;
+  observedAt?: string;
+  source?: string;
+  confidence?: number;
 }
 
 export interface RouteRequest {
@@ -38,6 +41,8 @@ export interface RouteRequest {
   maxCostPerUnit?: number;
   privacy?: ModelVersion["privacy"];
   usage?: "RESEARCH" | "INTERNAL" | "COMMERCIAL";
+  maxSnapshotAgeMs?: number;
+  nowMs?: number;
 }
 
 export class ModelRouter {
@@ -48,6 +53,13 @@ export class ModelRouter {
       .filter((m) => m.healthy && m.capabilities.includes(r.capability))
       .filter((m) => !r.allowedLicenses || r.allowedLicenses.includes(m.license))
       .filter((m) => !r.privacy || m.privacy === r.privacy)
+      .filter((m) => {
+        if (r.maxSnapshotAgeMs === undefined) return true;
+        if (!m.observedAt || !m.source) return false;
+        const observed = Date.parse(m.observedAt);
+        if (!Number.isFinite(observed)) return false;
+        return (r.nowMs ?? Date.now()) - observed <= r.maxSnapshotAgeMs;
+      })
       .filter((m) => {
         if (r.usage !== "COMMERCIAL") return true;
         return m.rights?.commercialUse === "ALLOWED";
