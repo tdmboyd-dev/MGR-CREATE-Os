@@ -331,3 +331,35 @@ Live PostgreSQL/S3/browser/render-engine/provider integrations remain separate v
 - [V] CI run 35690524587 SUCCESS on e996619a79b00c460383afae57af1a46f0b93134
 
 Live DB deployment remains blocked on selecting/creating a dedicated Creation OS database/project. This is an environment decision, not a missing code primitive.
+
+
+## BEAST Expansion 59–132 — Competitor decomposition / film-VFX / agent-security research
+The September 28 Pyxa/Firefly/Creatify/Muse/Bluehost/OpenArt pass was decomposed into independent research tracks instead of treating competitor feature labels as implementation knowledge.
+
+Canonical research matrix: `research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md`.
+Deep first-pass dossiers:
+- `research/BEAST-CINEMA-VFX-UNIVERSITY-2026-09-28.md`
+- `research/BEAST-AD-CREATIVE-UNIVERSITY-2026-09-28.md`
+- `research/BEAST-MEDIA-IDENTITY-UNIVERSITY-2026-09-28.md`
+- `research/BEAST-AGENT-MCP-SECURITY-UNIVERSITY-2026-09-28.md`
+
+Rules:
+- each capability progresses DISCOVERED -> SOURCED -> END_TO_END_READ -> SPECIFIED -> IMPLEMENTED -> TESTED -> VERIFIED;
+- datasets require independent rights/license/consent review before training use;
+- provider APIs are replaceable adapters, not product architecture;
+- film/VFX standards and open repos are universities/adapters subject to bake-off, not blind dependencies;
+- app repos receive local research/implementation dossiers while shared contracts remain here;
+- MGR-API-MCP is the portable assistant/API/MCP edge and must consume Creation OS domain capabilities rather than duplicate them.
+
+New bake-offs now required before dependency lock:
+- OpenUSD scene representation vs MGR-native scene graph + adapter boundary
+- OpenTimelineIO editorial interchange adapter
+- OCIO/ACES color pipeline depth
+- MaterialX material interchange depth
+- OpenCue vs Creation OS durable render scheduling boundary
+- Camera trajectory stack: deterministic parametric planner vs learned MotionCtrl/CameraCtrl/TriMotion/GenDoP-style adapters
+- segmentation/edit stack: SAM2 + Diffusers/ControlNet/IP-Adapter vs managed providers
+- sandbox profiles: gVisor vs Firecracker vs managed sandbox
+- MCP auth/security conformance against current OAuth 2.1/resource-binding requirements
+- C2PA signing/manifest integration with UCT
+- ad-performance learning: first-party outcome corpus + channel APIs; public/noncommercial datasets limited by license
