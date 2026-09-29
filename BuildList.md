@@ -408,3 +408,7 @@ New proof gates:
 - [R] Narrow VRM expression-rule and Rhubarb timing-format review tied to actual iKickItz source; three defects reproduced, repair pending iKickItz preflight.
 - [ ] Deepen every child path with versions, rights, implementations, failure modes and measured acceptance even when code already exists.
 - [ ] Preserve product-local canon/permissions and ordinary runtime behavior; extract shared creation machinery only after contract/parity evidence.
+
+## Backwards–Forwards avatar admission research — 2026-09-29
+- [R] AF-06/11–15 narrow shared-engine asset admission study: actual byte digest, immutable versions, staged concept/turnaround/rig/performance proof, owner approval and glTF skin/morph boundaries. See research/AVATAR-ASSET-ADMISSION-2026-09-29.md. This does not mark the 40 child paths or legacy 74 tracks complete.
+- [ ] Build actual-byte/version/evidence admission contract and then run real model/rig/mobile acceptance. Existing registry and continuity stubs are not those proofs.

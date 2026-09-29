@@ -22,3 +22,6 @@ Initial state for all imported legacy capabilities: UNKNOWN until audited.
 
 ## 2026-09-29 functional research / stale status repair
 Replaced current-tense 58-only scope in docs/BEAST-WAVE-STATUS.md with dated historical scope and links to the 74-track expansion and 40-path child decomposition. Preserved old implementation history. Corrected pending-packet wording in WORK-STATE.md. Primary-source versus existing-code comparison reproduced three iKickItz defects; no foreign product source copied here and no iKickItz repair claimed. Dossier and machine-readable evidence record exact scope.
+
+## 2026-09-29 avatar admission research
+Compared the existing AssetRegistry, continuity rules and evidence bundle with glTF 2.0 skin/morph requirements and the iKickItz legacy salvage decision. Found that the registry's default digest hashes blobRef/MIME rather than media bytes; no actual byte-integrity or admission proof follows from its existing status. Documented staged acceptance and failure cases in research/AVATAR-ASSET-ADMISSION-2026-09-29.md. No product source changed or real asset inspected in this batch.

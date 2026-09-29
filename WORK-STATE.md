@@ -35,7 +35,7 @@ Both transfer packets and manifests were received and reconciled in the private 
 
 ## Work ownership
 
-Current claim: ACTIVE — backwards-forwards research, owner /root; branch main; scope research dossier, BuildList/AUDIT-LEDGER/WORK-STATE (Agents: docs dossier and WORK-STATE only); base fbecbb3d3d1b6a54952b1f0dcc03030e3b4c46a4; claimed 2026-09-29T14:53:32.118Z; review 2026-09-29T15:53:32.119Z.
+Current claim: RELEASED — research slice and owner queue/continuity updates complete; no active process.
 This documentation recovery claims no ongoing runtime or exclusive ownership over another window.
 Before edits, record task, owner/session, branch, exact path scope, fresh base SHA, claimed UTC time and review/expiry UTC time; check other claims. A recorded claim is advisory, not a technical lock. A stale claim requires reconciliation, not an overwrite.
 
@@ -44,3 +44,6 @@ Before edits, record task, owner/session, branch, exact path scope, fresh base S
 This batch concerns continuity documentation only. No new product runtime, provider, device, database or deployment success is claimed. Existing test reports retain their original scope and dates. Read the batch's commit/diff and any local integrity receipt before calling the documentation installed.
 At resume, compare current HEAD with the base above, inspect intervening changes, and update this file plus the existing queue/audit/scorecard after the next meaningful batch. Never force an update over another writer.
 No scheduled continuation was created by this recovery.
+
+## 2026-09-29 Backwards–Forwards research batch
+Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRegistry, evaluateRules and evidence bundle compared to primary glTF requirements and approved iKickItz legacy decisions. The data/byte integrity and staged admission proof remain open; BuildList and AUDIT-LEDGER updated. No runtime, asset or provider check run.
