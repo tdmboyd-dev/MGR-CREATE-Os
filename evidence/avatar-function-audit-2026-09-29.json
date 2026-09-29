@@ -1,0 +1,139 @@
+{
+  "observed_at": "2026-09-29T13:34:33.232Z",
+  "ikickitz_head": "4bc9e063f1f15c708074c118c3a51cf2ac7d79b5",
+  "directory_inspection": {
+    "commit": "4bc9e063f1f15c708074c118c3a51cf2ac7d79b5",
+    "tree_truncated": false,
+    "required": [
+      {
+        "path": "frontend/package.json",
+        "present": true
+      },
+      {
+        "path": "frontend/src",
+        "present": true
+      },
+      {
+        "path": "frontend/vite.config.js",
+        "present": true
+      },
+      {
+        "path": "backend/package.json",
+        "present": true
+      },
+      {
+        "path": "backend/server.mjs",
+        "present": true
+      },
+      {
+        "path": "backend/services",
+        "present": true
+      },
+      {
+        "path": "supabase/migrations",
+        "present": true
+      },
+      {
+        "path": "contracts",
+        "present": true
+      }
+    ],
+    "forbidden": [
+      {
+        "path": "MGR ALL IN 1",
+        "present": false
+      },
+      {
+        "path": "frontend-new",
+        "present": false
+      },
+      {
+        "path": "backend-new",
+        "present": false
+      },
+      {
+        "path": "rebuild",
+        "present": false
+      },
+      {
+        "path": "site/package.json",
+        "present": false
+      },
+      {
+        "path": "app/package.json",
+        "present": false
+      }
+    ],
+    "root_name": "ikickitz-app",
+    "backend_main": "server.mjs",
+    "scope": "Exact remote tree and package inspection; not execution of npm guard:directories in a full checkout, and not GitHub CI"
+  },
+  "execution": {
+    "node": "24.19.0",
+    "command": "node --test backend/tests/*.test.mjs",
+    "snapshot": "isolated unchanged modules; no full checkout",
+    "test_files": [
+      "backend/tests/livingBeingExpressionMixer.test.mjs",
+      "backend/tests/livingBeingNarrativeKernel.test.mjs",
+      "backend/tests/livingBeingPerformanceTimeline.test.mjs",
+      "backend/tests/livingBeingSchedule.test.mjs",
+      "backend/tests/livingBeingSchedulePerformanceBridge.test.mjs",
+      "backend/tests/livingBeingStateKernel.test.mjs",
+      "backend/tests/livingBeingVoiceProviderRouter.test.mjs",
+      "backend/tests/rhubarbVisemeAdapter.test.mjs"
+    ],
+    "tests": 30,
+    "passed": 30,
+    "failed": 0
+  },
+  "diagnostics": [
+    {
+      "id": "AF-16",
+      "input": "blink 1; happy/sad overrideBlink blend weights .5 each",
+      "expected": 0,
+      "observed": 0.25,
+      "status": "REPRODUCED_NOT_REPAIRED"
+    },
+    {
+      "id": "AF-27a",
+      "input": "provider_timing cue weight NaN",
+      "observed": "NaN retained, productionReady true",
+      "status": "REPRODUCED_NOT_REPAIRED"
+    },
+    {
+      "id": "AF-27b",
+      "input": "Rhubarb metadata.duration 1, missing mouthCues",
+      "observed": "empty cues, productionReady true",
+      "status": "REPRODUCED_NOT_REPAIRED"
+    }
+  ],
+  "source_reads": [
+    {
+      "url": "https://github.com/vrm-c/vrm-specification/blob/master/specification/VRMC_vrm-1.0/expressions.md",
+      "blob": "74017309572fbbfcd2880c7fdd5234959a3471b6",
+      "scope": "complete Markdown; linked schemas/figures not inspected"
+    },
+    {
+      "url": "https://github.com/DanielSWolf/rhubarb-lip-sync/blob/master/README.adoc",
+      "blob": "e2bf071c78ebeb9127018ba127a54b87ff1baccd",
+      "scope": "mouth shapes, CLI, recognizers, timing outputs, status and versioning; not all linked resources"
+    }
+  ],
+  "research_paths": 40,
+  "all_paths_deeply_researched": false,
+  "hosted_run_at_head": 0,
+  "ci_history": {
+    "run_id": 36553736997,
+    "head": "e6b4e32423b9fc7e3f924c64ee95ebe2ac0d27bb",
+    "frontend_job": 109357809809,
+    "backend_job": 109357809913,
+    "backend_passed": 222,
+    "backend_failed": 5,
+    "scope": "historical logs; current failures not inferred from these"
+  },
+  "limitations": [
+    "No edit to iKickItz branch",
+    "No hosted check dispatched",
+    "No trained model, actual TTS synthesis, audio alignment, database or rig/browser verification"
+  ]
+}

@@ -3,7 +3,7 @@
 Updated: 2026-09-29. Responsible session: continuity-recovery-2026-09-29.
 Repository: `tdmboyd-dev/MGR-CREATE-Os`
 Working branch: `main`
-Last inspected code/base commit: `2772c69e04adf77a2fa949f4fe5be8f0421c91bb` (before this documentation batch).
+Last inspected code/base commit: `67c6c7518f66d551e97de9c37ae5b9464b1fc15d` (before this functional-research documentation batch).
 Scope of inspection: entry instructions, tree and the specific records/source stated below; not a complete repository audit.
 
 ## Purpose and boundaries
@@ -31,14 +31,11 @@ Current tree contains expanded research and implementations beyond the older 58-
 
 Reconcile the 74 research tracks and newer additions with owning specs, implementation and executed evidence. Preserve per-track source/license/read-depth/evaluation records. Prioritize shared contracts needed by Loco and API/MCP without calling research complete from source counts.
 
-The original windows' complete transfer packets are pending. Their private local files, uncommitted work and running-process state cannot be recovered from a shared-chat URL alone. Mark missing items explicitly and reconcile returned packets with fresh HEAD.
+Both transfer packets and manifests were received and reconciled in the private central workspace. Original private research files remain incomplete. See research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md: 40 child paths, narrow primary-source reads, 30 passing isolated iKickItz tests and three reproduced defects; not complete deep research or repaired iKickItz code.
 
 ## Work ownership
 
-Current claim: ACTIVE — continuity-recovery-2026-09-29; functional decomposition and native-performance research.
-Scope: WORK-STATE.md, BuildList.md, AUDIT-LEDGER.md, docs/BEAST-WAVE-STATUS.md, research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md, evidence/avatar-function-audit-2026-09-29.json.
-Branch: main; base: 67c6c7518f66d551e97de9c37ae5b9464b1fc15d; claimed: 2026-09-29T13:31:45.302Z; review: 2026-09-29T14:31:45.302Z.
-Acceptance: explicit child research paths, source-read boundaries, executable diagnostic evidence, preserved product ownership.
+Current claim: RELEASED — functional research dossier and evidence checkpoint complete; no active process.
 This documentation recovery claims no ongoing runtime or exclusive ownership over another window.
 Before edits, record task, owner/session, branch, exact path scope, fresh base SHA, claimed UTC time and review/expiry UTC time; check other claims. A recorded claim is advisory, not a technical lock. A stale claim requires reconciliation, not an overwrite.
 

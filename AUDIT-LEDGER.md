@@ -19,3 +19,6 @@ schema → migration → service/domain logic → route/event/worker → UI/clie
 UNKNOWN | SCHEMA_ONLY | PARTIAL | EXECUTES_UNVERIFIED | TESTED | VERIFIED
 
 Initial state for all imported legacy capabilities: UNKNOWN until audited.
+
+## 2026-09-29 functional research / stale status repair
+Replaced current-tense 58-only scope in docs/BEAST-WAVE-STATUS.md with dated historical scope and links to the 74-track expansion and 40-path child decomposition. Preserved old implementation history. Corrected pending-packet wording in WORK-STATE.md. Primary-source versus existing-code comparison reproduced three iKickItz defects; no foreign product source copied here and no iKickItz repair claimed. Dossier and machine-readable evidence record exact scope.

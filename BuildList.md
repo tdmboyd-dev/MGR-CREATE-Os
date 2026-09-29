@@ -402,3 +402,9 @@ New proof gates:
 - [I] CreativeDNA / ProductKnowledgeObject / PerformanceObservation contracts.
 - [I] sandbox policy expanded to tenant isolation, egress, scoped secrets and persistence.
 - [R] Forward discovery wave: TensorZero, modern agent sandboxes, World Labs/Marble, Runway Aleph, ad-performance category.
+
+## Functional backwards research — owner correction 2026-09-29
+- [S] Avatar/Living Being decomposition: 40 child research questions and acceptance targets in research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md; not 40 completed studies.
+- [R] Narrow VRM expression-rule and Rhubarb timing-format review tied to actual iKickItz source; three defects reproduced, repair pending iKickItz preflight.
+- [ ] Deepen every child path with versions, rights, implementations, failure modes and measured acceptance even when code already exists.
+- [ ] Preserve product-local canon/permissions and ordinary runtime behavior; extract shared creation machinery only after contract/parity evidence.
