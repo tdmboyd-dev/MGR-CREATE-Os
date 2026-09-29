@@ -35,7 +35,7 @@ Both transfer packets and manifests were received and reconciled in the private 
 
 ## Work ownership
 
-Current claim: RELEASED — functional research dossier and evidence checkpoint complete; no active process.
+Current claim: ACTIVE — backwards-forwards research, owner /root; branch main; scope research dossier, BuildList/AUDIT-LEDGER/WORK-STATE (Agents: docs dossier and WORK-STATE only); base fbecbb3d3d1b6a54952b1f0dcc03030e3b4c46a4; claimed 2026-09-29T14:53:32.118Z; review 2026-09-29T15:53:32.119Z.
 This documentation recovery claims no ongoing runtime or exclusive ownership over another window.
 Before edits, record task, owner/session, branch, exact path scope, fresh base SHA, claimed UTC time and review/expiry UTC time; check other claims. A recorded claim is advisory, not a technical lock. A stale claim requires reconciliation, not an overwrite.
 
