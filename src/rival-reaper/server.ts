@@ -87,8 +87,9 @@ export async function createRivalReaperServer(options: ReaperServerOptions) {
         if (!sameToken(req.headers.authorization?.replace(/^Bearer\s+/i, ""), options.hostToken)) return json(res, 401, { error: "unauthorized" });
         return json(res, 200, { receipts: session.receipts, state: session.state });
       }
-      if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
-        const html = await readFile(resolve(publicDir, "index.html"), "utf8");
+      if (req.method === "GET" && ["/", "/index.html", "/arena", "/arena.html", "/host", "/host.html"].includes(url.pathname)) {
+        const file = url.pathname.startsWith("/arena") ? "arena.html" : url.pathname.startsWith("/host") ? "host.html" : "index.html";
+        const html = await readFile(resolve(publicDir, file), "utf8");
         res.writeHead(200, { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" });
         return res.end(html);
       }
