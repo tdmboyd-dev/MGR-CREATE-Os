@@ -1,7 +1,6 @@
-# BEAST + Jev Read First — MGR Creation OS
-Canonical operating method: `tdmboyd-dev/mgr-perfect-skill/BEAST.md`.
+# Jev Read First — MGR Creation OS
 
-Creation OS owns the reusable MGR DecisionEngine contract; BEAST governs Creation OS and every other repo.
+Creation OS owns the reusable MGR DecisionEngine contract.
 
 ## Current verdict
 The interface-first architecture is correct, but several adapters/verification modules are still thin scaffolding. Treat them as foundations, not proof of production maturity.
@@ -20,10 +19,3 @@ VERIFY: bounded rubric judgments can assist; executed evidence proves status.
 AUDIT/IMPROVE: defect/cost/regression prioritization.
 
 Never let Jev become the source of truth for permissions, approvals, money, calculations, irreversible state or VERIFIED status.
-
-
-## BEAST v2.1 synchronization rule
-Canonical operating method: `tdmboyd-dev/mgr-perfect-skill/BEAST.md` v2.1.
-This repo extends that doctrine; it does not fork a competing BEAST.
-Compound capabilities must be decomposed into research tracks, substantial work should run in Backwards-Forwards batches, proven defects should be repaired in the same wave when safe, and architecture/research truth must be embedded in the owning repo rather than left only in chat.
-New-repo template: `tdmboyd-dev/mgr-perfect-skill/BEAST-NEW-REPO-BOOTSTRAP.md`.

@@ -121,7 +121,7 @@ Each outside workflow is a university, not a copy target. Research architecture,
 - App/Tool Factory
 - Data/Analytics Factory
 
-Factories share Creation OS grammar, locks, approvals, provenance, verification, routing, research doctrine, and BEAST rather than becoming isolated brains.
+Factories share Creation OS grammar, locks, approvals, provenance, verification, routing, and research doctrine rather than becoming isolated brains.
 
 ## Zoom-way-out operating model
 Request: “I want to build a business teaching people how to become tax preparers.”
@@ -155,12 +155,8 @@ MCP is a candidate adapter/interface, not assumed to be the entire core.
 Keep Creation OS domain logic independent of any single host product.
 Do not delete the MGR Agents implementation until compatibility and migration are proven.
 
-## Universal BEAST requirement
-Audit our own repo end to end before guessing; research outside systems as universities; extract capability lessons instead of blindly importing; verify license/security/maintenance/cost; build stronger native contracts; deliberately break them; repair causes; verify real environments and real outputs; separate RESEARCHED from IMPLEMENTED and PASS from product-complete; use evidence, defect ledgers, convergence criteria, bounded repair loops, large end-to-end waves, locked decisions, provenance, and proof before completion claims.
-
 ## Immediate work queue
 - Inventory every Creation OS-related file, schema, migration, route, service, UI, test, document, signal, approval action, training hook, brand lock, hybrid descriptor, and dependency in MGR Agents.
-- Inventory Create Loco BEAST-related doctrine and recover any missing skill implementation from history/prior work if available.
 - Verify what legacy Creation OS features are merely schemas/placeholders versus actual executing systems.
 - Recover/reconcile UCOS/CINEFORGE/sandboxes/operators/patterns/workflow-shapes/edge architecture.
 - Identify MGR Agents host coupling and extract clean domain boundaries.

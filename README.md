@@ -22,10 +22,6 @@ Creation OS is becoming its own product. MGR Agents, Create Loco, and future MGR
 - LOCAL PASS != PRODUCT COMPLETE.
 - We do not remove legacy behavior from MGR Agents until standalone compatibility is proven.
 
-## Universal BEAST
-
-This repository uses Universal BEAST as the mandatory research/build/repair methodology. See `BEAST-UNIVERSAL.md`.
-
 ## Factories
 
 Creation OS governs specialized factories including Product, Media, Web, Campaign, Course, Brand, Research, Document, Audio, Automation, App/Tool, and Data/Analytics factories.
