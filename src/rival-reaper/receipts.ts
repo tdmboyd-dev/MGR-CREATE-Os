@@ -23,7 +23,9 @@ function canonical(value: unknown): string {
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([k, v]) => `${JSON.stringify(k)}:${canonical(v)}`).join(",")}}`;
   }
-  return JSON.stringify(value);
+  const encoded = JSON.stringify(value);
+  if (encoded === undefined) throw new Error("Receipt contains unsupported undefined value");
+  return encoded;
 }
 
 export function hashReceipt(input: Omit<DrawReceipt, "receiptHash">) {
