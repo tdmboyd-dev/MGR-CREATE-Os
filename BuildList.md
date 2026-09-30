@@ -412,3 +412,19 @@ New proof gates:
 ## Backwards–Forwards avatar admission research — 2026-09-29
 - [R] AF-06/11–15 narrow shared-engine asset admission study: actual byte digest, immutable versions, staged concept/turnaround/rig/performance proof, owner approval and glTF skin/morph boundaries. See research/AVATAR-ASSET-ADMISSION-2026-09-29.md. This does not mark the 40 child paths or legacy 74 tracks complete.
 - [ ] Build actual-byte/version/evidence admission contract and then run real model/rig/mobile acceptance. Existing registry and continuity stubs are not those proofs.
+
+
+## Rival Reaper vertical slice — 2026-09-29
+- [I] audited five-team draw engine with household/gender/size constraints and random tie-break
+- [I] Blackout Krew exclusion by data-boundary design
+- [I] draw receipt fields for eligible/excluded teams and random unit
+- [I] zero-build host/public visual prototype with three-yank hidden-ink ticket reveal
+- [I] fake-roster 45-player demo targeting 9/9/9/9/9
+- [I] unit tests authored for balanced fill, uniqueness and support exclusion
+- [R] MotionSites prompt/media workflow researched and ADAPT disposition recorded
+- [ ] execute typecheck/tests and record evidence
+- [ ] seeded/CSPRNG draw receipts + cryptographic receipt hash
+- [ ] persistence/reload recovery
+- [ ] authenticated host screen + read-only arena screen sync
+- [ ] private roster import; never commit real family roster to public repo
+- [ ] approved badge/media integration + projector/mobile visual verification
