@@ -412,3 +412,38 @@ New proof gates:
 ## Backwards–Forwards avatar admission research — 2026-09-29
 - [R] AF-06/11–15 narrow shared-engine asset admission study: actual byte digest, immutable versions, staged concept/turnaround/rig/performance proof, owner approval and glTF skin/morph boundaries. See research/AVATAR-ASSET-ADMISSION-2026-09-29.md. This does not mark the 40 child paths or legacy 74 tracks complete.
 - [ ] Build actual-byte/version/evidence admission contract and then run real model/rig/mobile acceptance. Existing registry and continuity stubs are not those proofs.
+
+
+## Rival Reaper vertical slice — 2026-09-29
+- [I] audited five-team draw engine with household/gender/size constraints and random tie-break
+- [I] Blackout Krew exclusion by data-boundary design
+- [I] draw receipt fields for eligible/excluded teams and random unit
+- [I] zero-build host/public visual prototype with three-yank hidden-ink ticket reveal
+- [I] fake-roster 45-player demo targeting 9/9/9/9/9
+- [I] unit tests authored for balanced fill, uniqueness and support exclusion
+- [R] MotionSites prompt/media workflow researched and ADAPT disposition recorded
+- [ ] execute typecheck/tests and record evidence
+- [I] CSPRNG draw source + tamper-evident chained receipt hashes
+- [I] in-memory snapshot/restore contract for crash recovery; durable persistence still open
+- [I] encrypted atomic file persistence + reload path across local process restart; browser/runtime rehearsal still required
+- [I] authenticated host API/screen + read-only arena screen + SSE synchronization
+- [I] private roster import/validation + Blackout exclusion; never commit real family roster to public repo
+- [ ] approved badge/media integration + projector/mobile visual verification
+
+- [R] 21st.dev unified MCP/Codex workflow researched; ADAPT for UI primitives while preserving MGR draw authority
+
+### Rival Reaper completion denominator (10 gates)
+1. [I] draw/balance engine
+2. [I] CSPRNG + audit receipt chain
+3. [I] private roster boundary + Blackout exclusion
+4. [I] encrypted persistence + restore implementation
+5. [I] authenticated host + read-only arena realtime implementation
+6. [I] staged ticket interaction prototype
+7. [ ] executed typecheck/unit/runtime proof
+8. [I] authoritative synchronized staged reveal implementation; crash/reload/browser rehearsal still required
+9. [ ] final MotionSites/21st/Codex visual/audio/accessibility skin
+10. [ ] private 45+ roster rehearsal + projector/mobile verification + audit export
+
+Implementation coverage: 6/10 gates materially implemented. Production VERIFIED coverage remains lower until gates 7–10 execute with evidence.
+
+- [I] Codex Gates 7–9 execution prompt committed at docs/RIVAL-REAPER-CODEX-EXECUTION-PROMPT.md
