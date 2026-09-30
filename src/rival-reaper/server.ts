@@ -5,6 +5,7 @@ import { timingSafeEqual } from "node:crypto";
 import { RivalReaperSession } from "./session.js";
 import { EncryptedFileStore } from "./persistence.js";
 import type { ReaperState } from "./engine.js";
+import { RevealController } from "./reveal.js";
 
 export interface ReaperServerOptions {
   port?: number;
@@ -40,6 +41,7 @@ export async function createRivalReaperServer(options: ReaperServerOptions) {
   const restored = await store.load();
   let session = restored ? RivalReaperSession.restore(restored) : new RivalReaperSession(options.initialState);
   const listeners = new Set<ServerResponse>();
+  const reveal = new RevealController();
   const publicDir = options.publicDir ?? resolve("examples/rival-reaper");
 
   function publicState() {
@@ -53,6 +55,7 @@ export async function createRivalReaperServer(options: ReaperServerOptions) {
       remaining: session.state.players.length - session.state.assignments.length,
       drawCount: session.receipts.length,
       lastReceiptHash: session.receipts.at(-1)?.receiptHash ?? null,
+      reveal: reveal.current(),
     };
   }
   function broadcast(type = "state") {
@@ -79,9 +82,16 @@ export async function createRivalReaperServer(options: ReaperServerOptions) {
         const input = await body(req) as { playerId?: string };
         if (!input.playerId) return json(res, 400, { error: "playerId required" });
         const result = session.drawAndLock(input.playerId);
+        reveal.begin(result.receipt, result.team);
         await store.save(session.snapshot());
         broadcast("draw");
-        return json(res, 200, { team: result.team, receipt: result.receipt, randomSource: result.randomSource });
+        return json(res, 200, { team: result.team, receipt: result.receipt, reveal: reveal.current(), randomSource: result.randomSource });
+      }
+      if (req.method === "POST" && url.pathname === "/api/host/reveal/advance") {
+        if (!sameToken(req.headers.authorization?.replace(/^Bearer\s+/i, ""), options.hostToken)) return json(res, 401, { error: "unauthorized" });
+        const state = reveal.advance();
+        broadcast("reveal");
+        return json(res, 200, state);
       }
       if (req.method === "GET" && url.pathname === "/api/host/audit") {
         if (!sameToken(req.headers.authorization?.replace(/^Bearer\s+/i, ""), options.hostToken)) return json(res, 401, { error: "unauthorized" });
