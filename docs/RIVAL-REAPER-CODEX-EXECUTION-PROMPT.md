@@ -7,7 +7,7 @@ Branch: feature/rival-reaper-2026-09-29
 Draft PR: #1
 
 ## Mandatory boot
-1. Read AGENTS.md.
+1. Read AGENTS.md and the complete MGR-Beast-Pack/MGR-BEAST-PACK.md.
 2. Read WORK-STATE.md, JEV-READ-FIRST.md, BuildList.md and AUDIT-LEDGER.md.
 3. Read all files under src/rival-reaper/, test/rival-reaper*.test.ts, examples/rival-reaper/, and:
    - research/RIVAL-REAPER-MOTIONSITES-2026-09-29.md

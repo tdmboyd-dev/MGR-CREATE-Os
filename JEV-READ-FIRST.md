@@ -1,5 +1,7 @@
 # Jev Read First — MGR Creation OS
 
+Read the complete [MGR Beast Pack](MGR-Beast-Pack/MGR-BEAST-PACK.md) before the repository-specific guidance below. Preserve existing queues, decisions and evidence; use the pack's templates only for new records.
+
 Creation OS owns the reusable MGR DecisionEngine contract.
 
 ## Current verdict
