@@ -12,8 +12,8 @@ Shared creation/control engine and capability contracts, including provider-neut
 
 ## Read before continuing
 
-Read AGENTS.md and canonical BEAST, then the [continuity protocol](https://github.com/tdmboyd-dev/mgr-perfect-skill/blob/master/CONTINUITY-PROTOCOL.md). Follow stricter local read orders.
-- [BEAST-JEV-READ-FIRST.md](BEAST-JEV-READ-FIRST.md)
+Read AGENTS.md. Follow stricter local read orders.
+- [JEV-READ-FIRST.md](JEV-READ-FIRST.md)
 - [BuildList.md](BuildList.md)
 - [BUILD-QUEUE.md](BUILD-QUEUE.md)
 - [AUDIT-LEDGER.md](AUDIT-LEDGER.md)
