@@ -423,8 +423,11 @@ New proof gates:
 - [I] unit tests authored for balanced fill, uniqueness and support exclusion
 - [R] MotionSites prompt/media workflow researched and ADAPT disposition recorded
 - [ ] execute typecheck/tests and record evidence
-- [ ] seeded/CSPRNG draw receipts + cryptographic receipt hash
-- [ ] persistence/reload recovery
+- [I] CSPRNG draw source + tamper-evident chained receipt hashes
+- [I] in-memory snapshot/restore contract for crash recovery; durable persistence still open
+- [ ] durable persistence/reload recovery across process/device restart
 - [ ] authenticated host screen + read-only arena screen sync
 - [ ] private roster import; never commit real family roster to public repo
 - [ ] approved badge/media integration + projector/mobile visual verification
+
+- [R] 21st.dev unified MCP/Codex workflow researched; ADAPT for UI primitives while preserving MGR draw authority
