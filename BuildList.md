@@ -440,8 +440,10 @@ New proof gates:
 5. [I] authenticated host + read-only arena realtime implementation
 6. [I] staged ticket interaction prototype
 7. [ ] executed typecheck/unit/runtime proof
-8. [ ] synchronized staged reveal + crash/reload rehearsal
+8. [I] authoritative synchronized staged reveal implementation; crash/reload/browser rehearsal still required
 9. [ ] final MotionSites/21st/Codex visual/audio/accessibility skin
 10. [ ] private 45+ roster rehearsal + projector/mobile verification + audit export
 
 Implementation coverage: 6/10 gates materially implemented. Production VERIFIED coverage remains lower until gates 7–10 execute with evidence.
+
+- [I] Codex Gates 7–9 execution prompt committed at docs/RIVAL-REAPER-CODEX-EXECUTION-PROMPT.md
