@@ -1,5 +1,7 @@
 # MGR Creation OS
 
+For the current operating contract, read [MGR Beast Pack](MGR-Beast-Pack/MGR-BEAST-PACK.md). The supplied pack is preserved unchanged; existing work queues and evidence remain the project source of truth.
+
 MGR Creation OS is the standalone operating system for turning intent into verified creation.
 
 It sits above models, agents, tools, workflows, media generators, builders, and automation systems. It is not a single model and it is not a thin wrapper around MGR Agents. It is the source of truth for how MGR creation work is researched, planned, built, governed, verified, audited, and improved.

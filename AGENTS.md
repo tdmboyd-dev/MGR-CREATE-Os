@@ -1,10 +1,11 @@
 # MGR AI REPOSITORY BOOT
 
 Before substantial work in this repository:
-1. Read this repository's JEV-READ-FIRST.md.
-2. Read the repo's current continuity/spec/queue/audit/evidence files relevant to the task.
-3. Inspect current code and runtime state before making architecture claims.
-4. Preserve newer explicit owner decisions.
+1. Read the complete `MGR-Beast-Pack/MGR-BEAST-PACK.md` operating contract.
+2. Read this repository's JEV-READ-FIRST.md.
+3. Read the repo's current continuity/spec/queue/audit/evidence files relevant to the task.
+4. Inspect current code and runtime state before making architecture claims.
+5. Preserve newer explicit owner decisions.
 
 Status is evidence-based: QUEUED -> RESEARCHED -> SPECIFIED -> IMPLEMENTED -> TESTED -> VERIFIED.
 
