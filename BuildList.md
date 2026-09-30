@@ -425,9 +425,23 @@ New proof gates:
 - [ ] execute typecheck/tests and record evidence
 - [I] CSPRNG draw source + tamper-evident chained receipt hashes
 - [I] in-memory snapshot/restore contract for crash recovery; durable persistence still open
-- [ ] durable persistence/reload recovery across process/device restart
-- [ ] authenticated host screen + read-only arena screen sync
-- [ ] private roster import; never commit real family roster to public repo
+- [I] encrypted atomic file persistence + reload path across local process restart; browser/runtime rehearsal still required
+- [I] authenticated host API/screen + read-only arena screen + SSE synchronization
+- [I] private roster import/validation + Blackout exclusion; never commit real family roster to public repo
 - [ ] approved badge/media integration + projector/mobile visual verification
 
 - [R] 21st.dev unified MCP/Codex workflow researched; ADAPT for UI primitives while preserving MGR draw authority
+
+### Rival Reaper completion denominator (10 gates)
+1. [I] draw/balance engine
+2. [I] CSPRNG + audit receipt chain
+3. [I] private roster boundary + Blackout exclusion
+4. [I] encrypted persistence + restore implementation
+5. [I] authenticated host + read-only arena realtime implementation
+6. [I] staged ticket interaction prototype
+7. [ ] executed typecheck/unit/runtime proof
+8. [ ] synchronized staged reveal + crash/reload rehearsal
+9. [ ] final MotionSites/21st/Codex visual/audio/accessibility skin
+10. [ ] private 45+ roster rehearsal + projector/mobile verification + audit export
+
+Implementation coverage: 6/10 gates materially implemented. Production VERIFIED coverage remains lower until gates 7–10 execute with evidence.
