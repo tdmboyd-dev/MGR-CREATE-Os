@@ -1,0 +1,3325 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-01",
+  "ownerDecision": "Every missing or unproven production capability belongs in Creation OS research; categories must recursively decompose before architecture is considered ready.",
+  "sourceCommit": "67a7620b44188c0060f2a48227ab01fb103b544c",
+  "countingRule": "Child tracks overlap existing 74-track matrix. Do not sum into a completion percentage. No entire category is closed by a narrow reproduction.",
+  "categoryCount": 18,
+  "trackCount": 75,
+  "researchComplete": false,
+  "tracks": [
+    {
+      "id": "PR-INTENT-01",
+      "capability": "Semantic requirement extraction",
+      "parent": "Intent-to-production compiler",
+      "existingCategoryIds": [
+        69,
+        47
+      ],
+      "reason": "Required functional dependency of Intent-to-production compiler",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://github.com/higgsfield-ai/skills",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect semantic requirement extraction implementations and dependencies; complete the 16-field packet; execute: A paraphrase/ambiguity dataset retains every locked requirement",
+      "requiredKnowledge": "Separate requested facts, inferred choices and unknowns; map each requirement to a deliverable",
+      "candidateImplementations": "Host agent, typed intermediate representation, Creation OS context resolver",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "A paraphrase/ambiguity dataset retains every locked requirement"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        3,
+        4,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-INTENT-02",
+      "capability": "Contradiction and feasibility resolution",
+      "parent": "Intent-to-production compiler",
+      "existingCategoryIds": [
+        69,
+        47
+      ],
+      "reason": "Required functional dependency of Intent-to-production compiler",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://github.com/higgsfield-ai/skills",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect contradiction and feasibility resolution implementations and dependencies; complete the 16-field packet; execute: Contradictory shot constraints fail with an actionable explanation",
+      "requiredKnowledge": "Detect incompatible actions, timing, formats and unsupported mandatory controls",
+      "candidateImplementations": "Host agent, typed intermediate representation, Creation OS context resolver",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Contradictory shot constraints fail with an actionable explanation"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        3,
+        4,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-INTENT-03",
+      "capability": "Story and shot decomposition",
+      "parent": "Intent-to-production compiler",
+      "existingCategoryIds": [
+        69,
+        47
+      ],
+      "reason": "Required functional dependency of Intent-to-production compiler",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://github.com/higgsfield-ai/skills",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect story and shot decomposition implementations and dependencies; complete the 16-field packet; execute: An animatic reads coherently and every shot has a purpose",
+      "requiredKnowledge": "Narrative cause/effect, staging, beat allocation and editorial purpose",
+      "candidateImplementations": "Host agent, typed intermediate representation, Creation OS context resolver",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "An animatic reads coherently and every shot has a purpose"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        3,
+        4,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-INTENT-04",
+      "capability": "Prompt expansion and semantic diff",
+      "parent": "Intent-to-production compiler",
+      "existingCategoryIds": [
+        69,
+        47
+      ],
+      "reason": "Required functional dependency of Intent-to-production compiler",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://github.com/higgsfield-ai/skills",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect prompt expansion and semantic diff implementations and dependencies; complete the 16-field packet; execute: Injected or changed identities, claims or actions are reported before submission",
+      "requiredKnowledge": "Compare vendor-enhanced prompts against approved context and exceptions",
+      "candidateImplementations": "Host agent, typed intermediate representation, Creation OS context resolver",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Injected or changed identities, claims or actions are reported before submission"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        3,
+        4,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-INTENT-05",
+      "capability": "Revision invalidation",
+      "parent": "Intent-to-production compiler",
+      "existingCategoryIds": [
+        69,
+        47
+      ],
+      "reason": "Required functional dependency of Intent-to-production compiler",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://github.com/higgsfield-ai/skills",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect revision invalidation implementations and dependencies; complete the 16-field packet; execute: Changing an upstream asset invalidates every dependent approval and leaves unrelated work intact",
+      "requiredKnowledge": "Dependency closure across shots, assets, site components and approvals",
+      "candidateImplementations": "Host agent, typed intermediate representation, Creation OS context resolver",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Changing an upstream asset invalidates every dependent approval and leaves unrelated work intact"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        3,
+        4,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-PROVIDER-01",
+      "capability": "Capability snapshot discovery",
+      "parent": "Provider execution",
+      "existingCategoryIds": [
+        1,
+        4,
+        5,
+        7,
+        65,
+        66
+      ],
+      "reason": "Required functional dependency of Provider execution",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://www.youart.ai/mcp",
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://higgsfield.ai/mcp"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect capability snapshot discovery implementations and dependencies; complete the 16-field packet; execute: Unavailable mandatory capability blocks routing; no silent fallback",
+      "requiredKnowledge": "Model/tool schemas, freshness, input roles and explicit unsupported fields",
+      "candidateImplementations": "Official Higgsfield/YouArt MCP, MiniMax V2, Creation OS routing/runtime",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Unavailable mandatory capability blocks routing; no silent fallback"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-PROVIDER-02",
+      "capability": "OAuth and tool authorization",
+      "parent": "Provider execution",
+      "existingCategoryIds": [
+        1,
+        4,
+        5,
+        7,
+        65,
+        66
+      ],
+      "reason": "Required functional dependency of Provider execution",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://www.youart.ai/mcp",
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://higgsfield.ai/mcp"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect oauth and tool authorization implementations and dependencies; complete the 16-field packet; execute: Wrong audience/scope and expired sessions fail without secret disclosure",
+      "requiredKnowledge": "Transport, token audience, scopes and account connection lifecycle",
+      "candidateImplementations": "Official Higgsfield/YouArt MCP, MiniMax V2, Creation OS routing/runtime",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Wrong audience/scope and expired sessions fail without secret disclosure"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-PROVIDER-03",
+      "capability": "Paid request identity and reconciliation",
+      "parent": "Provider execution",
+      "existingCategoryIds": [
+        1,
+        4,
+        5,
+        7,
+        65,
+        66
+      ],
+      "reason": "Required functional dependency of Provider execution",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://www.youart.ai/mcp",
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://higgsfield.ai/mcp"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect paid request identity and reconciliation implementations and dependencies; complete the 16-field packet; execute: Lost submission response cannot trigger an untracked duplicate charge",
+      "requiredKnowledge": "Submit ambiguity, idempotency support, retry classification and cancellation",
+      "candidateImplementations": "Official Higgsfield/YouArt MCP, MiniMax V2, Creation OS routing/runtime",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Lost submission response cannot trigger an untracked duplicate charge"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-PROVIDER-04",
+      "capability": "Deadline and partial-job recovery",
+      "parent": "Provider execution",
+      "existingCategoryIds": [
+        1,
+        4,
+        5,
+        7,
+        65,
+        66
+      ],
+      "reason": "Required functional dependency of Provider execution",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://www.youart.ai/mcp",
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://higgsfield.ai/mcp"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect deadline and partial-job recovery implementations and dependencies; complete the 16-field packet; execute: Slow network and restarted worker produce bounded, reconciled outcomes",
+      "requiredKnowledge": "Monotonic wall time, polling, callbacks, restart and cancellation races",
+      "candidateImplementations": "Official Higgsfield/YouArt MCP, MiniMax V2, Creation OS routing/runtime",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Slow network and restarted worker produce bounded, reconciled outcomes"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-PROVIDER-05",
+      "capability": "Quote and spending authority",
+      "parent": "Provider execution",
+      "existingCategoryIds": [
+        1,
+        4,
+        5,
+        7,
+        65,
+        66
+      ],
+      "reason": "Required functional dependency of Provider execution",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "https://www.youart.ai/mcp",
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://higgsfield.ai/mcp"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect quote and spending authority implementations and dependencies; complete the 16-field packet; execute: Changed payload or price cannot reuse an old approval",
+      "requiredKnowledge": "Fresh provider quote, currency/minor units, approval binding and actual settlement",
+      "candidateImplementations": "Official Higgsfield/YouArt MCP, MiniMax V2, Creation OS routing/runtime",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Changed payload or price cannot reuse an old approval"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-01",
+      "capability": "Byte identity and immutable storage",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect byte identity and immutable storage implementations and dependencies; complete the 16-field packet; execute: Changed bytes at same URL are detected; no URL-only integrity claim",
+      "requiredKnowledge": "Hash exact bytes; bind immutable object version and storage transaction",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Changed bytes at same URL are detected; no URL-only integrity claim"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-02",
+      "capability": "Defensive registry ownership",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect defensive registry ownership implementations and dependencies; complete the 16-field packet; execute: Returned nested arrays and lineage lists cannot mutate stored versions",
+      "requiredKnowledge": "Deep immutability, copied returns, uniqueness, tenancy and parent existence",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Returned nested arrays and lineage lists cannot mutate stored versions"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-03",
+      "capability": "Media technical inspection",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect media technical inspection implementations and dependencies; complete the 16-field packet; execute: Disguised media, unknown metadata and forbidden codec combinations fail explicitly",
+      "requiredKnowledge": "Container versus codec, streams, dimensions, sample aspect, rotation and color metadata",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Disguised media, unknown metadata and forbidden codec combinations fail explicitly"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-04",
+      "capability": "Frame/time interpretation",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect frame/time interpretation implementations and dependencies; complete the 16-field packet; execute: 23.976-style rates and variable-timestamp fixtures do not silently round into wrong duration",
+      "requiredKnowledge": "Variable frame rate, rational rates, stream duration and packet/frame counts",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "23.976-style rates and variable-timestamp fixtures do not silently round into wrong duration"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-05",
+      "capability": "Bounded acquisition and probing",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect bounded acquisition and probing implementations and dependencies; complete the 16-field packet; execute: Oversized/truncated/malicious input terminates within limits with no unintended network access",
+      "requiredKnowledge": "URL egress policy, redirects, credentials, size/time/memory budgets and sandbox",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Oversized/truncated/malicious input terminates within limits with no unintended network access"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSET-06",
+      "capability": "Reference-mode admission",
+      "parent": "Media ingestion and immutable assets",
+      "existingCategoryIds": [
+        19,
+        21,
+        50
+      ],
+      "reason": "Required functional dependency of Media ingestion and immutable assets",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [],
+      "evidence": [
+        "src/creation/assets.ts",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+        "https://ffmpeg.org/ffprobe.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect reference-mode admission implementations and dependencies; complete the 16-field packet; execute: Mixed first/last and reference modes, wrong media types and over-limit totals fail",
+      "requiredKnowledge": "Role/type compatibility, per-item and aggregate provider limits",
+      "candidateImplementations": "Creation OS AssetRegistry, FFmpeg/ffprobe, image/3D validators",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Mixed first/last and reference modes, wrong media types and over-limit totals fail"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        30,
+        31,
+        32,
+        35
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-01",
+      "capability": "Camera units and coordinate conversion",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect camera units and coordinate conversion implementations and dependencies; complete the 16-field packet; execute: Equivalent cameras round-trip across USD and renderer without scale or orientation drift",
+      "requiredKnowledge": "World units, handedness, axis conventions, w2c/c2w, lens/sensor units",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Equivalent cameras round-trip across USD and renderer without scale or orientation drift"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-02",
+      "capability": "Trajectory structural validity",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect trajectory structural validity implementations and dependencies; complete the 16-field packet; execute: NaN, empty paths, out-of-range times and invalid lenses are rejected",
+      "requiredKnowledge": "Finite values, bounds, keyframe count/order, duration agreement and lens ranges",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "NaN, empty paths, out-of-range times and invalid lenses are rejected"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-03",
+      "capability": "Move semantics and subject anchors",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect move semantics and subject anchors implementations and dependencies; complete the 16-field packet; execute: Requested move matches measured position/orientation/FOV change",
+      "requiredKnowledge": "Distinguish optical zoom from camera translation; pose and target constraints",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Requested move matches measured position/orientation/FOV change"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-04",
+      "capability": "Collision and clearance evidence",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect collision and clearance evidence implementations and dependencies; complete the 16-field packet; execute: collisionFreeRequired cannot pass without the matching scene and proof",
+      "requiredKnowledge": "Scene geometry, swept camera/rig volumes, version-bound collision certificates",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "collisionFreeRequired cannot pass without the matching scene and proof"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-05",
+      "capability": "Framing and visibility proof",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect framing and visibility proof implementations and dependencies; complete the 16-field packet; execute: Contradictory fractions and occluded required subject fail on actual geometry",
+      "requiredKnowledge": "Projection, screen occupancy, eye line, occlusion and focus target",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Contradictory fractions and occluded required subject fail on actual geometry"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-06",
+      "capability": "Learned camera conditioning",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect learned camera conditioning implementations and dependencies; complete the 16-field packet; execute: Pose-conditioned output is measured; prompt text alone is not called exact control",
+      "requiredKnowledge": "Pose normalization, intrinsics, Plucker features, checkpoint provenance",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Pose-conditioned output is measured; prompt text alone is not called exact control"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CAMERA-07",
+      "capability": "Rendered camera evaluation",
+      "parent": "Camera intent and geometric proof",
+      "existingCategoryIds": [
+        42,
+        43,
+        44,
+        45,
+        54
+      ],
+      "reason": "Required functional dependency of Camera intent and geometric proof",
+      "priority": "Critical",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+        "https://github.com/hehao13/CameraCtrl"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect rendered camera evaluation implementations and dependencies; complete the 16-field packet; execute: Matched fixed-scene benchmark reports each error dimension and uncertainty",
+      "requiredKnowledge": "Trajectory estimation, pose error, smoothness, framing and domain shift",
+      "candidateImplementations": "Creation OS cinema contracts, OpenUSD camera, CameraCtrl/MotionCtrl candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Matched fixed-scene benchmark reports each error dimension and uncertainty"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IDENTITY-01",
+      "capability": "Reference and dataset quality",
+      "parent": "Character and performance continuity",
+      "existingCategoryIds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reason": "Required functional dependency of Character and performance continuity",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect reference and dataset quality implementations and dependencies; complete the 16-field packet; execute: Held-out views retain identity without training/reference leakage",
+      "requiredKnowledge": "View coverage, consent, deduplication, train/test leakage and pose diversity",
+      "candidateImplementations": "Existing avatar admission dossier; conditioning, rig and motion candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Held-out views retain identity without training/reference leakage"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IDENTITY-02",
+      "capability": "Face/body/wardrobe conditioning",
+      "parent": "Character and performance continuity",
+      "existingCategoryIds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reason": "Required functional dependency of Character and performance continuity",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect face/body/wardrobe conditioning implementations and dependencies; complete the 16-field packet; execute: Identity and costume measured independently across view/action changes",
+      "requiredKnowledge": "Reference encoders, LoRA/adapters and cross-shot state",
+      "candidateImplementations": "Existing avatar admission dossier; conditioning, rig and motion candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Identity and costume measured independently across view/action changes"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IDENTITY-03",
+      "capability": "Rig and facial control admission",
+      "parent": "Character and performance continuity",
+      "existingCategoryIds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reason": "Required functional dependency of Character and performance continuity",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect rig and facial control admission implementations and dependencies; complete the 16-field packet; execute: Real model inspection proves expected joints and expressions exist",
+      "requiredKnowledge": "Skeleton, skin weights, morph semantics, nonhuman rig support",
+      "candidateImplementations": "Existing avatar admission dossier; conditioning, rig and motion candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Real model inspection proves expected joints and expressions exist"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IDENTITY-04",
+      "capability": "Performance timing and contact",
+      "parent": "Character and performance continuity",
+      "existingCategoryIds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reason": "Required functional dependency of Character and performance continuity",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect performance timing and contact implementations and dependencies; complete the 16-field packet; execute: Rendered movement has observable timing and contact checks",
+      "requiredKnowledge": "Anticipation, action, settle, weight transfer, hand/foot/object contact",
+      "candidateImplementations": "Existing avatar admission dossier; conditioning, rig and motion candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Rendered movement has observable timing and contact checks"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IDENTITY-05",
+      "capability": "Voice/lip/gesture synchronization",
+      "parent": "Character and performance continuity",
+      "existingCategoryIds": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "reason": "Required functional dependency of Character and performance continuity",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+        "research/AVATAR-ASSET-ADMISSION-2026-09-29.md"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect voice/lip/gesture synchronization implementations and dependencies; complete the 16-field packet; execute: Audio-video offset and mouth/gesture timing measured on actual output",
+      "requiredKnowledge": "Phonemes/visemes, multilingual timing, voice identity and gaze",
+      "candidateImplementations": "Existing avatar admission dossier; conditioning, rig and motion candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Audio-video offset and mouth/gesture timing measured on actual output"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-DESTRUCTION-01",
+      "capability": "Fracture topology and materials",
+      "parent": "Blender destruction",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of Blender destruction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/destruction-studio",
+        "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect fracture topology and materials implementations and dependencies; complete the 16-field packet; execute: Fragments are editable, watertight where required and preserve material intent",
+      "requiredKnowledge": "Closed meshes, fragment distributions, interior surfaces, scale and mass",
+      "candidateImplementations": "Blender rigid-body/Bullet source; fracture and volume candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Fragments are editable, watertight where required and preserve material intent"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-DESTRUCTION-02",
+      "capability": "Breakable constraint graph",
+      "parent": "Blender destruction",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of Blender destruction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/destruction-studio",
+        "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect breakable constraint graph implementations and dependencies; complete the 16-field packet; execute: Intended structural failure sequence occurs without immediate explosive instability",
+      "requiredKnowledge": "Constraint connectivity, break thresholds, trigger fields and stability",
+      "candidateImplementations": "Blender rigid-body/Bullet source; fracture and volume candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Intended structural failure sequence occurs without immediate explosive instability"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-DESTRUCTION-03",
+      "capability": "Rigid-body stepping and cache",
+      "parent": "Blender destruction",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of Blender destruction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/destruction-studio",
+        "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect rigid-body stepping and cache implementations and dependencies; complete the 16-field packet; execute: Frame jumps, scene edits and reopen/replay cannot silently reuse wrong simulation cache",
+      "requiredKnowledge": "FPS/time scale, substeps, solver iterations, sequential evaluation and bake invalidation",
+      "candidateImplementations": "Blender rigid-body/Bullet source; fracture and volume candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Frame jumps, scene edits and reopen/replay cannot silently reuse wrong simulation cache"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-DESTRUCTION-04",
+      "capability": "Dust and secondary effects",
+      "parent": "Blender destruction",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of Blender destruction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/destruction-studio",
+        "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect dust and secondary effects implementations and dependencies; complete the 16-field packet; execute: Dust follows causal impact and passes memory/occlusion checks",
+      "requiredKnowledge": "Volume domain, particle coupling, collisions, emission timing and cache budgets",
+      "candidateImplementations": "Blender rigid-body/Bullet source; fracture and volume candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Dust follows causal impact and passes memory/occlusion checks"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-DESTRUCTION-05",
+      "capability": "Editable destruction delivery",
+      "parent": "Blender destruction",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of Blender destruction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/destruction-studio",
+        "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect editable destruction delivery implementations and dependencies; complete the 16-field packet; execute: Saved project reopens and produces the same approved preview within declared tolerance",
+      "requiredKnowledge": "Scene versions, dependencies, bake provenance, camera and render configuration",
+      "candidateImplementations": "Blender rigid-body/Bullet source; fracture and volume candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Saved project reopens and produces the same approved preview within declared tolerance"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSEMBLY-01",
+      "capability": "Part hierarchy and pivots",
+      "parent": "Object assembly animation",
+      "existingCategoryIds": [
+        44,
+        48,
+        50
+      ],
+      "reason": "Required functional dependency of Object assembly animation",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect part hierarchy and pivots implementations and dependencies; complete the 16-field packet; execute: Reassembly returns every part to its exact original transform",
+      "requiredKnowledge": "Component identification, local/world transforms and pivot placement",
+      "candidateImplementations": "Blender transform/keyframe APIs; independent staging planner",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Reassembly returns every part to its exact original transform"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSEMBLY-02",
+      "capability": "Collision-aware assembly paths",
+      "parent": "Object assembly animation",
+      "existingCategoryIds": [
+        44,
+        48,
+        50
+      ],
+      "reason": "Required functional dependency of Object assembly animation",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect collision-aware assembly paths implementations and dependencies; complete the 16-field packet; execute: Parts do not intersect and sequencing remains visually legible",
+      "requiredKnowledge": "Path clearance, staging order, easing and camera readability",
+      "candidateImplementations": "Blender transform/keyframe APIs; independent staging planner",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Parts do not intersect and sequencing remains visually legible"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-ASSEMBLY-03",
+      "capability": "Editable animation reconstruction",
+      "parent": "Object assembly animation",
+      "existingCategoryIds": [
+        44,
+        48,
+        50
+      ],
+      "reason": "Required functional dependency of Object assembly animation",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect editable animation reconstruction implementations and dependencies; complete the 16-field packet; execute: Edits remain editable after save/reopen and do not alter source assets",
+      "requiredKnowledge": "Keyframes, constraints, drivers, undo and project serialization",
+      "candidateImplementations": "Blender transform/keyframe APIs; independent staging planner",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Edits remain editable after save/reopen and do not alter source assets"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-SCENE-01",
+      "capability": "Scene hierarchy invariants",
+      "parent": "3D scene construction",
+      "existingCategoryIds": [
+        49,
+        50,
+        54
+      ],
+      "reason": "Required functional dependency of 3D scene construction",
+      "priority": "High",
+      "status": "RESEARCHED",
+      "statusScope": "Narrow existing-code failure behavior established; complete capability research remains OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/release/intro.html"
+      ],
+      "result": "See executed reproductions and packet; no production repair claimed",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "MGR-NATIVE",
+      "nextAction": "Inspect scene hierarchy invariants implementations and dependencies; complete the 16-field packet; execute: Cycle/dangling-parent/duplicate identity cases are rejected",
+      "requiredKnowledge": "Parent cycles, namespaces, transforms and stable identity",
+      "candidateImplementations": "OpenUSD, Blender scene/dependency graph, asset catalog",
+      "creationOSCoverage": {
+        "state": "PARTIAL_WITH_REPRODUCED_GAP",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Cycle/dangling-parent/duplicate identity cases are rejected"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        21,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-SCENE-02",
+      "capability": "Layer/reference/variant composition",
+      "parent": "3D scene construction",
+      "existingCategoryIds": [
+        49,
+        50,
+        54
+      ],
+      "reason": "Required functional dependency of 3D scene construction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/release/intro.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect layer/reference/variant composition implementations and dependencies; complete the 16-field packet; execute: Round-trip preserves intended overrides and variant selection",
+      "requiredKnowledge": "Asset references, overrides, edit targets and stronger opinions",
+      "candidateImplementations": "OpenUSD, Blender scene/dependency graph, asset catalog",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Round-trip preserves intended overrides and variant selection"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        21,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-SCENE-03",
+      "capability": "Layout and object relationships",
+      "parent": "3D scene construction",
+      "existingCategoryIds": [
+        49,
+        50,
+        54
+      ],
+      "reason": "Required functional dependency of 3D scene construction",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "src/cinema/contracts.ts",
+        "https://openusd.org/release/intro.html"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect layout and object relationships implementations and dependencies; complete the 16-field packet; execute: Generated set satisfies measurable spatial relationships",
+      "requiredKnowledge": "Scale, placement, support/contact, collision and semantic relations",
+      "candidateImplementations": "OpenUSD, Blender scene/dependency graph, asset catalog",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Generated set satisfies measurable spatial relationships"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        2,
+        21,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-TOON-01",
+      "capability": "Toon light response",
+      "parent": "Stylized materials",
+      "existingCategoryIds": [
+        51
+      ],
+      "reason": "Required functional dependency of Stylized materials",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect toon light response implementations and dependencies; complete the 16-field packet; execute: Material behaves coherently under multiple lights and camera views",
+      "requiredKnowledge": "Ramp thresholds, normals, light direction and renderer compatibility",
+      "candidateImplementations": "Blender shader nodes, outline methods and renderer-specific behavior",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Material behaves coherently under multiple lights and camera views"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-TOON-02",
+      "capability": "Outline construction",
+      "parent": "Stylized materials",
+      "existingCategoryIds": [
+        51
+      ],
+      "reason": "Required functional dependency of Stylized materials",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect outline construction implementations and dependencies; complete the 16-field packet; execute: Outlines preserve silhouette and avoid flicker in motion",
+      "requiredKnowledge": "Geometry/freestyle/screen-space options, depth and temporal aliasing",
+      "candidateImplementations": "Blender shader nodes, outline methods and renderer-specific behavior",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Outlines preserve silhouette and avoid flicker in motion"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-TOON-03",
+      "capability": "Material editability and export",
+      "parent": "Stylized materials",
+      "existingCategoryIds": [
+        51
+      ],
+      "reason": "Required functional dependency of Stylized materials",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect material editability and export implementations and dependencies; complete the 16-field packet; execute: Saved material remains editable; unsupported exports report loss",
+      "requiredKnowledge": "Node graph parameters, texture color spaces and portable fallbacks",
+      "candidateImplementations": "Blender shader nodes, outline methods and renderer-specific behavior",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Saved material remains editable; unsupported exports report loss"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EDITORIAL-01",
+      "capability": "Ingest/logging/proxies",
+      "parent": "Footage organization and editing",
+      "existingCategoryIds": [
+        48
+      ],
+      "reason": "Required functional dependency of Footage organization and editing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect ingest/logging/proxies implementations and dependencies; complete the 16-field packet; execute: Original/proxy mapping survives rename/move without wrong media relink",
+      "requiredKnowledge": "Media IDs, bins, metadata, proxies and relinking",
+      "candidateImplementations": "OpenTimelineIO; Premiere/Resolve interfaces to verify",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Original/proxy mapping survives rename/move without wrong media relink"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EDITORIAL-02",
+      "capability": "Audio/video synchronization",
+      "parent": "Footage organization and editing",
+      "existingCategoryIds": [
+        48
+      ],
+      "reason": "Required functional dependency of Footage organization and editing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect audio/video synchronization implementations and dependencies; complete the 16-field packet; execute: Long clips retain sync under declared error tolerance",
+      "requiredKnowledge": "Timecode, waveform alignment, drift and sample rates",
+      "candidateImplementations": "OpenTimelineIO; Premiere/Resolve interfaces to verify",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Long clips retain sync under declared error tolerance"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EDITORIAL-03",
+      "capability": "Timeline/timecode interchange",
+      "parent": "Footage organization and editing",
+      "existingCategoryIds": [
+        48
+      ],
+      "reason": "Required functional dependency of Footage organization and editing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect timeline/timecode interchange implementations and dependencies; complete the 16-field packet; execute: Round-trip preserves edit points, missing-media state and durations",
+      "requiredKnowledge": "Rational time, trims, gaps, transitions, handles and mixed rates",
+      "candidateImplementations": "OpenTimelineIO; Premiere/Resolve interfaces to verify",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Round-trip preserves edit points, missing-media state and durations"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EDITORIAL-04",
+      "capability": "Conform and relink verification",
+      "parent": "Footage organization and editing",
+      "existingCategoryIds": [
+        48
+      ],
+      "reason": "Required functional dependency of Footage organization and editing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/AcademySoftwareFoundation/OpenTimelineIO"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect conform and relink verification implementations and dependencies; complete the 16-field packet; execute: Unavailable media cannot be presented as a complete final edit",
+      "requiredKnowledge": "Version-bound media references, effects loss and offline media",
+      "candidateImplementations": "OpenTimelineIO; Premiere/Resolve interfaces to verify",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Unavailable media cannot be presented as a complete final edit"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        21,
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COMPOSITE-01",
+      "capability": "Keying and mattes",
+      "parent": "VFX shot compositing",
+      "existingCategoryIds": [
+        11,
+        14,
+        15,
+        46,
+        52
+      ],
+      "reason": "Required functional dependency of VFX shot compositing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/shot-composer"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect keying and mattes implementations and dependencies; complete the 16-field packet; execute: Hair/transparent/fast-motion edges pass frame and playback review",
+      "requiredKnowledge": "Segmentation, temporal edges, spill, premultiplication and motion blur",
+      "candidateImplementations": "After Effects documented automation; OpenEXR/OCIO and compositor candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Hair/transparent/fast-motion edges pass frame and playback review"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COMPOSITE-02",
+      "capability": "Tracking and reconstruction",
+      "parent": "VFX shot compositing",
+      "existingCategoryIds": [
+        11,
+        14,
+        15,
+        46,
+        52
+      ],
+      "reason": "Required functional dependency of VFX shot compositing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/shot-composer"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect tracking and reconstruction implementations and dependencies; complete the 16-field packet; execute: Inserted element stays registered across the shot with measured residual",
+      "requiredKnowledge": "Point/planar/3D tracking, lens distortion and coordinate conversion",
+      "candidateImplementations": "After Effects documented automation; OpenEXR/OCIO and compositor candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Inserted element stays registered across the shot with measured residual"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COMPOSITE-03",
+      "capability": "Light/depth/grain integration",
+      "parent": "VFX shot compositing",
+      "existingCategoryIds": [
+        11,
+        14,
+        15,
+        46,
+        52
+      ],
+      "reason": "Required functional dependency of VFX shot compositing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/shot-composer"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect light/depth/grain integration implementations and dependencies; complete the 16-field packet; execute: Composite passes controlled match review without halos or double transforms",
+      "requiredKnowledge": "Exposure, color space, contact shadows, depth of field and noise",
+      "candidateImplementations": "After Effects documented automation; OpenEXR/OCIO and compositor candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Composite passes controlled match review without halos or double transforms"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COMPOSITE-04",
+      "capability": "Layered editable delivery",
+      "parent": "VFX shot compositing",
+      "existingCategoryIds": [
+        11,
+        14,
+        15,
+        46,
+        52
+      ],
+      "reason": "Required functional dependency of VFX shot compositing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/shot-composer"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect layered editable delivery implementations and dependencies; complete the 16-field packet; execute: Recipient can reopen and revise layers without flattened-only dependencies",
+      "requiredKnowledge": "Passes, masks, tracking data, external assets and project version",
+      "candidateImplementations": "After Effects documented automation; OpenEXR/OCIO and compositor candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Recipient can reopen and revise layers without flattened-only dependencies"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CLEANUP-01",
+      "capability": "Removal masks and tracking",
+      "parent": "Temporal object removal",
+      "existingCategoryIds": [
+        9,
+        11,
+        14
+      ],
+      "reason": "Required functional dependency of Temporal object removal",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect removal masks and tracking implementations and dependencies; complete the 16-field packet; execute: Mask stays attached through motion and partial occlusion",
+      "requiredKnowledge": "Object selection, temporal propagation and occlusion",
+      "candidateImplementations": "After Effects cleanup workflow; segmentation/inpainting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Mask stays attached through motion and partial occlusion"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CLEANUP-02",
+      "capability": "Background reconstruction",
+      "parent": "Temporal object removal",
+      "existingCategoryIds": [
+        9,
+        11,
+        14
+      ],
+      "reason": "Required functional dependency of Temporal object removal",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect background reconstruction implementations and dependencies; complete the 16-field packet; execute: Removed region has stable texture with no temporal smear",
+      "requiredKnowledge": "Clean plates, parallax, disocclusion and texture synthesis",
+      "candidateImplementations": "After Effects cleanup workflow; segmentation/inpainting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Removed region has stable texture with no temporal smear"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-CLEANUP-03",
+      "capability": "Repair evidence and rollback",
+      "parent": "Temporal object removal",
+      "existingCategoryIds": [
+        9,
+        11,
+        14
+      ],
+      "reason": "Required functional dependency of Temporal object removal",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect repair evidence and rollback implementations and dependencies; complete the 16-field packet; execute: Source is preserved and localized edit can be reverted independently",
+      "requiredKnowledge": "Original plate, edit mask, generated fill and versioned comparison",
+      "candidateImplementations": "After Effects cleanup workflow; segmentation/inpainting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Source is preserved and localized edit can be reverted independently"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-VECTOR-01",
+      "capability": "Shape and edge extraction",
+      "parent": "Raster-to-editable vector",
+      "existingCategoryIds": [
+        8,
+        18
+      ],
+      "reason": "Required functional dependency of Raster-to-editable vector",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect shape and edge extraction implementations and dependencies; complete the 16-field packet; execute: Topology and holes match source within declared tolerance",
+      "requiredKnowledge": "Segmentation, contours, holes, color grouping and path fitting",
+      "candidateImplementations": "Illustrator tracing; open SVG/path-fitting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Topology and holes match source within declared tolerance"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37,
+        41
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-VECTOR-02",
+      "capability": "Path simplification and editability",
+      "parent": "Raster-to-editable vector",
+      "existingCategoryIds": [
+        8,
+        18
+      ],
+      "reason": "Required functional dependency of Raster-to-editable vector",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect path simplification and editability implementations and dependencies; complete the 16-field packet; execute: Editable vector retains design with bounded geometric error",
+      "requiredKnowledge": "Bezier fitting, node count, groups and text handling",
+      "candidateImplementations": "Illustrator tracing; open SVG/path-fitting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Editable vector retains design with bounded geometric error"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37,
+        41
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-VECTOR-03",
+      "capability": "Vector export validation",
+      "parent": "Raster-to-editable vector",
+      "existingCategoryIds": [
+        8,
+        18
+      ],
+      "reason": "Required functional dependency of Raster-to-editable vector",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect vector export validation implementations and dependencies; complete the 16-field packet; execute: Export renders consistently and does not substitute raster artwork silently",
+      "requiredKnowledge": "SVG feature support, fonts, clipping and render parity",
+      "candidateImplementations": "Illustrator tracing; open SVG/path-fitting candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Export renders consistently and does not substitute raster artwork silently"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37,
+        41
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IMAGE-01",
+      "capability": "Non-destructive layer operations",
+      "parent": "Layered image repair",
+      "existingCategoryIds": [
+        9,
+        10,
+        11,
+        13,
+        16
+      ],
+      "reason": "Required functional dependency of Layered image repair",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect non-destructive layer operations implementations and dependencies; complete the 16-field packet; execute: Editing one region leaves untouched pixels/layers recoverable",
+      "requiredKnowledge": "Masks, blend modes, adjustment layers and source preservation",
+      "candidateImplementations": "Photoshop masks/editing APIs; open image-processing candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Editing one region leaves untouched pixels/layers recoverable"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IMAGE-02",
+      "capability": "Texture and lighting repair",
+      "parent": "Layered image repair",
+      "existingCategoryIds": [
+        9,
+        10,
+        11,
+        13,
+        16
+      ],
+      "reason": "Required functional dependency of Layered image repair",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect texture and lighting repair implementations and dependencies; complete the 16-field packet; execute: Repeated structures and light direction survive localized repair",
+      "requiredKnowledge": "Perspective, repeat patterns, material and illumination consistency",
+      "candidateImplementations": "Photoshop masks/editing APIs; open image-processing candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Repeated structures and light direction survive localized repair"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-IMAGE-03",
+      "capability": "Image export and color fidelity",
+      "parent": "Layered image repair",
+      "existingCategoryIds": [
+        9,
+        10,
+        11,
+        13,
+        16
+      ],
+      "reason": "Required functional dependency of Layered image repair",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect image export and color fidelity implementations and dependencies; complete the 16-field packet; execute: Reopen/export tests preserve intended alpha and color appearance",
+      "requiredKnowledge": "Bit depth, profiles, alpha and metadata preservation",
+      "candidateImplementations": "Photoshop masks/editing APIs; open image-processing candidates",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Reopen/export tests preserve intended alpha and color appearance"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-REALTIME-01",
+      "capability": "Operator graph and feedback",
+      "parent": "TouchDesigner visual effects",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of TouchDesigner visual effects",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect operator graph and feedback implementations and dependencies; complete the 16-field packet; execute: Graph has explicit inputs and remains stable under parameter changes",
+      "requiredKnowledge": "TOP/CHOP/SOP domains, feedback stability and parameter mapping",
+      "candidateImplementations": "TouchDesigner operator docs; GPU graph alternatives",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Graph has explicit inputs and remains stable under parameter changes"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-REALTIME-02",
+      "capability": "Real-time timing and control",
+      "parent": "TouchDesigner visual effects",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of TouchDesigner visual effects",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect real-time timing and control implementations and dependencies; complete the 16-field packet; execute: Measured latency/frame timing stays within the agreed device budget",
+      "requiredKnowledge": "Audio/reactive inputs, frame pacing, latency and reset semantics",
+      "candidateImplementations": "TouchDesigner operator docs; GPU graph alternatives",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Measured latency/frame timing stays within the agreed device budget"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-REALTIME-03",
+      "capability": "Preview/export parity",
+      "parent": "TouchDesigner visual effects",
+      "existingCategoryIds": [
+        52,
+        53
+      ],
+      "reason": "Required functional dependency of TouchDesigner visual effects",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://higgsfield.ai/mcp/bundles/production-skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect preview/export parity implementations and dependencies; complete the 16-field packet; execute: Export matches approved preview without missing dependencies",
+      "requiredKnowledge": "Output resolution, codec, color and recorded time base",
+      "candidateImplementations": "TouchDesigner operator docs; GPU graph alternatives",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Export matches approved preview without missing dependencies"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COLOR-01",
+      "capability": "Input transform identification",
+      "parent": "Color and finishing",
+      "existingCategoryIds": [
+        46,
+        51
+      ],
+      "reason": "Required functional dependency of Color and finishing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://docs.acescentral.com/background/overview/",
+        "https://higgsfield.ai/mcp/color-grading"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect input transform identification implementations and dependencies; complete the 16-field packet; execute: Unknown encoding is explicit; display footage is not silently treated as linear",
+      "requiredKnowledge": "Encoding, gamut, transfer, range and scene/display-referred distinction",
+      "candidateImplementations": "ACES/OCIO; Resolve nodes; OpenEXR",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Unknown encoding is explicit; display footage is not silently treated as linear"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COLOR-02",
+      "capability": "Look and shot matching",
+      "parent": "Color and finishing",
+      "existingCategoryIds": [
+        46,
+        51
+      ],
+      "reason": "Required functional dependency of Color and finishing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://docs.acescentral.com/background/overview/",
+        "https://higgsfield.ai/mcp/color-grading"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect look and shot matching implementations and dependencies; complete the 16-field packet; execute: Shots match under controlled viewing without clipped or invalid colors",
+      "requiredKnowledge": "Exposure, white balance, contrast, skin and gamut behavior",
+      "candidateImplementations": "ACES/OCIO; Resolve nodes; OpenEXR",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Shots match under controlled viewing without clipped or invalid colors"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COLOR-03",
+      "capability": "Transform provenance",
+      "parent": "Color and finishing",
+      "existingCategoryIds": [
+        46,
+        51
+      ],
+      "reason": "Required functional dependency of Color and finishing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://docs.acescentral.com/background/overview/",
+        "https://higgsfield.ai/mcp/color-grading"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect transform provenance implementations and dependencies; complete the 16-field packet; execute: No double transform; replay uses identical approved configuration",
+      "requiredKnowledge": "Input/look/output transform IDs, versions and metadata",
+      "candidateImplementations": "ACES/OCIO; Resolve nodes; OpenEXR",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "No double transform; replay uses identical approved configuration"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-COLOR-04",
+      "capability": "Display and mastering validation",
+      "parent": "Color and finishing",
+      "existingCategoryIds": [
+        46,
+        51
+      ],
+      "reason": "Required functional dependency of Color and finishing",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://docs.acescentral.com/background/overview/",
+        "https://higgsfield.ai/mcp/color-grading"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect display and mastering validation implementations and dependencies; complete the 16-field packet; execute: Master is checked on intended output path with preserved metadata",
+      "requiredKnowledge": "SDR/HDR targets, viewing transforms, codecs and QC",
+      "candidateImplementations": "ACES/OCIO; Resolve nodes; OpenEXR",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Master is checked on intended output path with preserved metadata"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        24,
+        25,
+        37
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-WEB-01",
+      "capability": "Requirements to component mapping",
+      "parent": "Natural-language motion sites",
+      "existingCategoryIds": [
+        69,
+        70,
+        71,
+        73,
+        74
+      ],
+      "reason": "Required functional dependency of Natural-language motion sites",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://web.dev/articles/animations-guide",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect requirements to component mapping implementations and dependencies; complete the 16-field packet; execute: Every required action maps to a working component and acceptance test",
+      "requiredKnowledge": "Routes, content, actions, responsive behavior and data needs",
+      "candidateImplementations": "Higgsfield/MiniMax workflows, Motionsites public lesson, browser standards",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Every required action maps to a working component and acceptance test"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-WEB-02",
+      "capability": "Motion behavior and accessibility",
+      "parent": "Natural-language motion sites",
+      "existingCategoryIds": [
+        69,
+        70,
+        71,
+        73,
+        74
+      ],
+      "reason": "Required functional dependency of Natural-language motion sites",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://web.dev/articles/animations-guide",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect motion behavior and accessibility implementations and dependencies; complete the 16-field packet; execute: Motion alternatives and all controls work on target devices",
+      "requiredKnowledge": "Triggers, interruption, scroll, reduced-motion, keyboard and focus",
+      "candidateImplementations": "Higgsfield/MiniMax workflows, Motionsites public lesson, browser standards",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Motion alternatives and all controls work on target devices"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-WEB-03",
+      "capability": "Media delivery performance",
+      "parent": "Natural-language motion sites",
+      "existingCategoryIds": [
+        69,
+        70,
+        71,
+        73,
+        74
+      ],
+      "reason": "Required functional dependency of Natural-language motion sites",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://web.dev/articles/animations-guide",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect media delivery performance implementations and dependencies; complete the 16-field packet; execute: Measured loading and playback meet a fixed device/network budget",
+      "requiredKnowledge": "Poster/load states, responsive sources, caching and layout stability",
+      "candidateImplementations": "Higgsfield/MiniMax workflows, Motionsites public lesson, browser standards",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Measured loading and playback meet a fixed device/network budget"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-WEB-04",
+      "capability": "Post-build editing and regression",
+      "parent": "Natural-language motion sites",
+      "existingCategoryIds": [
+        69,
+        70,
+        71,
+        73,
+        74
+      ],
+      "reason": "Required functional dependency of Natural-language motion sites",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://web.dev/articles/animations-guide",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect post-build editing and regression implementations and dependencies; complete the 16-field packet; execute: Natural-language change preserves unrelated behavior and approved design",
+      "requiredKnowledge": "DOM/component/asset dependency mapping and visual diff",
+      "candidateImplementations": "Higgsfield/MiniMax workflows, Motionsites public lesson, browser standards",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Natural-language change preserves unrelated behavior and approved design"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-WEB-05",
+      "capability": "Backend and publication proof",
+      "parent": "Natural-language motion sites",
+      "existingCategoryIds": [
+        69,
+        70,
+        71,
+        73,
+        74
+      ],
+      "reason": "Required functional dependency of Natural-language motion sites",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://web.dev/articles/animations-guide",
+        "https://github.com/MiniMax-AI/skills"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect backend and publication proof implementations and dependencies; complete the 16-field packet; execute: No fake form success; verify real service and deployment result",
+      "requiredKnowledge": "Auth, forms, service responses, preview and deployment state",
+      "candidateImplementations": "Higgsfield/MiniMax workflows, Motionsites public lesson, browser standards",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "No fake form success; verify real service and deployment result"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EVAL-01",
+      "capability": "Intent/continuity evaluation",
+      "parent": "Multidimensional quality proof",
+      "existingCategoryIds": [
+        6,
+        37,
+        74
+      ],
+      "reason": "Required functional dependency of Multidimensional quality proof",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/Vchitect/VBench"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect intent/continuity evaluation implementations and dependencies; complete the 16-field packet; execute: Failed or unavailable evaluator cannot produce a verified outcome",
+      "requiredKnowledge": "Requirement traceability, identity, temporal state and uncertain judgments",
+      "candidateImplementations": "VBench and domain-specific validators; matched competitor experiments",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Failed or unavailable evaluator cannot produce a verified outcome"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        25,
+        26,
+        27,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EVAL-02",
+      "capability": "Visual and physical quality",
+      "parent": "Multidimensional quality proof",
+      "existingCategoryIds": [
+        6,
+        37,
+        74
+      ],
+      "reason": "Required functional dependency of Multidimensional quality proof",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/Vchitect/VBench"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect visual and physical quality implementations and dependencies; complete the 16-field packet; execute: Report separate dimensions and retain representative failure clips",
+      "requiredKnowledge": "Anatomy, contact, occlusion, temporal coherence and perceptual review",
+      "candidateImplementations": "VBench and domain-specific validators; matched competitor experiments",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Report separate dimensions and retain representative failure clips"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        25,
+        26,
+        27,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EVAL-03",
+      "capability": "Cost/latency/editability comparison",
+      "parent": "Multidimensional quality proof",
+      "existingCategoryIds": [
+        6,
+        37,
+        74
+      ],
+      "reason": "Required functional dependency of Multidimensional quality proof",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/Vchitect/VBench"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect cost/latency/editability comparison implementations and dependencies; complete the 16-field packet; execute: Competitor comparison includes failed jobs and total repair cost",
+      "requiredKnowledge": "Matched briefs, seeds where applicable, budgets, retries and human repair time",
+      "candidateImplementations": "VBench and domain-specific validators; matched competitor experiments",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Competitor comparison includes failed jobs and total repair cost"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        25,
+        26,
+        27,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    },
+    {
+      "id": "PR-EVAL-04",
+      "capability": "Evaluation data and promotion",
+      "parent": "Multidimensional quality proof",
+      "existingCategoryIds": [
+        6,
+        37,
+        74
+      ],
+      "reason": "Required functional dependency of Multidimensional quality proof",
+      "priority": "High",
+      "status": "SOURCED",
+      "statusScope": "Candidate and requirements identified; complete packet and implementation study remain OPEN",
+      "dependencies": [
+        "PR-ASSET-01",
+        "PR-INTENT-01"
+      ],
+      "evidence": [
+        "https://github.com/Vchitect/VBench"
+      ],
+      "result": "Recursively decomposed; implementation knowledge not yet complete",
+      "architectureImpact": "Creation OS owns shared contract/evidence; product plugins consume it",
+      "disposition": "STUDY",
+      "nextAction": "Inspect evaluation data and promotion implementations and dependencies; complete the 16-field packet; execute: Model/provider promotion requires repeatable evidence and rollback criteria",
+      "requiredKnowledge": "Rights-cleared fixtures, blinded review, holdouts and regression thresholds",
+      "candidateImplementations": "VBench and domain-specific validators; matched competitor experiments",
+      "creationOSCoverage": {
+        "state": "UNPROVEN_BY_SCOPED_INSPECTION",
+        "note": "Existing category or source presence does not establish completion; no exhaustive absence claim"
+      },
+      "acceptanceCriteria": [
+        "Model/provider promotion requires repeatable evidence and rollback criteria"
+      ],
+      "implemented": false,
+      "verified": false,
+      "existingCategoryNamespace": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "canonicalQueueParents": [
+        25,
+        26,
+        27,
+        37,
+        38
+      ],
+      "canonicalQueueNamespace": "research/RESEARCH-QUEUE.md"
+    }
+  ]
+}
