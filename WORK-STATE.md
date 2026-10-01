@@ -97,3 +97,6 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 ## Installation verification follow-up claim
 - Same owner/session: production-brain-1-native-2026-10-01; active follow-up scoped to WORK-STATE.md and research/production-brain-1/{tools/verify-installed.mjs,evidence/installed-1.json,evidence/release-1.json}.
 - Base observed: 9c9292da2de2c3c494039c158b6ddb761b43e9dd; claimed 2026-10-01T09:53:06Z, review by 2026-10-01T10:53:06Z. Prior scoped claim was released; this records the newly available installed-host evidence.
+
+- Follow-up claim RELEASED after installed-host evidence commits.
+- Superseding installation result: Brain 1 cache is present, all eight core module files match tested source, and seven commands executed successfully from that cache. See evidence/installed-1.json. Earlier 0.2-cache observation is historical, not a current blocker. Provider, browser, NLE, DCC and broader research limits are unchanged.
