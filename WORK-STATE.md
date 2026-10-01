@@ -69,3 +69,11 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - Existing branch claim RELEASED. Advisory branch ownership only. Canonical locks, paid execution and JEV authority unchanged.
 
 - Scope refinement: also research/production-knowledge/query.mjs and package.json test:production-research entrypoint. Native catalog is explicitly invoked; no application execution pipeline is wired implicitly.
+
+## Production knowledge checkpoint
+
+- Claim status: RELEASED after the scoped catalog, research and evidence commits; no background process is running.
+- Completed: native callable catalog/CLI and plugin 0.2.0 account release; 75 child tracks, 18 scoped category packets, 20 source records and 15 findings; 39 companion/catalog tests and isolated ResearchLedger import passed. Remote catalog/module/CLI/tests read back exactly.
+- New evidence: evidence/production-knowledge-verification.json; use research/production-knowledge/README.md and OPEN-WORK.json.
+- Overall owner goal remains incomplete: all 75 child studies and end-to-end production gates remain open. Account publication is verified, active host cache still 0.1.0. Full repo tests/typecheck, app wiring, main merge, provider authorization, DCC execution and output comparisons are not claimed.
+- Next work: finish native research-factory evidence contracts and child studies; verify host 0.2 activation, complete repository gates and connect authorized production runtimes. Do not mark all research done from this checkpoint.
