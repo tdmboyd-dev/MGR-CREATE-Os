@@ -41,7 +41,8 @@ export function validate(p, previous) {
   }
   for (const a of assets) if (obj(a)) {
     if (!['image','video','audio','model','document'].includes(a.type)) add('ASSET_TYPE',a.id,'Known asset type required');
-    for(const k of ['version','provenance','rights']) if(!txt(a[k])) add('ASSET_METADATA',a.id,'Missing '+k);
+    if (!(txt(a.version) || (integer(a.version) && a.version > 0))) add('ASSET_METADATA',a.id,'Version must be a nonempty legacy label or positive safe integer');
+    for(const k of ['provenance','rights']) if(!txt(a[k])) add('ASSET_METADATA',a.id,'Missing '+k);
   }
   const graph=new Map();
   for (const n of nodes) {
