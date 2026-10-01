@@ -96,8 +96,10 @@
     "scope": "Local planning, research catalog, storage, media structure, camera math, editorial and site compiler tests"
   },
   "activeHost": {
-    "lastObservedCache": "0.2.0",
-    "version1ActivationVerified": false
+    "lastObservedCache": "1.0.0",
+    "version1ActivationVerified": true,
+    "method": "Eight module files matched source byte-for-byte; seven commands executed through installed production entry point",
+    "evidence": "installed-1.json"
   },
   "open": [
     "Full 75-track research completion",
