@@ -93,3 +93,7 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - New scoped methods: node:sqlite transactions, SHA-256 bytes, PNG/WAVE structure, AABB segment geometry and pinhole framing, integer-frame OTIO drafts, native motion content websites.
 - Actual limits: the 75 broader research tracks are not all complete. No provider/DCC execution, NLE round trip, rendered-quality benchmark, full repository gate or main merge. Browser launch failed before DOM; active host cache last observed 0.2.0, so Brain 1 activation is not verified.
 - Evidence: research/production-brain-1/evidence/release-1.json and native-workflow.json. Read OWNER-DIRECTION.md before continuing; research and implementation are plugin-first, and a queue is not completion.
+
+## Installation verification follow-up claim
+- Same owner/session: production-brain-1-native-2026-10-01; active follow-up scoped to WORK-STATE.md and research/production-brain-1/{tools/verify-installed.mjs,evidence/installed-1.json,evidence/release-1.json}.
+- Base observed: 9c9292da2de2c3c494039c158b6ddb761b43e9dd; claimed 2026-10-01T09:53:06Z, review by 2026-10-01T10:53:06Z. Prior scoped claim was released; this records the newly available installed-host evidence.
