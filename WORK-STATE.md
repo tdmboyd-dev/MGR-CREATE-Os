@@ -47,3 +47,12 @@ No scheduled continuation was created by this recovery.
 
 ## 2026-09-29 Backwards–Forwards research batch
 Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRegistry, evaluateRules and evidence bundle compared to primary glTF requirements and approved iKickItz legacy decisions. The data/byte integrity and staged admission proof remain open; BuildList and AUDIT-LEDGER updated. No runtime, asset or provider check run.
+
+## Active branch research claim — 2026-10-01
+- Task: recursively decompose production/competitor capabilities, inspect selected implementations, record missing/unproven Creation OS research and reproduced gaps.
+- Owner/session: production-brain-research-2026-10-01.
+- Branch: research/production-brain-2026-10-01.
+- Fresh base: 67a7620b44188c0060f2a48227ab01fb103b544c.
+- Exact path scope: WORK-STATE.md; BUILD-QUEUE.md; AUDIT-LEDGER.md; research/BEAST-PRODUCTION-RESEARCH-2026-10-01.md; research/production-research-queue-2026-10-01.json; evidence/production-research-audit-2026-10-01.json.
+- Claimed UTC: 2026-10-01T07:30:00Z; review/expiry UTC: 2026-10-01T09:30:00Z.
+- Existing claim inspected: RELEASED. This claim applies to the isolated branch only and is advisory. No runtime source, canonical identity or original BEAST contract edits are claimed.
