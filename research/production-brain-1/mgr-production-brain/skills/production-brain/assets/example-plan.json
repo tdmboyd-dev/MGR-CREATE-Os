@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "storm-archive-demo",
+  "revision": 1,
+  "rawRequest": "Create a cinematic 18-second launch film and an interactive website for an original floating observatory. Start in a storm, reveal its living archive, and end on an invitation to explore. Make it feel physically grounded and emotionally hopeful.",
+  "assumptions": ["Demonstration concept, not an approved MGR brand or franchise", "Three six-second shots; no dialogue", "Website implementation will follow this specification", "No reference media are uploaded in this text-only demonstration"],
+  "requirements": ["The observatory has three asymmetric copper rings", "Warm interior light contrasts with blue storm light", "Preserve left-to-right travel across the first cut", "End on a still frame with space for separately typeset copy", "Do not generate readable logos or UI text inside video"],
+  "context": {
+    "world": "An original airborne research observatory above a storm sea",
+    "hero": "Adult archivist in a charcoal waterproof coat with a single amber cuff light",
+    "palette": "Desaturated blue exterior, warm amber interior, oxidized copper structures",
+    "continuity": "Wet surfaces, three copper rings, same coat and cuff light across shots",
+    "delivery": "18-second 16:9 sequence; editorial handles and final frame-rate choice require later production review"
+  },
+  "locks": [{"path": "/context/hero", "value": "Adult archivist in a charcoal waterproof coat with a single amber cuff light"}],
+  "assets": [],
+  "nodes": [
+    {
+      "id": "shot-01", "dependsOn": [], "references": [], "requiredControls": ["duration", "ratio", "resolution"],
+      "duration": 6, "ratio": "16:9", "resolution": "768P",
+      "purpose": "Establish scale and danger while making the observatory recognizable",
+      "subject": "Three asymmetric copper rings suspended above a dark storm sea",
+      "action": "Clouds part to expose a warm doorway; a small archivist crosses toward it left to right",
+      "camera": "Wide establishing view with restrained forward movement; maintain horizon and direction of travel",
+      "lighting": "Broad cold sky light, warm doorway practical, coherent wet reflections",
+      "sound": "Low wind and distant thunder; a faint rising tonal motif",
+      "startState": "Observatory partially hidden; archivist at the left edge of the bridge",
+      "endState": "Doorway occupies right third; archivist reaches the threshold",
+      "beats": [{"from": 0, "to": 2, "action": "Cloud layer opens"}, {"from": 2, "to": 5, "action": "Rings and bridge reveal; archivist walks right"}, {"from": 5, "to": 6, "action": "Hold on the threshold for the cut"}],
+      "acceptance": ["Exactly three stable rings", "No horizon wobble", "Travel remains left to right", "No body or bridge geometry discontinuity"]
+    },
+    {
+      "id": "shot-02", "dependsOn": ["shot-01"], "references": [], "requiredControls": ["duration", "ratio", "resolution"],
+      "duration": 6, "ratio": "16:9", "resolution": "768P",
+      "purpose": "Turn danger into discovery through one clear physical interaction",
+      "subject": "The same archivist beside a translucent archive table",
+      "action": "The archivist enters left to right, pauses, then opens a palm above the table as a luminous map rises",
+      "camera": "Medium side view with one slow push; hand and table remain readable",
+      "lighting": "Amber practical above the table, cool storm rim through doorway; map light grows gently",
+      "sound": "Wind becomes muffled indoors; quiet cloth movement and one crystalline activation tone",
+      "startState": "Archivist enters frame from left wearing the same wet charcoal coat",
+      "endState": "Open palm rests still above a fully formed map; amber cuff stays on the same wrist",
+      "beats": [{"from": 0, "to": 2, "action": "Enter and settle weight"}, {"from": 2, "to": 4, "action": "Lift palm; table begins to glow"}, {"from": 4, "to": 6, "action": "Map rises and holds"}],
+      "acceptance": ["Hand anatomy stable", "Same coat and cuff as first shot", "Map has a stable base on the table", "No abrupt lighting or camera jump"]
+    },
+    {
+      "id": "shot-03", "dependsOn": ["shot-02"], "references": [], "requiredControls": ["duration", "ratio", "resolution"],
+      "duration": 6, "ratio": "16:9", "resolution": "768P",
+      "purpose": "Resolve the reveal into an invitation",
+      "subject": "The luminous map and the observatory window beyond it",
+      "action": "Storm light softens as the map rotates slightly; all motion settles into the final composition",
+      "camera": "Close view opening gently to a balanced tableau; reserve left third for separately rendered title",
+      "lighting": "Maintain amber map light and cool window direction; gradual lift in exposure without clipping",
+      "sound": "Resolve tonal motif; leave a clean tail for the edit",
+      "startState": "Map position matches the previous end frame",
+      "endState": "Two-second stable tableau with legible negative space and no generated text",
+      "beats": [{"from": 0, "to": 3, "action": "Slow reveal toward window"}, {"from": 3, "to": 4, "action": "Movement eases to rest"}, {"from": 4, "to": 6, "action": "Hold final composition"}],
+      "acceptance": ["Map continuity across cut", "Final two seconds stable", "Negative space remains usable", "No invented letters or logos"]
+    }
+  ],
+  "site": {
+    "goal": "Let visitors explore the observatory story and request an exhibition invitation",
+    "audience": "Visitors interested in immersive science exhibits",
+    "visualDirection": "Editorial copper and storm-blue layout, large legible type, restrained motion, real HTML text",
+    "mobile": "Single-column hierarchy, touch controls, static poster until playback is requested; no hover-only content",
+    "performanceBudget": "Provisional target: LCP <= 2.5s and CLS <= 0.1 on an agreed mobile lab profile; establish baseline before accepting",
+    "routes": [{"path": "/", "purpose": "Introduction and playable film"}, {"path": "/archive", "purpose": "Explore three exhibit entries"}, {"path": "/visit", "purpose": "Invitation request with clear success and failure states"}],
+    "controls": [{"route": "/", "label": "Play film", "action": "Start native video playback with captions and pause controls"}, {"route": "/", "label": "Explore archive", "action": "Navigate to /archive"}, {"route": "/visit", "label": "Request invitation", "action": "Submit validated contact form to configured service; show pending, error and confirmed outcomes; never fake success"}],
+    "motion": [{"trigger": "Optional hero playback", "effect": "Play launch film once with pause available", "reducedMotion": "Show static poster and an explicit Play button"}, {"trigger": "Exhibit enters viewport", "effect": "Short opacity and transform entrance", "reducedMotion": "Show content immediately with no transform"}],
+    "assetIds": [],
+    "acceptance": ["Every link and form control works", "Keyboard navigation and visible focus", "Reduced-motion setting inspected", "No clipped text at 360, 768 and 1440px", "All motion has a purpose and accessible alternative", "Actual browser performance measured; no metric inferred from source code"]
+  }
+}
