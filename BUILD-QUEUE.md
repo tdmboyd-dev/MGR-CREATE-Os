@@ -168,3 +168,15 @@ Do not delete the MGR Agents implementation until compatibility and migration ar
 - Research stronger working/open workflow examples for each factory.
 - Maintain status: QUEUED / RESEARCHED / SPECIFIED / IMPLEMENTED / TESTED / VERIFIED.
 - Maintain scorecard: before, current, evidence, blockers, next steps to 100%.
+
+## Production research expansion — 2026-10-01
+
+- [ ] Follow research/production-research-queue-2026-10-01.json: 75 child tracks across 18 categories; preserve its existing-category mapping and per-track status.
+- [ ] Research then repair the 10 reproduced camera/scene/asset gaps recorded in evidence/production-research-audit-2026-10-01.json. First define trusted ownership, finite/time/lens/graph checks and explicit unavailable collision/framing evidence; do not substitute basic checks for geometric proof.
+- [ ] Complete actual-byte admission and bounded technical media inspection, including unknown metadata, rational frame rates and codec/container distinctions.
+- [ ] Complete camera coordinate/unit conversion and geometric validation before adopting learned camera controllers; resolve CameraCtrl code/base/checkpoint/data terms independently.
+- [ ] Research every DCC workflow's functions, state, dependencies and editable output: destruction, assembly, scenes, toon materials, footage organization, compositing, cleanup, vectorization, image repair, real-time effects and grading.
+- [ ] Execute one Blender cache/replay fixture and one OTIO/application round trip after runtime setup. No simulation, native timeline integration or complete film was verified in this research batch.
+- [ ] Integrate any companion Production Brain through canonical Creation OS context/assets/approvals; its 31 local tests are not Creation OS integration evidence.
+
+Dossier: research/BEAST-PRODUCTION-RESEARCH-2026-10-01.md. All unfinished functionality remains research/build work, not completed capability.
