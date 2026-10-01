@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "checks": {
+    "simulationReplay": true,
+    "bakedCache": true,
+    "groundContact": true,
+    "assemblyReturns": true,
+    "renderReplay": true,
+    "editableScene": true
+  },
+  "allPassed": true,
+  "pixelComparison": {
+    "maximumAbsoluteError": 0.0,
+    "rmse": 0.0,
+    "maximumTolerance": 0.00392156862745098,
+    "rmseTolerance": 0.001
+  },
+  "note": "Byte hashes may differ because PNG metadata differs. Compare decoded pixels; no model or Hollywood benchmark was run."
+}

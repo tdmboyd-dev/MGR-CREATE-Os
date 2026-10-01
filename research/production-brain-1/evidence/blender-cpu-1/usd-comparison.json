@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "runtime": "5.2.2 LTS",
+  "checks": {
+    "position": true,
+    "rotation": true,
+    "focalLength": true,
+    "sensorWidth": true,
+    "declaredUnits": true,
+    "declaredAxis": true
+  },
+  "allPassed": true,
+  "positionErrorMetres": 0.0,
+  "rotationErrorRadians": 0.0,
+  "original": {
+    "position": [
+      7.0,
+      -9.0,
+      6.0
+    ],
+    "rotation": [
+      0.7974614500999451,
+      0.5231359004974365,
+      0.16490408778190613,
+      0.2513776123523712
+    ],
+    "focalMm": 45.0,
+    "sensorMm": 36.0
+  },
+  "imported": {
+    "position": [
+      7.0,
+      -9.0,
+      6.0
+    ],
+    "focalMm": 45.0,
+    "sensorMm": 36.0
+  },
+  "scope": "Single static camera through actual Blender USD export/import. No claim that physics, material graphs, references or variants survive this export."
+}

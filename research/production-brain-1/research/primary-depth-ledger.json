@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual selected primary-source reads and observations. Unread implementation and live-output gaps are preserved.",
+  "sources": [
+    {
+      "id": "rigidbody-step",
+      "uri": "https://github.com/blender/blender/blob/main/source/blender/blenkernel/intern/rigidbody.cc",
+      "blobSha": "f784fa630c4f6de4c89628961a4a8f40b052aa54",
+      "readScope": "Selected lines 2180-2310; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Blender simulation advances sequentially one frame, reads exact baked cache, clamps end frame, and derives timestep from scene fps/time scale. A jump into an unbaked future frame cannot substitute for sequential bake."
+    },
+    {
+      "id": "ip-adapter-license",
+      "uri": "https://github.com/tencent-ailab/IP-Adapter/blob/main/LICENSE",
+      "blobSha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "readScope": "Complete selected file",
+      "retrieved": "2026-10-01",
+      "observation": "IP-Adapter repository license is Apache-2.0. This does not admit separately restricted FaceID/InsightFace checkpoints."
+    },
+    {
+      "id": "cameractrl-readme",
+      "uri": "https://github.com/hehao13/CameraCtrl/blob/main/README.md",
+      "blobSha": "f0ee595cd5f4f8c147bfce9f78f1f22a0201f21f",
+      "readScope": "Complete selected file",
+      "retrieved": "2026-10-01",
+      "observation": "Official CameraCtrl repository is hehao13/CameraCtrl. AnimateDiff and SVD branches differ; dataset preparation and external checkpoints are required; README restricts project to academic use."
+    },
+    {
+      "id": "camera-plucker",
+      "uri": "https://github.com/hehao13/CameraCtrl/blob/main/cameractrl/data/dataset.py",
+      "blobSha": "e937426c54766d79b18a3260fc535bbf8bb1173e",
+      "readScope": "Selected lines 1-180; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Camera entries parse normalized intrinsics and 3x4 world-to-camera matrices; inversion gives c2w. Pixel-centre rays are normalized, rotated to world, and concatenated with origin cross direction. Image flip changes pixel rays. Dataset catches exceptions and retries another random sample without a bound."
+    },
+    {
+      "id": "otio-track",
+      "uri": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO/blob/main/src/py-opentimelineio/opentimelineio/algorithms/track_algo.py",
+      "blobSha": "745fc6ef21eea54e57665b64740697d32a08e5b1",
+      "readScope": "Selected lines 1-210; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Trimming deep-copies tracks, preserves contained items, trims endpoints in source time, and rejects trimming inside a transition. Transition expansion uses neighbor ranges and rejects adjacent transitions."
+    },
+    {
+      "id": "sam2-corrections",
+      "uri": "https://github.com/facebookresearch/sam2/blob/main/sam2/sam2_video_predictor.py",
+      "blobSha": "5a7e1a01c4d6e89db0453ce982ea8a31b16651c8",
+      "readScope": "Selected lines 180-350; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Boxes precede point prompts with labels 2/3; old points must be cleared for a box. Coordinates normalize by original video dimensions then model size. Corrections reuse bounded prior logits and defer memory encoding until propagation."
+    },
+    {
+      "id": "propainter-inference",
+      "uri": "https://github.com/sczhou/ProPainter/blob/main/inference_propainter.py",
+      "blobSha": "4d7f92f311bf8b2870975aeb8f3874e4e26077bc",
+      "readScope": "Selected lines 180-330; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Inference resizes frames and masks, derives fps from input or fallback, downloads three separate checkpoints, computes RAFT in fp32 and chunks flow according to width. Chunk overlap uses the prior frame. Source inspection is not inference execution."
+    },
+    {
+      "id": "ocio-binding",
+      "uri": "https://github.com/AcademySoftwareFoundation/OpenColorIO/blob/main/src/bindings/python/PyOpenColorIO.h",
+      "blobSha": "4244f0d8e3a2325e24b81fadd823a53aaaf2734d",
+      "readScope": "Selected lines 1-80; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Python API declares separate CPU/GPU processors, configs, context, transforms, display views and builtin registries. Header inventory is not inspection of processor numerical implementation."
+    },
+    {
+      "id": "usd-stage",
+      "uri": "https://github.com/PixarAnimationStudios/OpenUSD/blob/dev/pxr/usd/usd/stage.h",
+      "blobSha": "80e8c2446f1c1bc638fd6eeab15cc0ca48c30109",
+      "readScope": "Selected lines 1-160; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Stage owns composed prims but layers are shared. Edit targets select mutation layers; session edits are ephemeral and flattening discards composition benefits, potentially increasing size. Selected header documentation only."
+    },
+    {
+      "id": "vbench-subject",
+      "uri": "https://github.com/Vchitect/VBench/blob/master/vbench/subject_consistency.py",
+      "blobSha": "3e7361f8b1eec5e15b17e8eb5770be12841c576a",
+      "readScope": "Selected lines 1-170; no whole-repository claim",
+      "retrieved": "2026-10-01",
+      "observation": "Subject consistency normalizes DINO frame embeddings and averages adjacent/first-frame cosine similarity. Clips with fewer than two frames have invalid denominators; a static scene can be consistent without desired action. No score was executed."
+    },
+    {
+      "id": "camera-runtime",
+      "uri": "https://github.com/hehao13/CameraCtrl/blob/main/environment.yaml",
+      "blobSha": "56e8a1fac731c68f02526c614f9007a91c7d823a",
+      "readScope": "Complete selected file",
+      "retrieved": "2026-10-01",
+      "observation": "CameraCtrl environment pins Python3.10, torch1.13.1/CUDA11.7, diffusers0.24 and xformers0.0.16. Local Python3.14 alone does not satisfy this environment."
+    },
+    {
+      "id": "vbench-license",
+      "uri": "https://github.com/Vchitect/VBench/blob/master/LICENSE",
+      "blobSha": "f49a4e16e68b128803cc2dcea614603632b04eac",
+      "readScope": "Complete selected file",
+      "retrieved": "2026-10-01",
+      "observation": "VBench root code license is Apache-2.0; models, input footage and external dependencies need separate admission."
+    }
+  ],
+  "failedReads": [
+    {
+      "uri": "https://docs.blender.org/api/current/bpy.types.Camera.html",
+      "reason": "Retrieval returned402; runtime/source fallback used"
+    },
+    {
+      "uri": "https://docs.derivative.ca/Feedback_TOP",
+      "reason": "403; successful alternative primary host derivative.ca/UserGuide/Feedback_TOP"
+    },
+    {
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/src/converter.rs",
+      "reason": "404; repository layout requires crates/ path inspection"
+    }
+  ]
+}

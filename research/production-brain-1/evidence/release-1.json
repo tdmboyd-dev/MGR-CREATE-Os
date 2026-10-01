@@ -1,0 +1,113 @@
+{
+  "product": "MGR Production Brain 1",
+  "updated": "2026-10-01",
+  "localSourceCommit": "3c1549fe9151af9209ad6f27902953ab1a4b1908",
+  "plugin": {
+    "plugin_id": "plugins_6abe0aac09fc8191878a61127a613ad2",
+    "name": "mgr-production-brain",
+    "description": "MGR Production Brain 1: researched production plans, prompt compilation, persistent revisions, byte-bound assets, media inspection, camera preflight, editorial drafts and motion content websites. Works with MGR BEAST and optional provider connections.",
+    "version": "1.0.0",
+    "current_release_id": "pluginrel_6abe2bc8e288819190f988a21895a10b",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "plugin_url": "https://chatgpt.com/plugins/plugins_6abe0aac09fc8191878a61127a613ad2",
+    "release_id": "pluginrel_6abe2bc8e288819190f988a21895a10b",
+    "latest_release_id": "pluginrel_6abe2bc8e288819190f988a21895a10b",
+    "status": "updated"
+  },
+  "accountReadback": [
+    {
+      "path": "skills/production-brain/scripts/store.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/scripts/camera.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/scripts/media.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/scripts/editorial.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/scripts/site.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/scripts/production.mjs",
+      "exact": true
+    },
+    {
+      "path": "skills/production-brain/references/native-foundations.md",
+      "exact": true
+    }
+  ],
+  "githubReadback": [
+    {
+      "path": "scripts/store.mjs",
+      "exact": true,
+      "sha": "b1723bc3253a3dc2f3e875122a611c4950b30eda"
+    },
+    {
+      "path": "scripts/camera.mjs",
+      "exact": true,
+      "sha": "b31d2cf807511e4ad07cd4e560ccb6b37bbd7b59"
+    },
+    {
+      "path": "scripts/media.mjs",
+      "exact": true,
+      "sha": "bc15bdceb8598e74847f27f1fe72c419154812f2"
+    },
+    {
+      "path": "scripts/editorial.mjs",
+      "exact": true,
+      "sha": "75fb6031d13f90c4d936a3c1f02a0e3a49574451"
+    },
+    {
+      "path": "scripts/site.mjs",
+      "exact": true,
+      "sha": "3d8cda9b2678ec41a35c96f8a42e09e0a9fa61e6"
+    },
+    {
+      "path": "scripts/production.mjs",
+      "exact": true,
+      "sha": "54f2beb51a6da7b8a38a9d138a9f9bcc799ef774"
+    },
+    {
+      "path": "references/native-foundations.md",
+      "exact": true,
+      "sha": "6a34af8214b238f3cff6c4a5b346f3d32176b2a7"
+    }
+  ],
+  "creationOS": {
+    "branch": "research/production-brain-2026-10-01",
+    "path": "research/production-brain-1",
+    "lastPackageCommit": "6a6ade18e8c508020923908691479f1a03dfc5a2",
+    "filesEmbedded": 42,
+    "applicationWired": false,
+    "merged": false
+  },
+  "tests": {
+    "passed": 58,
+    "failed": 0,
+    "scope": "Local planning, research catalog, storage, media structure, camera math, editorial and site compiler tests"
+  },
+  "activeHost": {
+    "lastObservedCache": "1.0.0",
+    "version1ActivationVerified": true,
+    "method": "Eight module files matched source byte-for-byte; seven commands executed through installed production entry point",
+    "evidence": "installed-1.json"
+  },
+  "open": [
+    "Full 75-track research completion",
+    "Live provider authorization/generation",
+    "DCC and learned-model execution",
+    "OTIO/NLE round trip",
+    "Browser verification",
+    "Rendered-quality benchmark",
+    "Creation OS application integration"
+  ]
+}

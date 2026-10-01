@@ -1,0 +1,87 @@
+{
+  "updated": "2026-10-01T09:08:34.346Z",
+  "scope": "Scoped production research module and companion release",
+  "plugin": {
+    "id": "plugins_6abe0aac09fc8191878a61127a613ad2",
+    "release": "pluginrel_6abe2214960081918183594dc3f46c4e",
+    "version": "0.2.0",
+    "visibility": "PRIVATE",
+    "accountPublication": "SUCCEEDED",
+    "manifestModuleInstructionsReadback": true,
+    "catalogInventoryBytes": 208765,
+    "catalogFullAccountReadback": "Text endpoint rejected oversized file; archive download failed through configured network",
+    "activeHostVersionObserved": "0.1.0",
+    "newReleaseHostActivationVerified": false
+  },
+  "tests": {
+    "companionAndCatalog": {
+      "passed": 39,
+      "failed": 0
+    },
+    "nativeCatalog": {
+      "passed": 8,
+      "failed": 0,
+      "scope": "Same tests against source layout fetched back from GitHub; not additional independent 8 cases"
+    },
+    "ledgerImport": {
+      "sources": 20,
+      "claims": 15,
+      "evidence": 20,
+      "contextOnlyDesignClaims": 1,
+      "method": "Exact fetched Creation OS source with Node TypeScript stripping"
+    },
+    "fullCreationOSTypecheck": false,
+    "fullCreationOSTests": false,
+    "providerCalls": 0,
+    "renderedOutputBenchmark": false
+  },
+  "research": {
+    "categories": 18,
+    "children": 75,
+    "packets": 18,
+    "sources": 20,
+    "findings": 15,
+    "fullyResearchReadyChildren": 0
+  },
+  "gitReadback": [
+    {
+      "path": "research/production-knowledge/catalog.json",
+      "sha": "e3ddd8dc9b39ac7f63144bfd34f00c57febcd204",
+      "exact": true
+    },
+    {
+      "path": "src/knowledge/production-catalog.mjs",
+      "sha": "94ac218c4c6d9302f97937ca51a214e7153a27fe",
+      "exact": true
+    },
+    {
+      "path": "test/production-catalog.test.mjs",
+      "sha": "1adf8c37c07669b1baaa0541132d37083ee634f7",
+      "exact": true
+    },
+    {
+      "path": "research/production-knowledge/query.mjs",
+      "sha": "91f022b94d4df74562746eae82e7d3ab9a4fe0c3",
+      "exact": true
+    }
+  ],
+  "newReproductions": [
+    {
+      "id": "COS-RESEARCH-01",
+      "observed": "Empty research succeeds with unanswered questions",
+      "fixed": false
+    },
+    {
+      "id": "COS-RESEARCH-02",
+      "observed": "Arbitrary source ID becomes supporting evidence",
+      "fixed": false
+    }
+  ],
+  "limitations": [
+    "No claim of full production research completion",
+    "No main-branch merge",
+    "No active host 0.2 execution",
+    "No app pipeline wiring",
+    "No provider/DCC/site production proof"
+  ]
+}

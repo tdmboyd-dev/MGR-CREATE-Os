@@ -1,0 +1,8 @@
+{
+  "id":"storm-archive-edit","rate":{"numerator":24,"denominator":1},
+  "items":[
+    {"id":"shot-01","kind":"clip","durationFrames":144,"sourceStartFrame":12,"availableStartFrame":0,"availableDurationFrames":168},
+    {"id":"shot-02","kind":"clip","durationFrames":144,"sourceStartFrame":12,"availableStartFrame":0,"availableDurationFrames":168},
+    {"id":"shot-03","kind":"clip","durationFrames":144,"sourceStartFrame":12,"availableStartFrame":0,"availableDurationFrames":168}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "units":"metres","duration":6,"coverage":"complete-static-proxies",
+  "camera":{"focalLengthMm":35,"sensorWidthMm":36,"sensorHeightMm":24,"near":0.1,"far":100,"clearance":0.2},
+  "samples":[{"time":0,"position":[-3,1,5],"target":[0,1,0],"up":[0,1,0]},{"time":6,"position":[3,1,5],"target":[0,1,0],"up":[0,1,0]}],
+  "colliders":[{"id":"wall","min":[-1,0,4.5],"max":[1,2,5.5]}],
+  "subjects":[{"id":"hero","min":[-0.3,0,0],"max":[0.3,1.8,0.4]}]
+}

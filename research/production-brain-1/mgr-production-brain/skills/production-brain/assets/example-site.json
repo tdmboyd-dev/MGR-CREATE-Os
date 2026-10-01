@@ -1,0 +1,13 @@
+{
+  "title": "The Storm Archive",
+  "description": "An original floating observatory gathering the stories that weather leaves behind.",
+  "eyebrow": "A fictional world, made tangible",
+  "hero": "Every storm leaves something worth keeping.",
+  "theme": "dark",
+  "accent": "copper",
+  "cta": {"label": "Explore the observatory", "href": "#observatory"},
+  "sections": [
+    {"id":"observatory","title":"Above the noise.","body":"Three copper rings hold a living archive above the storm sea. Inside, warm light falls on the traces of worlds that would otherwise disappear.","cards":[{"title":"Listen","body":"The archive begins with attention: rain, distant thunder, a voice carried across water."},{"title":"Preserve","body":"Every collected object keeps its origin. The story is as important as the shape."},{"title":"Return","body":"An archive becomes useful when someone can find their way back to it."}]},
+    {"id":"visit","title":"Come with questions.","body":"This is a demonstration of an original fictional campaign, not an operating visitor attraction.","faqs":[{"question":"What can I explore here?","answer":"The setting and its creative idea. This example uses real browser navigation and disclosures."},{"question":"Where are the film and images?","answer":"They have not been generated. The production plan can guide that work without presenting placeholders as finished footage."}]}
+  ]
+}

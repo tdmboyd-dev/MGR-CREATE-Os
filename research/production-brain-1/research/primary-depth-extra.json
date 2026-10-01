@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "vector-pipeline",
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/crates/vtracer/src/pipeline.rs",
+      "blobSha": "1bec571d75399dcabe2cf1f9eb5e62158c2694ff",
+      "readScope": "Complete selected pipeline driver",
+      "retrieved": "2026-10-01",
+      "observation": "Pipeline separates segmentation from finish stages; finish clones cached segmentation, applies color fitters and compositing before optimizer passes, and supports cancellation/progress."
+    },
+    {
+      "id": "vector-simplify",
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/crates/vtracer/src/simplify.rs",
+      "blobSha": "bb88c0e9fc32bcfb0c6d1d31adc4bd76b0344a0f",
+      "readScope": "Lines1-200; refit and junction invariants, not remaining sampling implementation",
+      "retrieved": "2026-10-01",
+      "observation": "Simplification pins shared junction endpoints, splits at tangent corners and refits sampled cubic runs only when node count decreases. The stated tolerance is measured at samples, not a continuous bound."
+    },
+    {
+      "id": "vector-svg",
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/crates/vtracer/src/svg.rs",
+      "blobSha": "a68371b818df8142f33c948be550b5a10fc85733",
+      "readScope": "Lines1-200; selected writer and subpath state",
+      "retrieved": "2026-10-01",
+      "observation": "SVG writer preserves painter order while grouping consecutive fills, chooses relative/absolute commands and resets current point to initial subpath on Close."
+    },
+    {
+      "id": "vector-spline-test",
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/crates/vtracer/tests/spline_fit.rs",
+      "blobSha": "1e59d4eba90d86a6763dd937f7c835eb77fd4cee",
+      "readScope": "Complete selected regression test",
+      "retrieved": "2026-10-01",
+      "observation": "Source regression checks fitted handles against on-curve bounds with overshoot allowance on stacked and cutout cityscape tracing. Test was read, not executed."
+    },
+    {
+      "id": "vector-manifest",
+      "uri": "https://github.com/visioncortex/vtracer/blob/master/crates/vtracer/Cargo.toml",
+      "blobSha": "022454d7f6abb696ee9588831b76549b49467a80",
+      "readScope": "Complete crate manifest",
+      "retrieved": "2026-10-01",
+      "observation": "VTracer crate has visioncortex and flo_curves runtime dependencies; resvg/image are test-only. No binary was vendored."
+    },
+    {
+      "id": "usd-camera",
+      "uri": "https://github.com/PixarAnimationStudios/OpenUSD/blob/dev/pxr/usd/usdGeom/camera.h",
+      "blobSha": "b05ca02d606f15beb90d12f820ae9621fac18cb8",
+      "readScope": "Camera schema documentation lines35-180",
+      "retrieved": "2026-10-01",
+      "observation": "USD camera local axes are +X right,+Y up,-Z view regardless of stage up axis. Optical lengths use tenths of stage unit."
+    },
+    {
+      "id": "usd-metrics",
+      "uri": "https://github.com/PixarAnimationStudios/OpenUSD/blob/dev/pxr/usd/usdGeom/metrics.h",
+      "blobSha": "d0042919dedcee8ae49a7915ba8faf5ed133575f",
+      "readScope": "Stage axis/units documentation lines35-185",
+      "retrieved": "2026-10-01",
+      "observation": "Stage metrics default centimetres/Y up; explicit up-axis and metres-per-unit are important, and assembled references with differing metrics need corrective transforms."
+    },
+    {
+      "id": "blender-armature",
+      "uri": "https://github.com/blender/blender/blob/main/source/blender/makesrna/intern/rna_armature.cc",
+      "blobSha": "f2c0b91ac7bc53625729a1d3b0d31030de558459",
+      "readScope": "RNA update/owner identity selected lines1-130; not skinning implementation",
+      "retrieved": "2026-10-01",
+      "observation": "RNA update functions tag evaluated/dependency data and owner identity is checked when setting active bone; this read does not prove rig deformation behavior."
+    },
+    {
+      "id": "blender-alpha-over",
+      "uri": "https://github.com/blender/blender/blob/main/source/blender/nodes/composite/nodes/node_composite_alpha_over.cc",
+      "blobSha": "713f348a161795e31f68a1127150eb08c27f245f",
+      "readScope": "Selected declarations and CPU alpha-over functions lines1-155",
+      "retrieved": "2026-10-01",
+      "observation": "Alpha Over distinguishes straight versus premultiplied foreground and computes foreground plus background scaled by one minus foreground alpha, then interpolates by factor."
+    },
+    {
+      "id": "blender-keying",
+      "uri": "https://github.com/blender/blender/blob/main/source/blender/nodes/composite/nodes/node_composite_keying.cc",
+      "blobSha": "7301016f5b12cad95d704f05315a29840b3fb353",
+      "readScope": "Node parameter declarations lines1-155; not full keying kernel",
+      "retrieved": "2026-10-01",
+      "observation": "Keying exposes preprocessing YCC blur, edge-preserving black/white matte remap, garbage/core mattes, dilation/feather and despill parameters. These declarations are not a shot-quality demonstration."
+    }
+  ]
+}

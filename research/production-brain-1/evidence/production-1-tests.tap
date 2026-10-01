@@ -1,0 +1,358 @@
+TAP version 13
+# Subtest: complete film/site intent compiles without mutation and preserves all shots
+ok 1 - complete film/site intent compiles without mutation and preserves all shots
+  ---
+  duration_ms: 12.3887
+  type: 'test'
+  ...
+# Subtest: invalid plan types produce structured failures
+ok 2 - invalid plan types produce structured failures
+  ---
+  duration_ms: 0.3011
+  type: 'test'
+  ...
+# Subtest: empty deliverable rejected
+ok 3 - empty deliverable rejected
+  ---
+  duration_ms: 0.666
+  type: 'test'
+  ...
+# Subtest: duplicate IDs rejected across assets and shots
+ok 4 - duplicate IDs rejected across assets and shots
+  ---
+  duration_ms: 0.5852
+  type: 'test'
+  ...
+# Subtest: dangling dependency rejected
+ok 5 - dangling dependency rejected
+  ---
+  duration_ms: 0.6731
+  type: 'test'
+  ...
+# Subtest: two-node cycle rejected
+ok 6 - two-node cycle rejected
+  ---
+  duration_ms: 0.5631
+  type: 'test'
+  ...
+# Subtest: self-cycle rejected
+ok 7 - self-cycle rejected
+  ---
+  duration_ms: 0.5764
+  type: 'test'
+  ...
+# Subtest: unknown reference rejected
+ok 8 - unknown reference rejected
+  ---
+  duration_ms: 0.5186
+  type: 'test'
+  ...
+# Subtest: out of duration and overlapping beats rejected
+ok 9 - out of duration and overlapping beats rejected
+  ---
+  duration_ms: 1.0369
+  type: 'test'
+  ...
+# Subtest: NaN, infinity, zero and negative duration rejected
+ok 10 - NaN, infinity, zero and negative duration rejected
+  ---
+  duration_ms: 2.0272
+  type: 'test'
+  ...
+# Subtest: missing actual website action rejected
+ok 11 - missing actual website action rejected
+  ---
+  duration_ms: 0.9372
+  type: 'test'
+  ...
+# Subtest: missing reduced-motion behavior rejected
+ok 12 - missing reduced-motion behavior rejected
+  ---
+  duration_ms: 0.733
+  type: 'test'
+  ...
+# Subtest: unmapped site assets rejected
+ok 13 - unmapped site assets rejected
+  ---
+  duration_ms: 0.8021
+  type: 'test'
+  ...
+# Subtest: valid branch keeps prior immutable and identifies downstream changes
+ok 14 - valid branch keeps prior immutable and identifies downstream changes
+  ---
+  duration_ms: 3.6623
+  type: 'test'
+  ...
+# Subtest: lock deletion cannot bypass prior authority
+ok 15 - lock deletion cannot bypass prior authority
+  ---
+  duration_ms: 0.8365
+  type: 'test'
+  ...
+# Subtest: changing both lock and its value cannot bypass prior authority
+ok 16 - changing both lock and its value cannot bypass prior authority
+  ---
+  duration_ms: 0.7187
+  type: 'test'
+  ...
+# Subtest: missing and malformed lock pointers fail
+ok 17 - missing and malformed lock pointers fail
+  ---
+  duration_ms: 0.9758
+  type: 'test'
+  ...
+# Subtest: wrong project or skipped revision rejected
+ok 18 - wrong project or skipped revision rejected
+  ---
+  duration_ms: 0.8791
+  type: 'test'
+  ...
+# Subtest: context changes invalidate all shots and site
+ok 19 - context changes invalidate all shots and site
+  ---
+  duration_ms: 2.5443
+  type: 'test'
+  ...
+# Subtest: asset changes propagate through reference edges and site
+ok 20 - asset changes propagate through reference edges and site
+  ---
+  duration_ms: 1.5123
+  type: 'test'
+  ...
+# Subtest: unknown compiler fails instead of substituting model
+ok 21 - unknown compiler fails instead of substituting model
+  ---
+  duration_ms: 1.2478
+  type: 'test'
+  ...
+# Subtest: H3 text-only draft has explicit model and request body
+ok 22 - H3 text-only draft has explicit model and request body
+  ---
+  duration_ms: 2.134
+  type: 'test'
+  ...
+# Subtest: H3 Max duration and resolution boundaries differ
+ok 23 - H3 Max duration and resolution boundaries differ
+  ---
+  duration_ms: 12.3091
+  type: 'test'
+  ...
+# Subtest: text-only adaptive ratio rejected
+ok 24 - text-only adaptive ratio rejected
+  ---
+  duration_ms: 0.797
+  type: 'test'
+  ...
+# Subtest: mixed first-frame and reference mode rejected
+ok 25 - mixed first-frame and reference mode rejected
+  ---
+  duration_ms: 0.722
+  type: 'test'
+  ...
+# Subtest: apparently valid media still requires independent inspection
+ok 26 - apparently valid media still requires independent inspection
+  ---
+  duration_ms: 1.1639
+  type: 'test'
+  ...
+# Subtest: unknown structural control is never silently omitted
+ok 27 - unknown structural control is never silently omitted
+  ---
+  duration_ms: 1.6945
+  type: 'test'
+  ...
+# Subtest: handoff retains original request, canonical context and asset metadata
+ok 28 - handoff retains original request, canonical context and asset metadata
+  ---
+  duration_ms: 2.5617
+  type: 'test'
+  ...
+# Subtest: budget checks digest expiry currency and amount without granting authority
+ok 29 - budget checks digest expiry currency and amount without granting authority
+  ---
+  duration_ms: 5.762
+  type: 'test'
+  ...
+# Subtest: any changed handoff invalidates old quote
+ok 30 - any changed handoff invalidates old quote
+  ---
+  duration_ms: 1.7491
+  type: 'test'
+  ...
+# Subtest: CLI dispatcher reads actual fixture and rejects unknown commands
+ok 31 - CLI dispatcher reads actual fixture and rejects unknown commands
+  ---
+  duration_ms: 0.9345
+  type: 'test'
+  ...
+# Subtest: real research retains every child and all sixteen packet fields
+ok 32 - real research retains every child and all sixteen packet fields
+  ---
+  duration_ms: 12.7901
+  type: 'test'
+  ...
+# Subtest: exact ID and useful keyword retrieval; unrelated intent has no fabricated answer
+ok 33 - exact ID and useful keyword retrieval; unrelated intent has no fabricated answer
+  ---
+  duration_ms: 51.0824
+  type: 'test'
+  ...
+# Subtest: source list and category packet do not certify child completion
+ok 34 - source list and category packet do not certify child completion
+  ---
+  duration_ms: 4.4017
+  type: 'test'
+  ...
+# Subtest: handoff expands and orders dependencies before requested work
+ok 35 - handoff expands and orders dependencies before requested work
+  ---
+  duration_ms: 6.0991
+  type: 'test'
+  ...
+# Subtest: malformed graph and evidence references fail before catalog construction
+ok 36 - malformed graph and evidence references fail before catalog construction
+  ---
+  duration_ms: 35.469
+  type: 'test'
+  ...
+# Subtest: expired and future evidence is explicitly blocked
+ok 37 - expired and future evidence is explicitly blocked
+  ---
+  duration_ms: 4.6167
+  type: 'test'
+  ...
+# Subtest: caller edits cannot mutate canonical catalog or retrieved records
+ok 38 - caller edits cannot mutate canonical catalog or retrieved records
+  ---
+  duration_ms: 6.2124
+  type: 'test'
+  ...
+# Subtest: ledger export preserves explicit support and context without promoting categories
+ok 39 - ledger export preserves explicit support and context without promoting categories
+  ---
+  duration_ms: 3.072
+  type: 'test'
+  ...
+# Subtest: independent CRC check vector and supported PNG structure
+ok 40 - independent CRC check vector and supported PNG structure
+  ---
+  duration_ms: 5.6049
+  type: 'test'
+  ...
+# Subtest: PNG corruption, truncation, scanline size/filter and resource limits
+ok 41 - PNG corruption, truncation, scanline size/filter and resource limits
+  ---
+  duration_ms: 2.5366
+  type: 'test'
+  ...
+# Subtest: unsupported valid encoding stays unsupported; unknown bytes stay uninspected
+ok 42 - unsupported valid encoding stays unsupported; unknown bytes stay uninspected
+  ---
+  duration_ms: 1.0015
+  type: 'test'
+  ...
+# Subtest: PCM WAVE facts and invalid rate/alignment
+ok 43 - PCM WAVE facts and invalid rate/alignment
+  ---
+  duration_ms: 1.0569
+  type: 'test'
+  ...
+# Subtest: odd RIFF metadata padding respected
+ok 44 - odd RIFF metadata padding respected
+  ---
+  duration_ms: 0.4773
+  type: 'test'
+  ...
+# Subtest: opening an unrelated database does not install production tables
+ok 45 - opening an unrelated database does not install production tables
+  ---
+  duration_ms: 22.3606
+  type: 'test'
+  ...
+# Subtest: plans survive reopen; stale second writer cannot replace history
+ok 46 - plans survive reopen; stale second writer cannot replace history
+  ---
+  duration_ms: 64.6105
+  type: 'test'
+  ...
+# Subtest: stored locks cannot be removed; failed revision leaves current plan intact
+ok 47 - stored locks cannot be removed; failed revision leaves current plan intact
+  ---
+  duration_ms: 2.8308
+  type: 'test'
+  ...
+# Subtest: byte identity, restart, detached lineage and consecutive versions
+ok 48 - byte identity, restart, detached lineage and consecutive versions
+  ---
+  duration_ms: 56.2579
+  type: 'test'
+  ...
+# Subtest: missing and cross-project parents fail atomically
+ok 49 - missing and cross-project parents fail atomically
+  ---
+  duration_ms: 5.4659
+  type: 'test'
+  ...
+# Subtest: oversized admission and corrupted recovery are rejected
+ok 50 - oversized admission and corrupted recovery are rejected
+  ---
+  duration_ms: 94.124
+  type: 'test'
+  ...
+# Subtest: segment slab cases: between frames, parallel, tangent, inside, zero motion
+ok 51 - segment slab cases: between frames, parallel, tangent, inside, zero motion
+  ---
+  duration_ms: 0.8949
+  type: 'test'
+  ...
+# Subtest: camera reports continuous linear path collisions with bound digest
+ok 52 - camera reports continuous linear path collisions with bound digest
+  ---
+  duration_ms: 2.2918
+  type: 'test'
+  ...
+# Subtest: camera rejects NaN, bad lens, empty samples, incomplete timing and collinear basis
+ok 53 - camera rejects NaN, bad lens, empty samples, incomplete timing and collinear basis
+  ---
+  duration_ms: 2.6642
+  type: 'test'
+  ...
+# Subtest: near-plane bounds are unavailable, clearance conservative, translation invariant
+ok 54 - near-plane bounds are unavailable, clearance conservative, translation invariant
+  ---
+  duration_ms: 0.767
+  type: 'test'
+  ...
+# Subtest: integer editorial boundaries and exact rational duration retain missing media
+ok 55 - integer editorial boundaries and exact rational duration retain missing media
+  ---
+  duration_ms: 1.9234
+  type: 'test'
+  ...
+# Subtest: editorial rejects overtrim, retime, duplicate IDs and ambiguous URLs
+ok 56 - editorial rejects overtrim, retime, duplicate IDs and ambiguous URLs
+  ---
+  duration_ms: 0.7997
+  type: 'test'
+  ...
+# Subtest: site output escapes content and has real disclosure, fragment action and reduced-motion fallback
+ok 57 - site output escapes content and has real disclosure, fragment action and reduced-motion fallback
+  ---
+  duration_ms: 5.1196
+  type: 'test'
+  ...
+# Subtest: site rejects missing anchor, duplicate IDs, unsafe URLs and oversized content
+ok 58 - site rejects missing anchor, duplicate IDs, unsafe URLs and oversized content
+  ---
+  duration_ms: 0.8425
+  type: 'test'
+  ...
+1..58
+# tests 58
+# suites 0
+# pass 58
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 598.4672

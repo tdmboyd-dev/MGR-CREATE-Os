@@ -1,0 +1,24 @@
+{
+  "product": "MGR Production Brain 1",
+  "executedAt": "2026-10-01T09:45:14.992Z",
+  "runtime": "v24.21.0",
+  "ok": true,
+  "checks": [
+    "CLI project persistence",
+    "asset admission and exact recovery",
+    "existing output protection",
+    "camera collision exposed",
+    "432-frame editorial draft",
+    "standalone website output"
+  ],
+  "assetDigest": "4b8537205c1f1419460e6c59bb265adfbb413ffdd1ff04cf045b5aecbcb6afb0",
+  "cameraDigest": "4bbb8155701a7349363176148c41e34280f795984732c23f2f659bc4125c51f8",
+  "editorialDigest": "9abd73f252c1ac77ffc6529530abf027faa604b1f7b6f1890af7388147d10fc2",
+  "siteDigest": "ae2cc1306e7a169cef440d1082a33e6209c46144752f0d6ec3abf9da7b205a29",
+  "limitations": [
+    "No provider request or paid generation",
+    "No OTIO/NLE round trip",
+    "Headless Edge produced access-denied crashpad errors and no DOM; browser acceptance unverified",
+    "Broader research catalog still contains incomplete tracks"
+  ]
+}
