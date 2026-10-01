@@ -180,3 +180,11 @@ Do not delete the MGR Agents implementation until compatibility and migration ar
 - [ ] Integrate any companion Production Brain through canonical Creation OS context/assets/approvals; its 31 local tests are not Creation OS integration evidence.
 
 Dossier: research/BEAST-PRODUCTION-RESEARCH-2026-10-01.md. All unfinished functionality remains research/build work, not completed capability.
+
+## Production knowledge module — 2026-10-01
+
+- [x] Embed source-scoped production knowledge, keyword retrieval, dependency handoffs and ResearchLedger-compatible records. See research/production-knowledge/README.md.
+- [x] Execute 39 companion/catalog tests and isolated import into the existing ResearchLedger. These are not full repository or provider tests.
+- [ ] Repair COS-RESEARCH-01/02 with explicit question/evidence contracts and product-pipeline regression tests; details in research/production-knowledge/OPEN-WORK.json.
+- [ ] Finish all 75 child research and external acceptance gates. Eighteen category packets are not eighteen completed capabilities.
+- [ ] Wire the research module into the application entrypoint and run full repository gates before main integration.
