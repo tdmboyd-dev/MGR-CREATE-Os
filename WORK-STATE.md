@@ -84,3 +84,12 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - Scope: WORK-STATE.md; research/production-brain-1/ reusable package/research/tests/evidence only. No application or canonical-lock changes.
 - Claimed UTC: 2026-10-01T09:46:00Z; review/expiry UTC: 2026-10-01T11:46:00Z.
 - Existing claims inspected: RELEASED. This isolated-branch claim is advisory.
+
+## Brain 1 executable checkpoint
+- Claim status: RELEASED for this scoped package batch; no background process claimed.
+- Product name: MGR Production Brain 1. Account release pluginrel_6abe2bc8e288819190f988a21895a10b saved privately; six executable modules and native research packet read back exactly.
+- Added research/production-brain-1/: full reusable companion package, implementation research/specs, tests and evidence. Existing application source is not wired to these tools.
+- 58 local tests passed; integrated CLI exercise covered persistent plans, exact asset recovery, camera collision, 432-frame editorial draft and standalone content-site output.
+- New scoped methods: node:sqlite transactions, SHA-256 bytes, PNG/WAVE structure, AABB segment geometry and pinhole framing, integer-frame OTIO drafts, native motion content websites.
+- Actual limits: the 75 broader research tracks are not all complete. No provider/DCC execution, NLE round trip, rendered-quality benchmark, full repository gate or main merge. Browser launch failed before DOM; active host cache last observed 0.2.0, so Brain 1 activation is not verified.
+- Evidence: research/production-brain-1/evidence/release-1.json and native-workflow.json. Read OWNER-DIRECTION.md before continuing; research and implementation are plugin-first, and a queue is not completion.
