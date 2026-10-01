@@ -1,0 +1,13 @@
+# Natural language to an implementable motion website
+
+Convert the request into audience, goal, route map, content hierarchy, design language, real controls, asset manifest and motion rules. The user should be able to trace each major requirement to a component and acceptance criterion. Keep real copy, navigation and forms in semantic HTML; generated images/video supply visuals rather than inaccessible baked text.
+
+For each interaction specify trigger, affected element, start/end state, duration/easing intention, interruption behavior and reduced-motion fallback. Distinguish scroll-linked motion from time-based playback. Set a mobile behavior instead of shrinking a desktop scene. Keep keyboard focus visible, preserve natural scrolling and do not make a critical action hover-only. Pause controls and static fallbacks should remain usable before a video loads or if it fails.
+
+Performance requires actual browser measurements. Prefer transform/opacity where suitable, but inspect painting and compositing: do not repeat the claim that every filter or clip-path animation is automatically GPU-only. Reserve media geometry, choose responsive sources, defer noncritical assets and test loading/error states. Select measurable budgets with a device/network profile; do not claim compliance from source inspection.
+
+Build through the installed Sites or coding workflow when requested. Supply the compiled site brief plus asset references. Verify links, navigation, forms, keyboard operation, reduced motion and agreed viewports. A contact form without a configured service must not display fake successful delivery. Preserve editability and never copy paid template libraries without entitlement.
+
+Higgsfield's public website workflow already includes design and motion planning; a motion brief alone is not a novel advantage. MGR's proposed differentiators must be demonstrated: context retained across film/site assets, dependent revisions, provider portability, functional controls and measured performance. Compare complete outputs, not landing-page screenshots.
+
+Sources: [Higgsfield website skill](https://github.com/higgsfield-ai/skills/tree/main/higgsfield-websites), [MiniMax frontend skill](https://github.com/MiniMax-AI/skills/tree/main/skills/frontend-dev), [Motionsites public lesson](https://motionsites.ai/lesson/build-animated-website-with-motionsites), [web.dev animations](https://web.dev/articles/animations-guide), [W3C animation from interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html). The cited W3C criterion is AAA; meeting it alone does not establish WCAG conformance.
