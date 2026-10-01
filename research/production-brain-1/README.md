@@ -1,6 +1,6 @@
 # MGR Production Brain 1
 
-Private companion plugin to MGR BEAST with executable production tools. It turns host-agent interpretation into validated plans, persistent revisions, exact-byte asset storage, bounded media inspection, camera preflight, editorial drafts and responsive motion content pages. Research is embedded in the plugin. See RELEASE-1.md for actual scope and outstanding studio capabilities.
+Private companion plugin to MGR BEAST with executable production tools. It turns host-agent interpretation into validated plans, persistent revisions, exact-byte asset storage, bounded media inspection, camera preflight, editorial drafts and responsive motion content pages. It also supplies durable job bookkeeping, read-only provider recovery and evidence-bound comparison records. Research includes75 individual branch studies and68 source records with declared read scopes. Actual procedural Blender CPU bake/reopen/render and static USD camera fixtures passed. All75 original broad research scopes still retain unresolved work; no live provider or Hollywood superiority claim is made.
 
 ## Run
 
@@ -12,7 +12,7 @@ node mgr-production-brain/skills/production-brain/scripts/brain.mjs compile mgr-
 node mgr-production-brain/skills/production-brain/scripts/production.mjs camera-check mgr-production-brain/skills/production-brain/assets/example-camera.json
 node mgr-production-brain/skills/production-brain/scripts/production.mjs timeline mgr-production-brain/skills/production-brain/assets/example-timeline.json
 node mgr-production-brain/skills/production-brain/scripts/production.mjs site-build mgr-production-brain/skills/production-brain/assets/example-site.json new-site.html
-node --test --test-isolation=none tests/brain.test.mjs tests/catalog.test.mjs tests/native.test.mjs tests/media.test.mjs tests/outputs.test.mjs
+node --test --test-isolation=none tests/*.test.mjs
 ```
 
 The test command uses in-process isolation because this managed Windows environment denies child-process spawn. The engine performs no network calls. OAuth connections declared in mcp.json are independently authorized; packaging is not a connection test.
