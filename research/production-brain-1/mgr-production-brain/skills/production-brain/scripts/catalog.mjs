@@ -36,6 +36,11 @@ export function validateCatalog(c) {
     if (!nonempty(p.title) || typeof p.scopeComplete !== 'boolean' || !strings(p.gaps)) errors.push(`packet ${p.id}: invalid scope`);
     for (const k of FIELDS) if (!nonempty(p.fields?.[k])) errors.push(`packet ${p.id}: missing ${k}`);
     refs(p.findingIds,maps.findings,`packet ${p.id}`,true);
+    if(p.sourceIds!==undefined){
+      refs(p.sourceIds,maps.sources,`packet sources ${p.id}`,true);
+      const observedSources=new Set((Array.isArray(p.findingIds)?p.findingIds:[]).flatMap(id=>maps.findings.get(id)?.sourceIds??[]));
+      for(const id of Array.isArray(p.sourceIds)?p.sourceIds:[])if(!observedSources.has(id))errors.push(`packet ${p.id}: source ${id} has no linked observation`);
+    }
     if (p.scopeComplete && p.gaps?.length) errors.push(`packet ${p.id}: complete with open gaps`);
   }
   for (const t of maps.tracks.values()) {
