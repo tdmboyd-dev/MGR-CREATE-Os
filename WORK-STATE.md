@@ -108,3 +108,13 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - Exact scope: WORK-STATE.md; research/production-brain-1/ updated package, individual studies, primary-read ledgers, tests and evidence; research/production-knowledge/catalog.json; src/knowledge/production-catalog.mjs; test/production-catalog.test.mjs. No application execution or canonical authority change.
 - Claimed UTC: 2026-10-01T10:46:17.109Z; review/expiry UTC: 2026-10-01T11:46:17.109Z.
 - Existing claims inspected RELEASED. Advisory isolated-branch claim; no exclusive lock or background process asserted.
+
+##75-branch executable research checkpoint
+- Claim status: RELEASED for this saved source/evidence batch. The owner's full objective remains INCOMPLETE; no background continuation is claimed.
+- Product remains MGR Production Brain 1. Latest private account release: pluginrel_6abe400d441881919c06473deb22fba5. Changed account files read back exactly; active host cache last observed1.0.0, so latest activation remains unverified.
+- Saved:75 individual engineering studies with16 fields, alternatives, dependencies and hard negatives;68 scoped source records; durable job bookkeeping, read-only provider recovery and evidence-bound comparison tooling.38 embedded source/evidence files read back exactly, followed by product-observation/report updates. Native Creation OS catalog/module/test updated; application wiring and main merge not performed.
+- Executed:74 local companion tests passed; procedural Blender5.2.2 CPU bake/save/reopen/render pixel replay and static USD camera pose/optics round-trip passed.
+- Repository CI also passed typecheck/npm test on ab7337c0e5fe4caea1d485d02c761f53ac65923c; https://github.com/tdmboyd-dev/MGR-CREATE-Os/actions/runs/36854140829. See research/production-brain-1/evidence/creation-os-ci.json. This supersedes the earlier report that repository gates had not run.
+- Local source checkpoint committed50463e2. Archive creation succeeded locally, but final persistent archive transfer was not confirmed after the execution service disconnected. Account/source commits remain saved.
+- Remaining: all75 original broad research scopes retain unclosed implementation/dependency/license knowledge and/or acceptance gaps. They are not all blocked by authentication. Live provider/host-authority integration, full production-specific runtime acceptance, browser/NLE proof and matched competitor/Hollywood output evaluation remain. No live comparison trial or quality superiority is claimed.
+- Resume from actual commits and evidence. Do not call the individual study documents completed end-to-end research or a finished studio.
