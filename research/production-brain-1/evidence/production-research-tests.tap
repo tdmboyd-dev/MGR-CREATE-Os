@@ -1,0 +1,454 @@
+TAP version 13
+# Subtest: complete film/site intent compiles without mutation and preserves all shots
+ok 1 - complete film/site intent compiles without mutation and preserves all shots
+  ---
+  duration_ms: 3.4474
+  type: 'test'
+  ...
+# Subtest: invalid plan types produce structured failures
+ok 2 - invalid plan types produce structured failures
+  ---
+  duration_ms: 0.1645
+  type: 'test'
+  ...
+# Subtest: asset versions accept storage integers and preserve legacy labels
+ok 3 - asset versions accept storage integers and preserve legacy labels
+  ---
+  duration_ms: 4.0912
+  type: 'test'
+  ...
+# Subtest: empty deliverable rejected
+ok 4 - empty deliverable rejected
+  ---
+  duration_ms: 0.2691
+  type: 'test'
+  ...
+# Subtest: duplicate IDs rejected across assets and shots
+ok 5 - duplicate IDs rejected across assets and shots
+  ---
+  duration_ms: 0.2422
+  type: 'test'
+  ...
+# Subtest: dangling dependency rejected
+ok 6 - dangling dependency rejected
+  ---
+  duration_ms: 0.2478
+  type: 'test'
+  ...
+# Subtest: two-node cycle rejected
+ok 7 - two-node cycle rejected
+  ---
+  duration_ms: 0.2002
+  type: 'test'
+  ...
+# Subtest: self-cycle rejected
+ok 8 - self-cycle rejected
+  ---
+  duration_ms: 0.2321
+  type: 'test'
+  ...
+# Subtest: unknown reference rejected
+ok 9 - unknown reference rejected
+  ---
+  duration_ms: 0.2909
+  type: 'test'
+  ...
+# Subtest: out of duration and overlapping beats rejected
+ok 10 - out of duration and overlapping beats rejected
+  ---
+  duration_ms: 0.4231
+  type: 'test'
+  ...
+# Subtest: NaN, infinity, zero and negative duration rejected
+ok 11 - NaN, infinity, zero and negative duration rejected
+  ---
+  duration_ms: 0.66
+  type: 'test'
+  ...
+# Subtest: missing actual website action rejected
+ok 12 - missing actual website action rejected
+  ---
+  duration_ms: 0.1884
+  type: 'test'
+  ...
+# Subtest: missing reduced-motion behavior rejected
+ok 13 - missing reduced-motion behavior rejected
+  ---
+  duration_ms: 0.1801
+  type: 'test'
+  ...
+# Subtest: unmapped site assets rejected
+ok 14 - unmapped site assets rejected
+  ---
+  duration_ms: 0.2329
+  type: 'test'
+  ...
+# Subtest: valid branch keeps prior immutable and identifies downstream changes
+ok 15 - valid branch keeps prior immutable and identifies downstream changes
+  ---
+  duration_ms: 1.4255
+  type: 'test'
+  ...
+# Subtest: lock deletion cannot bypass prior authority
+ok 16 - lock deletion cannot bypass prior authority
+  ---
+  duration_ms: 0.3616
+  type: 'test'
+  ...
+# Subtest: changing both lock and its value cannot bypass prior authority
+ok 17 - changing both lock and its value cannot bypass prior authority
+  ---
+  duration_ms: 0.312
+  type: 'test'
+  ...
+# Subtest: missing and malformed lock pointers fail
+ok 18 - missing and malformed lock pointers fail
+  ---
+  duration_ms: 0.444
+  type: 'test'
+  ...
+# Subtest: wrong project or skipped revision rejected
+ok 19 - wrong project or skipped revision rejected
+  ---
+  duration_ms: 0.3842
+  type: 'test'
+  ...
+# Subtest: context changes invalidate all shots and site
+ok 20 - context changes invalidate all shots and site
+  ---
+  duration_ms: 0.4964
+  type: 'test'
+  ...
+# Subtest: asset changes propagate through reference edges and site
+ok 21 - asset changes propagate through reference edges and site
+  ---
+  duration_ms: 0.6478
+  type: 'test'
+  ...
+# Subtest: unknown compiler fails instead of substituting model
+ok 22 - unknown compiler fails instead of substituting model
+  ---
+  duration_ms: 0.4665
+  type: 'test'
+  ...
+# Subtest: H3 text-only draft has explicit model and request body
+ok 23 - H3 text-only draft has explicit model and request body
+  ---
+  duration_ms: 0.6896
+  type: 'test'
+  ...
+# Subtest: H3 Max duration and resolution boundaries differ
+ok 24 - H3 Max duration and resolution boundaries differ
+  ---
+  duration_ms: 0.2578
+  type: 'test'
+  ...
+# Subtest: text-only adaptive ratio rejected
+ok 25 - text-only adaptive ratio rejected
+  ---
+  duration_ms: 0.2243
+  type: 'test'
+  ...
+# Subtest: mixed first-frame and reference mode rejected
+ok 26 - mixed first-frame and reference mode rejected
+  ---
+  duration_ms: 0.2709
+  type: 'test'
+  ...
+# Subtest: apparently valid media still requires independent inspection
+ok 27 - apparently valid media still requires independent inspection
+  ---
+  duration_ms: 0.2496
+  type: 'test'
+  ...
+# Subtest: unknown structural control is never silently omitted
+ok 28 - unknown structural control is never silently omitted
+  ---
+  duration_ms: 0.4624
+  type: 'test'
+  ...
+# Subtest: handoff retains original request, canonical context and asset metadata
+ok 29 - handoff retains original request, canonical context and asset metadata
+  ---
+  duration_ms: 0.8557
+  type: 'test'
+  ...
+# Subtest: budget checks digest expiry currency and amount without granting authority
+ok 30 - budget checks digest expiry currency and amount without granting authority
+  ---
+  duration_ms: 1.1817
+  type: 'test'
+  ...
+# Subtest: any changed handoff invalidates old quote
+ok 31 - any changed handoff invalidates old quote
+  ---
+  duration_ms: 0.7972
+  type: 'test'
+  ...
+# Subtest: CLI dispatcher reads actual fixture and rejects unknown commands
+ok 32 - CLI dispatcher reads actual fixture and rejects unknown commands
+  ---
+  duration_ms: 0.5178
+  type: 'test'
+  ...
+# Subtest: real research retains every child and all sixteen packet fields
+ok 33 - real research retains every child and all sixteen packet fields
+  ---
+  duration_ms: 7.7747
+  type: 'test'
+  ...
+# Subtest: exact ID and useful keyword retrieval; unrelated intent has no fabricated answer
+ok 34 - exact ID and useful keyword retrieval; unrelated intent has no fabricated answer
+  ---
+  duration_ms: 20.3628
+  type: 'test'
+  ...
+# Subtest: source list and category packet do not certify child completion
+ok 35 - source list and category packet do not certify child completion
+  ---
+  duration_ms: 8.2798
+  type: 'test'
+  ...
+# Subtest: handoff expands and orders dependencies before requested work
+ok 36 - handoff expands and orders dependencies before requested work
+  ---
+  duration_ms: 2.4913
+  type: 'test'
+  ...
+# Subtest: malformed graph and evidence references fail before catalog construction
+ok 37 - malformed graph and evidence references fail before catalog construction
+  ---
+  duration_ms: 29.7917
+  type: 'test'
+  ...
+# Subtest: expired and future evidence is explicitly blocked
+ok 38 - expired and future evidence is explicitly blocked
+  ---
+  duration_ms: 4.2255
+  type: 'test'
+  ...
+# Subtest: caller edits cannot mutate canonical catalog or retrieved records
+ok 39 - caller edits cannot mutate canonical catalog or retrieved records
+  ---
+  duration_ms: 5.2567
+  type: 'test'
+  ...
+# Subtest: ledger export preserves explicit support and context without promoting categories
+ok 40 - ledger export preserves explicit support and context without promoting categories
+  ---
+  duration_ms: 3.309
+  type: 'test'
+  ...
+# Subtest: missing evaluator prevents completion and never certifies Hollywood output
+ok 41 - missing evaluator prevents completion and never certifies Hollywood output
+  ---
+  duration_ms: 1.3739
+  type: 'test'
+  ...
+# Subtest: failed jobs and repair cost remain in the comparison denominator
+ok 42 - failed jobs and repair cost remain in the comparison denominator
+  ---
+  duration_ms: 0.2417
+  type: 'test'
+  ...
+# Subtest: changed briefs and pass claims for missing outputs fail
+ok 43 - changed briefs and pass claims for missing outputs fail
+  ---
+  duration_ms: 0.2328
+  type: 'test'
+  ...
+# Subtest: recorded matched observations still do not imply statistical superiority
+ok 44 - recorded matched observations still do not imply statistical superiority
+  ---
+  duration_ms: 0.2784
+  type: 'test'
+  ...
+# Subtest: lost response survives restart and never allows resubmission
+ok 45 - lost response survives restart and never allows resubmission
+  ---
+  duration_ms: 27.7559
+  type: 'test'
+  ...
+# Subtest: changed payload, stale quote and expired approval cannot start a request
+ok 46 - changed payload, stale quote and expired approval cannot start a request
+  ---
+  duration_ms: 0.7947
+  type: 'test'
+  ...
+# Subtest: duplicate callbacks are idempotent but altered events and stale writers fail
+ok 47 - duplicate callbacks are idempotent but altered events and stale writers fail
+  ---
+  duration_ms: 0.735
+  type: 'test'
+  ...
+# Subtest: cancel race keeps actual successful output and reports over-quote settlement
+ok 48 - cancel race keeps actual successful output and reports over-quote settlement
+  ---
+  duration_ms: 1.1601
+  type: 'test'
+  ...
+# Subtest: independent CRC check vector and supported PNG structure
+ok 49 - independent CRC check vector and supported PNG structure
+  ---
+  duration_ms: 1.4471
+  type: 'test'
+  ...
+# Subtest: PNG corruption, truncation, scanline size/filter and resource limits
+ok 50 - PNG corruption, truncation, scanline size/filter and resource limits
+  ---
+  duration_ms: 1.0013
+  type: 'test'
+  ...
+# Subtest: unsupported valid encoding stays unsupported; unknown bytes stay uninspected
+ok 51 - unsupported valid encoding stays unsupported; unknown bytes stay uninspected
+  ---
+  duration_ms: 0.2417
+  type: 'test'
+  ...
+# Subtest: PCM WAVE facts and invalid rate/alignment
+ok 52 - PCM WAVE facts and invalid rate/alignment
+  ---
+  duration_ms: 0.3569
+  type: 'test'
+  ...
+# Subtest: odd RIFF metadata padding respected
+ok 53 - odd RIFF metadata padding respected
+  ---
+  duration_ms: 0.186
+  type: 'test'
+  ...
+# Subtest: opening an unrelated database does not install production tables
+ok 54 - opening an unrelated database does not install production tables
+  ---
+  duration_ms: 4.9727
+  type: 'test'
+  ...
+# Subtest: plans survive reopen; stale second writer cannot replace history
+ok 55 - plans survive reopen; stale second writer cannot replace history
+  ---
+  duration_ms: 27.1948
+  type: 'test'
+  ...
+# Subtest: stored locks cannot be removed; failed revision leaves current plan intact
+ok 56 - stored locks cannot be removed; failed revision leaves current plan intact
+  ---
+  duration_ms: 1.1256
+  type: 'test'
+  ...
+# Subtest: byte identity, restart, detached lineage and consecutive versions
+ok 57 - byte identity, restart, detached lineage and consecutive versions
+  ---
+  duration_ms: 24.5125
+  type: 'test'
+  ...
+# Subtest: missing and cross-project parents fail atomically
+ok 58 - missing and cross-project parents fail atomically
+  ---
+  duration_ms: 1.4462
+  type: 'test'
+  ...
+# Subtest: oversized admission and corrupted recovery are rejected
+ok 59 - oversized admission and corrupted recovery are rejected
+  ---
+  duration_ms: 24.2516
+  type: 'test'
+  ...
+# Subtest: segment slab cases: between frames, parallel, tangent, inside, zero motion
+ok 60 - segment slab cases: between frames, parallel, tangent, inside, zero motion
+  ---
+  duration_ms: 0.3345
+  type: 'test'
+  ...
+# Subtest: camera reports continuous linear path collisions with bound digest
+ok 61 - camera reports continuous linear path collisions with bound digest
+  ---
+  duration_ms: 1.0041
+  type: 'test'
+  ...
+# Subtest: camera rejects NaN, bad lens, empty samples, incomplete timing and collinear basis
+ok 62 - camera rejects NaN, bad lens, empty samples, incomplete timing and collinear basis
+  ---
+  duration_ms: 0.302
+  type: 'test'
+  ...
+# Subtest: near-plane bounds are unavailable, clearance conservative, translation invariant
+ok 63 - near-plane bounds are unavailable, clearance conservative, translation invariant
+  ---
+  duration_ms: 0.2046
+  type: 'test'
+  ...
+# Subtest: integer editorial boundaries and exact rational duration retain missing media
+ok 64 - integer editorial boundaries and exact rational duration retain missing media
+  ---
+  duration_ms: 0.4813
+  type: 'test'
+  ...
+# Subtest: editorial rejects overtrim, retime, duplicate IDs and ambiguous URLs
+ok 65 - editorial rejects overtrim, retime, duplicate IDs and ambiguous URLs
+  ---
+  duration_ms: 0.2801
+  type: 'test'
+  ...
+# Subtest: site output escapes content and has real disclosure, fragment action and reduced-motion fallback
+ok 66 - site output escapes content and has real disclosure, fragment action and reduced-motion fallback
+  ---
+  duration_ms: 0.588
+  type: 'test'
+  ...
+# Subtest: site rejects missing anchor, duplicate IDs, unsafe URLs and oversized content
+ok 67 - site rejects missing anchor, duplicate IDs, unsafe URLs and oversized content
+  ---
+  duration_ms: 0.3018
+  type: 'test'
+  ...
+# Subtest: comparison CLI binds actual artifact bytes and rejects modification and directory escape
+ok 68 - comparison CLI binds actual artifact bytes and rejects modification and directory escape
+  ---
+  duration_ms: 7.0626
+  type: 'test'
+  ...
+# Subtest: standalone job preparation persists without submitting or granting execution
+ok 69 - standalone job preparation persists without submitting or granting execution
+  ---
+  duration_ms: 23.3969
+  type: 'test'
+  ...
+# Subtest: provider URLs cannot redirect credentials or change identity
+ok 70 - provider URLs cannot redirect credentials or change identity
+  ---
+  duration_ms: 0.3722
+  type: 'test'
+  ...
+# Subtest: prompt enrichment and remote output are distinct from admitted media
+ok 71 - prompt enrichment and remote output are distinct from admitted media
+  ---
+  duration_ms: 0.1724
+  type: 'test'
+  ...
+# Subtest: fractional-cent quote is an exact conservative cap, never settlement
+ok 72 - fractional-cent quote is an exact conservative cap, never settlement
+  ---
+  duration_ms: 0.3137
+  type: 'test'
+  ...
+# Subtest: polling deadline includes read latency and never submits again
+ok 73 - polling deadline includes read latency and never submits again
+  ---
+  duration_ms: 0.4466
+  type: 'test'
+  ...
+# Subtest: retryable reads recover the original job; identity failure stops
+ok 74 - retryable reads recover the original job; identity failure stops
+  ---
+  duration_ms: 0.3699
+  type: 'test'
+  ...
+1..74
+# tests 74
+# suites 0
+# pass 74
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 318.6918
