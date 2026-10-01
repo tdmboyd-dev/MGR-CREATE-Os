@@ -1,0 +1,59 @@
+{
+  "updated": "2026-10-01",
+  "scope": "Additional work discovered during production knowledge integration; do not sum this with overlapping category counts",
+  "items": [
+    {
+      "id": "COS-RESEARCH-01",
+      "status": "RESEARCHED",
+      "scope": "Narrow reproduced empty-claim behavior",
+      "implemented": false,
+      "verified": false,
+      "task": "Specify and implement unanswered-question and empty-research handling in ResearchFactory",
+      "evidence": "evidence/production-knowledge-verification.json",
+      "acceptance": "Unanswered required questions cannot succeed through an empty claims array; preserve valid documented empty-research cases explicitly."
+    },
+    {
+      "id": "COS-RESEARCH-02",
+      "status": "RESEARCHED",
+      "scope": "Narrow source-ID behavior",
+      "implemented": false,
+      "verified": false,
+      "task": "Require explicit scoped evidence and distinguish SUPPORTS, CONTRADICTS and CONTEXT at ResearchFactory boundary",
+      "evidence": "evidence/production-knowledge-verification.json",
+      "acceptance": "Unrelated source links and contextual design references cannot certify claim support or readiness; test product-pipeline consumers."
+    },
+    {
+      "id": "PRODUCTION-SOURCE-DEPTH",
+      "status": "QUEUED",
+      "task": "Finish each child method/source/license/runtime study and required acceptance tests",
+      "scope": "All 75 child capabilities remain open beyond current scoped findings",
+      "blocking": false
+    },
+    {
+      "id": "PRODUCTION-EXTERNAL-RUNTIME",
+      "status": "BLOCKED",
+      "task": "Execute authenticated provider canaries and selected DCC/media/browser round trips",
+      "cause": "No authenticated generation tools, bounded execution budget or verified DCC runtime in this session",
+      "independentWork": "Research and deterministic native implementation continue"
+    },
+    {
+      "id": "PRODUCTION-COMPARISON",
+      "status": "BLOCKED",
+      "task": "Run matched competitor briefs with retained outputs, budgets, revisions and blind review",
+      "cause": "No comparable rendered output set",
+      "acceptance": "Publish actual per-dimension results; do not claim universal superiority"
+    },
+    {
+      "id": "PRODUCTION-APP-WIRING",
+      "status": "QUEUED",
+      "task": "Integrate the explicit research module into the Creation OS application entrypoint with workspace-scoped context and evidence",
+      "acceptance": "An actual application call retrieves and uses canonical research while preserving ownership/approval boundaries"
+    },
+    {
+      "id": "PRODUCTION-RELEASE-GATES",
+      "status": "QUEUED",
+      "task": "Run complete repository typecheck/tests and review the research branch before main integration",
+      "acceptance": "Resolve any repository-wide issues; do not infer full suite success from isolated module tests"
+    }
+  ]
+}
