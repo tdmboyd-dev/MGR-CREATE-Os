@@ -25,3 +25,13 @@ Replaced current-tense 58-only scope in docs/BEAST-WAVE-STATUS.md with dated his
 
 ## 2026-09-29 avatar admission research
 Compared the existing AssetRegistry, continuity rules and evidence bundle with glTF 2.0 skin/morph requirements and the iKickItz legacy salvage decision. Found that the registry's default digest hashes blobRef/MIME rather than media bytes; no actual byte-integrity or admission proof follows from its existing status. Documented staged acceptance and failure cases in research/AVATAR-ASSET-ADMISSION-2026-09-29.md. No product source changed or real asset inspected in this batch.
+
+## 2026-10-01 recursive production research and implementation audit
+
+Owner requested deeper capability decomposition and canonical queue coverage. Added 18-category/75-child production research queue mapped to existing categories, four scoped 16-field packets, selected source-level Blender/OTIO/FFprobe/CameraCtrl findings and exact read-depth evidence. Corrected the canonical research queue's old 20/48 progress to an explicitly historical record without deleting it.
+
+Executed fetched Creation OS camera/asset/digest source in isolation: 10 gaps reproduced (six camera, one scene cycle, three asset ownership/identity). URL/MIME digest limitation was already recorded on September 29; this batch confirms rather than rediscovers it. Additional observations include empty/out-of-range/nonfinite camera inputs and externally mutable lineage. Product source remains unchanged; no runtime repair or whole-product verification is claimed.
+
+Evidence: evidence/production-research-audit-2026-10-01.json includes source blobs/read depth, observed outputs, local source hashes, reproducible inputs and script. Queue integrity checks passed (75 unique IDs, resolved acyclic dependencies, no false implemented/verified flags). Blender/ffprobe commands were not found on PATH; those runtime checks and all learned-model/rendered comparisons remain open. No model weights downloaded, provider credentials used or generation credits spent.
+
+Research -> build order: asset ownership/byte admission and honest structural validation; bounded media probe; camera geometry/unit proof; editable simulation and editorial round trips; remaining child tracks. Do not mark all 75 researched from the queue's existence.
