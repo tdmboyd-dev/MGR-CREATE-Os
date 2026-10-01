@@ -1,0 +1,22 @@
+{
+  "repository": "tdmboyd-dev/MGR-CREATE-Os",
+  "runId": 36854140829,
+  "headSha": "ab7337c0e5fe4caea1d485d02c761f53ac65923c",
+  "url": "https://github.com/tdmboyd-dev/MGR-CREATE-Os/actions/runs/36854140829",
+  "conclusion": "success",
+  "observedSteps": [
+    {
+      "name": "Run npm run typecheck",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5
+    },
+    {
+      "name": "Run npm test",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6
+    }
+  ],
+  "scope": "GitHub Actions repository typecheck/npm test; separate from74 local companion tests and production output evaluation"
+}
