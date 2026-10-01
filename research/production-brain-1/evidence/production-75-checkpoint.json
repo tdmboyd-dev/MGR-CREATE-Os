@@ -1,0 +1,110 @@
+{
+  "product": "MGR Production Brain 1",
+  "recordedAt": "2026-10-01T11:13:50.753Z",
+  "research": {
+    "tracks": 75,
+    "individualStudies": 75,
+    "sourceRecords": 68,
+    "fullOriginalScopesClosed": 0,
+    "scope": "Selected primary reads plus independently authored engineering decisions; not all child research complete"
+  },
+  "tests": {
+    "command": "node --test --test-isolation=none --test-reporter=tap tests/*.test.mjs",
+    "pass": 74,
+    "fail": 0
+  },
+  "blender": {
+    "runtime": "5.2.2 LTS CPU",
+    "replay": {
+      "schemaVersion": 1,
+      "checks": {
+        "simulationReplay": true,
+        "bakedCache": true,
+        "groundContact": true,
+        "assemblyReturns": true,
+        "renderReplay": true,
+        "editableScene": true
+      },
+      "allPassed": true,
+      "pixelComparison": {
+        "maximumAbsoluteError": 0,
+        "rmse": 0,
+        "maximumTolerance": 0.00392156862745098,
+        "rmseTolerance": 0.001
+      },
+      "note": "Byte hashes may differ because PNG metadata differs. Compare decoded pixels; no model or Hollywood benchmark was run."
+    },
+    "usd": {
+      "schemaVersion": 1,
+      "runtime": "5.2.2 LTS",
+      "checks": {
+        "position": true,
+        "rotation": true,
+        "focalLength": true,
+        "sensorWidth": true,
+        "declaredUnits": true,
+        "declaredAxis": true
+      },
+      "allPassed": true,
+      "positionErrorMetres": 0,
+      "rotationErrorRadians": 0,
+      "original": {
+        "position": [
+          7,
+          -9,
+          6
+        ],
+        "rotation": [
+          0.7974614500999451,
+          0.5231359004974365,
+          0.16490408778190613,
+          0.2513776123523712
+        ],
+        "focalMm": 45,
+        "sensorMm": 36
+      },
+      "imported": {
+        "position": [
+          7,
+          -9,
+          6
+        ],
+        "focalMm": 45,
+        "sensorMm": 36
+      },
+      "scope": "Single static camera through actual Blender USD export/import. No claim that physics, material graphs, references or variants survive this export."
+    },
+    "scope": "Procedural rigid body/assembly reopen, decoded PNG equality and static camera USD round-trip only"
+  },
+  "plugin": {
+    "id": "plugins_6abe0aac09fc8191878a61127a613ad2",
+    "releaseId": "pluginrel_6abe400d441881919c06473deb22fba5",
+    "url": "https://chatgpt.com/plugins/plugins_6abe0aac09fc8191878a61127a613ad2",
+    "accountSaved": true,
+    "latestActiveCachePresent": false,
+    "lastObservedActiveCache": "1.0.0"
+  },
+  "creationOS": {
+    "branch": "research/production-brain-2026-10-01",
+    "draftPR": "https://github.com/tdmboyd-dev/MGR-CREATE-Os/pull/2",
+    "embeddedFilesReadBack": 38,
+    "canonicalCatalogUpdated": true,
+    "mainMerged": false,
+    "applicationWired": false,
+    "fullRepositoryGatesRun": false
+  },
+  "comparison": {
+    "protocolAuthored": true,
+    "liveCompetitorTrialsExecuted": 0,
+    "hollywoodQualityVerified": false
+  },
+  "remaining": [
+    "Selected implementation/dependency/licensing research remains within the original75 scopes; not all remaining work is an account blocker",
+    "Live provider authentication, host approval consumption, output acquisition and charge reconciliation",
+    "Production-specific fracture/dust/rig/compositing/editorial/color runtime acceptance",
+    "Browser interaction and native NLE round-trip evidence",
+    "Actual matched competitor outputs and independently blinded craft review",
+    "Creation OS application wiring and full repository tests/typecheck",
+    "Latest account release activation in the active host"
+  ]
+}
