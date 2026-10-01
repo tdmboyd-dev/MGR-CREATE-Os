@@ -6,7 +6,8 @@ const data=JSON.parse(readFileSync(new URL('../research/production-knowledge/cat
 const clone=()=>structuredClone(data);
 test('real research retains every child and all sixteen packet fields',()=>{
  assert.deepEqual(validateCatalog(data),{ok:true,errors:[]});
- assert.equal(data.tracks.length,75); assert.equal(data.packets.length,18);
+ assert.equal(data.tracks.length,75); assert.equal(data.packets.length,93);
+ for(const track of data.tracks){const p=data.packets.find(p=>p.id===track.packetIds[0]);assert.equal(p.id,'P-'+track.id.slice(3));assert.ok(p.decision&&p.alternative&&p.fixtures&&p.remainingEvidence);}
  assert.equal(FIELDS.length,16);assert.equal(new ProductionCatalog(data).summary().researchReady,0);
 });
 test('exact ID and useful keyword retrieval; unrelated intent has no fabricated answer',()=>{
@@ -47,7 +48,7 @@ test('malformed graph and evidence references fail before catalog construction',
  assert.equal(validateCatalog(null).ok,false);
 });
 test('expired and future evidence is explicitly blocked',()=>{
- const d=clone();d.sources.find(x=>x.id==='prior-dossier').refreshAfter='2026-10-02';
+ const d=clone();d.sources.find(x=>x.id==='usd-camera').refreshAfter='2026-10-02';
  const c=new ProductionCatalog(d);
  assert.ok(c.readiness('PR-CAMERA-04','2026-10-03').blockers.some(x=>x.startsWith('Refresh source')));
  assert.ok(c.readiness('PR-CAMERA-04','2026-09-01').blockers.some(x=>x.startsWith('Future source')));
