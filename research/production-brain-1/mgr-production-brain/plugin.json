@@ -1,13 +1,13 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mgr-production-brain",
-  "version": "1.0.0",
-  "description": "MGR Production Brain 1: researched production plans, prompt compilation, persistent revisions, byte-bound assets, media inspection, camera preflight, editorial drafts and motion content websites. Works with MGR BEAST and optional provider connections.",
+  "version": "1.0.1",
+  "description": "MGR Production Brain 1:75 individual branch studies, production plans, prompt compilation, immutable assets, camera/editorial/site tools, durable job bookkeeping and output comparison checks. Works with MGR BEAST; research and execution limits stay explicit.",
   "author": { "name": "Money Grind Religion Corp." },
   "extensions": { "com.openai": { "interface": {
     "displayName": "MGR Production Brain 1",
     "shortDescription": "Plan before you generate",
-    "longDescription": "Companion to MGR BEAST with executable Node tools. Turn an idea into a production plan, preserve revisions and original assets, inspect supported media, check camera paths, assemble editorial drafts and build motion content pages before provider generation. Includes researched methods and explicit capability limits. Live rendering and provider execution require connected tools; generated quality is not certified by planning checks.",
+    "longDescription": "Companion to MGR BEAST with75 individual engineering studies and executable tools. Turn ideas into plans/prompts, preserve revisions and bytes, inspect supported media, check cameras, assemble editorial drafts and build motion content pages. Adds durable job bookkeeping, comparison evidence checks and an actual procedural Blender CPU fixture. Full child research, live provider execution and Hollywood quality are not claimed complete.",
     "developerName": "Money Grind Religion Corp.",
     "category": "Productivity",
     "capabilities": ["Interactive"],
