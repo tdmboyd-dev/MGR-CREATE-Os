@@ -60,3 +60,10 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - Claim status: RELEASED after research, evidence and queue commits. No ongoing process or exclusive ownership claimed.
 - Completed checkpoint: 18 categories decomposed into 75 child tracks; selected source implementations inspected; 10 narrow existing-code gaps reproduced; canonical queue/build/audit pointers updated.
 - Remaining: full research and implementation acceptance for each child. No whole-category completion, runtime source repair, provider integration or rendered-quality claim.
+
+## Active production knowledge implementation claim
+- Owner/session: production-brain-completion-2026-10-01.
+- Branch: research/production-brain-2026-10-01; fresh base aa22b8c39bf835fec440f4c6aa08ae7a009b6f4e.
+- Exact scope: WORK-STATE.md; BUILD-QUEUE.md; AUDIT-LEDGER.md; research/production-research-queue-2026-10-01.json; research/production-knowledge/; src/knowledge/production-catalog.mjs; src/knowledge/production-catalog.d.mts; test/production-catalog.test.mjs; evidence/production-knowledge-verification.json.
+- Claimed UTC: 2026-10-01T08:49:57.890Z; review/expiry: end of this active session or two hours after claim.
+- Existing branch claim RELEASED. Advisory branch ownership only. Canonical locks, paid execution and JEV authority unchanged.
