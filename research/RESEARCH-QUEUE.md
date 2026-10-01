@@ -2,10 +2,19 @@
 
 This queue was derived after reading the current standalone repo source-of-truth, extracted MGR Agents legacy architecture, factory dossiers, BEAST contract, migrations, UCOS lock corpus, and extraction findings.
 
+
+## Current production research checkpoint — 2026-10-01
+
+The counts below describe the original wave only. They do not represent current research completeness. Later work includes the [74-track capability matrix](BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md), existing Avatar child dossiers, and the [production implementation research](BEAST-PRODUCTION-RESEARCH-2026-10-01.md).
+
+The [machine-readable production child queue](production-research-queue-2026-10-01.json) records 75 child tracks under 18 categories, linked to both this queue and the later matrix. These overlap existing categories; do not add counts into a fabricated denominator. Missing and unproven capabilities remain queued, including the eleven DCC workflow families decomposed into their actual dependencies.
+
+Ten narrow gaps were reproduced in the existing camera/scene/asset code; see [source-bound evidence and reproducer](../evidence/production-research-audit-2026-10-01.json). This is not a product repair or whole-category completion. Every child requires its own implementation-depth research, full applicable packet and executed acceptance before promotion.
+
 ## Counting rule
 A category counts as RESEARCHED only when its dossier contains: internal legacy findings, top open-source universities, top commercial/industry universities, standards/papers where relevant, Hugging Face/model-hub candidates where relevant, architecture lessons, failure modes, license/security/cost concerns, Creation OS native-contract consequences, and verification criteria.
 
-## Total research categories: 48
+## Historical baseline: 48 research categories
 
 ### Wave 1 — Core operating system (1–20)
 1. Durable orchestration / workflow runtime
@@ -61,7 +70,7 @@ A category counts as RESEARCHED only when its dossier contains: internal legacy 
 47. Data/Analytics Factory
 48. Cross-factory composition / zoom-way-out objective orchestration
 
-## Progress
+## Historical progress recorded by the original wave
 - Wave 1 researched this run: 20 / 20
 - Wave 2 remaining: 15
 - Wave 3 existing seed dossiers but not yet BEAST-complete under the counting rule: 13
