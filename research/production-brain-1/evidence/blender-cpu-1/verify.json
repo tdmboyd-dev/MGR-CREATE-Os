@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "mode": "verify",
+  "runtime": "5.2.2 LTS",
+  "buildHash": "d13f752e3b9c",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "samples": [
+    {
+      "frame": 1,
+      "bodyPosition": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "parts": {
+        "assembly-part-0": [
+          -1.0,
+          2.0,
+          0.4000000059604645
+        ],
+        "assembly-part-1": [
+          0.0,
+          2.0,
+          0.4000000059604645
+        ],
+        "assembly-part-2": [
+          1.0,
+          2.0,
+          0.4000000059604645
+        ]
+      }
+    },
+    {
+      "frame": 24,
+      "bodyPosition": [
+        0.0,
+        0.0,
+        0.4000137150287628
+      ],
+      "parts": {
+        "assembly-part-0": [
+          -1.0,
+          2.0,
+          1.399999976158142
+        ],
+        "assembly-part-1": [
+          0.0,
+          2.0,
+          1.7000000476837158
+        ],
+        "assembly-part-2": [
+          1.0,
+          2.0,
+          2.0
+        ]
+      }
+    },
+    {
+      "frame": 48,
+      "bodyPosition": [
+        0.0,
+        0.0,
+        0.4000137150287628
+      ],
+      "parts": {
+        "assembly-part-0": [
+          -1.0,
+          2.0,
+          0.3999999761581421
+        ],
+        "assembly-part-1": [
+          0.0,
+          2.0,
+          0.40000003576278687
+        ],
+        "assembly-part-2": [
+          1.0,
+          2.0,
+          0.4000000059604645
+        ]
+      }
+    }
+  ],
+  "cacheBaked": true,
+  "editableObjects": [
+    "Area",
+    "assembly-part-0",
+    "assembly-part-1",
+    "assembly-part-2",
+    "assembly-root",
+    "contact-body",
+    "ground",
+    "production-camera"
+  ],
+  "camera": {
+    "lensMm": 45.0,
+    "sensorMm": 36.0
+  },
+  "render": {
+    "width": 320,
+    "height": 180
+  },
+  "scope": "Procedural contact, keyframe assembly, camera and editable project replay; no Hollywood quality claim",
+  "imageSha256": "cd1b45f065ea864ff231fd759b929cee5160b6da1246143ca6b01a5ee3cc916d",
+  "projectSha256": "cbc800392c954a6761e1b92ba283a066826326254813a0ab35c1bdddb7423afd"
+}
