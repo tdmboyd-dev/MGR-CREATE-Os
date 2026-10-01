@@ -12,6 +12,15 @@ test('complete film/site intent compiles without mutation and preserves all shot
  assert.ok(h.shots[1].prompt.includes('amber cuff'));assert.equal(h.executionStatus,'NONEXECUTABLE');assert.equal(JSON.stringify(p),before);
 });
 test('invalid plan types produce structured failures',()=>{for(const p of [null,[],1,'x',{}])assert.equal(validate(p).ok,false);});
+test('asset versions accept storage integers and preserve legacy labels',()=>{
+ for(const version of [1,2,'1','v1']) {
+  const p=fresh();p.assets=[{id:'art',type:'image',version,provenance:'test',rights:'test'}];
+  assert.equal(validate(p).ok,true);assert.equal(compile(p).assets[0].version,version);
+ }
+ for(const version of [0,-1,1.5,Number.MAX_SAFE_INTEGER+1,null,{},'']) {
+  invalid(p=>p.assets=[{id:'art',type:'image',version,provenance:'test',rights:'test'}],'ASSET_METADATA');
+ }
+});
 test('empty deliverable rejected',()=>invalid(p=>{p.nodes=[];delete p.site;},'EMPTY'));
 test('duplicate IDs rejected across assets and shots',()=>invalid(p=>p.assets.push({id:'shot-01',type:'image',version:'1',rights:'unknown',provenance:'draft'}),'DUPLICATE_ID'));
 test('dangling dependency rejected',()=>invalid(p=>p.nodes[0].dependsOn=['missing'],'DANGLING'));
