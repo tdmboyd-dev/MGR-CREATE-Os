@@ -77,3 +77,10 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - New evidence: evidence/production-knowledge-verification.json; use research/production-knowledge/README.md and OPEN-WORK.json.
 - Overall owner goal remains incomplete: all 75 child studies and end-to-end production gates remain open. Account publication is verified, active host cache still 0.1.0. Full repo tests/typecheck, app wiring, main merge, provider authorization, DCC execution and output comparisons are not claimed.
 - Next work: finish native research-factory evidence contracts and child studies; verify host 0.2 activation, complete repository gates and connect authorized production runtimes. Do not mark all research done from this checkpoint.
+
+## Active Brain 1 native module claim
+- Owner/session: production-brain-1-native-2026-10-01.
+- Branch: research/production-brain-2026-10-01; fresh base 1bb32e02978b1a5e21451781198acc2817193e4f.
+- Scope: WORK-STATE.md; research/production-brain-1/ reusable package/research/tests/evidence only. No application or canonical-lock changes.
+- Claimed UTC: 2026-10-01T09:46:00Z; review/expiry UTC: 2026-10-01T11:46:00Z.
+- Existing claims inspected: RELEASED. This isolated-branch claim is advisory.
