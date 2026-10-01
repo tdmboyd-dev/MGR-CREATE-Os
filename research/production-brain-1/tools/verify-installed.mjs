@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 const installed=process.argv[2];if(!installed)throw Error('Installed plugin root required');
 const skill=join(installed,'skills/production-brain');
 const hashes=[];
-for(const file of ['brain','catalog','camera','editorial','media','production','site','store']){
+for(const file of ['brain','catalog','camera','editorial','media','production','site','store','jobs','comparison','providers']){
  const relative='skills/production-brain/scripts/'+file+'.mjs',local=readFileSync(resolve('mgr-production-brain',relative)),cached=readFileSync(join(installed,relative));
  assert.ok(local.equals(cached),'Installed bytes differ: '+relative);hashes.push({file:relative,sha256:createHash('sha256').update(cached).digest('hex')});
 }
