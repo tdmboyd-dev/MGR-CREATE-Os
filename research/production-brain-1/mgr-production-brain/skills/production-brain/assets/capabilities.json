@@ -1,0 +1,18 @@
+{
+  "product":"MGR Production Brain 1",
+  "schemaVersion":1,
+  "runtime":"Node 24.21+ with node:sqlite and filesystem access",
+  "hostLanguageInterpretation":"The host agent interprets natural language; native code validates and executes structured inputs.",
+  "implemented":[
+    {"id":"plan-compiler","module":"brain.mjs","scope":"Structured shot/site plans, lock/dependency validation, prompt handoff, revision impact and budget arithmetic"},
+    {"id":"production-store","module":"store.mjs","scope":"Local immutable plan revisions and project-scoped asset lineage with exact byte recovery, max 32 MiB per asset"},
+    {"id":"media-inspection","module":"media.mjs","scope":"Noninterlaced 8-bit RGB/RGBA PNG structure and mono/stereo 8/16-bit PCM WAVE structure"},
+    {"id":"camera-preflight","module":"camera.mjs","scope":"Declared static AABB proxies, linear camera segments, conservative clearance and sampled pinhole framing"},
+    {"id":"editorial-assembly","module":"editorial.mjs","scope":"Single-rate integer-frame cuts/gaps, exact duration and OTIO draft; no NLE round-trip verification"},
+    {"id":"content-site","module":"site.mjs","scope":"Standalone responsive single-page content HTML with native links/disclosures and optional motion; browser verification separate"},
+    {"id":"research-retrieval","module":"catalog.mjs","scope":"Scoped source/claim retrieval and dependency expansion; no automatic research-completion promotion"}
+  ],
+  "notImplemented":["autonomous film renderer","DCC rigging/simulation/compositing execution","neural character/voice consistency","live provider job reconciliation","complete codec ingest","arbitrary website backend synthesis","rendered quality benchmark","Creation OS application wiring"],
+  "externalConnections":{"higgsfield":"configured; live tool/auth verification required","youart":"configured; live tool/auth verification required"},
+  "researchCompletion":"The 75 broader research tracks are not all complete; native implementation packets are bounded decisions, not replacements for those tracks."
+}
