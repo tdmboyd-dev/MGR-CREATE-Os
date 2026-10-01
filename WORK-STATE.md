@@ -67,3 +67,5 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 - Exact scope: WORK-STATE.md; BUILD-QUEUE.md; AUDIT-LEDGER.md; research/production-research-queue-2026-10-01.json; research/production-knowledge/; src/knowledge/production-catalog.mjs; src/knowledge/production-catalog.d.mts; test/production-catalog.test.mjs; evidence/production-knowledge-verification.json.
 - Claimed UTC: 2026-10-01T08:49:57.890Z; review/expiry: end of this active session or two hours after claim.
 - Existing branch claim RELEASED. Advisory branch ownership only. Canonical locks, paid execution and JEV authority unchanged.
+
+- Scope refinement: also research/production-knowledge/query.mjs and package.json test:production-research entrypoint. Native catalog is explicitly invoked; no application execution pipeline is wired implicitly.
