@@ -100,3 +100,11 @@ Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRe
 
 - Follow-up claim RELEASED after installed-host evidence commits.
 - Superseding installation result: Brain 1 cache is present, all eight core module files match tested source, and seven commands executed successfully from that cache. See evidence/installed-1.json. Earlier 0.2-cache observation is historical, not a current blocker. Provider, browser, NLE, DCC and broader research limits are unchanged.
+
+## Active75-branch production study claim
+- Owner/session: production-brain-75-study-2026-10-01.
+- Task: individually study all75 branches, inspect primary implementation/license sources, add durable job/comparison tools, execute isolated Blender CPU fixtures, embed reusable knowledge.
+- Branch: research/production-brain-2026-10-01; fresh base fd879cc277e61cbdf87dbea0557f3a38035c7ade.
+- Exact scope: WORK-STATE.md; research/production-brain-1/ updated package, individual studies, primary-read ledgers, tests and evidence; research/production-knowledge/catalog.json; src/knowledge/production-catalog.mjs; test/production-catalog.test.mjs. No application execution or canonical authority change.
+- Claimed UTC: 2026-10-01T10:46:17.109Z; review/expiry UTC: 2026-10-01T11:46:17.109Z.
+- Existing claims inspected RELEASED. Advisory isolated-branch claim; no exclusive lock or background process asserted.
