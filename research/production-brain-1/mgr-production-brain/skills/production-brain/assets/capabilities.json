@@ -1,18 +1,78 @@
 {
-  "product":"MGR Production Brain 1",
-  "schemaVersion":1,
-  "runtime":"Node 24.21+ with node:sqlite and filesystem access",
-  "hostLanguageInterpretation":"The host agent interprets natural language; native code validates and executes structured inputs.",
-  "implemented":[
-    {"id":"plan-compiler","module":"brain.mjs","scope":"Structured shot/site plans, lock/dependency validation, prompt handoff, revision impact and budget arithmetic"},
-    {"id":"production-store","module":"store.mjs","scope":"Local immutable plan revisions and project-scoped asset lineage with exact byte recovery, max 32 MiB per asset"},
-    {"id":"media-inspection","module":"media.mjs","scope":"Noninterlaced 8-bit RGB/RGBA PNG structure and mono/stereo 8/16-bit PCM WAVE structure"},
-    {"id":"camera-preflight","module":"camera.mjs","scope":"Declared static AABB proxies, linear camera segments, conservative clearance and sampled pinhole framing"},
-    {"id":"editorial-assembly","module":"editorial.mjs","scope":"Single-rate integer-frame cuts/gaps, exact duration and OTIO draft; no NLE round-trip verification"},
-    {"id":"content-site","module":"site.mjs","scope":"Standalone responsive single-page content HTML with native links/disclosures and optional motion; browser verification separate"},
-    {"id":"research-retrieval","module":"catalog.mjs","scope":"Scoped source/claim retrieval and dependency expansion; no automatic research-completion promotion"}
+  "product": "MGR Production Brain 1",
+  "schemaVersion": 1,
+  "runtime": "Node 24.21+ with node:sqlite and filesystem access",
+  "hostLanguageInterpretation": "The host agent interprets natural language; native code validates and executes structured inputs.",
+  "implemented": [
+    {
+      "id": "plan-compiler",
+      "module": "brain.mjs",
+      "scope": "Structured shot/site plans, lock/dependency validation, prompt handoff, revision impact and budget arithmetic"
+    },
+    {
+      "id": "production-store",
+      "module": "store.mjs",
+      "scope": "Local immutable plan revisions and project-scoped asset lineage with exact byte recovery, max 32 MiB per asset"
+    },
+    {
+      "id": "media-inspection",
+      "module": "media.mjs",
+      "scope": "Noninterlaced 8-bit RGB/RGBA PNG structure and mono/stereo 8/16-bit PCM WAVE structure"
+    },
+    {
+      "id": "camera-preflight",
+      "module": "camera.mjs",
+      "scope": "Declared static AABB proxies, linear camera segments, conservative clearance and sampled pinhole framing"
+    },
+    {
+      "id": "editorial-assembly",
+      "module": "editorial.mjs",
+      "scope": "Single-rate integer-frame cuts/gaps, exact duration and OTIO draft; no NLE round-trip verification"
+    },
+    {
+      "id": "content-site",
+      "module": "site.mjs",
+      "scope": "Standalone responsive single-page content HTML with native links/disclosures and optional motion; browser verification separate"
+    },
+    {
+      "id": "research-retrieval",
+      "module": "catalog.mjs",
+      "scope": "75 individual branch studies, scoped source/claim retrieval and dependency expansion; no automatic research-completion promotion"
+    },
+    {
+      "id": "durable-job-bookkeeping",
+      "module": "jobs.mjs",
+      "scope": "Offline SQLite request/quote identity, optimistic state transitions, ambiguity recovery, callback deduplication and output byte binding; no provider transport or spending authority"
+    },
+    {
+      "id": "comparison-records",
+      "module": "comparison.mjs",
+      "scope": "Matched brief, failed-job cost accounting, evaluator completeness and bounded local artifact identity; no creative superiority certificate"
+    },
+    {
+      "id": "blender-cpu-fixture",
+      "module": "blender_fixture.py",
+      "scope": "Actual authored procedural bake/save/reopen/render on Blender5.2.2LTS CPU; pixel replay and static USD camera comparisons executed"
+    },
+    {
+      "id": "read-only-provider-recovery",
+      "module": "providers.mjs",
+      "scope": "Host-injected authenticated GET polling for existing Higgsfield/MiniMax jobs; exact origin/job identity, deadline/backoff, prompt-only distinction and decimal quote caps; offline tests, no live account execution"
+    }
   ],
-  "notImplemented":["autonomous film renderer","DCC rigging/simulation/compositing execution","neural character/voice consistency","live provider job reconciliation","complete codec ingest","arbitrary website backend synthesis","rendered quality benchmark","Creation OS application wiring"],
-  "externalConnections":{"higgsfield":"configured; live tool/auth verification required","youart":"configured; live tool/auth verification required"},
-  "researchCompletion":"The 75 broader research tracks are not all complete; native implementation packets are bounded decisions, not replacements for those tracks."
+  "notImplemented": [
+    "arbitrary autonomous film renderer",
+    "complex DCC fracture/dust/rigging/compositing execution",
+    "neural character/voice consistency",
+    "live provider transport and reconciliation",
+    "complete codec ingest",
+    "arbitrary website backend synthesis",
+    "matched competitor rendered quality benchmark",
+    "Creation OS application wiring"
+  ],
+  "externalConnections": {
+    "higgsfield": "configured; live tool/auth verification required",
+    "youart": "configured; live tool/auth verification required"
+  },
+  "researchCompletion": "The 75 broader research tracks are not all complete; native implementation packets are bounded decisions, not replacements for those tracks."
 }
