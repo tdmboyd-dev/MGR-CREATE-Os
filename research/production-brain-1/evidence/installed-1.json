@@ -1,0 +1,55 @@
+{
+  "product": "MGR Production Brain 1",
+  "verifiedAt": "2026-10-01T09:53:06.974Z",
+  "installedRoot": "C:\\Users\\cool\\.codex\\plugins\\cache\\created-by-me-remote\\mgr-production-brain\\1.0.0",
+  "runtime": "v24.21.0",
+  "ok": true,
+  "byteMatches": [
+    {
+      "file": "skills/production-brain/scripts/brain.mjs",
+      "sha256": "15e9ccd76cc526cc2b61090f904ac6f4d74d04feb7469777345e580983a32c03"
+    },
+    {
+      "file": "skills/production-brain/scripts/catalog.mjs",
+      "sha256": "e6136a1f8757e004aff094fe44c81675a9d5fcf99c2b477d6aed53471af12f94"
+    },
+    {
+      "file": "skills/production-brain/scripts/camera.mjs",
+      "sha256": "d641829dfa3d7860aebc711be9ffe1533a9d48336332ca79edca569ce597bad3"
+    },
+    {
+      "file": "skills/production-brain/scripts/editorial.mjs",
+      "sha256": "76fc27e90007ae725fcb3f3571afdf2d99fd589e713767b7505799d60faa5352"
+    },
+    {
+      "file": "skills/production-brain/scripts/media.mjs",
+      "sha256": "b651b96a376ab1845cb5de1c95cb5c0f702cd4d3534cb7cbf58d530ad2ddeb34"
+    },
+    {
+      "file": "skills/production-brain/scripts/production.mjs",
+      "sha256": "4cf4f42340de0bb4869170455a656e2446695651b59996e0cde3a2a4825141a7"
+    },
+    {
+      "file": "skills/production-brain/scripts/site.mjs",
+      "sha256": "c0525c3fb32a27a5217e6895ddda7e6b8c8e0a6a4cd1f099b5db6c0b9e9fabfc"
+    },
+    {
+      "file": "skills/production-brain/scripts/store.mjs",
+      "sha256": "46f6ff838689a5ba8eb7c547df3d5bd2a4a51a88355eaffe8bfb7e5c04657172"
+    }
+  ],
+  "executed": [
+    "save-plan",
+    "get-plan",
+    "admit-asset",
+    "export-asset",
+    "camera-check",
+    "timeline",
+    "site-build"
+  ],
+  "limitations": [
+    "Host filesystem/Node commands verified, not a hosted MCP server",
+    "Provider authorization and generated output unverified",
+    "Browser/NLE acceptance unverified"
+  ]
+}
