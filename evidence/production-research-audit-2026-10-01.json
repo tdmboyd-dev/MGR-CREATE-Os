@@ -1,0 +1,177 @@
+{
+  "wave": "production-research-2026-10-01",
+  "scope": "Research and queue updates; no Creation OS product source repairs",
+  "sourceCommit": "67a7620b44188c0060f2a48227ab01fb103b544c",
+  "sources": {
+    "contracts.ts": "export type Vec3 = { x: number; y: number; z: number };\n\nexport interface Transform {\n  position: Vec3;\n  rotationEulerDeg: Vec3;\n  scale: Vec3;\n}\n\nexport interface SceneNode {\n  id: string;\n  kind: \"WORLD\" | \"SET\" | \"CHARACTER\" | \"PROP\" | \"LIGHT\" | \"CAMERA\" | \"VOLUME\" | \"OTHER\";\n  name: string;\n  parentId?: string;\n  transform: Transform;\n  assetRef?: string;\n  variant?: string;\n  metadata?: Record<string, unknown>;\n}\n\nexport interface SceneGraph {\n  id: string;\n  version: number;\n  nodes: SceneNode[];\n  sourceRefs: string[];\n}\n\nexport interface WorldVersion {\n  id: string;\n  worldId: string;\n  version: number;\n  sceneGraphRef: string;\n  createdAt: string;\n  parentVersionRef?: string;\n  continuityLockRefs: string[];\n}\n\nexport interface LensState {\n  focalLengthMm: number;\n  sensorWidthMm: number;\n  apertureF?: number;\n  focusDistanceM?: number;\n  shutterAngleDeg?: number;\n}\n\nexport interface CameraPose {\n  position: Vec3;\n  rotationEulerDeg: Vec3;\n  lens: LensState;\n}\n\nexport type CameraMove =\n  | \"STATIC\" | \"PAN\" | \"TILT\" | \"ROLL\" | \"DOLLY\" | \"TRUCK\"\n  | \"PEDESTAL\" | \"CRANE\" | \"ORBIT\" | \"TRACK\" | \"PUSH\" | \"PULL\"\n  | \"ZOOM\" | \"HANDHELD\" | \"DRONE\";\n\nexport interface FramingConstraint {\n  subjectNodeId: string;\n  minScreenFraction?: number;\n  maxScreenFraction?: number;\n  keepVisible?: boolean;\n  allowOcclusion?: boolean;\n}\n\nexport interface CameraKeyframe {\n  tMs: number;\n  pose: CameraPose;\n}\n\nexport interface CameraTrajectory {\n  id: string;\n  move: CameraMove;\n  durationMs: number;\n  keyframes: CameraKeyframe[];\n  framing: FramingConstraint[];\n  collisionFreeRequired: boolean;\n}\n\nexport interface ShotIntent {\n  id: string;\n  worldVersionRef: string;\n  subjectNodeIds: string[];\n  purpose: string;\n  shotScale?: \"ECU\" | \"CU\" | \"MCU\" | \"MS\" | \"MLS\" | \"FS\" | \"LS\" | \"ELS\";\n  requestedMove?: CameraMove;\n  durationMs: number;\n  dialogueRef?: string;\n  continuityLockRefs: string[];\n}\n\nexport interface ShotValidationIssue {\n  code:\n    | \"MISSING_SUBJECT\"\n    | \"INVALID_DURATION\"\n    | \"KEYFRAME_ORDER\"\n    | \"MISSING_CAMERA\"\n    | \"WORLD_REFERENCE\"\n    | \"FRAMING_REFERENCE\"\n    | \"COLLISION_UNVERIFIED\";\n  message: string;\n}\n\nexport function validateSceneGraph(graph: SceneGraph): string[] {\n  const issues: string[] = [];\n  const ids = new Set<string>();\n  for (const node of graph.nodes) {\n    if (ids.has(node.id)) issues.push(`duplicate node id: ${node.id}`);\n    ids.add(node.id);\n  }\n  for (const node of graph.nodes) {\n    if (node.parentId && !ids.has(node.parentId)) issues.push(`missing parent for ${node.id}: ${node.parentId}`);\n  }\n  return issues;\n}\n\nexport function validateShot(\n  shot: ShotIntent,\n  trajectory: CameraTrajectory,\n  graph: SceneGraph,\n): ShotValidationIssue[] {\n  const issues: ShotValidationIssue[] = [];\n  const ids = new Set(graph.nodes.map((n) => n.id));\n\n  if (shot.durationMs <= 0 || trajectory.durationMs <= 0) {\n    issues.push({ code: \"INVALID_DURATION\", message: \"shot and trajectory duration must be positive\" });\n  }\n  for (const subject of shot.subjectNodeIds) {\n    if (!ids.has(subject)) issues.push({ code: \"MISSING_SUBJECT\", message: `subject not found: ${subject}` });\n  }\n  for (const frame of trajectory.framing) {\n    if (!ids.has(frame.subjectNodeId)) {\n      issues.push({ code: \"FRAMING_REFERENCE\", message: `framing subject not found: ${frame.subjectNodeId}` });\n    }\n  }\n  let last = -1;\n  for (const keyframe of trajectory.keyframes) {\n    if (keyframe.tMs < last) {\n      issues.push({ code: \"KEYFRAME_ORDER\", message: \"camera keyframes must be monotonic\" });\n      break;\n    }\n    last = keyframe.tMs;\n  }\n  return issues;\n}\n\n",
+    "assets.ts": "import {sha256Canonical} from \"../core/digest.js\";export interface AssetVersion{id:string;assetId:string;version:number;blobRef:string;digest:string;mime:string;parentVersionIds:string[];createdAt:string}export class AssetRegistry{private versions=new Map<string,AssetVersion[]>();add(v:Omit<AssetVersion,\"digest\"> & {digest?:string}){const list=this.versions.get(v.assetId)??[];if(list.some(x=>x.version===v.version))throw new Error(\"version exists\");const x={...v,digest:v.digest??sha256Canonical({blobRef:v.blobRef,mime:v.mime})};list.push(Object.freeze(x));this.versions.set(v.assetId,list);return x}get(assetId:string,version:number){return this.versions.get(assetId)?.find(v=>v.version===version)}lineage(assetId:string){return this.versions.get(assetId)??[]}}\n",
+    "digest.ts": "import {createHash} from \"node:crypto\";\nfunction canonical(value:unknown):string{if(value===null||typeof value!==\"object\")return JSON.stringify(value);if(Array.isArray(value))return \"[\"+value.map(canonical).join(\",\")+\"]\";const o=value as Record<string,unknown>;return \"{\"+Object.keys(o).sort().map(k=>JSON.stringify(k)+\":\"+canonical(o[k])).join(\",\")+\"}\"}\nexport function sha256Canonical(value:unknown){return createHash(\"sha256\").update(canonical(value)).digest(\"hex\")}\nexport function actionDigest(actionType:string,target:unknown,payload:unknown){return sha256Canonical({actionType,target,payload})}\n\n"
+  },
+  "externalReferences": [
+    {
+      "url": "https://higgsfield.ai/mcp/bundles/production-skills",
+      "readDepth": "public workflow scope and local application prerequisites; not private implementation"
+    },
+    {
+      "url": "https://openusd.org/24.08/api/class_usd_geom_camera.html",
+      "readDepth": "camera unit and focus/clipping/shutter sections"
+    },
+    {
+      "url": "https://ffmpeg.org/ffprobe.html",
+      "readDepth": "probe/streams/counts/interval/optional-field sections"
+    },
+    {
+      "url": "https://github.com/hehao13/CameraCtrl",
+      "readDepth": "README read; root LICENSE lookup 404; commercial clearance unresolved"
+    }
+  ],
+  "observations": {
+    "scope": "Isolated execution of fetched Creation OS source, not full product or integration tests",
+    "sourceCommit": "67a7620b44188c0060f2a48227ab01fb103b544c",
+    "runtime": "v24.21.0",
+    "transformation": "Node stripTypeScriptTypes; only assets digest import rebound to identical fetched digest implementation",
+    "files": [
+      {
+        "path": "contracts.ts",
+        "sha256": "acbc1bcb28f764e574905e450bca97389104346067f5e1ae97eb938afdb0e4c0"
+      },
+      {
+        "path": "assets.ts",
+        "sha256": "f8d13c3f9fc299f737411c3650af54b5cbfde44e129d8425e38bf3663a2e66a5"
+      },
+      {
+        "path": "digest.ts",
+        "sha256": "61cb710d41ea179a972b9ba1fce54decd9971f349029079ff7cefd28f76b3afb"
+      }
+    ],
+    "confirmed": 10,
+    "results": [
+      {
+        "id": "COS-CAM-01",
+        "reproduction": "CONFIRMED",
+        "expected": "Collision-required shots report unverified collision without geometric evidence",
+        "observed": [],
+        "rootCause": "collisionFreeRequired is never checked",
+        "productFixed": false
+      },
+      {
+        "id": "COS-CAM-02",
+        "reproduction": "CONFIRMED",
+        "expected": "Nonfinite duration rejected",
+        "observed": [],
+        "rootCause": "Only <= 0 comparison is used",
+        "productFixed": false
+      },
+      {
+        "id": "COS-CAM-03",
+        "reproduction": "CONFIRMED",
+        "expected": "Keyframe outside duration rejected",
+        "observed": [],
+        "rootCause": "Order checked, time bounds not checked",
+        "productFixed": false
+      },
+      {
+        "id": "COS-CAM-04",
+        "reproduction": "CONFIRMED",
+        "expected": "Empty trajectory rejected",
+        "observed": [],
+        "rootCause": "No minimum keyframe or camera validation",
+        "productFixed": false
+      },
+      {
+        "id": "COS-CAM-05",
+        "reproduction": "CONFIRMED",
+        "expected": "Invalid lens rejected",
+        "observed": [],
+        "rootCause": "Pose and lens values are not examined",
+        "productFixed": false
+      },
+      {
+        "id": "COS-CAM-06",
+        "reproduction": "CONFIRMED",
+        "expected": "Contradictory framing bounds rejected",
+        "observed": [],
+        "rootCause": "Only subject reference existence is checked",
+        "productFixed": false
+      },
+      {
+        "id": "COS-GRAPH-01",
+        "reproduction": "CONFIRMED",
+        "expected": "Parent cycles rejected",
+        "observed": [],
+        "rootCause": "Only duplicate IDs and missing parents checked",
+        "productFixed": false
+      },
+      {
+        "id": "COS-ASSET-01",
+        "reproduction": "CONFIRMED",
+        "expected": "Artifact digest proves exact bytes",
+        "observed": {
+          "identicalDigest": true,
+          "byteInputAccepted": false
+        },
+        "rootCause": "Default hash only binds blobRef/MIME; bytes are absent from API",
+        "productFixed": false
+      },
+      {
+        "id": "COS-ASSET-02",
+        "reproduction": "CONFIRMED",
+        "expected": "Admitted lineage cannot mutate externally",
+        "observed": {
+          "storedParents": [
+            "invented-parent"
+          ]
+        },
+        "rootCause": "Object.freeze is shallow; nested array remains mutable",
+        "productFixed": false
+      },
+      {
+        "id": "COS-ASSET-03",
+        "reproduction": "CONFIRMED",
+        "expected": "Registry lookup remains intact after caller edits returned list",
+        "observed": {
+          "versionRemoved": true
+        },
+        "rootCause": "lineage returns the registry internal array",
+        "productFixed": false
+      }
+    ]
+  },
+  "reproducer": "import {readFileSync,writeFileSync} from 'node:fs';\nimport {stripTypeScriptTypes} from 'node:module';\nimport {createHash} from 'node:crypto';\nimport assert from 'node:assert/strict';\nconst source=name=>readFileSync(new URL(name,import.meta.url),'utf8');\nconst asModule=s=>'data:text/javascript;base64,'+Buffer.from(s).toString('base64');\nconst dg=asModule(stripTypeScriptTypes(source('digest.ts')));\nconst assetJS=stripTypeScriptTypes(source('assets.ts')).replace('../core/digest.js',dg);\nconst {AssetRegistry}=await import(asModule(assetJS));\nconst {validateSceneGraph,validateShot}=await import(asModule(stripTypeScriptTypes(source('contracts.ts'))));\nconst identity={position:{x:0,y:0,z:0},rotationEulerDeg:{x:0,y:0,z:0},scale:{x:1,y:1,z:1}};\nconst graph={id:'g',version:1,sourceRefs:[],nodes:[{id:'world',kind:'WORLD',name:'test',transform:identity},{id:'hero',kind:'CHARACTER',name:'test subject',parentId:'world',transform:identity}]};\nconst shot={id:'s',worldVersionRef:'world:v1',subjectNodeIds:['hero'],purpose:'test',durationMs:1000,continuityLockRefs:[]};\nconst trajectory={id:'t',move:'DOLLY',durationMs:1000,keyframes:[{tMs:0,pose:{position:{x:0,y:0,z:0},rotationEulerDeg:{x:0,y:0,z:0},lens:{focalLengthMm:35,sensorWidthMm:36}}}],framing:[{subjectNodeId:'hero',keepVisible:true}],collisionFreeRequired:true};\nconst results=[];\nfunction record(id,expected,observed,rootCause){results.push({id,reproduction:'CONFIRMED',expected,observed,rootCause,productFixed:false});}\nassert.deepEqual(validateShot(shot,trajectory,graph),[]);\nrecord('COS-CAM-01','Collision-required shots report unverified collision without geometric evidence',[], 'collisionFreeRequired is never checked');\nfor(const [id,mutate,expectation,cause] of [\n ['COS-CAM-02',(s,t)=>{s.durationMs=NaN;t.durationMs=NaN;},'Nonfinite duration rejected','Only <= 0 comparison is used'],\n ['COS-CAM-03',(s,t)=>{t.keyframes[0].tMs=2000;},'Keyframe outside duration rejected','Order checked, time bounds not checked'],\n ['COS-CAM-04',(s,t)=>{t.keyframes=[];},'Empty trajectory rejected','No minimum keyframe or camera validation'],\n ['COS-CAM-05',(s,t)=>{t.keyframes[0].pose.lens.focalLengthMm=-35;},'Invalid lens rejected','Pose and lens values are not examined'],\n ['COS-CAM-06',(s,t)=>{t.framing[0].minScreenFraction=0.9;t.framing[0].maxScreenFraction=0.1;},'Contradictory framing bounds rejected','Only subject reference existence is checked']\n]) {const s=structuredClone(shot),t=structuredClone(trajectory);mutate(s,t);const observed=validateShot(s,t,graph);assert.deepEqual(observed,[]);record(id,expectation,observed,cause);}\nconst cyclic=structuredClone(graph);cyclic.nodes[0].parentId='hero';assert.deepEqual(validateSceneGraph(cyclic),[]);record('COS-GRAPH-01','Parent cycles rejected',[],'Only duplicate IDs and missing parents checked');\nconst make=v=>({id:'version-'+v,assetId:'a',version:v,blobRef:'memory://same-object',mime:'image/png',parentVersionIds:[],createdAt:'2026-10-01T07:00:00Z'});\nconst registry=new AssetRegistry();const a=registry.add(make(1)),b=registry.add(make(2));assert.equal(a.digest,b.digest);record('COS-ASSET-01','Artifact digest proves exact bytes',{identicalDigest:a.digest===b.digest,byteInputAccepted:false},'Default hash only binds blobRef/MIME; bytes are absent from API');\na.parentVersionIds.push('invented-parent');assert.deepEqual(registry.get('a',1).parentVersionIds,['invented-parent']);record('COS-ASSET-02','Admitted lineage cannot mutate externally',{storedParents:registry.get('a',1).parentVersionIds},'Object.freeze is shallow; nested array remains mutable');\nregistry.lineage('a').splice(0,2);assert.equal(registry.get('a',1),undefined);record('COS-ASSET-03','Registry lookup remains intact after caller edits returned list',{versionRemoved:true},'lineage returns the registry internal array');\nconst evidence={scope:'Isolated execution of fetched Creation OS source, not full product or integration tests',sourceCommit:'67a7620b44188c0060f2a48227ab01fb103b544c',runtime:process.version,transformation:'Node stripTypeScriptTypes; only assets digest import rebound to identical fetched digest implementation',files:['contracts.ts','assets.ts','digest.ts'].map(path=>({path,sha256:createHash('sha256').update(source(path)).digest('hex')})),confirmed:results.length,results};\nwriteFileSync(new URL('observations.json',import.meta.url),JSON.stringify(evidence,null,2)+'\\n');\nconsole.log(JSON.stringify({confirmed:results.length,productFixed:false,scope:evidence.scope},null,2));\n",
+  "limitations": [
+    "Isolated source reproduction is not whole-product runtime verification",
+    "No Blender, ffprobe, OTIO or learned model runtime executed",
+    "No entire production research category is complete",
+    "Reproducer output confirms gaps, not successful product acceptance"
+  ],
+  "scorecard": [
+    {
+      "capability": "Category decomposition",
+      "before": "broad names and selected sources",
+      "current": "18 categories/75 mapped child tracks",
+      "verification": "queue integrity checks; not research completion"
+    },
+    {
+      "capability": "Creation OS camera/asset correctness",
+      "before": "source and historical findings",
+      "current": "10 narrow gaps reproduced",
+      "verification": "observations; no repair"
+    },
+    {
+      "capability": "Production Brain companion",
+      "before": "outline",
+      "current": "private 0.1.0 release; 31 local tests",
+      "verification": "separate companion evidence; not Creation OS integration"
+    }
+  ],
+  "queueIntegrity": {
+    "ok": true,
+    "childTracks": 75,
+    "categories": 18,
+    "uniqueIds": true,
+    "dependenciesResolved": true,
+    "acyclic": true,
+    "noFalseImplementedOrVerified": true,
+    "reproductions": 10
+  }
+}
