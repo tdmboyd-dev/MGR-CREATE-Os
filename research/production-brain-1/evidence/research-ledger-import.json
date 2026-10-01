@@ -1,0 +1,27 @@
+{
+  "scope": "Isolated fetched ResearchLedger/ResearchFactory source execution with Node type stripping; not full Creation OS test suite",
+  "runtime": "v24.21.0",
+  "ledgerImport": {
+    "sources": 68,
+    "claims": 63,
+    "evidence": 68,
+    "unsupportedDesignDecisions": [
+      "production:F-WEB"
+    ]
+  },
+  "reproductions": [
+    {
+      "id": "COS-RESEARCH-01",
+      "finding": "Empty research succeeds with unanswered question",
+      "observed": "SUCCEEDED",
+      "fixed": false
+    },
+    {
+      "id": "COS-RESEARCH-02",
+      "finding": "Unrelated source ID creates supporting evidence without content inspection",
+      "observed": "SUCCEEDED",
+      "fixed": false
+    }
+  ],
+  "catalogResearchReady": 0
+}
