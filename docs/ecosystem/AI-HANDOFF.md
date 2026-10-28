@@ -1,4 +1,4 @@
-# MGR-CREATE-Os — AI ecosystem handoff
+# MGR-CREATE-Os â€” AI ecosystem handoff
 
 Baseline: `67a7620b44188c0060f2a48227ab01fb103b544c`. Existing default: `main`. Repository: https://github.com/tdmboyd-dev/MGR-CREATE-Os.
 
@@ -44,3 +44,5 @@ Rollback: Preserve original source/data; revert only owned source change; reconc
 The new source catalog lists this repository as catalogued, with runtimeVerified=false and no executable tools. Local read-only discovery through ONE/API-MCP has separate integration proof. No discovery response authorizes execution or proves this domain is deployed. No callable MCP endpoint is asserted here; add an admitted adapter only after domain acceptance.
 
 Highest-value measured upgrade: One durable artifact/job lifecycle for media, documents, 3D and reconstruction; benchmark restart correctness and usable-artifact rate.
+
+Current product-source repairs and remaining boundaries: [PRODUCT-SOURCE-REPAIRS.md](PRODUCT-SOURCE-REPAIRS.md). Persistent bounded scorecard: [SCORECARD.md](../full-build/SCORECARD.md).

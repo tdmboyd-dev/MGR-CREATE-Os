@@ -58,7 +58,7 @@ export class ModelRouter {
         if (!m.observedAt || !m.source) return false;
         const observed = Date.parse(m.observedAt);
         if (!Number.isFinite(observed)) return false;
-        return (r.nowMs ?? Date.now()) - observed <= r.maxSnapshotAgeMs;
+        const age=(r.nowMs ?? Date.now())-observed;return age>=0&&age<=r.maxSnapshotAgeMs;
       })
       .filter((m) => {
         if (r.usage !== "COMMERCIAL") return true;
