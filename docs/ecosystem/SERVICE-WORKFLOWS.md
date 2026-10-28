@@ -1,4 +1,4 @@
-# Local service workflow handoff — 2026-10-27
+# Local service workflow handoff - 2026-10-27
 
 Creation persists actual MarkdownRenderer bytes in SQLite with hash, byte size, rights declarations, audit events, idempotency, deferred cancellation and restart readback.
 
@@ -11,3 +11,5 @@ SignMe POST /v1/documents/drafts accepts requestId, workspaceId, title, content 
 Proof: Creation120/120 existing+new tests, TypeScript check; SignMe5/5 sidecar process-restart, route ownership and SQLite migration tests. SignMe route tests use transpiled handlers with mocked Prisma, not a deployed Next app. No production, paid generation, real signing, legal validity or external sending proof.
 
 Full source audit remains incomplete. See central wave2 reading ledger for explicit scope.
+
+Current source/repair/test checkpoint: see PRODUCT-SOURCE-REPAIRS.md; older test totals above are the initial service checkpoint.

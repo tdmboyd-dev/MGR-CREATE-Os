@@ -1,5 +1,11 @@
 # Tevin usage — MGR-CREATE-Os
 
+## Current October27 wave2 checkpoint
+
+Current bounded runtime proof: authenticated local document.markdown renders actual Markdown bytes through the existing renderer and persists SQLite jobs/artifacts/audit records. Tevin owner preview/approval/MCP execution and independent artifact readback are proven by central wave2 evidence. Generic11 content factories without real adapters explicitly block;124/124 local tests and TypeScript pass. Product source150/150 read; historical archive is separate.
+
+See [service contracts](SERVICE-WORKFLOWS.md), [repair record](PRODUCT-SOURCE-REPAIRS.md) and [scorecard](../full-build/SCORECARD.md). The following baseline material retains its original historical scope.
+
 ## Use it when
 
 The owner needs this domain: Creation artifacts, versions, rights, production jobs and validation.

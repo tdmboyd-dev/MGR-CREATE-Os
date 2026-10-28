@@ -1,4 +1,10 @@
-# MGR-CREATE-Os â€” AI ecosystem handoff
+# MGR-CREATE-Os - AI ecosystem handoff
+
+## Current October27 wave2 checkpoint
+
+Current bounded runtime proof: authenticated local document.markdown renders actual Markdown bytes through the existing renderer and persists SQLite jobs/artifacts/audit records. Tevin owner preview/approval/MCP execution and independent artifact readback are proven by central wave2 evidence. Generic11 content factories without real adapters explicitly block;124/124 local tests and TypeScript pass. Product source150/150 read; historical archive is separate.
+
+See [service contracts](SERVICE-WORKFLOWS.md), [repair record](PRODUCT-SOURCE-REPAIRS.md) and [scorecard](../full-build/SCORECARD.md). The following baseline material retains its original historical scope.
 
 Baseline: `67a7620b44188c0060f2a48227ab01fb103b544c`. Existing default: `main`. Repository: https://github.com/tdmboyd-dev/MGR-CREATE-Os.
 
