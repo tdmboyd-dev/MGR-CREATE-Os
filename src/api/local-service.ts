@@ -30,7 +30,8 @@ function validate(value:unknown,p:CreationPrincipal):NativeDocumentRequest{
     !Array.isArray(r.acceptanceCriteria)||!r.acceptanceCriteria.length||!r.acceptanceCriteria.every(nonempty)||
     (r.maxCost!==undefined&&(!Number.isFinite(r.maxCost)||r.maxCost!==0))||
     (r.defer!==undefined&&typeof r.defer!=="boolean"))throw new HttpError(400,"Document content, rights declaration and acceptance criteria are required; this native capability has zero provider cost");
-  return structuredClone(r);
+  // Optional caller actor is only an assertion; always persist credential ownership.
+  return structuredClone({...r,input:{...r.input,actorId:p.actorId}});
 }
 async function readJson(req:IncomingMessage){let length=0;const chunks:Buffer[]=[];for await(const c of req){const b=Buffer.from(c);length+=b.length;if(length>1_048_576)throw new HttpError(413,"Request too large");chunks.push(b);}try{return JSON.parse(Buffer.concat(chunks).toString());}catch{throw new HttpError(400,"Invalid JSON");}}
 function json(res:ServerResponse,status:number,body:unknown){res.writeHead(status,{"content-type":"application/json","cache-control":"no-store"});res.end(JSON.stringify(body));}
@@ -46,6 +47,8 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
     UPDATE native_creation_jobs SET status='QUEUED' WHERE status='RUNNING';`);
   const audit=(tenant:string,request:string,event:string)=>db.prepare("INSERT INTO native_creation_audit(tenantId,requestId,event,createdAt) VALUES(?,?,?,?)").run(tenant,request,event,new Date().toISOString());
   const get=(tenant:string,request:string)=>db.prepare("SELECT * FROM native_creation_jobs WHERE tenantId=? AND requestId=?").get(tenant,request) as unknown as Job|undefined;
+  const owns=(job:Job,p:CreationPrincipal)=>JSON.parse(job.spec).input?.actorId===p.actorId;
+  const owned=(p:CreationPrincipal,request:string)=>{const job=get(p.tenantId,request);if(!job||!owns(job,p))throw new HttpError(404,"Job not found");return job;};
   const describe=(job:Job)=>{const artifact=job.artifactId?db.prepare("SELECT id,sha256,size,mime,rightsRefs FROM native_creation_artifacts WHERE id=? AND tenantId=?").get(job.artifactId,job.tenantId):undefined;return {requestId:job.requestId,status:job.status,inputDigest:job.digest,artifactRefs:artifact?[job.artifactId]:[],evidenceRefs:[job.receiptId],artifacts:artifact?[{...artifact,bytes:artifact.size,downloadPath:`/v1/creation/artifacts/${job.artifactId}`}]:[],rightsStatus:"caller-declared; not legal clearance",providerCost:0};};
   const produce=async(tenant:string,request:string)=>{
     let job=get(tenant,request);if(!job)throw new HttpError(404,"Job not found");
@@ -79,18 +82,18 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
       if(req.method==="GET"&&url.pathname==="/health")return json(res,200,{ok:true,service:"mgr-creation-native",capabilities:["document.markdown"],tenantId:p.tenantId,actorId:p.actorId});
       if(req.method==="POST"&&url.pathname==="/v1/creation/jobs"){
         const r=validate(await readJson(req),p);const digest=sha(canonical({...r,defer:undefined}));let job=get(p.tenantId,r.requestId);
-        if(job){if(job.digest!==digest)throw new HttpError(409,"Idempotency input mismatch");return json(res,200,describe(job));}
+        if(job){if(!owns(job,p))throw new HttpError(404,"Job not found");if(job.digest!==digest)throw new HttpError(409,"Idempotency input mismatch");return json(res,200,describe(job));}
         db.prepare("INSERT INTO native_creation_jobs VALUES(?,?,?,?,?,?,?)").run(p.tenantId,r.requestId,"QUEUED",digest,JSON.stringify(r),null,randomUUID());audit(p.tenantId,r.requestId,"job-accepted");
         return json(res,201,r.defer?describe(get(p.tenantId,r.requestId)!):await produce(p.tenantId,r.requestId));
       }
       const route=url.pathname.match(/^\/v1\/creation\/jobs\/([a-zA-Z0-9_.:-]{1,128})(?:\/(run|cancel))?$/);
-      if(route){const job=get(p.tenantId,route[1]);if(!job)throw new HttpError(404,"Job not found");
+      if(route){const job=owned(p,route[1]);
         if(req.method==="GET"&&!route[2])return json(res,200,describe(job));
         if(req.method==="POST"&&route[2]==="run"){if(job.status==="CANCELLED")throw new HttpError(409,"Job cancelled");return json(res,200,await produce(p.tenantId,job.requestId));}
         if(req.method==="POST"&&route[2]==="cancel"){if(job.status==="SUCCEEDED")throw new HttpError(409,"Completed artifact cannot be cancelled");db.prepare("UPDATE native_creation_jobs SET status='CANCELLED' WHERE tenantId=? AND requestId=?").run(p.tenantId,job.requestId);audit(p.tenantId,job.requestId,"cancelled");return json(res,200,describe(get(p.tenantId,job.requestId)!));}
       }
       const artifact=url.pathname.match(/^\/v1\/creation\/artifacts\/([a-zA-Z0-9-]{1,128})$/);
-      if(req.method==="GET"&&artifact){const row=db.prepare("SELECT bytes,mime,sha256 FROM native_creation_artifacts WHERE id=? AND tenantId=?").get(artifact[1],p.tenantId);if(!row)throw new HttpError(404,"Artifact not found");res.writeHead(200,{"content-type":String(row.mime),"x-content-sha256":String(row.sha256),"cache-control":"no-store"});res.end(row.bytes as Uint8Array);return;}
+      if(req.method==="GET"&&artifact){const row=db.prepare("SELECT a.bytes,a.mime,a.sha256 FROM native_creation_artifacts a JOIN native_creation_jobs j ON j.tenantId=a.tenantId AND j.requestId=a.requestId AND j.artifactId=a.id WHERE a.id=? AND a.tenantId=? AND json_extract(j.spec,'$.input.actorId')=?").get(artifact[1],p.tenantId,p.actorId);if(!row)throw new HttpError(404,"Artifact not found");res.writeHead(200,{"content-type":String(row.mime),"x-content-sha256":String(row.sha256),"cache-control":"no-store"});res.end(row.bytes as Uint8Array);return;}
       throw new HttpError(404,"Not found");
     }catch(error){json(res,error instanceof HttpError?error.status:500,{error:error instanceof HttpError?error.message:"Creation operation failed"});}
   });
