@@ -1,0 +1,37 @@
+{
+  "scope": "Relevant complete files; wider source/historical research not freshly fully audited",
+  "files": [
+    {
+      "path": "src/api/local-service.ts",
+      "sha256": "3f45d5a4896bcce64663e9498861932f6f9f9c13673d87761f461ef1587e2ac3"
+    },
+    {
+      "path": "test/native-service-takeover.test.ts",
+      "sha256": "eeccad0fc07a52138c71f918f804ecd42cd024d621450abfc804aefe0046baef"
+    },
+    {
+      "path": "test/native-service.test.ts",
+      "sha256": "6f3c623aa94533c297e0616864884a32580965463ab7ab3f7bb7ef566447d49a"
+    },
+    {
+      "path": "test/native-service-actor-isolation.test.ts",
+      "sha256": "0a467905bf5e261821b9c0fa064d0d0f861f0d86b0b708b901005b94939a31a1"
+    },
+    {
+      "path": "src/documents/markdown-renderer.ts",
+      "sha256": "ceb8ca6daf0e5f6459f5f75d216b76ff6ee4351451b82ff877304e8c70770a0a"
+    },
+    {
+      "path": "src/factories/contracts.ts",
+      "sha256": "014f999ea193c094d0cc816afb879852f1d2b5f492d3dd61c2a441a3543210bd"
+    },
+    {
+      "path": "src/factories/document-factory.ts",
+      "sha256": "5ea6bcdb99ae5f937772c6bc93d0e57b40e9d4f3bdafba82d024787b548672c7"
+    },
+    {
+      "path": "src/factories/media-factory.ts",
+      "sha256": "0eded7390faa0522377b5313f20c0a1f1bf605959e8496a901e9d10f28b11085"
+    }
+  ]
+}

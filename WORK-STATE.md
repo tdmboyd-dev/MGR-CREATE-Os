@@ -47,3 +47,8 @@ No scheduled continuation was created by this recovery.
 
 ## 2026-09-29 Backwards–Forwards research batch
 Research slice installed: research/AVATAR-ASSET-ADMISSION-2026-09-29.md. AssetRegistry, evaluateRules and evidence bundle compared to primary glTF requirements and approved iKickItz legacy decisions. The data/byte integrity and staged admission proof remain open; BuildList and AUDIT-LEDGER updated. No runtime, asset or provider check run.
+
+
+## October 28 restart/producer continuation
+
+Reproduced and repaired stale renderer success/failure overriding a newer accepted document after service restart. Persistent producer tokens now fence publication and failure settlement. TypeScript and126/126 full tests pass; both new adverse cases were red before repair. See evidence/completion-2026-10-28/RESULTS.md. All11 generic factories remain honestly blocked; broader factory/worker/provider work remains unfinished. No UI/3D/paid/production work.

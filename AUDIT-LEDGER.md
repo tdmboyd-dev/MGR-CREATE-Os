@@ -30,3 +30,8 @@ Compared the existing AssetRegistry, continuity rules and evidence bundle with g
 Independent real HTTP/SQLite regression reproduced a same-tenant peer reading another actor's job (HTTP200 instead of404). Root cause: tenant-only job/artifact queries despite credential-bound actors. New requests now persist the authenticated actor even when actorId is omitted, and every job/replay/run/cancel/artifact read requires that stored actor. Preserved legacy rows without authoritative stored actors are inaccessible; no ownership is guessed or automatically reassigned.
 
 Verification: `node --test --import tsx test/native-service.test.ts test/native-service-actor-isolation.test.ts` passes2/2 with actual loopback HTTP and disposable SQLite; `npm run typecheck` passes. Checks include same-tenant peer read/download/replay/run/cancel denial, legitimate owner read, and legacy unbound-row quarantine. Evidence is retained in ecosystem wave2/creation-independent-review-tests.txt. This is an ownership repair to the native document slice, not a whole-repository or production audit.
+
+
+## October 28 restart/producer continuation
+
+Reproduced and repaired stale renderer success/failure overriding a newer accepted document after service restart. Persistent producer tokens now fence publication and failure settlement. TypeScript and126/126 full tests pass; both new adverse cases were red before repair. See evidence/completion-2026-10-28/RESULTS.md. All11 generic factories remain honestly blocked; broader factory/worker/provider work remains unfinished. No UI/3D/paid/production work.

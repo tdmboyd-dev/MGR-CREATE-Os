@@ -1,0 +1,54 @@
+✖ restarted producer fences stale success without replacing accepted artifact (157.0794ms)
+✖ restarted producer fences stale failure without replacing accepted artifact (75.6882ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1821.7485
+
+✖ failing tests:
+
+test at test\native-service-takeover.test.ts:1:491
+✖ restarted producer fences stale success without replacing accepted artifact (157.0794ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+    [
+  +   '945e1b6c-48a4-4428-9aeb-6765f06afdbe'
+  -   'ed756159-f9d1-48c7-8b41-ef13411ca0c9'
+    ]
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-28\files-mentioned-by-the-user-mgr\work\repos\MGR-CREATE-Os\test\native-service-takeover.test.ts:23:124)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ '945e1b6c-48a4-4428-9aeb-6765f06afdbe' ],
+    expected: [ 'ed756159-f9d1-48c7-8b41-ef13411ca0c9' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at test\native-service-takeover.test.ts:1:491
+✖ restarted producer fences stale failure without replacing accepted artifact (75.6882ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + 'FAILED'
+  - 'SUCCEEDED'
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-28\files-mentioned-by-the-user-mgr\work\repos\MGR-CREATE-Os\test\native-service-takeover.test.ts:23:85)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAILED',
+    expected: 'SUCCEEDED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

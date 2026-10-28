@@ -1,0 +1,11 @@
+# Native Creation restart ownership repair — October 28, 2026
+
+Preserved audit baseline a3e4725 on repair/completion-2026-10-28. Before implementation the existing AI/HUMAN handoffs, product-source repair record, service source, factory contracts, WORK-STATE and Jev entry were inspected; the BEAST contract matches the previously read API-MCP contract after line-ending normalization. No UI or 3D work performed.
+
+Two real HTTP/SQLite adverse interleavings reproduced: opening a second service requeues an unfinished renderer; the stale renderer could then replace the newer accepted artifact, or its late failure could change a completed job to FAILED. Both new regressions failed against the original source. They use a deliberately held renderer callback with real service/database/artifact code and authored fixture Markdown; no external provider claim.
+
+A per-production random token is now stored on each claimed job. Restart clears old production authority, and artifact publication/failure settlement require the exact current RUNNING token. Stale success returns the current accepted result; stale failure cannot alter another producer's result or append its failure event. The existing deterministic local renderer can be restarted; this is not an automatic retry policy for remote/paid providers. A transaction-safe startup migration adds the nullable token to old databases; explicit INSERT columns preserve old-schema compatibility.
+
+TypeScript passed. Full current suite126/126 passed, including existing native service, actor/tenant, replay, cancellation and reopen tests, plus both stale-producer cases. Exact accepted artifact identity and one artifact/production event are checked. Disposal closes owned servers/databases and removes only synthetic fixture directories.
+
+Eleven generic factories remain BLOCKED until real adapters exist. Existing Markdown production is the actual qualified lane; no fabricated factory output was re-enabled. Remaining factory implementations, durable general jobs/approval leases/provider reconciliation, rights, independent output quality and production operations stay open. No customer database, paid inference, media asset, signing or deployment was used.

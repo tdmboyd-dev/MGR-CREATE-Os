@@ -168,3 +168,8 @@ Do not delete the MGR Agents implementation until compatibility and migration ar
 - Research stronger working/open workflow examples for each factory.
 - Maintain status: QUEUED / RESEARCHED / SPECIFIED / IMPLEMENTED / TESTED / VERIFIED.
 - Maintain scorecard: before, current, evidence, blockers, next steps to 100%.
+
+
+## October 28 restart/producer continuation
+
+Reproduced and repaired stale renderer success/failure overriding a newer accepted document after service restart. Persistent producer tokens now fence publication and failure settlement. TypeScript and126/126 full tests pass; both new adverse cases were red before repair. See evidence/completion-2026-10-28/RESULTS.md. All11 generic factories remain honestly blocked; broader factory/worker/provider work remains unfinished. No UI/3D/paid/production work.

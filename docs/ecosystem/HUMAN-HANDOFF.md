@@ -41,3 +41,8 @@ This is a proposed improvement and measurement target, not a claimed 100x result
 Use the existing repository work order, handoff, queues and canonical scorecard first. This packet adds ecosystem context. No main-branch merge, production deployment, live trade, message delivery, signature, paid generation or physical-device acceptance is implied. Preserve domain data; a source revert cannot undo an external effect. Full semantic reading of every repository file is not claimed by this handoff.
 
 See [AI handoff](AI-HANDOFF.md) and [Tevin usage](TEVIN-USAGE.md).
+
+
+## October 28 restart/producer continuation
+
+Reproduced and repaired stale renderer success/failure overriding a newer accepted document after service restart. Persistent producer tokens now fence publication and failure settlement. TypeScript and126/126 full tests pass; both new adverse cases were red before repair. See evidence/completion-2026-10-28/RESULTS.md. All11 generic factories remain honestly blocked; broader factory/worker/provider work remains unfinished. No UI/3D/paid/production work.

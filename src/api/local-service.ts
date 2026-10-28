@@ -12,7 +12,7 @@ export interface NativeDocumentRequest {
   input:{actorId?:string;correlationId?:string;payload:{title:string;sections:{heading:string;body:string}[];rightsRefs:string[]}};
   acceptanceCriteria:string[];maxCost?:number;defer?:boolean;
 }
-type Job={requestId:string;tenantId:string;status:string;digest:string;spec:string;artifactId:string|null;receiptId:string};
+type Job={requestId:string;tenantId:string;status:string;digest:string;spec:string;artifactId:string|null;receiptId:string;producerToken:string|null};
 const canonical=(x:unknown):string=>x!==null&&typeof x==="object"?(Array.isArray(x)?`[${x.map(canonical).join(",")}]`:`{${Object.entries(x).filter(([,v])=>v!==undefined).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>JSON.stringify(k)+":"+canonical(v)).join(",")}}`):JSON.stringify(x);
 const sha=(x:string|Uint8Array)=>createHash("sha256").update(x).digest("hex");
 const nonempty=(x:unknown):x is string=>typeof x==="string"&&x.trim().length>0;
@@ -43,8 +43,14 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
   db.exec(`PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;
     CREATE TABLE IF NOT EXISTS native_creation_jobs(tenantId TEXT NOT NULL,requestId TEXT NOT NULL,status TEXT NOT NULL,digest TEXT NOT NULL,spec TEXT NOT NULL,artifactId TEXT,receiptId TEXT NOT NULL,PRIMARY KEY(tenantId,requestId));
     CREATE TABLE IF NOT EXISTS native_creation_artifacts(id TEXT PRIMARY KEY,tenantId TEXT NOT NULL,requestId TEXT NOT NULL,bytes BLOB NOT NULL,sha256 TEXT NOT NULL,size INTEGER NOT NULL,mime TEXT NOT NULL,rightsRefs TEXT NOT NULL);
-    CREATE TABLE IF NOT EXISTS native_creation_audit(id INTEGER PRIMARY KEY,tenantId TEXT NOT NULL,requestId TEXT NOT NULL,event TEXT NOT NULL,createdAt TEXT NOT NULL);
-    UPDATE native_creation_jobs SET status='QUEUED' WHERE status='RUNNING';`);
+    CREATE TABLE IF NOT EXISTS native_creation_audit(id INTEGER PRIMARY KEY,tenantId TEXT NOT NULL,requestId TEXT NOT NULL,event TEXT NOT NULL,createdAt TEXT NOT NULL);`);
+  // Native Markdown is deterministic local rendering. Restart may safely reclaim
+  // unfinished work, but every prior producer must lose publication authority.
+  db.exec('BEGIN IMMEDIATE');
+  try{
+    if(!db.prepare('PRAGMA table_info(native_creation_jobs)').all().some(row=>row.name==='producerToken'))db.exec('ALTER TABLE native_creation_jobs ADD COLUMN producerToken TEXT');
+    db.exec("UPDATE native_creation_jobs SET status='QUEUED',producerToken=NULL WHERE status='RUNNING'; COMMIT;");
+  }catch(error){db.exec('ROLLBACK');db.close();throw error;}
   const audit=(tenant:string,request:string,event:string)=>db.prepare("INSERT INTO native_creation_audit(tenantId,requestId,event,createdAt) VALUES(?,?,?,?)").run(tenant,request,event,new Date().toISOString());
   const get=(tenant:string,request:string)=>db.prepare("SELECT * FROM native_creation_jobs WHERE tenantId=? AND requestId=?").get(tenant,request) as unknown as Job|undefined;
   const owns=(job:Job,p:CreationPrincipal)=>JSON.parse(job.spec).input?.actorId===p.actorId;
@@ -53,7 +59,8 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
   const produce=async(tenant:string,request:string)=>{
     let job=get(tenant,request);if(!job)throw new HttpError(404,"Job not found");
     if(job.status!=="QUEUED")return describe(job);
-    const claimed=db.prepare("UPDATE native_creation_jobs SET status='RUNNING' WHERE tenantId=? AND requestId=? AND status='QUEUED'").run(tenant,request);
+    const producerToken=randomUUID();
+    const claimed=db.prepare("UPDATE native_creation_jobs SET status='RUNNING',producerToken=? WHERE tenantId=? AND requestId=? AND status='QUEUED'").run(producerToken,tenant,request);
     if(!claimed.changes)return describe(get(tenant,request)!);
     const spec=JSON.parse(job.spec) as NativeDocumentRequest;
     try{
@@ -62,12 +69,12 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
       db.exec("BEGIN IMMEDIATE");
       try{
         job=get(tenant,request)!;
-        if(job.status==="CANCELLED"){db.exec("COMMIT");return describe(job);}
+        if(job.status!=="RUNNING"||job.producerToken!==producerToken){db.exec("COMMIT");return describe(job);}
         const artifactId=randomUUID();
         db.prepare("INSERT INTO native_creation_artifacts VALUES(?,?,?,?,?,?,?,?)").run(artifactId,tenant,request,bytes,sha(bytes),bytes.length,rendered.mime,JSON.stringify(spec.input.payload.rightsRefs));
         db.prepare("UPDATE native_creation_jobs SET status='SUCCEEDED',artifactId=? WHERE tenantId=? AND requestId=?").run(artifactId,tenant,request);audit(tenant,request,"artifact-produced");db.exec("COMMIT");
       }catch(error){db.exec("ROLLBACK");throw error;}
-    }catch(error){db.prepare("UPDATE native_creation_jobs SET status='FAILED' WHERE tenantId=? AND requestId=? AND status!='CANCELLED'").run(tenant,request);audit(tenant,request,"renderer-failed");throw error;}
+    }catch(error){const failed=db.prepare("UPDATE native_creation_jobs SET status='FAILED' WHERE tenantId=? AND requestId=? AND status='RUNNING' AND producerToken=?").run(tenant,request,producerToken);if(failed.changes)audit(tenant,request,"renderer-failed");throw error;}
     return describe(get(tenant,request)!);
   };
   const server=createServer(async(req,res)=>{
@@ -83,7 +90,7 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
       if(req.method==="POST"&&url.pathname==="/v1/creation/jobs"){
         const r=validate(await readJson(req),p);const digest=sha(canonical({...r,defer:undefined}));let job=get(p.tenantId,r.requestId);
         if(job){if(!owns(job,p))throw new HttpError(404,"Job not found");if(job.digest!==digest)throw new HttpError(409,"Idempotency input mismatch");return json(res,200,describe(job));}
-        db.prepare("INSERT INTO native_creation_jobs VALUES(?,?,?,?,?,?,?)").run(p.tenantId,r.requestId,"QUEUED",digest,JSON.stringify(r),null,randomUUID());audit(p.tenantId,r.requestId,"job-accepted");
+        db.prepare("INSERT INTO native_creation_jobs(tenantId,requestId,status,digest,spec,artifactId,receiptId) VALUES(?,?,?,?,?,?,?)").run(p.tenantId,r.requestId,"QUEUED",digest,JSON.stringify(r),null,randomUUID());audit(p.tenantId,r.requestId,"job-accepted");
         return json(res,201,r.defer?describe(get(p.tenantId,r.requestId)!):await produce(p.tenantId,r.requestId));
       }
       const route=url.pathname.match(/^\/v1\/creation\/jobs\/([a-zA-Z0-9_.:-]{1,128})(?:\/(run|cancel))?$/);
