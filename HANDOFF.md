@@ -1,5 +1,11 @@
 # MGR Creation OS — Canonical Handoff
 
+## Forge master-program continuity reference — 2026-10-31
+
+Creation OS remains a standalone optional multi-factory orchestrator, not a prerequisite for basic 3D work. Full Forge plan: https://github.com/tdmboyd-dev/MGR-3D-FORGE/blob/main/docs/MASTER-FORGE-PROGRAM-2026-10-31.md . Forge target registry: https://github.com/tdmboyd-dev/MGR-3D-FORGE/blob/main/research/external-provenance/BEAST-3D-RESEARCH-UNIVERSE-2026-10-31.json (184 queued investigations, not 184 completed reverse-engineering reports). Forge HANDOFF.md and this separate HANDOFF.md each remain the one live authority for their own product. Creation OS must consume genuine Forge artifact/verification receipts through existing MGR API/MCP, not rebuild its own 3D engine, asset vault or REA X-Ray backend. Hosted integration remains OPEN.
+
+
+
 **Current checkpoint:** 2026-10-31, clean GitHub `main` checkout; remote baseline `67a7620b44188c0060f2a48227ab01fb103b544c`. This is the **one living handoff for Creation OS**. `WORK-STATE.md` is a historic work ledger, not another current authority.
 
 ## What this product actually is
