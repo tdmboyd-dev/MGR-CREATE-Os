@@ -1,3 +1,12 @@
+## 2026-10-31 — optional independent Creation OS / Forge coordination
+
+- [x] Retain separate standalone Forge, Creation OS and shared API/MCP responsibilities; direct Forge calls must not pass through Creation OS.
+- [x] Block unsupported default MediaFactory fake `SUCCEEDED` outcomes for IMAGE, VIDEO, AUDIO and 3D until actual output receipts exist.
+- [ ] Build and verify actual multi-factory Creation OS → authenticated MGR API/MCP → Forge job with original geometry, stable ID, cost/rights/tenant gates, artifact hash and independent Blender/target engine acceptance.
+- [ ] Implement actual media backend providers and output verifiers for other formats, avoiding false success.
+- [ ] Do not duplicate Forge's kit vault, native imagination engine or optional GPU model weights in Creation OS.
+
+
 # MGR Creation OS — Master Build Queue
 
 This file intentionally preserves the complete direction rather than reducing it to a short roadmap.

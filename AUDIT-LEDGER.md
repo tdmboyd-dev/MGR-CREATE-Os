@@ -1,3 +1,10 @@
+## 2026-10-31 — Forge bridge architecture + false media completion correction
+
+- Creation OS is a standalone cross-factory coordinator, not required to make Tevin or other clients use MGR 3D Forge. The existing MGR API/MCP owns tool/auth transport; Forge owns 3D geometry, vault and jobs.
+- **Defect repaired for ALL default media types:** `MediaFactory` previously returned `SUCCEEDED` with a synthetic `media_<digest>` reference for IMAGE/VIDEO/AUDIO/3D. Now all default media requests `BLOCKED` until a real output provider and independent file verification are built; no missing asset is presented as a finished user deliverable. Malformed inputs fail closed.
+- Test `test/media-forge-boundary.test.ts` checks fake-image/3D success denial. Existing 12 factory registrations are not 12 fully verified products. `HANDOFF.md` remains this repo's sole current resume authority.
+
+
 # Legacy Verification Ledger
 
 Legacy code copied from MGR Agents is evidence only.

@@ -1,3 +1,5 @@
+**2026-10-31 current resume authority: `HANDOFF.md`. All dated 2026-09-29 claims below are historical and do not supersede current code/test evidence.
+
 # Current work and resume record — MGR-CREATE-Os
 
 Updated: 2026-09-29. Responsible session: continuity-recovery-2026-09-29.
