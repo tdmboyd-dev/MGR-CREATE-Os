@@ -1,5 +1,12 @@
 ## Accepted stage outputs and six-path native project qualification — November1,2026
 
+## Native identifier compatibility repair — November1,2026
+
+Accepted native IDs containing colon/underscore/dot now reconcile exactly; literal dot segments use authenticated body lookup/control rather than normalized URL paths. Legacy SignMe document IDs remain readable/revisable; unsafe encodings/versions and foreign owners are denied. Existing shared edge probes native compatibility before affected writes and rechecks current owner authority after the probe. Original ledgers/IDs/approvals are retained. Creation repeated cancellation no longer appends a duplicate cancellation event.
+
+Executed scopes: native SignMe35/35, Creation265/265, shared edge324/324, affected ONE27/27; zero skips. Seven changed source/test hashes unchanged. See [exact report](evidence/native-identifier-recovery-2026-11-01/REPORT.md). This resolves the prior pending valid-ID reproduction instruction. Exact-source permanent activation remains pending, separate from fixture acceptance. Full original product/UI/provider/signing/production/source/cost scope remains active/Unassessed.
+
+
 ## Permanent SignMe owner acceptance — November1,2026
 
 Published/fetched/adopted sources ONE8be0b9f, shared edge revision b07a1e6; Creation revision 0af2d43; SignMe revision 14b1cb0 are active through the normal owner launcher. Two consistent SQLite backups passed quick_check; SignMe's dedicated domain file was absent before enrollment. Startup preserved all34old execution effects, prior native Creation/Forge state, all7old artifacts and private configuration. Native SignMe starts with a local no-password service actor, not a browser/customer account, and reopening does not provision actors.

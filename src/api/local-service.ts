@@ -19,6 +19,7 @@ const wellFormed=(x:string)=>!/[\uD800-\uDFFF]/u.test(x);
 const nonempty=(x:unknown):x is string=>typeof x==="string"&&x.trim().length>0&&wellFormed(x);
 const id=(x:unknown):x is string=>typeof x==="string"&&/^[a-zA-Z0-9_.:-]{1,128}$/.test(x);
 class HttpError extends Error {constructor(readonly status:number,message:string){super(message);}}
+const pathId=(value:string)=>{let decoded:string;try{decoded=decodeURIComponent(value);}catch{throw new HttpError(400,"Invalid resource identifier encoding");}if(!id(decoded))throw new HttpError(400,"Invalid resource identifier");return decoded;};
 function validate(value:unknown,p:CreationPrincipal):NativeDocumentRequest{
   if(!value||typeof value!=="object"||Array.isArray(value))throw new HttpError(400,"Invalid creation request");
   const r=value as NativeDocumentRequest;
@@ -81,6 +82,13 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
     }catch(error){const failed=db.prepare("UPDATE native_creation_jobs SET status='FAILED' WHERE tenantId=? AND requestId=? AND status='RUNNING' AND producerToken=?").run(tenant,request,producerToken);if(failed.changes)audit(tenant,request,"renderer-failed");throw error;}
     return describe(get(tenant,request)!);
   };
+  const control=async(p:CreationPrincipal,request:string,action:'run'|'cancel')=>{
+    const job=owned(p,request);
+    if(action==='run'){if(job.status==='CANCELLED')throw new HttpError(409,'Job cancelled');return produce(p.tenantId,job.requestId);}
+    if(job.status==='SUCCEEDED')throw new HttpError(409,'Completed artifact cannot be cancelled');
+    if(job.status==='CANCELLED')return describe(job);
+    db.prepare("UPDATE native_creation_jobs SET status='CANCELLED' WHERE tenantId=? AND requestId=?").run(p.tenantId,job.requestId);audit(p.tenantId,job.requestId,'cancelled');return describe(get(p.tenantId,job.requestId)!);
+  };
   const server=createServer(async(req,res)=>{
     try{
       if(req.headers.origin)throw new HttpError(403,"Browser origins are not admitted to this service boundary");
@@ -90,18 +98,24 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
       if(!p)throw new HttpError(401,"Unauthorized");
       if((req.headers["x-tenant-id"]!==undefined&&req.headers["x-tenant-id"]!==p.tenantId)||(req.headers["x-actor-id"]!==undefined&&req.headers["x-actor-id"]!==p.actorId))throw new HttpError(403,"Identity mismatch");
       const url=new URL(req.url??"/","http://localhost");
-      if(req.method==="GET"&&url.pathname==="/health")return json(res,200,{ok:true,service:"mgr-creation-native",capabilities:["document.markdown"],tenantId:p.tenantId,actorId:p.actorId});
+      if(req.method==="GET"&&url.pathname==="/health")return json(res,200,{ok:true,service:"mgr-creation-native",capabilities:["document.markdown"],identifierLookupVersion:1,tenantId:p.tenantId,actorId:p.actorId});
+      // Dot-segment IDs require a body channel: URL implementations normalize
+      // them before transmission. No identity rewriting or new job dispatch.
+      if(req.method==='POST'&&['/v1/creation/jobs/read','/v1/creation/jobs/control'].includes(url.pathname)){
+        const value=await readJson(req),input=value as {requestId:string;action?:'run'|'cancel'},isControl=url.pathname.endsWith('/control');
+        if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).sort().join(',')!==(isControl?'action,requestId':'requestId')||!id(input.requestId)||isControl&&!['run','cancel'].includes(input.action!))throw new HttpError(400,'Invalid scoped job lookup/control');
+        return json(res,200,isControl?await control(p,input.requestId,input.action!):describe(owned(p,input.requestId)));
+      }
       if(req.method==="POST"&&url.pathname==="/v1/creation/jobs"){
         const r=validate(await readJson(req),p);const digest=sha(canonical({...r,defer:undefined}));let job=get(p.tenantId,r.requestId);
         if(job){if(!owns(job,p))throw new HttpError(404,"Job not found");if(job.digest!==digest)throw new HttpError(409,"Idempotency input mismatch");return json(res,200,describe(job));}
         db.prepare("INSERT INTO native_creation_jobs(tenantId,requestId,status,digest,spec,artifactId,receiptId) VALUES(?,?,?,?,?,?,?)").run(p.tenantId,r.requestId,"QUEUED",digest,JSON.stringify(r),null,randomUUID());audit(p.tenantId,r.requestId,"job-accepted");
         return json(res,201,r.defer?describe(get(p.tenantId,r.requestId)!):await produce(p.tenantId,r.requestId));
       }
-      const route=url.pathname.match(/^\/v1\/creation\/jobs\/([a-zA-Z0-9_.:-]{1,128})(?:\/(run|cancel))?$/);
-      if(route){const job=owned(p,route[1]);
-        if(req.method==="GET"&&!route[2])return json(res,200,describe(job));
-        if(req.method==="POST"&&route[2]==="run"){if(job.status==="CANCELLED")throw new HttpError(409,"Job cancelled");return json(res,200,await produce(p.tenantId,job.requestId));}
-        if(req.method==="POST"&&route[2]==="cancel"){if(job.status==="SUCCEEDED")throw new HttpError(409,"Completed artifact cannot be cancelled");db.prepare("UPDATE native_creation_jobs SET status='CANCELLED' WHERE tenantId=? AND requestId=?").run(p.tenantId,job.requestId);audit(p.tenantId,job.requestId,"cancelled");return json(res,200,describe(get(p.tenantId,job.requestId)!));}
+      const route=url.pathname.match(/^\/v1\/creation\/jobs\/([^/]{1,384})(?:\/(run|cancel))?$/);
+      if(route){const request=pathId(route[1]);
+        if(req.method==='GET'&&!route[2])return json(res,200,describe(owned(p,request)));
+        if(req.method==='POST'&&(route[2]==='run'||route[2]==='cancel'))return json(res,200,await control(p,request,route[2]));
       }
       const artifact=url.pathname.match(/^\/v1\/creation\/artifacts\/([a-zA-Z0-9-]{1,128})$/);
       if(req.method==="GET"&&artifact){const row=db.prepare("SELECT a.bytes,a.mime,a.sha256 FROM native_creation_artifacts a JOIN native_creation_jobs j ON j.tenantId=a.tenantId AND j.requestId=a.requestId AND j.artifactId=a.id WHERE a.id=? AND a.tenantId=? AND json_extract(j.spec,'$.input.actorId')=?").get(artifact[1],p.tenantId,p.actorId);if(!row)throw new HttpError(404,"Artifact not found");res.writeHead(200,{"content-type":String(row.mime),"x-content-sha256":String(row.sha256),"cache-control":"no-store"});res.end(row.bytes as Uint8Array);return;}
