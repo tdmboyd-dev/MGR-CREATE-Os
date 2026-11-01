@@ -26,6 +26,7 @@ export interface Factory {
     execute(req: FactoryRequest): Promise<FactoryResult>;
 }
 export interface RecoverableFactory extends Factory {
+    readArtifactText?(requestId:string,artifactRef:string):Promise<string>;
     reconcile(req: FactoryRequest, options?: {
         dispatchAllowed: boolean;
     }): Promise<FactoryResult>;

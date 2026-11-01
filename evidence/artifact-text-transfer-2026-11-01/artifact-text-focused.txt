@@ -1,0 +1,43 @@
+✔ exact Unicode text resolves from accepted direct dependency once per attempt (3.7643ms)
+✔ unsupported accepted text fails before consumer resolution: 0 (0.851ms)
+✔ unsupported accepted text fails before consumer resolution: 2 (0.3585ms)
+✔ unsupported accepted text fails before consumer resolution: 10001 (0.324ms)
+✔ unsupported accepted text fails before consumer resolution: 1 (0.3144ms)
+✔ repeated accepted text expansion is bounded by existing command input limit (3.9556ms)
+✔ text selector cannot read undeclared or unaccepted source (1.001ms)
+✔ resolved exact content and plan survive SQLite reopen with original consumer identity (147.4742ms)
+✔ missing producer text reader records known input failure without consumer action (82.4002ms)
+✖ cancel while accepted text read is held prevents consumer action (74.8255ms)
+✔ close while accepted text read is held prevents consumer action (66.2533ms)
+✔ native receiving reuses exact original Markdown verification with zero preview or execute (2.4074ms)
+✔ native text receiving rejects changed actor (0.6341ms)
+✔ native text receiving rejects changed workspace (0.2346ms)
+✔ native text receiving rejects changed hash (0.4101ms)
+✔ native text receiving rejects changed bytes (0.495ms)
+✔ native text receiving rejects changed state (0.2874ms)
+✔ native text receiving rejects changed reference (0.4077ms)
+✔ authority withdrawn during the accepted text read denies its return (0.5377ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 18
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1343.2305
+
+✖ failing tests:
+
+test at test\artifact-text.test.ts:1:5386
+✖ cancel while accepted text read is held prevents consumer action (74.8255ms)
+  Error: project not running
+      at <anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\persistence\sqlite.ts:256:23)
+      at SqliteCreationRepository.tx (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\persistence\sqlite.ts:78:27)
+      at SqliteCreationRepository.claim (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\persistence\sqlite.ts:253:21)
+      at Object.execute (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\api\durable-objectives.ts:117:85)
+      at async ObjectiveOrchestrator.execute (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\objectives\orchestrator.ts:124:53)
+      at async DurableObjectiveService.advance (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\api\durable-objectives.ts:134:9)
+      at async DurableObjectiveService.resume (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\src\api\durable-objectives.ts:39:32)
+      at async TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-artifact-text\test\artifact-text.test.ts:15:766)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

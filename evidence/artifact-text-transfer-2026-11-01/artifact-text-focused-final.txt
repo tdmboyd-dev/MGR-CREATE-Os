@@ -1,0 +1,27 @@
+✔ exact Unicode text resolves from accepted direct dependency once per attempt (4.2772ms)
+✔ unsupported accepted text fails before consumer resolution: 0 (1.1836ms)
+✔ unsupported accepted text fails before consumer resolution: 2 (0.9135ms)
+✔ unsupported accepted text fails before consumer resolution: 10001 (0.456ms)
+✔ unsupported accepted text fails before consumer resolution: 1 (0.3828ms)
+✔ repeated accepted text expansion is bounded by existing command input limit (5.1352ms)
+✔ text selector cannot read undeclared or unaccepted source (0.9448ms)
+✔ resolved exact content and plan survive SQLite reopen with original consumer identity (125.4204ms)
+✔ missing producer text reader records known input failure without consumer action (75.5173ms)
+✔ cancel while accepted text read is held prevents consumer action (71.9697ms)
+✔ close while accepted text read is held prevents consumer action (59.8756ms)
+✔ native receiving reuses exact original Markdown verification with zero preview or execute (2.2351ms)
+✔ native text receiving rejects changed actor (0.4676ms)
+✔ native text receiving rejects changed workspace (0.2674ms)
+✔ native text receiving rejects changed hash (0.3693ms)
+✔ native text receiving rejects changed bytes (0.3794ms)
+✔ native text receiving rejects changed state (0.2939ms)
+✔ native text receiving rejects changed reference (0.4527ms)
+✔ authority withdrawn during the accepted text read denies its return (0.5584ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 894.099

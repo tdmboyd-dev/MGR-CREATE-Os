@@ -1,0 +1,14 @@
+{"actualOwnerHTTP":true,"nativeDocuments":2,"originalEffects":2,"projectAndArtifactReopen":true,"retirementBlockedForActiveCompletedAndDisabled":true,"modelCalls":0}
+✔ actual owner API -> project prepare/approval/native files -> retained child -> all-host restart (14652.652ms)
+✔ project APIs reject a changed plan, selected business and unknown extra inputs (3110.351ms)
+{"injectedModelRounds":5,"actualProjectPlanAndStatus":true,"nativeApprovals":0,"nativeDispatches":0,"liveModel":false}
+✔ conversation proposal and checkpoint reads use actual project persistence without approving or executing native actions (4022.2486ms)
+✔ retirement approval/apply recheck later project custody and preserve the original result (3454.9724ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31183.7266

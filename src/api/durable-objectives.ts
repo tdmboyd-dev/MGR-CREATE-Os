@@ -3,7 +3,7 @@ import type { FactoryRequest, FactoryResult, RecoverableFactory } from '../facto
 import { FactoryRegistry } from '../factories/registry.js';
 import { ObjectiveOrchestrator, checkedFactoryResult, type ObjectivePlan } from '../objectives/orchestrator.js';
 import { SqliteCreationRepository, type ProjectSnapshot } from '../persistence/sqlite.js';
-import { resolveStageOutputReferences, StageOutputUnavailable } from '../objectives/stage-outputs.js';
+import { resolveStageOutputReferencesAsync, StageOutputUnavailable } from '../objectives/stage-outputs.js';
 /** Reuses the existing graph scheduler and scoped domain project/stage storage.
  * Factories own native execution/reconciliation; project state grants no action.
  */
@@ -16,6 +16,7 @@ export interface DurableProjectView extends ProjectSnapshot {
 }
 export class DurableObjectiveService {
     readonly stageOutputReferenceVersion = 1;
+    readonly artifactTextReferenceVersion = 1;
     private active = new Map<string, Promise<DurableProjectView>>();
     private closed = false;
     constructor(private repo: SqliteCreationRepository, private factories: FactoryRegistry) { }
@@ -73,8 +74,8 @@ export class DurableObjectiveService {
                         return c.result ?? { requestId: req.id, kind: req.kind, status: 'FAILED', artifactRefs: [], evidenceRefs: [], blockers: ['project stage cancelled before dispatch'] };
                     if (this.closed)
                         return c.result ?? { requestId: req.id, kind: req.kind, status: 'BLOCKED', artifactRefs: [], evidenceRefs: [], blockers: ['Project host is quiescing; this stage was not dispatched.'], checkpoint: { state: c.started ? 'UNKNOWN' : 'WAITING_RESOURCE', operationRef: req.id } };
-                    const cancelling = current.run.status === 'CANCELLING';
-                    const failureDrain = current.stages.some(s => s.status === 'FAILED');
+                    let cancelling = current.run.status === 'CANCELLING';
+                    let failureDrain = current.stages.some(s => s.status === 'FAILED');
                     if (failureDrain && !c.started) {
                         this.repo.haltUnstarted(runId);
                         return { requestId: req.id, kind: req.kind, status: 'FAILED', artifactRefs: [], evidenceRefs: [], blockers: ['A sibling failed; no new project stage was dispatched.'] };
@@ -85,10 +86,17 @@ export class DurableObjectiveService {
                     // this stage. Reopening reproduces the same exact owner command.
                     let resolved: FactoryRequest;
                     try {
-                        resolved = { ...req, inputs: resolveStageOutputReferences(current.plan, stage.stageKey, key => {
+                        resolved = { ...req, inputs: await resolveStageOutputReferencesAsync(current.plan, stage.stageKey, key => {
                             const source = current.stages.find(s => s.stageKey === key);
                             if (!source) throw Error('stage output dependency not found');
                             return { ...this.repo.checkpoint(runId, key), status: source.status };
+                        },async(key,requestId,artifactRef)=>{
+                            const source=current.plan.workstreams.find(w=>w.id===key),producer=source&&originals.get(source.factory);
+                            if(typeof producer?.readArtifactText!=='function')throw new StageOutputUnavailable('source factory does not expose verified artifact text');
+                            const text=await producer.readArtifactText(requestId,artifactRef);
+                            const latest=this.repo.readObjective(runId),saved=this.repo.checkpoint(runId,key);
+                            if(latest.stages.find(s=>s.stageKey===key)?.status!=='SUCCEEDED'||saved.requestId!==requestId||saved.result?.status!=='SUCCEEDED'||!saved.result.artifactRefs.includes(artifactRef))throw Error('accepted source changed during artifact read');
+                            return text;
                         }) };
                     } catch (error) {
                         // A legitimately absent selected output is a known input
@@ -100,6 +108,13 @@ export class DurableObjectiveService {
                         this.repo.settle(runId, stage.stageKey, claim, failed);
                         return failed;
                     }
+                    // Text reads can suspend. Recheck close/cancellation/failure
+                    // before any original producer claim or native preview.
+                    if(this.closed)throw Error('Project host quiesced before resolved stage claim');
+                    const latest=this.repo.readObjective(runId);
+                    cancelling=latest.run.status==='CANCELLING';failureDrain=latest.stages.some(s=>s.status==='FAILED');c=this.repo.checkpoint(runId,stage.stageKey);
+                    if(['COMPLETED','FAILED','CANCELLED'].includes(latest.run.status)||['SUCCEEDED','FAILED','CANCELLED'].includes(latest.stages.find(s=>s.stageKey===stage.stageKey)?.status??''))return c.result??{requestId:req.id,kind:req.kind,status:'FAILED',artifactRefs:[],evidenceRefs:[],blockers:['Project or consumer stage became terminal during dependency read.']};
+                    if((cancelling||failureDrain)&&!c.started){this.repo.haltUnstarted(runId);return{requestId:req.id,kind:req.kind,status:'FAILED',artifactRefs:[],evidenceRefs:[],blockers:['Project cancellation or sibling failure prevented the resolved consumer action.']};}
                     const claim = cancelling ? { ...c, claimed: false } : this.repo.claim(runId, stage.stageKey);
                     c = claim;
                     let result: FactoryResult;

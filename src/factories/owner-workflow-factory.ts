@@ -4,6 +4,7 @@ import type { FactoryKind, FactoryRequest, FactoryResult, RecoverableFactory } f
 import type { ProjectPrincipal } from '../persistence/sqlite.js';
 import { sha256Canonical } from '../core/digest.js';
 import { MarkdownRenderer } from '../documents/markdown-renderer.js';
+import { StageOutputUnavailable } from '../objectives/stage-outputs.js';
 export interface OwnerWorkflowBridge {
     readonly tenantId: string;
     readonly actorId: string;
@@ -69,6 +70,10 @@ export class OwnerWorkflowFactory implements RecoverableFactory {
             return this.waiting(req, p.state === 'unknown' ? 'UNKNOWN' : 'WAITING_RESOURCE', 'Original native operation is ' + p.state + '; reconcile it without creating another request.');
         if (['failed', 'cancelled'].includes(p.state))
             return { requestId: req.id, kind: this.kind, status: 'FAILED', artifactRefs: [], evidenceRefs: ['ecosystem:' + req.id], blockers: ['Original owner workflow ' + p.state] };
+        const {a}=await this.verifiedArtifact(req,command,p);
+        return { requestId: req.id, kind: this.kind, status: 'SUCCEEDED', artifactRefs: ['mgr-workflow:' + req.id + ':sha256:' + a.sha256], evidenceRefs: ['ecosystem:' + req.id, ...(id(p.jobId) ? ['job:' + p.jobId] : [])] };
+    }
+    private async verifiedArtifact(req:FactoryRequest,command:any,p:any){
         const a = await this.call('artifact', req.id);
         if (!record(a) || typeof a.contentBase64 !== 'string' || a.contentBase64.length > 12000000 || !Number.isSafeInteger(a.bytes) || a.bytes < 1 || typeof a.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(a.sha256))
             throw Error('original artifact unavailable');
@@ -91,7 +96,26 @@ export class OwnerWorkflowFactory implements RecoverableFactory {
             if (!bytes.equals(Buffer.from(expected.bytes)) || !String(a.mediaType).startsWith('text/markdown'))
                 throw Error('native document exact-text proof missing');
         }
-        return { requestId: req.id, kind: this.kind, status: 'SUCCEEDED', artifactRefs: ['mgr-workflow:' + req.id + ':sha256:' + a.sha256], evidenceRefs: ['ecosystem:' + req.id, ...(id(p.jobId) ? ['job:' + p.jobId] : [])] };
+        return{a,bytes};
+    }
+    /** Read-only original-owner text receiving. No preview/execute/approval and
+     * no file path, URL or arbitrary receipt field can select content here.
+     */
+    async readArtifactText(requestId:string,artifactRef:string):Promise<string>{
+        this.current();if(this.kind!=='DOCUMENT')throw new StageOutputUnavailable('source factory does not produce accepted native text');
+        const prefix='mgr-workflow:'+requestId+':sha256:';
+        if(!id(requestId)||typeof artifactRef!=='string'||!artifactRef.startsWith(prefix)||!/^[a-f0-9]{64}$/.test(artifactRef.slice(prefix.length)))throw Error('accepted artifact reference mismatch');
+        const p=await this.call('status',requestId);
+        if(!record(p)||!record(p.command))throw Error('original accepted text workflow unavailable');
+        const req:FactoryRequest={id:requestId,kind:this.kind,tenantId:this.principal.tenantId,workspaceId:this.principal.workspaceId,inputs:{operation:p.command.operation,input:p.command.input},budget:0,acceptanceCriteria:['Original accepted artifact text']};
+        const command=this.command(req);this.bound(req,command,p);
+        if(p.state!=='succeeded')throw Error('original accepted text workflow is not successful');
+        const {a,bytes}=await this.verifiedArtifact(req,command,p);
+        if(a.requestId!==requestId||artifactRef!==prefix+a.sha256)throw Error('accepted artifact reference mismatch');
+        if(bytes.length>40000)throw new StageOutputUnavailable('accepted artifact exceeds current native text input contract');
+        const text=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);this.current();
+        if(!text.trim()||text.length>10000)throw new StageOutputUnavailable('accepted artifact exceeds current native text input contract');
+        return text;
     }
     private async progress(req: FactoryRequest, cancel = false, dispatchAllowed = true): Promise<FactoryResult> {
         let command: any;

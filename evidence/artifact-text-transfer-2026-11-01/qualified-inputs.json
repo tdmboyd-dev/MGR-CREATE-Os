@@ -1,0 +1,10 @@
+{
+  "creation/src/objectives/stage-outputs.ts": "f3bd9df9b283b865289f6a71b720cdc4f90bf1bf1f15d2af693deb2fe595590c",
+  "creation/src/factories/contracts.ts": "01e5042fc28cbefcf6e9bcbf6471eac7c7ca7370b6ab0c3d6e78a134a7ad7660",
+  "creation/src/factories/owner-workflow-factory.ts": "35dce9965d6b89fcf542107e48a329ea576bdd54f16f6ff91b2022293e22393d",
+  "creation/src/api/durable-objectives.ts": "733865dcdae50a17825fe7b83f85fe5ff8fbe728974fec8c87cc87bacb604180",
+  "creation/test/artifact-text.test.ts": "5732f610f09d05460d1e5faddd1c09df92051c6d77a83cc16b829dd5a0dfb68c",
+  "one/web/owner-creation-projects.mjs": "ae409a165e27a9787aed9d6e48ac60d95da3b6ff00d958b484f566ce486da2e5",
+  "one/web/creation-project-contract.mjs": "8317f706f4ce06cc97d9d16b08bfcbc68e58b577022c1921df57482a536d01bf",
+  "one/scripts/qualification/owner-signme-http.test.mjs": "8c8a2f43e246faf75268e00acd8a0ac1c1c7f5fa4ff4331cf47f6d657866e036"
+}
