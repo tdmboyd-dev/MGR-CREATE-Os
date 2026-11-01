@@ -1,0 +1,53 @@
+✔ actual SQLite plan, stages, output references and events survive close/reopen (113.7264ms)
+✔ changed same-key plan is denied before a factory call (39.4545ms)
+✔ project data and same keys remain isolated by tenantId (48.965ms)
+✔ project data and same keys remain isolated by workspaceId (55.9535ms)
+✔ project data and same keys remain isolated by actorId (46.7948ms)
+✔ an incoming plan cannot select another tenant or workspace (30.7849ms)
+✔ WAITING_APPROVAL resumes by reconciling the original stage after database reopen (107.5413ms)
+✔ a rejection after an effect remains unknown; restart cannot repeat execute (105.6173ms)
+✔ unsettled RUNNING claim is reconciled after host loss, never reset to READY (102.0768ms)
+✔ competing database handles cannot claim a second original execution (53.0158ms)
+✔ stale original producer cannot overwrite a newer reconciled result (65.666ms)
+✔ saved plans and accepted results reject changed database contents (101.5164ms)
+✔ cancellation before dispatch persists without calling any factory (52.1896ms)
+✔ cancellation of uncertain native work stays CANCELLING until original outcome is known (97.0154ms)
+✔ a provider without original reconciliation is refused before starting a stage (33.7293ms)
+✔ failed factory blocks dependencies and remains terminal after reopen (60.6296ms)
+✔ legacy creation records are not silently assigned to the current actor (36.2304ms)
+✔ existing CreationRepository contract and Cineforge-style transitions persist (41.9683ms)
+✔ optional undefined metadata normalizes to the same durable JSON plan (33.156ms)
+✔ managed stage/run records cannot bypass checkpoint commands (36.1967ms)
+✔ a result cannot settle before the original claim (35.8267ms)
+✔ malformed existing project schema rolls back partial new tables (39.8783ms)
+✔ unconfirmed provider result identity remains recoverable instead of becoming a false terminal failure (82.6619ms)
+✔ altered completed project status cannot skip unfinished stage evidence (39.6381ms)
+✔ project service close drains original work, then denies new operations (73.8837ms)
+✖ unclean child-process death preserves WAL claim for original-stage reconciliation (30021.1099ms)
+✔ factory creates only a preview and cannot approve its own request (8.4064ms)
+✔ only original approved state dispatches and accepts independently read exact bytes (5.9144ms)
+✔ original pending state is reconciled without re-execute (2.2456ms)
+✔ original unknown state is reconciled without re-execute (1.3555ms)
+✔ factory refuses mismatched scope/allocation/criteria before preview: {"tenantId":"foreign"} (1.2349ms)
+✔ factory refuses mismatched scope/allocation/criteria before preview: {"workspaceId":"foreign"} (1.2325ms)
+✔ factory refuses mismatched scope/allocation/criteria before preview: {"budget":1} (0.3609ms)
+✔ factory refuses mismatched scope/allocation/criteria before preview: {"acceptanceCriteria":[]} (0.3402ms)
+✔ source text cannot choose an unrelated operation (0.4916ms)
+✔ a result bound to another actor is refused before execute or artifact read (1.4705ms)
+✔ changed artifact bytes do not become successful project output (0.7254ms)
+✔ revoked current authority prevents any further bridge call (0.3775ms)
+✔ cancelling uses the original workflow and never substitutes execute (0.7383ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 1
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 32134.6409
+
+✖ failing tests:
+
+test at test\durable-objectives.test.ts:1:13645
+✖ unclean child-process death preserves WAL claim for original-stage reconciliation (30021.1099ms)
+  'test timed out after 30000ms'

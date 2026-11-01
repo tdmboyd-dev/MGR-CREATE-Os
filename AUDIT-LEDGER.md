@@ -1,3 +1,9 @@
+## Durable project runtime and reusable native adapter — November1,2026
+
+Public opt-in createCreationOS(projectRuntime) now uses the existing canonical SQL run/stage/events schema, actor-bound exact plans, producer/revision-fenced checkpoints and original graph scheduler. Reusable owner workflow factories cannot approve themselves; original ONE/API/native custody remains. Typecheck/full220/220pass (44new included), actual child-process/WAL recovery and separate real public-bootstrap Forge+document/unknown-reply/four-host-reopen qualification. [Exact source, failures, compatibility and unfinished integration](evidence/durable-projects-2026-11-01/REPORT.md).
+
+Permanent Tevin project startup/API/conversation controls are next, alongside parent-project retirement/storage protection, dynamic dependency references and the other four new Forge adapter paths. The default twelve factory families and their original requirements remain. Basic Forge remains independently callable. Earlier memory-only project statements are superseded only for the explicit durable bootstrap; memory utilities remain. No permanent account/config/data change, full studio/production or monetary-savings claim.
+
 ## Objective execution integrity and real native project qualification — November 1, 2026
 
 Repaired original coordinator/request-cache/consent-window defects before installing effectful factories. Initial objective21/23fail and consent6/9fail retained; final TypeScript/full176/176pass, including39new checks. Separate real Forge GLB+native document project1/1passed through fixture owner approval/SDK and all-host reopen with original effects2 and unchanged saved files. [Exact scope, compatibility and next work](evidence/objective-integrity-2026-11-01/REPORT.md).

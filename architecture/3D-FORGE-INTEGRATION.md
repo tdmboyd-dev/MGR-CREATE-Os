@@ -16,3 +16,6 @@ Project truth: `HANDOFF.md` is this repo's one living resume record. The older `
 
 
 November1 prerequisite/qualification checkpoint: objective/coordinator/request/consent defects repaired;176localtests and actual fixture two-factory native project/restart passed. See ../evidence/objective-integrity-2026-11-01/REPORT.md. The driver is qualification-only. Durable project/resume and trusted production adapter/output/right/approval contracts remain open; this does not supersede the future adapter acceptance above.
+
+
+November1 durable adapter implementation: explicit public Creation bootstrap now combines SQL project/stage recovery with reusable original ONE workflow adapters. Actual creature+native document, approval waits, intentionally lost reply and four host reopenings pass in isolated qualification. This supersedes the claim that no reusable adapter/runtime code exists. Permanent Tevin project UI/API, parent retention/custody, other four new-path Forge trials, dynamic output bindings and full independent output/art/rights acceptance remain open. See ../evidence/durable-projects-2026-11-01/REPORT.md. No alternate engine/vault or mandatory Creation dependency is introduced.

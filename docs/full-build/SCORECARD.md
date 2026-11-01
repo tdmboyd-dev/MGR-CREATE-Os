@@ -33,3 +33,12 @@ Repaired original coordinator/request-cache/consent-window defects before instal
 Production multi-factory adapter remains unfinished: the actual project used an explicit qualification driver, not a default installed factory. Existing service cache is in-memory; durable project/resume, trusted actor/rights/approval and production output acceptance remain required. Factory ID format changed to a scoped structured digest; reconcile any old custom-adapter jobs before migrating. No permanent owner data/settings or native endpoint IDs rewritten. Direct basic Forge remains independent. Whole studio/production readiness Unassessed.
 
 Defined local regression scope39/39 (100% this scope); broader adapter/project/production scope Unassessed. Actual two-domain fixture1/1 is separate.
+
+
+## Durable project runtime and reusable native adapter — November1,2026
+
+Public opt-in createCreationOS(projectRuntime) now uses the existing canonical SQL run/stage/events schema, actor-bound exact plans, producer/revision-fenced checkpoints and original graph scheduler. Reusable owner workflow factories cannot approve themselves; original ONE/API/native custody remains. Typecheck/full220/220pass (44new included), actual child-process/WAL recovery and separate real public-bootstrap Forge+document/unknown-reply/four-host-reopen qualification. [Exact source, failures, compatibility and unfinished integration](../../evidence/durable-projects-2026-11-01/REPORT.md).
+
+Permanent Tevin project startup/API/conversation controls are next, alongside parent-project retirement/storage protection, dynamic dependency references and the other four new Forge adapter paths. The default twelve factory families and their original requirements remain. Basic Forge remains independently callable. Earlier memory-only project statements are superseded only for the explicit durable bootstrap; memory utilities remain. No permanent account/config/data change, full studio/production or monetary-savings claim.
+
+Defined new local runtime/adapter regression scope44/44 (100% this scope), included in220. Separate selected native scenario1; new positive native operation coverage2/6. Permanent owner project interface and full product/production remain unverified/Unassessed.

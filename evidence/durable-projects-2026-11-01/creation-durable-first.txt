@@ -1,0 +1,26 @@
+✔ actual SQLite plan, stages, output references and events survive close/reopen (129.0846ms)
+✔ changed same-key plan is denied before a factory call (68.9346ms)
+✔ project data and same keys remain isolated by tenantId (47.4699ms)
+✔ project data and same keys remain isolated by workspaceId (59.6753ms)
+✔ project data and same keys remain isolated by actorId (52.9017ms)
+✔ an incoming plan cannot select another tenant or workspace (35.6498ms)
+✔ WAITING_APPROVAL resumes by reconciling the original stage after database reopen (108.467ms)
+✔ a rejection after an effect remains unknown; restart cannot repeat execute (106.5701ms)
+✔ unsettled RUNNING claim is reconciled after host loss, never reset to READY (103.9344ms)
+✔ competing database handles cannot claim a second original execution (58.7785ms)
+✔ stale original producer cannot overwrite a newer reconciled result (70.9536ms)
+✔ saved plans and accepted results reject changed database contents (87.2969ms)
+✔ cancellation before dispatch persists without calling any factory (51.6088ms)
+✔ cancellation of uncertain native work stays CANCELLING until original outcome is known (88.6274ms)
+✔ a provider without original reconciliation is refused before starting a stage (37.351ms)
+✔ failed factory blocks dependencies and remains terminal after reopen (68.9069ms)
+✔ legacy creation records are not silently assigned to the current actor (37.8521ms)
+✔ existing CreationRepository contract and Cineforge-style transitions persist (54.7866ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13014.5897
