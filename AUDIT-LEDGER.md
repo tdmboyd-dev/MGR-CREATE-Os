@@ -1,3 +1,9 @@
+## Objective execution integrity and real native project qualification — November 1, 2026
+
+Repaired original coordinator/request-cache/consent-window defects before installing effectful factories. Initial objective21/23fail and consent6/9fail retained; final TypeScript/full176/176pass, including39new checks. Separate real Forge GLB+native document project1/1passed through fixture owner approval/SDK and all-host reopen with original effects2 and unchanged saved files. [Exact scope, compatibility and next work](evidence/objective-integrity-2026-11-01/REPORT.md).
+
+Production multi-factory adapter remains unfinished: the actual project used an explicit qualification driver, not a default installed factory. Existing service cache is in-memory; durable project/resume, trusted actor/rights/approval and production output acceptance remain required. Factory ID format changed to a scoped structured digest; reconcile any old custom-adapter jobs before migrating. No permanent owner data/settings or native endpoint IDs rewritten. Direct basic Forge remains independent. Whole studio/production readiness Unassessed.
+
 ## Current joined-source checkpoint — November 1, 2026
 
 Canonical multi-factory and original native-service histories are reconciled on `integrate/tevin-creation-native-20261101`, for delivery to `repair/completion-2026-10-28`; main is not promoted. TypeScript and **137/137** local tests pass. Separate actual two-source ONE approval/SDK/HTTP/SQLite migration/reopen test **1/1** passes, preserving original bytes, IDs and receipts with zero duplicate creates. Six reproduced credential/startup/text defects are repaired. [Exact evidence and remaining consumer migration](evidence/creation-history-2026-11-01/REPORT.md).

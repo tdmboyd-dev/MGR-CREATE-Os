@@ -1,28 +1,27 @@
-# Product Boundaries — Creation OS / Create Loco / API-MCP / Brain
+# Product boundaries — Creation OS and connected owners
+
+Current owning HANDOFF.md and explicit owner decisions supersede the earlier internal-only Creation/brain-in-API wording. Preserve product names, original capabilities and independent release surfaces.
 
 ## Creation OS
-Internal shared creation/control-plane engine.
-Owns creation runs, factories, assets, identity/continuity, provenance, rights, media capability routing, verification, cost, durable production and cross-factory orchestration.
 
-## Create Loco
-User-facing visual/web reconstruction and repair product.
-Owns screenshot/reference understanding, visual IR, web composition, browser visual verification and causal visual repair.
-Consumes Creation OS media/asset/provider capabilities.
+Standalone multi-factory planning/production coordinator, usable by people, Tevin and other applications. Owns its project/run, continuity, rights decisions, evidence references and factory coordination. Its twelve registrations are not twelve finished products. Native Markdown is one real capability. Creation does not own or copy Forge's geometry engine, 3D jobs, rigging or raw vault.
 
-Do not merge Create Loco into Creation OS right now. They have different product responsibilities and deployment surfaces. Share contracts/services instead.
+## ONE/Reign and Tevin
 
-## MGR-API-MCP
-External assistant/API/MCP/task edge.
-Owns Task/Job-facing contracts, MCP/API transport, schedules, receipts and portable assistant workflows.
-Calls Creation OS; does not duplicate factories/media/identity.
+ONE/Reign owns the existing intelligence and owner permission system; Tevin is the assistant/persona. Creation plans and model/decision suggestions do not grant authority. Reuse authenticated shared contracts; no second brain, grant engine or duplicate business ledger.
 
-## Brain/CoI
-Shared decision/controller subsystem, initially living with MGR-API-MCP.
-Decides, retrieves and plans. It does not grant permission and does not render media.
+## Shared MGR-API-MCP
 
-## MGR Agents
-Business automation/agent workforce product.
-Consumes Brain/API-MCP and Creation OS instead of owning canonical copies of either.
+Bounded authenticated shared API/MCP edge routes to domain authorities and preserves caller/action/receipt identity. The previous suggestion to put a competing brain here is superseded. Source discovery and tool knowledge do not confer action permission.
 
-## Merge rule
-Merge repos only when two codebases truly share lifecycle, deployment, ownership and release cadence. Similar concepts are not enough.
+## MGR 3D Forge
+
+Independent geometry/asset/job owner. Ordinary 3D goes through the shared API directly; Creation joins when several creation domains form one project. Store references/rights/evidence in the coordinator rather than mirroring the authoritative 3D vault. Native CPU capability is not equivalence to every external/neural art service.
+
+## Create Loco, HU, SignMe, Legacy and MGR Agents
+
+Retain each product's original feature/canon and authoritative records/actions. Loco's visual reconstruction and repair can consume verified creation outputs; HU's broader creator scope and locked canon are separate. SignMe signing and Legacy business records remain distinct from content generation. Agents automation consumes existing brain/shared/domain contracts. This boundary map is not their full source audit or complete capability handbook.
+
+## Merge rule and comparison
+
+Connect products or reuse components before merging repositories. Consolidate only after source, consumers, lifecycle, deployment, ownership, quality, rights and total maintenance/cost comparisons justify it. Owned code has no automatic preference; do not purchase or discard from unmeasured savings. Canonical cross-product recommendations live in ONE coordination/ECOSYSTEM-REUSE-AND-MERGE-PLAN.md. Preserve migration/recovery and independent direct tool use.

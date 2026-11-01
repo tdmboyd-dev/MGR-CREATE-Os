@@ -1,0 +1,134 @@
+✖ consent window denies future effective date (5.3076ms)
+✖ consent window denies invalid effective date (0.6215ms)
+✖ consent window denies empty revocation marker (0.3522ms)
+✖ consent window denies invalid observation time (0.7876ms)
+✔ consent window denies invalid expiry (0.377ms)
+✔ consent window denies expired record (0.2226ms)
+✖ consent purpose cannot be blank even when malformed source lists it (0.5342ms)
+✖ malformed consent fields deny without crashing the caller (1.0812ms)
+✔ valid exact-purpose consent is active at its effective boundary, not at expiry (0.3148ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 3
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1215.3391
+
+✖ failing tests:
+
+test at test\consent-window.test.ts:1:810
+✖ consent window denies future effective date (5.3076ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  true !== false
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:3:420)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\consent-window.test.ts:1:810
+✖ consent window denies invalid effective date (0.6215ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  true !== false
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:3:420)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\consent-window.test.ts:1:810
+✖ consent window denies empty revocation marker (0.3522ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  true !== false
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:3:420)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\consent-window.test.ts:1:810
+✖ consent window denies invalid observation time (0.7876ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  true !== false
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:3:420)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\consent-window.test.ts:1:926
+✖ consent purpose cannot be blank even when malformed source lists it (0.5342ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  true !== false
+
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:4:87)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\consent-window.test.ts:1:1076
+✖ malformed consent fields deny without crashing the caller (1.0812ms)
+  TypeError: Cannot read properties of null (reading 'includes')
+      at consentAllows (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\src\governance\rights.ts:1:361)
+      at TestContext.<anonymous> (C:\Users\cool\Documents\Codex\2026-10-30\so-i-have-a-question-and\work\creation-objective-integrity\test\consent-window.test.ts:5:83)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

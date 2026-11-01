@@ -1,0 +1,10 @@
+{"scope":"isolated actual two-factory/native owner-SDK qualification; driver only, no installed generic adapter","artifacts":[{"requestId":"creation-workstream-cf3d935cfd66029afcbce966daaab9d75456406c5b329afcb4d6b083e3edebe4","kind":"MEDIA","sha256":"1313b696263ebcf3a8aa2e550444527f629b0a8a226da508c7a6b219c8672e01","bytes":109836},{"requestId":"creation-workstream-20d2100426962c190edc27158074d365ceeac5451e402b9b5474c636d25bcd68","kind":"DOCUMENT","sha256":"3da984bf20530dd978aef74a3ac6f3da5fbaffdefa6cd1e67d3c46aea753d84b","bytes":80}],"driverCalls":4,"originalEffects":2,"afterRestartEffects":2,"originalNativeGLBsUnchanged":true,"newInferenceCalls":0,"productionAccepted":false}
+✔ real two-domain project preserves original owner authority and native artifacts after full host restart (14520.0586ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15457.7272

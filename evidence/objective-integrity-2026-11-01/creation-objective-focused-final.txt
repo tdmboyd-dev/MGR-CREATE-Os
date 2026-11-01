@@ -1,0 +1,38 @@
+✔ objective cannot succeed when FAILED factory returns an empty blocker list (6.6533ms)
+✔ objective cannot succeed when BLOCKED factory returns an empty blocker list (0.7152ms)
+✔ factory result rejects wrong requestId before dependent work (0.8613ms)
+✔ factory result rejects wrong kind before dependent work (0.5381ms)
+✔ factory result rejects wrong status before dependent work (0.526ms)
+✔ factory result rejects wrong blockers before dependent work (0.4579ms)
+✔ objective refuses maxBudget NaN before executing (0.863ms)
+✔ objective refuses budget NaN before executing (0.4499ms)
+✔ objective refuses maxBudget Infinity before executing (0.4383ms)
+✔ objective refuses budget Infinity before executing (0.4454ms)
+✔ objective refuses maxBudget -1 before executing (0.3729ms)
+✔ objective refuses budget -1 before executing (0.2357ms)
+✔ duplicate workstream IDs are refused before execution (0.3518ms)
+✔ all referenced factories are available before any work starts (0.6093ms)
+✔ concurrent exact service calls share one original execution (46.8986ms)
+✔ a failed possibly-effectful attempt is not automatically re-executed (1.8273ms)
+✔ cached results cannot be rewritten through a returned replay object (1.0664ms)
+✔ request keys and factory identities remain isolated by tenant and workspace (1.5904ms)
+✔ colon-separated objective/workstream names cannot collide in factory request identity (0.6471ms)
+✔ external plan mutation during a factory await cannot change later work (0.7018ms)
+✔ prototype-named workstream is retained as an own result without prototype mutation (0.4198ms)
+✔ finite budget addition overflow is refused before execution (0.3853ms)
+✔ empty objectives are refused rather than labelled successful (0.314ms)
+✔ an objective ceiling cannot hide unspecified workstream allocations (0.6252ms)
+✔ decimal allocations at the exact ceiling pass without binary rounding errors (3.1733ms)
+✔ non-JSON input cannot collide in the objective request digest: NaN (0.3346ms)
+✔ non-JSON input cannot collide in the objective request digest: [object Map] (0.2106ms)
+✔ non-JSON input cannot collide in the objective request digest: ,1 (0.1682ms)
+✔ non-JSON input cannot collide in the objective request digest: 1 (0.141ms)
+✔ sparse factory references cannot be admitted as successful evidence (0.4376ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1536.6843

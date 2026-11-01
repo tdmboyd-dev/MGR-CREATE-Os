@@ -1,0 +1,31 @@
+✔ objective cannot succeed when FAILED factory returns an empty blocker list (5.1777ms)
+✔ objective cannot succeed when BLOCKED factory returns an empty blocker list (0.8833ms)
+✔ factory result rejects wrong requestId before dependent work (1.1574ms)
+✔ factory result rejects wrong kind before dependent work (0.6213ms)
+✔ factory result rejects wrong status before dependent work (0.54ms)
+✔ factory result rejects wrong blockers before dependent work (0.3876ms)
+✔ objective refuses maxBudget NaN before executing (0.8321ms)
+✔ objective refuses budget NaN before executing (0.2951ms)
+✔ objective refuses maxBudget Infinity before executing (0.268ms)
+✔ objective refuses budget Infinity before executing (0.3869ms)
+✔ objective refuses maxBudget -1 before executing (0.7328ms)
+✔ objective refuses budget -1 before executing (0.3774ms)
+✔ duplicate workstream IDs are refused before execution (1.0082ms)
+✔ all referenced factories are available before any work starts (0.4777ms)
+✔ concurrent exact service calls share one original execution (24.5358ms)
+✔ a failed possibly-effectful attempt is not automatically re-executed (2.2462ms)
+✔ cached results cannot be rewritten through a returned replay object (2.1335ms)
+✔ request keys and factory identities remain isolated by tenant and workspace (1.5902ms)
+✔ colon-separated objective/workstream names cannot collide in factory request identity (0.6183ms)
+✔ external plan mutation during a factory await cannot change later work (0.6044ms)
+✔ prototype-named workstream is retained as an own result without prototype mutation (0.3374ms)
+✔ finite budget addition overflow is refused before execution (0.3075ms)
+✔ empty objectives are refused rather than labelled successful (0.2429ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 777.1819

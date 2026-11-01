@@ -1,0 +1,17 @@
+✔ consent window denies future effective date (1.0196ms)
+✔ consent window denies invalid effective date (0.1041ms)
+✔ consent window denies empty revocation marker (0.0695ms)
+✔ consent window denies invalid observation time (0.1155ms)
+✔ consent window denies invalid expiry (0.0763ms)
+✔ consent window denies expired record (0.0988ms)
+✔ consent purpose cannot be blank even when malformed source lists it (0.9209ms)
+✔ malformed consent fields deny without crashing the caller (0.0958ms)
+✔ valid exact-purpose consent is active at its effective boundary, not at expiry (0.1566ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 358.8211

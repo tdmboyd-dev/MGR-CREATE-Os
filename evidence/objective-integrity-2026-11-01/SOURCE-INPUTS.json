@@ -1,0 +1,36 @@
+{
+  "base": "b2eba6eed43c59993184327bf9f9d988cc5738ea",
+  "sourceAndTestSha256": {
+    "src/api/service.ts": "cf9bd5a319a46f2d5ac1eeb82e5b1ebe4ef3811f82e19727d1c50363853dce43",
+    "src/objectives/orchestrator.ts": "4b4d0f880767ef2a8df681cb0647af48932d183c5e33c64ea13b81ff6930e7eb",
+    "src/governance/rights.ts": "774c9fbc8eabf502e1b7356db5919dc8ebb805acedd9af9d316f23bc2f580638",
+    "test/objective-integrity.test.ts": "8364076bfc990ec649b8975997e003cf7503c2a7693dd5d3b63c0a90e01b6c24",
+    "test/consent-window.test.ts": "35e5d642c82dfc9edeb1787b49b123948c47db699c4713e90906a81e2bd97287",
+    "scripts/qualification/native-project-join.test.mjs": "2e72a5777704b2466beb433c34e4375db3974ff2bd55c67ff9d22082792e260a"
+  },
+  "readScope": [
+    "src/core/idempotency.ts",
+    "src/core/digest.ts",
+    "src/core/cost.ts",
+    "src/core/approval.ts",
+    "src/core/queue.ts",
+    "src/factories/contracts.ts",
+    "src/factories/registry.ts",
+    "src/factories/default-registry.ts",
+    "src/factories/research-factory.ts",
+    "src/factories/document-factory.ts",
+    "src/factories/media-factory.ts",
+    "src/bootstrap.ts",
+    "src/persistence/interfaces.ts",
+    "src/security/permissions.ts",
+    "src/security/audit.ts",
+    "spec/README.md",
+    "architecture/PRODUCT-BOUNDARIES.md",
+    "architecture/3D-FORGE-INTEGRATION.md"
+  ],
+  "notWholeSourceCoverage": true,
+  "fullUnitPassed": 176,
+  "newFocusedCasesIncludedInFullSuite": 39,
+  "separateActualProjectScenarioPassed": 1,
+  "productionAccepted": false
+}
