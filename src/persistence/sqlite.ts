@@ -155,6 +155,7 @@ export class SqliteCreationRepository implements CreationRepository {
                 this.db.prepare('INSERT INTO stage_runs VALUES(?,?,?,?,?,?,?)').run(x.id, x.creationRunId, x.stageKey, x.attempt, x.status, JSON.stringify(x.inputRefs), JSON.stringify(x.outputRefs));
         });
     }
+    listObjectives(){return this.db.prepare('SELECT r.id,r.status,r.created_at,o.plan_json FROM creation_runs r JOIN creation_objectives o ON o.run_id=r.id JOIN creation_run_owners own ON own.run_id=r.id WHERE r.tenant_id=? AND r.workspace_id=? AND own.actor_id=? ORDER BY r.created_at DESC,r.id DESC LIMIT 20').all(this.principal.tenantId,this.principal.workspaceId,this.principal.actorId).map(row=>{if(!runStates.has(row.status as RunStatus))throw Error('saved project status invalid');const p=this.readObjective(String(row.id));return{runId:p.run.id,objectiveId:p.plan.id,status:p.run.status,createdAt:p.run.createdAt,stages:p.stages.length,acceptedStages:p.stages.filter(s=>s.status==='SUCCEEDED').length};});}
     requestId(runId: string, plan: ObjectivePlan, stageKey: string) { return 'creation-workstream-' + sha256Canonical({ tenantId: plan.tenantId, workspaceId: plan.workspaceId, objectiveId: plan.id, workstreamId: stageKey, executionScope: runId }); }
     openObjective(key: string, input: ObjectivePlan): ProjectSnapshot {
         if (typeof key !== 'string' || !key.trim() || key.length > 512)

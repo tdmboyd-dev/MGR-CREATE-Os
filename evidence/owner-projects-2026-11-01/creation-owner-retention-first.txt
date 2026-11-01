@@ -1,0 +1,16 @@
+✔ project preparation/listing persist without calling any native factory (46.1349ms)
+✔ unfinished project references block retirement of original workflow (39.8597ms)
+✔ completed project references stay protected for later result download (50.4943ms)
+✔ retention covers the same owner across project workspaces without exposing other owners (46.6027ms)
+✔ retention always observes withdrawal and closed-resource failure (31.9024ms)
+✔ missing project checkpoint custody denies retirement rather than treating it as unreferenced (39.1769ms)
+✔ retention does not migrate an unavailable schema or widen the configured root (19.3557ms)
+✔ linked database authority is refused (27.805ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1328.7221

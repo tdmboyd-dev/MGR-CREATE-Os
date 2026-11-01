@@ -17,6 +17,8 @@ export class DurableObjectiveService {
     private active = new Map<string, Promise<DurableProjectView>>();
     private closed = false;
     constructor(private repo: SqliteCreationRepository, private factories: FactoryRegistry) { }
+    prepareObjective(key:string,plan:ObjectivePlan){if(this.closed)throw Error('project service closed');return this.view(this.repo.openObjective(key,plan));}
+    list(){if(this.closed)throw Error('project service closed');return this.repo.listObjectives();}
     async executeObjective(key: string, plan: ObjectivePlan) {
         if (this.closed)
             throw Error("project service closed");

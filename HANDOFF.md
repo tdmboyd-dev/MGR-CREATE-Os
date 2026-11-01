@@ -1,3 +1,7 @@
+## Authenticated owner project metadata and retained results — November 1, 2026
+
+`prepareObjective` saves a plan with no native dispatch; `list` returns twenty scoped summaries. A read-only project retention guard protects referenced native artifacts across this owner's workspaces, including completed projects. Full Creation228/228 and TypeScript passed; receiving owner HTTP/retirement/conversation checks40/40 passed with injected model transport. [Evidence and explicit remaining work](evidence/owner-projects-2026-11-01/REPORT.md). This supersedes the prior statement that parent retention has no implementation; permanent activation, project UI, release/archive lifecycle and broader acceptance still need their own proof. Original product requirements remain open at their actual scope.
+
 # MGR Creation OS — Canonical Handoff
 
 ## Durable Creation runtime and native adapter — November1,2026

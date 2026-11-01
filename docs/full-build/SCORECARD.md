@@ -48,3 +48,8 @@ Defined new local runtime/adapter regression scope44/44 (100% this scope), inclu
 Creation1b25299 is published/adopted: canonical typecheck/full220pass (44new included), actual public-bootstrap native creature+Markdown/approval/lost-reply/four-host-reopen/preapproval-cancel scenario1pass. Concrete scoped SQL persistence and reusable original-owner adapters now exist. Permanent owner reader received new handbook without inference/config/effect changes. [Exact evidence and remaining integration](../../evidence/durable-projects-2026-11-01/RECEIVING-REPORT.md).
 
 Next: connect the same runtime to permanent authenticated project controls and parent retention; verify four other new Forge paths and dynamic output references. Full studio/source/production remains Unassessed. No second brain/grant/native ledger/vault, no native ID/account migration or dollar-savings claim. Original counts/requirements and peer work preserved.
+
+
+## Authenticated owner project metadata and retained results — November 1, 2026
+
+`prepareObjective` saves a plan with no native dispatch; `list` returns twenty scoped summaries. A read-only project retention guard protects referenced native artifacts across this owner's workspaces, including completed projects. Full Creation228/228 and TypeScript passed; receiving owner HTTP/retirement/conversation checks40/40 passed with injected model transport. [Evidence and explicit remaining work](../../evidence/owner-projects-2026-11-01/REPORT.md). This supersedes the prior statement that parent retention has no implementation; permanent activation, project UI, release/archive lifecycle and broader acceptance still need their own proof. Original product requirements remain open at their actual scope.

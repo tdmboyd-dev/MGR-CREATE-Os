@@ -1,0 +1,10 @@
+{
+  "base": "d4db52ec23cabf78dab64f9c4c57f817c5a9b106",
+  "files": {
+    "src/api/durable-objectives.ts": "2e4d4dec08dcbfbe21a906bfcd3f20731c68b13700df45fe49fcd94bb4eba094",
+    "src/persistence/index.ts": "ed71216230fdd69c20795f08e28512f3cced68d097150bfdc4f842652307a8df",
+    "src/persistence/sqlite.ts": "5ec03117c4dacac3d704170edcdcbf9b4b4357a5d53f5753a3a156f52131c75c",
+    "src/persistence/project-retention.ts": "5a3d92efac0c66f391e7267096a75741ea8f74d56e124b78745e4313bf6333d9",
+    "test/project-retention.test.ts": "6fe1ec569eb968304c0a783516095b0f7c8f2ca15aaa47b7803a3cfd8dfdfa8f"
+  }
+}
