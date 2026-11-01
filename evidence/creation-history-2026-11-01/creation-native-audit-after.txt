@@ -1,0 +1,14 @@
+✔ native credentials retain their enrolled actor and tenant when caller configuration changes (181.0387ms)
+✔ ambiguous duplicate credentials are rejected before opening a domain database (2.804ms)
+✔ unstarted native service closes its database and repeated close keeps the same result (29.1759ms)
+✔ failed native schema migration rolls back newly created tables and preserves the original database (39.3713ms)
+✔ native input refuses invalid-utf8 before allocating a request or artifact (55.062ms)
+✔ native input refuses unpaired-surrogate before allocating a request or artifact (40.6323ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1261.5436

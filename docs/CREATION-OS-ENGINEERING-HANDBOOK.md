@@ -28,7 +28,7 @@ The existing `src/factories/media-factory.ts` previously could claim success for
 
 ```powershell
 cd MGR-CREATE-Os
-npm install --ignore-scripts --no-audit --no-fund --no-package-lock
+npm ci --ignore-scripts --no-audit --no-fund
 npm run typecheck
 npm test
 ```
@@ -44,3 +44,10 @@ Audited baseline completed with 122/122 tests PASS. These test registry, objecti
 - Maintain one active resume record, record original source paths/evidence and reconcile any old `WORK-STATE.md`/`BuildList.md` against current tests, not vice versa.
 
 The full owner-approved Forge roadmap is in sibling `MGR-3D-FORGE/docs/MASTER-FORGE-PROGRAM-2026-10-31.md` and actual current product truth is in Forge `docs/HANDOFF.md`. The 187 research queue records are sources/candidates, not installed components.
+
+
+## Joined native domain service
+
+`src/api/local-service.ts` owns authenticated native Markdown jobs, exact bytes, actor-bound artifacts, idempotency, audit and SQLite recovery. `src/api/service.ts` remains the broader objective/orchestrator interface. They are different contracts; do not send an actorless objective directly into the authenticated service or create a competing ledger. Use the existing shared API for Tevin access. Principals are captured at service creation; changing caller configuration cannot rebind live credentials. Schema upgrade/reclaim is atomic; close releases an unstarted service. Invalid UTF-8/unpaired surrogates are refused before allocating jobs.
+
+Historical baseline counts above remain tied to their original source. Current joined source passes typecheck/137 tests; explicit two-source owner SDK/HTTP migration qualification is in `scripts/qualification/native-history-migration.test.mjs` and `evidence/creation-history-2026-11-01/REPORT.md`. Full studio/provider readiness remains open. HANDOFF.md is current authority.

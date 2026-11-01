@@ -6,6 +6,8 @@ dist/
 build/
 coverage/
 .private/
+.local/
+*.tsbuildinfo
 *.blend
 *.glb
 *.zip

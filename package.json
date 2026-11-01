@@ -1,5 +1,5 @@
 {
   "name":"@mgr/creation-os","version":"0.1.0","private":false,"type":"module","description":"MGR Creation OS standalone core",
-  "scripts":{"typecheck":"tsc --noEmit","test":"node --test --import tsx test/**/*.test.ts"},
+  "scripts":{"typecheck":"tsc --noEmit","test":"node --test --import tsx test/**/*.test.ts","start:service":"node --import tsx src/api/local-service.ts"},
   "devDependencies":{"@types/node":"^22.15.0","tsx":"^4.20.5","typescript":"^5.9.2"}
 }

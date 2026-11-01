@@ -1,0 +1,10 @@
+{"scope":"two-source owner factory / anchored approval / official SDK / HTTP / SQLite / exact native bytes / legacy column migration / cold replay","nativeJobs":2,"originalArtifactsPreserved":true,"replayCreates":0,"modelCalls":0,"productionAccepted":false}
+✔ original Creation -> joined source -> cold reopen preserves owner approvals, jobs and exact artifacts (24802.1961ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26440.0789

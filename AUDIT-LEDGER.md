@@ -1,3 +1,9 @@
+## Current joined-source checkpoint — November 1, 2026
+
+Canonical multi-factory and original native-service histories are reconciled on `integrate/tevin-creation-native-20261101`, for delivery to `repair/completion-2026-10-28`; main is not promoted. TypeScript and **137/137** local tests pass. Separate actual two-source ONE approval/SDK/HTTP/SQLite migration/reopen test **1/1** passes, preserving original bytes, IDs and receipts with zero duplicate creates. Six reproduced credential/startup/text defects are repaired. [Exact evidence and remaining consumer migration](evidence/creation-history-2026-11-01/REPORT.md).
+
+This root HANDOFF.md remains the sole current Creation resume authority. Imported October27/28 ecosystem handoffs and work-state notes are historical source context. All twelve factory requirements remain; unsupported default factories block honestly. Native Markdown is one real capability, not the full studio. Canonical main's malformed-media guards remain. Full multi-factory provider/Forge execution, actual hosted/client and production acceptance stay open. Test coverage is source-specific; broader readiness remains Unassessed.
+
 ## 2026-10-31 — Forge bridge architecture + false media completion correction
 
 - Creation OS is a standalone cross-factory coordinator, not required to make Tevin or other clients use MGR 3D Forge. The existing MGR API/MCP owns tool/auth transport; Forge owns 3D geometry, vault and jobs.
@@ -32,3 +38,13 @@ Replaced current-tense 58-only scope in docs/BEAST-WAVE-STATUS.md with dated his
 
 ## 2026-09-29 avatar admission research
 Compared the existing AssetRegistry, continuity rules and evidence bundle with glTF 2.0 skin/morph requirements and the iKickItz legacy salvage decision. Found that the registry's default digest hashes blobRef/MIME rather than media bytes; no actual byte-integrity or admission proof follows from its existing status. Documented staged acceptance and failure cases in research/AVATAR-ASSET-ADMISSION-2026-09-29.md. No product source changed or real asset inspected in this batch.
+## October 27, 2026 — independent actor-isolation review
+
+Independent real HTTP/SQLite regression reproduced a same-tenant peer reading another actor's job (HTTP200 instead of404). Root cause: tenant-only job/artifact queries despite credential-bound actors. New requests now persist the authenticated actor even when actorId is omitted, and every job/replay/run/cancel/artifact read requires that stored actor. Preserved legacy rows without authoritative stored actors are inaccessible; no ownership is guessed or automatically reassigned.
+
+Verification: `node --test --import tsx test/native-service.test.ts test/native-service-actor-isolation.test.ts` passes2/2 with actual loopback HTTP and disposable SQLite; `npm run typecheck` passes. Checks include same-tenant peer read/download/replay/run/cancel denial, legitimate owner read, and legacy unbound-row quarantine. Evidence is retained in ecosystem wave2/creation-independent-review-tests.txt. This is an ownership repair to the native document slice, not a whole-repository or production audit.
+
+
+## October 28 restart/producer continuation
+
+Reproduced and repaired stale renderer success/failure overriding a newer accepted document after service restart. Persistent producer tokens now fence publication and failure settlement. TypeScript and126/126 full tests pass; both new adverse cases were red before repair. See evidence/completion-2026-10-28/RESULTS.md. All11 generic factories remain honestly blocked; broader factory/worker/provider work remains unfinished. No UI/3D/paid/production work.

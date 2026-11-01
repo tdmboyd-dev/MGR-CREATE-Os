@@ -31,3 +31,8 @@ Creation OS governs specialized factories including Product, Media, Web, Campaig
 ## Master queue
 
 See `BUILD-QUEUE.md` for the full non-summary build queue, including MGR Product Factory, workflow research targets, interoperability, verification, and migration work.
+
+
+## Ecosystem review — October 27, 2026
+
+Additive source-pinned ecosystem context: [human handoff](docs/ecosystem/HUMAN-HANDOFF.md). This review branch preserves the default-branch baseline and existing work orders. Domain runtime/production acceptance is separate.

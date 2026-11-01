@@ -1,5 +1,11 @@
 # MGR Creation OS — Canonical Handoff
 
+## Current joined-source checkpoint — November 1, 2026
+
+Canonical multi-factory and original native-service histories are reconciled on `integrate/tevin-creation-native-20261101`, for delivery to `repair/completion-2026-10-28`; main is not promoted. TypeScript and **137/137** local tests pass. Separate actual two-source ONE approval/SDK/HTTP/SQLite migration/reopen test **1/1** passes, preserving original bytes, IDs and receipts with zero duplicate creates. Six reproduced credential/startup/text defects are repaired. [Exact evidence and remaining consumer migration](evidence/creation-history-2026-11-01/REPORT.md).
+
+This root HANDOFF.md remains the sole current Creation resume authority. Imported October27/28 ecosystem handoffs and work-state notes are historical source context. All twelve factory requirements remain; unsupported default factories block honestly. Native Markdown is one real capability, not the full studio. Canonical main's malformed-media guards remain. Full multi-factory provider/Forge execution, actual hosted/client and production acceptance stay open. Test coverage is source-specific; broader readiness remains Unassessed.
+
 ## CURRENT FULL SOURCE-BASED CREATION OS HANDBOOK — 2026-10-31
 
 **Final same-wave verification:** npm run typecheck and npm test **123/123 passed**. Forge 608 tests ran with 3 skips, API/MCP 69/69 and actual local cross-process Forge bridge PASS. Creation OS independent full user journey still open.
