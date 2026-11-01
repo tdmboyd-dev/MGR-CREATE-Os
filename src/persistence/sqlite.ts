@@ -8,6 +8,7 @@ import type { FactoryRequest, FactoryResult } from '../factories/contracts.js';
 import { sha256Canonical } from '../core/digest.js';
 import { canTransitionRun, canTransitionStage } from '../core/state-machines.js';
 import { snapshotPlan, checkedFactoryResult, type ObjectivePlan } from '../objectives/orchestrator.js';
+import { validateStageOutputReferences } from '../objectives/stage-outputs.js';
 export interface ProjectPrincipal {
     tenantId: string;
     workspaceId: string;
@@ -161,6 +162,7 @@ export class SqliteCreationRepository implements CreationRepository {
         if (typeof key !== 'string' || !key.trim() || key.length > 512)
             throw Error('invalid objective request key');
         const plan = snapshotPlan(input);
+        validateStageOutputReferences(plan);
         this.assertScope(plan);
         const runId = 'creation-project-' + sha256Canonical({ ...this.principal, key }), digest = sha256Canonical(plan);
         return this.tx(() => {
@@ -189,6 +191,7 @@ export class SqliteCreationRepository implements CreationRepository {
         if (row.schema_version !== 1 || row.pipeline_id !== 'objective' || row.pipeline_version !== '1' || row.trace_id !== runId || !Number.isFinite(Date.parse(String(row.created_at))))
             throw Error('saved project version mismatch');
         const plan = snapshotPlan(JSON.parse(String(o.plan_json)));
+        validateStageOutputReferences(plan);
         this.assertScope(plan);
         if (sha256Canonical(plan) !== o.plan_digest)
             throw Error('saved objective digest mismatch');

@@ -1,0 +1,20 @@
+{"actualOwnerHTTP":true,"nativeDocuments":2,"originalEffects":2,"projectAndArtifactReopen":true,"retirementBlockedForActiveCompletedAndDisabled":true,"modelCalls":0}
+✔ actual owner API -> project prepare/approval/native files -> retained child -> all-host restart (10417.158ms)
+✔ project APIs reject a changed plan, selected business and unknown extra inputs (2637.5382ms)
+{"injectedModelRounds":5,"actualProjectPlanAndStatus":true,"nativeApprovals":0,"nativeDispatches":0,"liveModel":false}
+✔ conversation proposal and checkpoint reads use actual project persistence without approving or executing native actions (3539.749ms)
+✔ retirement approval/apply recheck later project custody and preserve the original result (2518.8301ms)
+✔ persisted retention requirement blocks a later unguarded workflow instance (3247.6966ms)
+✔ server rejects a forged project host and request fences reject an away-and-back business switch (2088.6207ms)
+{"actualOwnerMixedProject":true,"nativeForgeAndCreation":true,"originalEffects":2,"allHostRestart":true,"redispatches":0,"liveInference":0}
+✔ actual owner project API joins original Forge creature and Creation document with cold recovery (9989.2943ms)
+{"actualNativeProjectPaths":["forge.world.create","forge.creature.create","forge.biome.create","forge.world.compose","forge.human.lipsync","creation.document.render"],"nativePathsAccepted":6,"generatedBiomeReference":true,"reopenedBeforeComposition":true,"coldReopen":true,"originalEffects":6,"redispatches":0,"modelInference":0}
+✔ all six native project paths and generated biome dependency survive exact approvals and cold reopen (55562.8485ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91511.931

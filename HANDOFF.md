@@ -1,3 +1,7 @@
+## Accepted stage outputs and six-path native project qualification — November1,2026
+
+Durable plans support exact declared-dependency request/artifact references with accepted checkpoint binding. Full244/244 and TypeScript; receiving owner consumer42/42 includes actual all-six native paths, generated-biome composition across pre-composition restart, exact original approvals, files, cold replay and retention. [Evidence, syntax and remaining work](evidence/stage-outputs-2026-11-01/REPORT.md). Supersedes prior missing-dynamic-reference/remaining-four-path implementation directions for this local adapter scope. Permanent activation needs its own receipt. Full product/source/quality/cost/production remains Unassessed; original requirement counts unchanged.
+
 ## Authenticated owner project metadata and retained results — November 1, 2026
 
 ## Permanent mixed-project connection verified — November 1, 2026

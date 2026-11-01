@@ -1,0 +1,23 @@
+✔ accepted dependency request/artifact references resolve exactly across SQLite reopen without changing the plan (107.5679ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"foreign","value":"requestId"}} (27.3667ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"consumer","value":"requestId"}} (27.0067ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"source","value":"producerToken"}} (26.7107ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"source","value":"artifactRef"}} (24.6729ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"source","value":"artifactRef","index":-1}} (23.5734ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"source","value":"requestId","index":0}} (28.0397ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":{"stage":"source","value":"requestId"},"extra":"unbound"} (24.7362ms)
+✔ invalid output selector rejects metadata before any factory call: {"$stageOutput":null} (26.0626ms)
+✔ a known stage without a declared dependency cannot supply a reference (24.0939ms)
+✔ unaccepted or mismatched source cannot resolve output: {"requestId":"source-request","status":"WAITING_APPROVAL","result":{"requestId":"source-request","status":"SUCCEEDED"}} (0.3715ms)
+✔ unaccepted or mismatched source cannot resolve output: {"requestId":"source-request","status":"SUCCEEDED","result":{"requestId":"foreign-request","status":"SUCCEEDED"}} (0.0856ms)
+✔ unaccepted or mismatched source cannot resolve output: {"requestId":"source-request","status":"SUCCEEDED","result":{"requestId":"source-request","status":"FAILED"}} (0.064ms)
+✔ missing output does not claim or dispatch the consumer (47.2077ms)
+✔ altered source checkpoint is refused before recovered consumer dispatch (64.6475ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1446.4507

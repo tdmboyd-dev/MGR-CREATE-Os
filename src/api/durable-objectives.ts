@@ -3,6 +3,7 @@ import type { FactoryRequest, FactoryResult, RecoverableFactory } from '../facto
 import { FactoryRegistry } from '../factories/registry.js';
 import { ObjectiveOrchestrator, checkedFactoryResult, type ObjectivePlan } from '../objectives/orchestrator.js';
 import { SqliteCreationRepository, type ProjectSnapshot } from '../persistence/sqlite.js';
+import { resolveStageOutputReferences, StageOutputUnavailable } from '../objectives/stage-outputs.js';
 /** Reuses the existing graph scheduler and scoped domain project/stage storage.
  * Factories own native execution/reconciliation; project state grants no action.
  */
@@ -14,6 +15,7 @@ export interface DurableProjectView extends ProjectSnapshot {
     }[];
 }
 export class DurableObjectiveService {
+    readonly stageOutputReferenceVersion = 1;
     private active = new Map<string, Promise<DurableProjectView>>();
     private closed = false;
     constructor(private repo: SqliteCreationRepository, private factories: FactoryRegistry) { }
@@ -79,11 +81,30 @@ export class DurableObjectiveService {
                     }
                     if (cancelling && !c.started)
                         return { requestId: req.id, kind: req.kind, status: 'FAILED', artifactRefs: [], evidenceRefs: [], blockers: ['project cancellation prevents dispatch'] };
+                    // Resolve from scoped immutable accepted checkpoints before claiming
+                    // this stage. Reopening reproduces the same exact owner command.
+                    let resolved: FactoryRequest;
+                    try {
+                        resolved = { ...req, inputs: resolveStageOutputReferences(current.plan, stage.stageKey, key => {
+                            const source = current.stages.find(s => s.stageKey === key);
+                            if (!source) throw Error('stage output dependency not found');
+                            return { ...this.repo.checkpoint(runId, key), status: source.status };
+                        }) };
+                    } catch (error) {
+                        // A legitimately absent selected output is a known input
+                        // failure, not an uncertain native action or a stuck run.
+                        if (!(error instanceof StageOutputUnavailable) || c.started) throw error;
+                        const claim = this.repo.claim(runId, stage.stageKey);
+                        if (!claim.claimed) throw Error('Dependency input failure requires the original unstarted stage claim');
+                        const failed: FactoryResult = { requestId: req.id, kind: req.kind, status: 'FAILED', artifactRefs: [], evidenceRefs: [], blockers: ['Declared dependency output is unavailable; no consumer factory action was attempted.'] };
+                        this.repo.settle(runId, stage.stageKey, claim, failed);
+                        return failed;
+                    }
                     const claim = cancelling ? { ...c, claimed: false } : this.repo.claim(runId, stage.stageKey);
                     c = claim;
                     let result: FactoryResult;
                     try {
-                        const raw = await ((cancelling || failureDrain) && factory.cancel ? factory.cancel(structuredClone(req)) : claim.claimed ? factory.execute(structuredClone(req)) : factory.reconcile(structuredClone(req), { dispatchAllowed: !failureDrain && !cancelling }));
+                        const raw = await ((cancelling || failureDrain) && factory.cancel ? factory.cancel(structuredClone(resolved)) : claim.claimed ? factory.execute(structuredClone(resolved)) : factory.reconcile(structuredClone(resolved), { dispatchAllowed: !failureDrain && !cancelling }));
                         result = checkedFactoryResult(req, raw);
                         if (sha256Canonical(result) !== sha256Canonical(raw))
                             throw Error('original provider binding unconfirmed');
