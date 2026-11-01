@@ -1,5 +1,9 @@
 # MGR Creation OS — Canonical Handoff
 
+## Objective integrity and permanent tool knowledge repaired — November1,2026
+
+Creation owning source46cccc9 is published/adopted: typecheck/full176pass (39new included), real Forge+document project/restart fixture1pass with unchanged two effects. Actual permanent knowledge read then exposed a removed Backpack0.4.0 cache dependency. ONE now reuses the existing live private host pointer;5host/12ONE/13API affected checks passed. Normal restart restored four source and eleven manual roots, actual latest Creation handbook/stale-pin denial/current Code Monster profile; account/host configuration and original workflow/effect rows unchanged, no new inference/creates. [Full evidence and unfinished adapter](evidence/objective-integrity-2026-11-01/CONNECTION-REPORT.md). Source execution approval remains separately stale; no profile/permission renewal. Whole-product/source/production scope Unassessed.
+
 ## Objective execution integrity and real native project qualification — November 1, 2026
 
 Repaired original coordinator/request-cache/consent-window defects before installing effectful factories. Initial objective21/23fail and consent6/9fail retained; final TypeScript/full176/176pass, including39new checks. Separate real Forge GLB+native document project1/1passed through fixture owner approval/SDK and all-host reopen with original effects2 and unchanged saved files. [Exact scope, compatibility and next work](evidence/objective-integrity-2026-11-01/REPORT.md).
