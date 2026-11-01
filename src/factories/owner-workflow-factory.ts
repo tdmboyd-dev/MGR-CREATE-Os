@@ -7,6 +7,7 @@ import { MarkdownRenderer } from '../documents/markdown-renderer.js';
 export interface OwnerWorkflowBridge {
     readonly tenantId: string;
     readonly actorId: string;
+    readonly availableOperations?: readonly string[];
     assertCurrent(): void;
     preview(command: unknown): unknown | Promise<unknown>;
     execute(requestId: string, digest: string): unknown | Promise<unknown>;
@@ -44,8 +45,12 @@ export class OwnerWorkflowFactory implements RecoverableFactory {
         if (req.kind !== this.kind || req.tenantId !== this.principal.tenantId || req.workspaceId !== this.principal.workspaceId || !id(req.id) || req.budget !== 0 || !req.acceptanceCriteria.length)
             throw Error('workflow factory scope, zero allocation and criteria required');
         const x = req.inputs as any;
-        if (!record(x) || Object.keys(x).sort().join(',') !== 'input,operation' || !record(x.input) || this.kind === 'DOCUMENT' && (x.operation !== 'creation.document.render' || x.input.workspaceId !== req.workspaceId) || this.kind === 'MEDIA' && (!forge.has(x.operation) || x.input.workspaceId !== this.forgeWorkspaceId))
+        if (!record(x) || Object.keys(x).sort().join(',') !== 'input,operation' || !record(x.input) || this.kind === 'DOCUMENT' && (!['creation.document.render','signme.draft.create'].includes(x.operation) || x.input.workspaceId !== req.workspaceId) || this.kind === 'MEDIA' && (!forge.has(x.operation) || x.input.workspaceId !== this.forgeWorkspaceId))
             throw Error('unsupported scoped factory operation');
+        if (this.bridge.availableOperations !== undefined && (!Array.isArray(this.bridge.availableOperations) || !this.bridge.availableOperations.includes(x.operation)))
+            throw Error('native project operation is not connected');
+        if (x.operation === 'signme.draft.create' && (Object.keys(x.input).some(k=>!['workspaceId','title','content','documentId','expectedVersion'].includes(k)) || typeof x.input.content !== 'string' || !x.input.content.isWellFormed() || !x.input.content.trim() || x.input.content.length>10000 || typeof x.input.title !== 'string' || !x.input.title.isWellFormed() || !x.input.title.trim() || x.input.title.length>500 || (x.input.documentId!==undefined && !id(x.input.documentId)) || (x.input.expectedVersion!==undefined && (!Number.isSafeInteger(x.input.expectedVersion)||x.input.expectedVersion<1)) || (x.input.documentId!==undefined)!==(x.input.expectedVersion!==undefined)))
+            throw Error('unsupported SignMe draft input');
         return structuredClone({ requestId: req.id, operation: x.operation, input: x.input });
     }
     private bound(req: FactoryRequest, command: any, p: any) {
@@ -68,11 +73,17 @@ export class OwnerWorkflowFactory implements RecoverableFactory {
         if (!record(a) || typeof a.contentBase64 !== 'string' || a.contentBase64.length > 12000000 || !Number.isSafeInteger(a.bytes) || a.bytes < 1 || typeof a.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(a.sha256))
             throw Error('original artifact unavailable');
         const bytes = Buffer.from(a.contentBase64, 'base64');
-        if (bytes.toString('base64') !== a.contentBase64 || bytes.length !== a.bytes || createHash('sha256').update(bytes).digest('hex') !== a.sha256 || p.result?.artifacts?.length !== 1 || p.result.artifacts[0].sha256 !== a.sha256 || p.result.artifacts[0].bytes !== a.bytes)
+        const signme = command.operation === 'signme.draft.create';
+        const accepted = signme ? p.result : p.result?.artifacts?.length===1 ? p.result.artifacts[0] : null;
+        if (bytes.toString('base64') !== a.contentBase64 || bytes.length !== a.bytes || createHash('sha256').update(bytes).digest('hex') !== a.sha256 || accepted?.sha256 !== a.sha256 || accepted?.bytes !== a.bytes)
             throw Error('original artifact readback mismatch');
         if (this.kind === 'MEDIA') {
             if (a.mediaType !== 'model/gltf-binary' || bytes.length < 20 || bytes.toString('ascii', 0, 4) !== 'glTF' || bytes.readUInt32LE(4) !== 2 || bytes.readUInt32LE(8) !== bytes.length)
                 throw Error('native GLB receiving proof missing');
+        }
+        else if (signme) {
+            if (!bytes.equals(Buffer.from(command.input.content,'utf8')) || a.mediaType!=='text/plain; charset=utf-8' || !id(p.result?.documentId) || p.result?.version!==(command.input.expectedVersion===undefined?1:command.input.expectedVersion+1) || command.input.documentId!==undefined&&p.result.documentId!==command.input.documentId || a.documentId!==p.result.documentId || a.version!==p.result.version || a.readbackVerified!==true)
+                throw Error('native SignMe exact-content/version proof missing');
         }
         else {
             const expected = await new MarkdownRenderer().render(command.input);

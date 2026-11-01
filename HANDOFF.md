@@ -1,5 +1,12 @@
 ## Accepted stage outputs and six-path native project qualification — November1,2026
 
+## Native SignMe and approved-command custody — November1,2026
+
+Original SignMe startup/schema/text/lifecycle repaired; native23/23. Existing edge returns exact immutable version bytes; TypeScript/fullAPI312/312, zero skips. Creation DOCUMENT factory supports direct SignMe; full253/253. Final owner99/99 covers actual drafts/revisions/download/lost reply/restarts, mixed project/ref/retention and old-tool regressions. Four saved-input substitution probes reproduced missing core approval binding; all nonretired commands now bind saved/reconstructed action and recheck before dispatch. Source16hashes unchanged. [Evidence and continuation](evidence/native-signme-owner-2026-11-01/REPORT.md).
+
+Fixture/source integration supersedes missing-native-adapter directions. Permanent activation needs its own receipt. Dedicated local service actor is separate from customer login/signing. Full UI/signature/delivery/provider/hosted/production/source/cost scope remains Unassessed; original requirements preserved. No duplicate brain/grant/store, account reset or dollar-savings claim.
+
+
 ## Accepted dependency outputs and all-six native project paths — November1,2026
 
 Published source Creation687e980 and ONEee3c47b. Durable inputs now resolve exact request/artifact references from accepted direct-dependency checkpoints. Stored plan/digest remains immutable; original owner preview/approval binds the resolved command. Invalid references reject admission; missing selected output records known input failure without consumer dispatch; competing producer and changed checkpoint custody are preserved/refused. Runtime status now supplies actual tenant/project/Forge workspace and supported reference version, and the model tool documents the plan shape.
