@@ -1,5 +1,14 @@
 # MGR Creation OS — Canonical Handoff
 
+## CURRENT FULL SOURCE-BASED CREATION OS HANDBOOK — 2026-10-31
+
+**Final same-wave verification:** npm run typecheck and npm test **123/123 passed**. Forge 608 tests ran with 3 skips, API/MCP 69/69 and actual local cross-process Forge bridge PASS. Creation OS independent full user journey still open.
+
+Standalone Creation OS owns multi-factory planning/queue/rights/verification, not MGR-3D-FORGE's mesh, rigs, assets, jobs or the real MGR-API-MCP service. Direct 3D creation uses MGR API/MCP -> Forge; Creation OS only coordinates multi-factory projects. Full product remains only partially runtime verified.
+
+Static full tracked-file audit at dcf3b749: 365 tracked files, 178 JS/TS, 138 Markdown and 23 tests; no parsed syntax/JSON errors. Individual file digests and source mentions in evidence/audits/2026-10-31-baseline-static-inventory.json. Full how-to grounded in real source: docs/CREATION-OS-ENGINEERING-HANDBOOK.md. Baseline 122/122 tests passed, new handbook guard to rerun. HANDOFF.md stays sole current Creation OS resume authority.
+
+
 ## Forge master-program continuity reference — 2026-10-31
 
 Creation OS remains a standalone optional multi-factory orchestrator, not a prerequisite for basic 3D work. Full Forge plan: https://github.com/tdmboyd-dev/MGR-3D-FORGE/blob/main/docs/MASTER-FORGE-PROGRAM-2026-10-31.md . Forge target registry: https://github.com/tdmboyd-dev/MGR-3D-FORGE/blob/main/research/external-provenance/BEAST-3D-RESEARCH-UNIVERSE-2026-10-31.json (184 queued investigations, not 184 completed reverse-engineering reports). Forge HANDOFF.md and this separate HANDOFF.md each remain the one live authority for their own product. Creation OS must consume genuine Forge artifact/verification receipts through existing MGR API/MCP, not rebuild its own 3D engine, asset vault or REA X-Ray backend. Hosted integration remains OPEN.

@@ -1,0 +1,6694 @@
+{
+  "all_tracked_file_sha256_bytes_and_parse_classifications": [
+    {
+      "bytes": 46,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 2,
+      "path": ".github/ci-trigger",
+      "sha256": "5bd90bdfb9c02bef2e0a7b8744f92cd0c0ab8cac0acb01a6d1944b091ff07766"
+    },
+    {
+      "bytes": 442,
+      "classification": "TEXT_READ",
+      "lines": 23,
+      "path": ".github/workflows/ci.yml",
+      "sha256": "90e1ea314841ab9ba2147fee3ce173fccb25ac0aa83932fe47aa23a9887e9605"
+    },
+    {
+      "bytes": 104,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 11,
+      "path": ".gitignore",
+      "sha256": "4a6228933a9b4ca12f3ba77b4da0fa2bb60e59ebded9bbb7fdb4b207c6c05cac"
+    },
+    {
+      "bytes": 680,
+      "classification": "TEXT_READ",
+      "lines": 12,
+      "path": "AGENTS.md",
+      "sha256": "98480e79ad42be4da8668d81abf8a728ff292eaea186a0eb1f3258c699a8fa30"
+    },
+    {
+      "bytes": 3149,
+      "classification": "TEXT_READ",
+      "lines": 34,
+      "path": "AUDIT-LEDGER.md",
+      "sha256": "ef4af2f547f0f53b586191d747d076434b5197b2423819ec268c6b2fdb8bee23"
+    },
+    {
+      "bytes": 3682,
+      "classification": "TEXT_READ",
+      "lines": 80,
+      "path": "BUILD-CATEGORY-MAP.md",
+      "sha256": "9ad390a57d2ae59c27dab75f7ebd347de97081d70161e13bb65f8ebcf87d5fa7"
+    },
+    {
+      "bytes": 10799,
+      "classification": "TEXT_READ",
+      "lines": 179,
+      "path": "BUILD-QUEUE.md",
+      "sha256": "894627edc739156507fee9c6208b9886a5765da583ff8379851af5cb981714bd"
+    },
+    {
+      "bytes": 22836,
+      "classification": "TEXT_READ",
+      "lines": 414,
+      "path": "BuildList.md",
+      "sha256": "b5b97a847f9971141e79abef65ad1fe30e0c358cf3d2fea874cc10fb3fbe97be"
+    },
+    {
+      "bytes": 3034,
+      "classification": "TEXT_READ",
+      "lines": 47,
+      "path": "END-TO-END-READ.md",
+      "sha256": "efc5225847064b20d1d5836ab8885e93f94b1f1a332e28d34c30a663c2c535bd"
+    },
+    {
+      "bytes": 2805,
+      "classification": "TEXT_READ",
+      "lines": 65,
+      "path": "EXTRACTION-MANIFEST.md",
+      "sha256": "bb1080e9331e43461ae378b605112080d323fd89ef025bcd86c876e7f7d05b4b"
+    },
+    {
+      "bytes": 6077,
+      "classification": "TEXT_READ",
+      "lines": 44,
+      "path": "HANDOFF.md",
+      "sha256": "d9893dc5c13e736a662821e3e70ea661a50ff9872c8ee6144fee9b37422b6725"
+    },
+    {
+      "bytes": 1321,
+      "classification": "TEXT_READ",
+      "lines": 23,
+      "path": "JEV-READ-FIRST.md",
+      "sha256": "564d82a61318dbba379dcf5f5a6c28d83efd6b311d172ba8e65f0b47c704170e"
+    },
+    {
+      "bytes": 2831,
+      "classification": "TEXT_READ",
+      "lines": 51,
+      "path": "MGR-AGENTS-EXTRACTION-REPORT.md",
+      "sha256": "a3532e3ae86b4f83a621411edc67b232cf5d37281270986d5d05594135df8338"
+    },
+    {
+      "bytes": 909,
+      "classification": "TEXT_READ",
+      "lines": 1,
+      "path": "MGR-Beast-Pack/ACTIVATION-PROMPT.txt",
+      "sha256": "4fb070e1aac62bbb640a07ea4d0f58e4fbd4be2ea5a2b754b30ae768375cc51a"
+    },
+    {
+      "bytes": 112,
+      "classification": "TEXT_READ",
+      "lines": 8,
+      "path": "MGR-Beast-Pack/CALL-MGR-BEAST.txt",
+      "sha256": "8c452d8bfd52c3b751723b7f75400f0012b3fdbcd911a1da2c2c6d09cf6e70e3"
+    },
+    {
+      "bytes": 47378,
+      "classification": "TEXT_READ",
+      "lines": 2121,
+      "path": "MGR-Beast-Pack/MGR-BEAST-PACK.md",
+      "sha256": "5bce398eadd22d12ab164035fa0c94a29f484e03293573402a2fead9d80ffe6b"
+    },
+    {
+      "bytes": 848,
+      "classification": "TEXT_READ",
+      "lines": 24,
+      "path": "MGR-Beast-Pack/templates/ARCHITECTURE-COMPLETENESS-CHECKLIST.md",
+      "sha256": "6cdd67e931f5e6f7ca311d029fab29b2383d5ca183e138d8d4e04a446afdb7ab"
+    },
+    {
+      "bytes": 460,
+      "classification": "TEXT_READ",
+      "lines": 39,
+      "path": "MGR-Beast-Pack/templates/AUDIT-LEDGER-TEMPLATE.md",
+      "sha256": "25ed5e9bb1720cf5dd5a8d18ef294d4b7520a37ccda851335e9750198c373437"
+    },
+    {
+      "bytes": 262,
+      "classification": "TEXT_READ",
+      "lines": 4,
+      "path": "MGR-Beast-Pack/templates/BUILD-QUEUE-TEMPLATE.md",
+      "sha256": "8cbff575d1a05dd3767dc1ec892cbffe3a4377ab9d77e98df9eec85d47ecc27c"
+    },
+    {
+      "bytes": 276,
+      "classification": "TEXT_READ",
+      "lines": 23,
+      "path": "MGR-Beast-Pack/templates/CAPABILITY-MAP-TEMPLATE.md",
+      "sha256": "95d6b14e65a4a5b45967e51206dfb26c8367d3cbf280704a622a894d5da17f94"
+    },
+    {
+      "bytes": 203,
+      "classification": "TEXT_READ",
+      "lines": 4,
+      "path": "MGR-Beast-Pack/templates/DEFECT-LEDGER-TEMPLATE.md",
+      "sha256": "a0f5e6fa665e91bfdc3ba084ef2fc9283480881434b71c08182f6d928b82ea03"
+    },
+    {
+      "bytes": 671,
+      "classification": "TEXT_READ",
+      "lines": 47,
+      "path": "MGR-Beast-Pack/templates/RESEARCH-PACKET-TEMPLATE.md",
+      "sha256": "39b5a4e2302d761bc90730d609af863ebf4de80b7ea761a454876accfb8ae3c1"
+    },
+    {
+      "bytes": 215,
+      "classification": "TEXT_READ",
+      "lines": 4,
+      "path": "MGR-Beast-Pack/templates/RESEARCH-QUEUE-TEMPLATE.md",
+      "sha256": "48ee27076fff01df19d7581fb4980cdb90339f0261410bbdce7deab2904d4490"
+    },
+    {
+      "bytes": 559,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "MGR-Beast-Pack/templates/SCORECARD-TEMPLATE.md",
+      "sha256": "d2b05b55e0eecc29b308123437e9d6a993fb1418163da45f2fa5342658e4cc70"
+    },
+    {
+      "bytes": 110,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 1,
+      "path": "MGR-Beast-Pack/templates/TASK-LEDGER-TEMPLATE.csv",
+      "sha256": "7b30b6eb7a6b6cd32748b8f6c1e4ab76d7d9d2c20fab0d4788d2608018311e9c"
+    },
+    {
+      "bytes": 1816,
+      "classification": "TEXT_READ",
+      "lines": 33,
+      "path": "README.md",
+      "sha256": "3d92cde09cf0a196a290f348753dfd6444d3bec430d1da82ca05cc5cf479bd75"
+    },
+    {
+      "bytes": 2105,
+      "classification": "TEXT_READ",
+      "lines": 51,
+      "path": "TASK-LEDGER.md",
+      "sha256": "460ebaa66e01aef3c66fbe34e416966bb572f887e32b684130c6fbf6d1561c68"
+    },
+    {
+      "bytes": 3834,
+      "classification": "TEXT_READ",
+      "lines": 51,
+      "path": "WORK-STATE.md",
+      "sha256": "984d58ecb4866a1a3e6d41143870bff175217376ae9a515ec3f2f5528c8cc62f"
+    },
+    {
+      "bytes": 2323,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "architecture/3D-FORGE-INTEGRATION.md",
+      "sha256": "3d621ece58f7f38bf1840bb870bb5ac4873769f455cfaf8c31fe40a91f44a366"
+    },
+    {
+      "bytes": 2215,
+      "classification": "TEXT_READ",
+      "lines": 34,
+      "path": "architecture/ACCEPTANCE-TESTS.md",
+      "sha256": "5c5dfa3647bc2148c9b4add12df8acb66e04d958ca3cb8ec5262314e94b25eea"
+    },
+    {
+      "bytes": 1781,
+      "classification": "TEXT_READ",
+      "lines": 31,
+      "path": "architecture/BAKEOFFS.md",
+      "sha256": "df3f8abc5d7d5cb2d50b85bb416ae0c052673026395bf78da75cfed5c007d41d"
+    },
+    {
+      "bytes": 1965,
+      "classification": "TEXT_READ",
+      "lines": 52,
+      "path": "architecture/DEPENDENCY-ORDER.md",
+      "sha256": "32647f89f0d5800569919f08ebdbf2b16435d6b22828a8e48a78f2812438f46f"
+    },
+    {
+      "bytes": 1440,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "architecture/PRODUCT-BOUNDARIES.md",
+      "sha256": "6dac9be7e4e563f5b3aa700c9acd8d14c38ae0bd9674103343cdf6e041f60e31"
+    },
+    {
+      "bytes": 1291,
+      "classification": "TEXT_READ",
+      "lines": 17,
+      "path": "architecture/STATE-MACHINES.md",
+      "sha256": "e885abdb650d8f37f6699b81caa489344223f68ca5f0e040d4bce7d7bcc895df"
+    },
+    {
+      "bytes": 1165,
+      "classification": "TEXT_READ",
+      "lines": 13,
+      "path": "architecture/SYSTEM-MAP-58.md",
+      "sha256": "6deb5af5342c53771ebff2c71b89172716b35e62c0178ca6f9a4272478ea11bd"
+    },
+    {
+      "bytes": 2138,
+      "classification": "TEXT_READ",
+      "lines": 22,
+      "path": "docs/BEAST-WAVE-STATUS.md",
+      "sha256": "8eb8a45d9e8973b07271400d7891f9d74f1e4e81db1136ce2930536e9c375435"
+    },
+    {
+      "bytes": 1256,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "docs/LIVE-INTEGRATION-GATES.md",
+      "sha256": "43021b23762126edbe49a038e7f41bac88f078775b1fe87afef2932ba862bb90"
+    },
+    {
+      "bytes": 1271,
+      "classification": "TEXT_READ",
+      "lines": 33,
+      "path": "docs/PRODUCT-VERTICAL-SLICE.md",
+      "sha256": "c4cdeb89d1159c153da30bd0d8053e116a7da2dee3bcdecb8abdf9104d0ce3ac"
+    },
+    {
+      "bytes": 1003,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "docs/PRODUCTION-BOUNDARY-WAVE.md",
+      "sha256": "d67b7333e7a265c67265000843185b6539d583cebf3590aaf67c5187b29bd252"
+    },
+    {
+      "bytes": 1189,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "docs/SUPABASE-DECISION.md",
+      "sha256": "233655ee27613bfdc3a6a926c6a205c7346b9ff34be10fb8b11be15d3d49da3f"
+    },
+    {
+      "bytes": 4136,
+      "classification": "VALID_JSON",
+      "lines": 139,
+      "path": "evidence/avatar-function-audit-2026-09-29.json",
+      "sha256": "11155357736e3c97b72a941bbc49773d5ddc492409bf1f7b763e039e98483208"
+    },
+    {
+      "bytes": 4023,
+      "classification": "TEXT_READ",
+      "lines": 54,
+      "path": "legacy/mgr-agents/BRAIN_TRAINING_PLAN.md",
+      "sha256": "d540ef7a2edbfee9d406acaa90eda443365e6f821d8c8932c70c08d7d3752abd"
+    },
+    {
+      "bytes": 41016,
+      "classification": "TEXT_READ",
+      "lines": 403,
+      "path": "legacy/mgr-agents/docs/architecture/IKICKITZ_CHARACTER_LOCKS.md",
+      "sha256": "06e40e3d709a0e1dfe283cbff98f81bbe5e7825e49c7e42ddc5b6d05cec73943"
+    },
+    {
+      "bytes": 123029,
+      "classification": "TEXT_READ",
+      "lines": 2120,
+      "path": "legacy/mgr-agents/docs/architecture/MGR_AGENTS_FULL_SPEC.md",
+      "sha256": "d721d8b4a404524e33ba0109038aa31f4b2866d4ad45a331c1146ce8f07cd973"
+    },
+    {
+      "bytes": 19240,
+      "classification": "TEXT_READ",
+      "lines": 444,
+      "path": "legacy/mgr-agents/docs/architecture/MGR_AGENTS_PLATFORM_BRIEF.md",
+      "sha256": "3fc690e9dc22785c30911d9018b4ce43a70cdcf4e3d687818440430b2fcd585d"
+    },
+    {
+      "bytes": 4259,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 87,
+      "path": "legacy/mgr-agents/drizzle/0001_training_pipeline.sql",
+      "sha256": "071f2989eaddd121c2d74504b172d6354f5ba0d76f7844237e856ca52ad5d531"
+    },
+    {
+      "bytes": 551,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 12,
+      "path": "legacy/mgr-agents/drizzle/0002_autopilot_persistence.sql",
+      "sha256": "f09c8cc6b9c76e71366c5444cc56ede21481f5c551729418aef70fba23f0473d"
+    },
+    {
+      "bytes": 8154,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 163,
+      "path": "legacy/mgr-agents/drizzle/0003_foundation_repair.sql",
+      "sha256": "7ef8030ba213c4b2cf1583ee834702c12cb9a8acbefdba64ba5f27c11ad85312"
+    },
+    {
+      "bytes": 4780,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 71,
+      "path": "legacy/mgr-agents/drizzle/add_approval_gateway.sql",
+      "sha256": "a7bd15e56607490d54211097ddcfb5e651d24b16e8be4ef81a9ce24e5ff7e793"
+    },
+    {
+      "bytes": 2414,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 45,
+      "path": "legacy/mgr-agents/drizzle/add_hybrid_descriptors.sql",
+      "sha256": "a42efbd7a5e8420c76e1d4d865f27044ba6f0d8703150c5f9380ecd8f2fc8af0"
+    },
+    {
+      "bytes": 3207,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/agency/config/ucos-locks__agency.yaml",
+      "sha256": "b01cbaf4f311626f11722ae6936c52ae6e0d05f1161fe57b6110a11047d69c1e"
+    },
+    {
+      "bytes": 3711,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/aiden/config/ucos-locks__aiden.yaml",
+      "sha256": "c0fabd196d7196232a8f590f289a246c9de19f4b6cec7111c5b6ff0192c8dfb6"
+    },
+    {
+      "bytes": 3583,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/axel/config/ucos-locks__axel.yaml",
+      "sha256": "72bcaf8bb042419c01ff8c84b3664d95a4787fa3f0140a8686a74c468a9344bb"
+    },
+    {
+      "bytes": 3809,
+      "classification": "TEXT_READ",
+      "lines": 91,
+      "path": "legacy/mgr-agents/public/36Agents/blake/config/ucos-locks__blake.yaml",
+      "sha256": "9ad62f88d7d603d5926f1726ea408fae2893a205e1d736b70a75710d70f51e15"
+    },
+    {
+      "bytes": 3639,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/blaze/config/ucos-locks__blaze.yaml",
+      "sha256": "f78ede037c2995009c530ea320996ce11689c068572fb1794e5aac087e5deebf"
+    },
+    {
+      "bytes": 3489,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/chef/config/ucos-locks__chef.yaml",
+      "sha256": "1ee334ab9969e0e7201d4007a65de3db31466f16b38fda08650de03c634e3003"
+    },
+    {
+      "bytes": 3753,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/debugger/config/ucos-locks__debugger.yaml",
+      "sha256": "b6260afb3756d1f33d868fb0ca6d3a7d59272695f5bfce4a880a00c67edf3f97"
+    },
+    {
+      "bytes": 3641,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/devops/config/ucos-locks__devops.yaml",
+      "sha256": "5450071938cfecd47bd4cef63ba84fc7380e94311680db622b2f25f1d5bca38f"
+    },
+    {
+      "bytes": 3431,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/dimarko/config/ucos-locks__dimarko.yaml",
+      "sha256": "269ecd6e131154d68cd45e91ad163f3cd5eb2a4645619433f7b1f63360eefec0"
+    },
+    {
+      "bytes": 3557,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/equity/config/ucos-locks__equity.yaml",
+      "sha256": "1dd70917afee4e9abab61fdd0c33881030c996a57e276de97280bcfc54c75f31"
+    },
+    {
+      "bytes": 3447,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/foreman/config/ucos-locks__foreman.yaml",
+      "sha256": "be3f7e6c7761cf3996177d72400b847dea2956a2f0a5ea3ec200e4553076c2b7"
+    },
+    {
+      "bytes": 3237,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/forge/config/ucos-locks__forge.yaml",
+      "sha256": "3c474c0ac76b50cd24a02c7c95f3f0672c9395b08f388f0878c137d684f435d5"
+    },
+    {
+      "bytes": 3633,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/gantt/config/ucos-locks__gantt.yaml",
+      "sha256": "8dd24b0b771de7571b1f530a1037cb1dd8f1929dff107b2d7e26f6b5496352de"
+    },
+    {
+      "bytes": 3573,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/grantley/config/ucos-locks__grantley.yaml",
+      "sha256": "0f40e8fd4ca21ff4e1d59bbde1734d152c1dbaa8e2635ce09d382c29e499b116"
+    },
+    {
+      "bytes": 4169,
+      "classification": "TEXT_READ",
+      "lines": 94,
+      "path": "legacy/mgr-agents/public/36Agents/herald/config/ucos-locks__herald.yaml",
+      "sha256": "77c04ede759ca8a0ffabb8efa2fef204682c5ce18539aa16c34144925fb70f19"
+    },
+    {
+      "bytes": 3633,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/inti/config/ucos-locks__inti.yaml",
+      "sha256": "94bd14ada2cff5115f8930287c8249f9ff77efabc81188d4fcba8750aa00141a"
+    },
+    {
+      "bytes": 4185,
+      "classification": "TEXT_READ",
+      "lines": 92,
+      "path": "legacy/mgr-agents/public/36Agents/investor/config/ucos-locks__investor.yaml",
+      "sha256": "2722d7b1abd21910c5f6d333c3820206bd5340c7fc46e0f103c0701a8cad4bb0"
+    },
+    {
+      "bytes": 3807,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/ledger/config/ucos-locks__ledger.yaml",
+      "sha256": "8122bd67e1b874c682298cdac7d2f44bf2a7ff53baaee01946a1d13009d5fa60"
+    },
+    {
+      "bytes": 3495,
+      "classification": "TEXT_READ",
+      "lines": 87,
+      "path": "legacy/mgr-agents/public/36Agents/leo/config/ucos-locks__leo.yaml",
+      "sha256": "cf5be2099507db78661322378ebff1c4752c23e9cfa0c45c6868baf74a9447ec"
+    },
+    {
+      "bytes": 3595,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/marshall/config/ucos-locks__marshall.yaml",
+      "sha256": "5ebd2b00c3d3873cb13c982f8e4ba2839153691b740b7a317e89012793042ce5"
+    },
+    {
+      "bytes": 3713,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/milo/config/ucos-locks__milo.yaml",
+      "sha256": "27ec87194bc85a8234835f2240c8797b8741fb8dfd6672de90f828ea3952afec"
+    },
+    {
+      "bytes": 3277,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/phantom/config/ucos-locks__phantom.yaml",
+      "sha256": "bce8572f12aea0db7ed40bc25b5b4dd45af8c110f29f9be62e8e3e3e0bdb41e1"
+    },
+    {
+      "bytes": 3567,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/polaris/config/ucos-locks__polaris.yaml",
+      "sha256": "5b4a7a95958c3012412a8ef5c9b860b1ee33a4c7d24f7254db02afed1fdef0f6"
+    },
+    {
+      "bytes": 3459,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/recruit/config/ucos-locks__recruit.yaml",
+      "sha256": "c4113e6425a968c383e62071a7c07c2551cd27e19501ad750fe89407c541843d"
+    },
+    {
+      "bytes": 3495,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/remy/config/ucos-locks__remy.yaml",
+      "sha256": "3aca38381934549b606accd3b379a6d6f67fd6935811832fa44064386c9f8798"
+    },
+    {
+      "bytes": 3647,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/rhythm/config/ucos-locks__rhythm.yaml",
+      "sha256": "bf8b18863f93fa6cf762e765a672d64a66ee2c9181fb6b80b0e41dd6a80a26d9"
+    },
+    {
+      "bytes": 3511,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/sentinel/config/ucos-locks__sentinel.yaml",
+      "sha256": "fbc0792130053b6d140b4b84674928b8ca0a2f0d0862a787afef4a1b6f08695e"
+    },
+    {
+      "bytes": 3309,
+      "classification": "TEXT_READ",
+      "lines": 87,
+      "path": "legacy/mgr-agents/public/36Agents/stockwell/config/ucos-locks__stockwell.yaml",
+      "sha256": "6852f0b8eed43bd423c3ef76494681528f02877f34f5844241ca9c6483ea68dd"
+    },
+    {
+      "bytes": 3903,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/titan/config/ucos-locks__titan.yaml",
+      "sha256": "852623ed9a746f3f75697b41c82e4f9fae716d9b2c3ce48dd187d7766cfd81ed"
+    },
+    {
+      "bytes": 3963,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "legacy/mgr-agents/public/36Agents/victor/config/ucos-locks__victor.yaml",
+      "sha256": "a75d945b4eb94353c8d6f77154556f5c226146188077d9abda5b3440fdbba713"
+    },
+    {
+      "bytes": 3609,
+      "classification": "TEXT_READ",
+      "lines": 89,
+      "path": "legacy/mgr-agents/public/36Agents/vinnie/config/ucos-locks__vinnie.yaml",
+      "sha256": "8a51ad51522a923e9fe4eace90819a3f2b8ba1eeffae9bd9df2af37b287622bf"
+    },
+    {
+      "bytes": 3487,
+      "classification": "TEXT_READ",
+      "lines": 88,
+      "path": "legacy/mgr-agents/public/36Agents/vitals/config/ucos-locks__vitals.yaml",
+      "sha256": "c783a417aa4b0698871af16d1ac773d3071708cacd9e1d68537c6f1908b3846d"
+    },
+    {
+      "bytes": 3197,
+      "classification": "TEXT_READ",
+      "lines": 87,
+      "path": "legacy/mgr-agents/public/36Agents/voice/config/ucos-locks__voice.yaml",
+      "sha256": "00770e2786983971151d36a52b56d443616eaee280e7bd2372767cc2c63524f0"
+    },
+    {
+      "bytes": 18013,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 385,
+      "path": "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "sha256": "3efd4b01c09477895bde684d10f3d699db24c42fac2b3050d2c34946d94bf7f7"
+    },
+    {
+      "bytes": 10375,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 287,
+      "path": "legacy/mgr-agents/src/lib/db/schema/approvals.ts",
+      "sha256": "cc72fa69a8b4a2a69788f87f089c946ab874a13c2a1bff72cabc6979c77e19d2"
+    },
+    {
+      "bytes": 3514,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 75,
+      "path": "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "sha256": "51b0aba6d61a8eeffe37b4d89b650487956a074d352d50b2bc669d651f026843"
+    },
+    {
+      "bytes": 18875,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 397,
+      "path": "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "sha256": "635d055fb8e5210a1a8d7d8b18bda2ecfb307f260f886350d234ef5325e50693"
+    },
+    {
+      "bytes": 3012,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 59,
+      "path": "legacy/mgr-agents/src/lib/db/schema/hybrid.ts",
+      "sha256": "3606c8527beef62b03152e7304deeb715ae3fa99afa3c4aaa0a5f245542e40a2"
+    },
+    {
+      "bytes": 6745,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 122,
+      "path": "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "sha256": "95e5c41161c89fa69eb992c0a7a27d97f9d98ab9183f7b88a866ee284681a2e3"
+    },
+    {
+      "bytes": 313,
+      "classification": "VALID_JSON",
+      "lines": 5,
+      "path": "package.json",
+      "sha256": "a1c29e256c7023b5c3e01ef693e90a8fa244a06b272454924ade87dc367b9f97"
+    },
+    {
+      "bytes": 1466,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "research/01-product-factory.md",
+      "sha256": "c3f30e385f307c7c1570b95fa44ece9a700babbbb3a283811f05e70813814c71"
+    },
+    {
+      "bytes": 1132,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "research/02-media-factory.md",
+      "sha256": "8e9249c6221c822bec580873ca0527d92cb1d13f455b6782ff96189ffe7ed09f"
+    },
+    {
+      "bytes": 1012,
+      "classification": "TEXT_READ",
+      "lines": 13,
+      "path": "research/03-web-factory.md",
+      "sha256": "723c1cc1e90dcce4c40d63f52a44c7c4f52fc74794e7a6df1923334b54dd3ded"
+    },
+    {
+      "bytes": 650,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/04-campaign-factory.md",
+      "sha256": "c1c5a7bc1f3ca1e4e4415f604d6c21f24ef151c62858f6c0680f97d39ddc6b2c"
+    },
+    {
+      "bytes": 620,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/05-course-factory.md",
+      "sha256": "d7c4aba4003f4cff97e9cddd19284954ac610287c56c6ea27cb793ee821435f3"
+    },
+    {
+      "bytes": 574,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/06-brand-factory.md",
+      "sha256": "bc1ec7d98c90fd0ae50f6a07f47eba9affa8128e013fe8a35a486a9a9f2d409b"
+    },
+    {
+      "bytes": 557,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/07-research-factory.md",
+      "sha256": "f0cf36abce85c2e05df1e183530e3d084bc2e12e696fa317a1366479809347d5"
+    },
+    {
+      "bytes": 517,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/08-document-factory.md",
+      "sha256": "19af6ce9910cec4cbabc27474c64d92b88199bc9cbe5571ef950c757d39c86af"
+    },
+    {
+      "bytes": 667,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/09-audio-factory.md",
+      "sha256": "93423ff77bfa079b1b68753d422cfeebb73c944620cc24dc48165a2db9fb435c"
+    },
+    {
+      "bytes": 608,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/10-automation-factory.md",
+      "sha256": "20fb57456ccc9119bf923de80fa812c35c92e1bd68e101d2b05a96b5e46831e8"
+    },
+    {
+      "bytes": 683,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/11-app-tool-factory.md",
+      "sha256": "7a886e6b89fe64ecc4b2bae970566614924a6e8870920dd2784f64a368434a45"
+    },
+    {
+      "bytes": 654,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/12-data-analytics-factory.md",
+      "sha256": "9f3e634e6e899bfe027a260f9d424e557c91dc6e76e6a23ecfe6d16dbdd75b0c"
+    },
+    {
+      "bytes": 5637,
+      "classification": "TEXT_READ",
+      "lines": 30,
+      "path": "research/AVATAR-ASSET-ADMISSION-2026-09-29.md",
+      "sha256": "ab521eaa879cf03da6e73b3b0c2965331cd801fd12510a6cd6c38787f405fff7"
+    },
+    {
+      "bytes": 13563,
+      "classification": "TEXT_READ",
+      "lines": 90,
+      "path": "research/AVATAR-FUNCTION-RESEARCH-2026-09-29.md",
+      "sha256": "cbd535c8193801b52e2172650c90589d4601c7ccaa5cb51eff684a9555215d9a"
+    },
+    {
+      "bytes": 3040,
+      "classification": "TEXT_READ",
+      "lines": 36,
+      "path": "research/BEAST-AD-CREATIVE-UNIVERSITY-2026-09-28.md",
+      "sha256": "39a1cae5cdbc5409a268afb3fc9147c5531544e522404db6893652154aebe795"
+    },
+    {
+      "bytes": 2450,
+      "classification": "TEXT_READ",
+      "lines": 29,
+      "path": "research/BEAST-AGENT-MCP-SECURITY-UNIVERSITY-2026-09-28.md",
+      "sha256": "7b93a4b669604900538f19c843a739e2f6361f2da0b3fd4ef99c454945a6da7b"
+    },
+    {
+      "bytes": 971,
+      "classification": "TEXT_READ",
+      "lines": 9,
+      "path": "research/BEAST-BRAIN-AGENT-UNIVERSITY-2026-09-29.md",
+      "sha256": "c5a5514747944c161b952530fbbba4d8d3773ced7448cd8134c6b01d9f6fb522"
+    },
+    {
+      "bytes": 1172,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "research/BEAST-CAMERA-CONTROL-DEEP-PASS-2026-09-29.md",
+      "sha256": "cd928297b2560390f2b8b44e6e00cce646472d11daf97fcc063197b07ccf9388"
+    },
+    {
+      "bytes": 6346,
+      "classification": "TEXT_READ",
+      "lines": 130,
+      "path": "research/BEAST-CAPABILITY-RESEARCH-MATRIX-2026-09-28.md",
+      "sha256": "c5f846f5c4fd0c0809f3628452c5a24ed8d9a1d9e6f069fe308cba483fa6ddb5"
+    },
+    {
+      "bytes": 3357,
+      "classification": "TEXT_READ",
+      "lines": 45,
+      "path": "research/BEAST-CINEMA-VFX-UNIVERSITY-2026-09-28.md",
+      "sha256": "855e2bf78cebc2e8f442123c0d6ff3efea0a45c246e4decf78edac08bb023a04"
+    },
+    {
+      "bytes": 1808,
+      "classification": "TEXT_READ",
+      "lines": 19,
+      "path": "research/BEAST-DATASET-EVAL-UNIVERSITY-2026-09-28.md",
+      "sha256": "a0fd29673718d7b3113335220f082fa73a1a94b5b3b6958a0e1e5b560ed3f42e"
+    },
+    {
+      "bytes": 1032,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "research/BEAST-FILM-STANDARDS-DEEP-PASS-2026-09-29.md",
+      "sha256": "05ad95e0399d17673d35ca5bfa6dbf957a7b15d5092b55cc72b4039225d07962"
+    },
+    {
+      "bytes": 3045,
+      "classification": "TEXT_READ",
+      "lines": 42,
+      "path": "research/BEAST-FORWARD-DISCOVERY-WAVE-2026-09-29.md",
+      "sha256": "286d9307276562a9ba370ae8c8ea31289cd748e5c7ba77ec132d312d2f651d78"
+    },
+    {
+      "bytes": 2529,
+      "classification": "TEXT_READ",
+      "lines": 31,
+      "path": "research/BEAST-MEDIA-IDENTITY-UNIVERSITY-2026-09-28.md",
+      "sha256": "64058cdf422a8ec4857a2855e75467d187895a9e901233824666964ac259e99d"
+    },
+    {
+      "bytes": 868,
+      "classification": "TEXT_READ",
+      "lines": 9,
+      "path": "research/BEAST-MEDIA-PERCEPTION-EDITING-DEEP-PASS-2026-09-29.md",
+      "sha256": "c7b7ed61c11fffd1e6924381ee23bebcac374472ab4ed42012f3ad2f2e42a4b2"
+    },
+    {
+      "bytes": 1233,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "research/BEAST-ROUTING-GATEWAY-BAKEOFF-2026-09-29.md",
+      "sha256": "7f821242cdb7c24e7bbf3c81016221404bd09e30aefba40511debf7fd8523e2b"
+    },
+    {
+      "bytes": 2259,
+      "classification": "TEXT_READ",
+      "lines": 25,
+      "path": "research/BEAST-ROUTING-INFRASTRUCTURE-UNIVERSITY-2026-09-28.md",
+      "sha256": "f26213f77335e05095aff9cfd7d0a4fadb2690180cad07c4473a9f3df3006b63"
+    },
+    {
+      "bytes": 1611,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "research/BEAST-SHARED-NATIVE-VS-PROVIDER-DECISION-2026-09-28.md",
+      "sha256": "d4ab79b687be0a573e2999693bcad6a55eb285bf4ecd989693f4aa412b94dbac"
+    },
+    {
+      "bytes": 1984,
+      "classification": "TEXT_READ",
+      "lines": 37,
+      "path": "research/BEAST-SPATIAL-WORLD-RENDERING-DEEP-PASS-2026-09-29.md",
+      "sha256": "a53258de7978b470efa76d1ad7ab619c7a0bec7b787129aee99488638972a573"
+    },
+    {
+      "bytes": 3329,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "research/BEAST-VOICE-IDENTITY-LIPSYNC-LICENSE-MATRIX-2026-09-29.md",
+      "sha256": "904f47c6d2a77a608fe97fae3b34aaa771e5420d3d24645ec873f702e487175d"
+    },
+    {
+      "bytes": 6994,
+      "classification": "TEXT_READ",
+      "lines": 57,
+      "path": "research/DEEP-WAVE-01-35.md",
+      "sha256": "a634684843a92345a2b53bf4e36633dfb7178a4d1a0b0f6a3b2c8b156a26480e"
+    },
+    {
+      "bytes": 4693,
+      "classification": "TEXT_READ",
+      "lines": 54,
+      "path": "research/DEEP-WAVE-49-58.md",
+      "sha256": "414616be8392caf20112f68fdbd64a25967722e1b79a1717b9fc8d5b45c2a439"
+    },
+    {
+      "bytes": 5944,
+      "classification": "TEXT_READ",
+      "lines": 57,
+      "path": "research/EVIDENCE-LEDGER-01-35.md",
+      "sha256": "44e12e47e6c8f9e5281730586dacc0e97ffc7bfd3ad6d8d2f94882fee617dbd5"
+    },
+    {
+      "bytes": 5133,
+      "classification": "TEXT_READ",
+      "lines": 65,
+      "path": "research/IMPLEMENTATION-RESEARCH-AUDIT-A-E.md",
+      "sha256": "313deb40e1b6db784541a4f43a7f56e577a20f528f4e5ec7f795bc9e9d16c9e0"
+    },
+    {
+      "bytes": 4717,
+      "classification": "TEXT_READ",
+      "lines": 58,
+      "path": "research/MASTER-RESEARCH-MATRIX.md",
+      "sha256": "ee280a6e1a8d5c7d6c1f888dfb8979dc50031709e00cc160e57617048c957739"
+    },
+    {
+      "bytes": 1170,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "research/PROGRESS.md",
+      "sha256": "c2ac04a5a5b7ea0809e3e0e5eaf3f8b16faf853e0fb38167c504a6831b503056"
+    },
+    {
+      "bytes": 1076,
+      "classification": "TEXT_READ",
+      "lines": 26,
+      "path": "research/QUEUE-EXPANSION-49-58.md",
+      "sha256": "498ec9c3e511efc736cf3bcdfe5d26282f6cb23421918c102c1d61382b4ad1bd"
+    },
+    {
+      "bytes": 1032,
+      "classification": "TEXT_READ",
+      "lines": 10,
+      "path": "research/README.md",
+      "sha256": "f3b2ab1f0b25514890fa2f19163d18652e0f39df6593b89cd5fff7387246f192"
+    },
+    {
+      "bytes": 1553,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "research/RESEARCH-INTEGRITY.md",
+      "sha256": "f99e31372b882a2b3e006453f72c0c1c8ca812f3102f0a42505f516f35b81a0a"
+    },
+    {
+      "bytes": 3326,
+      "classification": "TEXT_READ",
+      "lines": 72,
+      "path": "research/RESEARCH-QUEUE.md",
+      "sha256": "401fb05ef8d4293e0fb7c04f6b4b8b3cc7688a0b685777f874d7579d7b6850ab"
+    },
+    {
+      "bytes": 1931,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "research/SOURCE-UNIVERSE.md",
+      "sha256": "5ac8844e493e378d19b5892914835e23686263e9bfa31bd41d839a3737cd6dae"
+    },
+    {
+      "bytes": 2498,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "research/UNIVERSITY-HUGGING-FACE.md",
+      "sha256": "634799024ab282f29cc07148db9c6af2a11794adf8472171fbab53223cd8c52f"
+    },
+    {
+      "bytes": 3202,
+      "classification": "TEXT_READ",
+      "lines": 42,
+      "path": "research/UNIVERSITY-STUDIO-PRODUCTION.md",
+      "sha256": "b018682e30edc5903d3ac83787fb30e8ae2d7f3ee2aa9cf5bd98b54091b076c8"
+    },
+    {
+      "bytes": 3917,
+      "classification": "TEXT_READ",
+      "lines": 63,
+      "path": "research/WAVE-01-SYNTHESIS.md",
+      "sha256": "7c63ca00f1fb8af7868f2a4df3813a32181ae619160cadf5b28b6539ea826882"
+    },
+    {
+      "bytes": 1238,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "research/WAVE3-EVIDENCE.md",
+      "sha256": "053f762667995b9a9d5883f5ed97c59b6dd42333e24024909bc2f67848354fc5"
+    },
+    {
+      "bytes": 1243,
+      "classification": "TEXT_READ",
+      "lines": 8,
+      "path": "research/wave3/36-product-factory.md",
+      "sha256": "51351cb86ac84dc30c8940dbaf6bc4235cb44348e6dfc2f55293a1eabfa1a1cf"
+    },
+    {
+      "bytes": 1399,
+      "classification": "TEXT_READ",
+      "lines": 8,
+      "path": "research/wave3/37-media-factory.md",
+      "sha256": "7f6ea2db30c5a3176352d7f1dff1006a4e4dbf9752b79752bfa91262529dddaa"
+    },
+    {
+      "bytes": 1044,
+      "classification": "TEXT_READ",
+      "lines": 7,
+      "path": "research/wave3/38-web-factory.md",
+      "sha256": "0a653fcd023cb3017640607a3f5d5d74c443f886bab01a9352dcc6f9a75ac225"
+    },
+    {
+      "bytes": 887,
+      "classification": "TEXT_READ",
+      "lines": 7,
+      "path": "research/wave3/39-campaign-factory.md",
+      "sha256": "303f2b20122e9299dd84442b443aa2728ef7f1ac55a495d02bf9b347d93f828a"
+    },
+    {
+      "bytes": 856,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/40-course-factory.md",
+      "sha256": "4147bf19d3ae2051a62fc77d0633de0b29cc29edb5dc41cb5b5847ae4b153fa7"
+    },
+    {
+      "bytes": 785,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/41-brand-factory.md",
+      "sha256": "ed72caa8083244c9d43b46c75047af03f132554ed33856eb06b3f23c7f6b0766"
+    },
+    {
+      "bytes": 874,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/42-research-factory.md",
+      "sha256": "d86a1a15293c3ccd434a26f0d617ccba7ce45679721e8c36246f9f18c9413222"
+    },
+    {
+      "bytes": 724,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/43-document-factory.md",
+      "sha256": "77eecc1d1110327c0436bc0d6b43bea36c94a5ded731390dc872a0ea5ae254af"
+    },
+    {
+      "bytes": 813,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/44-audio-factory.md",
+      "sha256": "e334d9278d75f5c294d248361b049177d41706b4485bc1db12790f908ee4351d"
+    },
+    {
+      "bytes": 737,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/45-automation-factory.md",
+      "sha256": "264c7064171e6c8d31c8b58849d334f31e94e44719030a5512faaec8780500e2"
+    },
+    {
+      "bytes": 819,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/46-app-tool-factory.md",
+      "sha256": "b5af5c7d0b24449d75d01e2356b91e1d81e3c1eb322111e4327fbb2c2fe49130"
+    },
+    {
+      "bytes": 812,
+      "classification": "TEXT_READ",
+      "lines": 6,
+      "path": "research/wave3/47-data-analytics-factory.md",
+      "sha256": "1404201913fb765831b78c68a9cb76f37fa807246ea027d6f79964b69f9d5332"
+    },
+    {
+      "bytes": 1264,
+      "classification": "TEXT_READ",
+      "lines": 8,
+      "path": "research/wave3/48-cross-factory-objective-orchestrator.md",
+      "sha256": "57b2ba402af6a7d03598371a8ba3c932b856993424a8c4b69dfb278063627042"
+    },
+    {
+      "bytes": 579,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/01-durable-orchestration.md",
+      "sha256": "32f5813d48633ae9f08377d47b5a8657345a25e4277cd80327d01bb11ce3059e"
+    },
+    {
+      "bytes": 475,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/02-creation-graph.md",
+      "sha256": "8a86458ac4b85a509b897717c4e00d617b8eab469ef9b78414421ae4cd38920c"
+    },
+    {
+      "bytes": 492,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/03-ucos-context-lock-resolution.md",
+      "sha256": "91e9be2589b745d0edd577593804d4f9967f97bdfe078963dbd4025fe97ea4e1"
+    },
+    {
+      "bytes": 482,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/04-continuity-engine.md",
+      "sha256": "5f58b83fd4d474e48261725edbf4763816f168bdbcb9aae0c8a8115486d77a67"
+    },
+    {
+      "bytes": 460,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/05-provenance-uct.md",
+      "sha256": "6697d110aaf3a2bb745bdbfd9750e58db5c0709c43bccd89226a7210d31562fa"
+    },
+    {
+      "bytes": 437,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/06-approval-policy.md",
+      "sha256": "9955af454c6fb9ae8c08b78633cf45abb58151a2ffd803ed85701119b06752a5"
+    },
+    {
+      "bytes": 433,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/07-event-bus-signals.md",
+      "sha256": "beaae1a560885c05f9c98b3b132f1c5c273c9d2c6a23cfbdd737c012e9510afc"
+    },
+    {
+      "bytes": 420,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/08-sandbox-isolation.md",
+      "sha256": "5a38b66435569997ad2ad0578aa1c4e9793a198b438cf89231db8ec36481c831"
+    },
+    {
+      "bytes": 432,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/09-operator-registry.md",
+      "sha256": "194448e34dcf3fc839201ebcca2b9a79f0de47c990412abad5f60fe17405d58b"
+    },
+    {
+      "bytes": 443,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/10-patterns-composition.md",
+      "sha256": "10e836945a825093b3b7c116c3ca648c48a71abf251982ed71cc24505f1dd09a"
+    },
+    {
+      "bytes": 484,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/11-model-router.md",
+      "sha256": "e8a9027795a486c54556374939376d353f0fd67feda76280919de4f0b7dca5c9"
+    },
+    {
+      "bytes": 494,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/12-tool-connectors.md",
+      "sha256": "5a49c1631380e34cf4f3ba7d5acd5256ee7eae28ab245779aea34330cec334ee"
+    },
+    {
+      "bytes": 482,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/13-cost-budget-metering.md",
+      "sha256": "bf2411dd17dbc0ccf98a1348440e46531ffc858f673f60d0695c8fcfba55dd3a"
+    },
+    {
+      "bytes": 473,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/14-rollback-compensation.md",
+      "sha256": "9b98145d53d219eeaac94456e88331f9e795a5fbaf866e87f2aa4ba636460704"
+    },
+    {
+      "bytes": 493,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/15-queues-workers-scheduling.md",
+      "sha256": "196d7c15510436367b290ec8764b3842c9d75965af7203240a08ebdd0bb3db3a"
+    },
+    {
+      "bytes": 454,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/16-checkpoint-replay.md",
+      "sha256": "14acf3a1c6c741ed5c5d0a56082bd8e8b043fbc6f9815811ab26520c46fc658e"
+    },
+    {
+      "bytes": 514,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/17-agent-orchestration.md",
+      "sha256": "edf6a34cd863b485a7381df8e3424e77e846eec268a82018d7b2bf3f5c160a40"
+    },
+    {
+      "bytes": 504,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/18-interoperability-mcp-sdk-api.md",
+      "sha256": "96a201c4f0def666fd2a621df987bf6fd4abcb582e4bd8ef6d05ca94c1ce8c7b"
+    },
+    {
+      "bytes": 502,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/19-observability-evidence.md",
+      "sha256": "d975902692907d093fab2d471ae0aae5ecb4208229c9b22946b382820f4b0ea4"
+    },
+    {
+      "bytes": 534,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/20-security-auth-tenancy.md",
+      "sha256": "44f40529629506c278fc5894c630ebbeafc27f3e6fc7dd805d4d798a9bb87555"
+    },
+    {
+      "bytes": 602,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/21-asset-registry-versioning.md",
+      "sha256": "9b27666a3b782e4524e616303bbc387b7a10d0fb95fbd7544d54477c21f785b0"
+    },
+    {
+      "bytes": 575,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/22-identity-locks.md",
+      "sha256": "f13a464a819912c896276e69002f5fe159bbf940e3a45fb902e63d075fa564f8"
+    },
+    {
+      "bytes": 570,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/23-training-model-lifecycle.md",
+      "sha256": "4d486e8a6749a76e171ad26a83668be060a31bb423753147456cc2cd1424753a"
+    },
+    {
+      "bytes": 561,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/24-media-runtime.md",
+      "sha256": "ec1ada485d8f23373fa78aacd52d1ff102a69d495c1eab6247bbc704658bc4ab"
+    },
+    {
+      "bytes": 565,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/25-verification-evaluation.md",
+      "sha256": "a966cedcbb83e53a2f26c4b6a2fe6b6dbcde6cf75af9cf60426725383c6e9230"
+    },
+    {
+      "bytes": 552,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/26-causal-repair-convergence.md",
+      "sha256": "b0304623f44ec022e4b2cccde577da78f6b5287043e1c953abe8e3594be2bfa9"
+    },
+    {
+      "bytes": 549,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/27-research-evidence.md",
+      "sha256": "2681a1cd81ff04f743d95c1115309f4f95df296906a5a81a88d55562508f70e4"
+    },
+    {
+      "bytes": 616,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/28-templates-marketplace-packaging.md",
+      "sha256": "79f79dafc13c171b689db5a9d5e513e2501552eff0cfb7df36b00b2af1810dec"
+    },
+    {
+      "bytes": 543,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/29-collaboration-review.md",
+      "sha256": "097d5923cfcfed25673eba270df08ae49c5cac2a9e25bad3746b8fd3f0a1c6a0"
+    },
+    {
+      "bytes": 576,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/30-data-catalog-search.md",
+      "sha256": "e9a241d5e612a96043e9aa31d7f100a3e70e279af856c4048747157c248e1fc3"
+    },
+    {
+      "bytes": 508,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/31-artifact-integrity-attestations.md",
+      "sha256": "7e0cd3b27f1fa45098a7dce12a469352639ac4b3cf54f16dce08e038bd0f9dc5"
+    },
+    {
+      "bytes": 601,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/32-rights-licensing-consent.md",
+      "sha256": "3384dccfa4316d2af78356e1d94c82233105c5fb185c80652e32ea4d710575d3"
+    },
+    {
+      "bytes": 561,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/33-compliance-safety-policy.md",
+      "sha256": "9e1d08d31f3d2b4773c294eda83d2e53f157c95286002654c90ba9c5efa0b20f"
+    },
+    {
+      "bytes": 547,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/34-multitenancy-workspaces.md",
+      "sha256": "24488ab679e0585dfc58944da345258cff028fa6e1688e7e08b599a863b7ca89"
+    },
+    {
+      "bytes": 636,
+      "classification": "TEXT_READ",
+      "lines": 5,
+      "path": "research/waves/35-storage-retrieval-memory.md",
+      "sha256": "27c5b86eb0d353e2796bdb124f4556540d32ad4f20f7beaa19393e3938aa794f"
+    },
+    {
+      "bytes": 1566,
+      "classification": "TEXT_READ",
+      "lines": 15,
+      "path": "spec/01-runtime.md",
+      "sha256": "f87ca7fa8523660cc9d90f1496e1bb393aacff556751c1505f6d32e6cdf9ba8b"
+    },
+    {
+      "bytes": 1792,
+      "classification": "TEXT_READ",
+      "lines": 20,
+      "path": "spec/02-assets-context-continuity-provenance.md",
+      "sha256": "3f7c83e06c754b106ba7d045eb29ade0880efb29c11b895971ff5bb55163916d"
+    },
+    {
+      "bytes": 1685,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "spec/03-policy-events-sandbox-operators-patterns.md",
+      "sha256": "05f5db2531adb2f7d49926a83ea3cba52795fa17c4f42d45fdcc9b766012b5c2"
+    },
+    {
+      "bytes": 1333,
+      "classification": "TEXT_READ",
+      "lines": 13,
+      "path": "spec/04-models-connectors-cost-recovery.md",
+      "sha256": "55fe09e20bf42c4a6fe3bdaebd5a422ad15698a2821686a30383fd3e203c9604"
+    },
+    {
+      "bytes": 1627,
+      "classification": "TEXT_READ",
+      "lines": 18,
+      "path": "spec/05-queues-checkpoints-agents-observability-tenancy.md",
+      "sha256": "717d6e55677ef8cd43a04f0be5f9fda1b2cf890440c8feb93b9d9e547207bf23"
+    },
+    {
+      "bytes": 2904,
+      "classification": "TEXT_READ",
+      "lines": 28,
+      "path": "spec/06-rights-research-verification-repair-packages-review-catalog-training-policy.md",
+      "sha256": "8d364f3ec5c49573db241314bdd19e5f74d5bffdb9ba1fe87fc2ab1c7619494a"
+    },
+    {
+      "bytes": 1339,
+      "classification": "TEXT_READ",
+      "lines": 20,
+      "path": "spec/README.md",
+      "sha256": "db781a25d6159c0a3761d274becfe8a96f7efb1049ce2b10c0c8ed66bde81f13"
+    },
+    {
+      "bytes": 2307,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 77,
+      "path": "src/adapters/create-loco.ts",
+      "sha256": "9315861b1748a86328905317c1a29d796f9034432fe83cbf1438f11eeaafc1ab"
+    },
+    {
+      "bytes": 1146,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/adapters/in-memory.ts",
+      "sha256": "bd1e44d5698cd6e4c940cc6dc9d360aaa2f307bbc51ba4e2fdc350a3164a3eb6"
+    },
+    {
+      "bytes": 96,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/adapters/index.ts",
+      "sha256": "b07be5851e15175ad9697ae22d77f03d34021772178c7ebd2a386549ac7d57d9"
+    },
+    {
+      "bytes": 796,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/adapters/interfaces.ts",
+      "sha256": "74a07dc1bfb333367b0e5f80ac8a04eb6c94a7488b9a92455fb434b710fffa5f"
+    },
+    {
+      "bytes": 629,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/agents/crew.ts",
+      "sha256": "f5341ffc354351dd4ac82cb6b185df079da30f1cad19c1a367c9f91de6c280d0"
+    },
+    {
+      "bytes": 26,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/agents/index.ts",
+      "sha256": "b64a68041fe2b126245bcea42b0d523f11b89d7883b3a923efd15c6ff375b221"
+    },
+    {
+      "bytes": 29,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/api/index.ts",
+      "sha256": "84b19243d37f79231641bffe14ac35e5ccaa45d4efe2344f73bcdfe88424c04f"
+    },
+    {
+      "bytes": 668,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/api/service.ts",
+      "sha256": "43e1225111cc1e9db8fbfdffe21c39680fd4451af2f4ad76359683d4f7d31d5a"
+    },
+    {
+      "bytes": 609,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 12,
+      "path": "src/bootstrap.ts",
+      "sha256": "d26be9ed226b66c664052f71a1f3b7fca476b7bcc8a6104e808e1035d6488cbe"
+    },
+    {
+      "bytes": 3444,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 126,
+      "path": "src/campaign/creative-intelligence.ts",
+      "sha256": "21041084bad0bd8be5a29f801954593ca4201fae4383b3577fc0870f8f109d80"
+    },
+    {
+      "bytes": 45,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/campaign/index.ts",
+      "sha256": "1aa3136ed2ef139cd5749ad47fbe6b4d2af8a8668e808741442ebb749d4b7f08"
+    },
+    {
+      "bytes": 3761,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 143,
+      "path": "src/cinema/contracts.ts",
+      "sha256": "83613a8a2836d5339eface8637994fc2de1e382607fa62e1185032bb22923e3a"
+    },
+    {
+      "bytes": 2509,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 81,
+      "path": "src/cinema/editorial.ts",
+      "sha256": "26a113c5b5a7b8edb3fd63e4b4c22d662318bfdb62e8463fab5891c1404014f7"
+    },
+    {
+      "bytes": 122,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 2,
+      "path": "src/cinema/index.ts",
+      "sha256": "c3c684cd11beb6d3dde3583c9426d35583a36f866885276eca02828b20f75bdb"
+    },
+    {
+      "bytes": 2740,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 68,
+      "path": "src/cinema/planner.ts",
+      "sha256": "a9acaea8ce273b253daec21375be6b94f7dcc8e0e17223ef8a5ea286fe3853a4"
+    },
+    {
+      "bytes": 1430,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 46,
+      "path": "src/cinema/spatial.ts",
+      "sha256": "d499bd9938088d85b5aca0e879111d761461ac800d4438a417d6c07ef22367ef"
+    },
+    {
+      "bytes": 28,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/collaboration/index.ts",
+      "sha256": "0581310ec4b8d1a9164bed35f31a86bd7f41c2f20f9233a118078e16462cf267"
+    },
+    {
+      "bytes": 594,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/collaboration/review.ts",
+      "sha256": "cd8c110e4e9b6200f531f62c19a7f05e63847ae9421c5fddbe1fac8916513b69"
+    },
+    {
+      "bytes": 1334,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/approval.ts",
+      "sha256": "c75ef8052847ec5b8795e150c692fb793bacb43596269f07d1b10cb17496cb78"
+    },
+    {
+      "bytes": 806,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/checkpoints.ts",
+      "sha256": "3d82a0ef2625890bb225cc178ff2bc836a2cc13e5c2156dedb4767ebd2841c97"
+    },
+    {
+      "bytes": 605,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/compensation.ts",
+      "sha256": "e4a95f6056225e986c277a32ade830415de6a63d93064df19127a843b9b1f472"
+    },
+    {
+      "bytes": 591,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/connectors.ts",
+      "sha256": "ae5dfbe17aed76d2ab4873ff606fdec0ee7d2bc631dc9125ac7f079bab2248d1"
+    },
+    {
+      "bytes": 539,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/cost.ts",
+      "sha256": "49094f476fdc1c3c87d481062c2bfdbad84fd29866d3f8542b12e29b629a05e8"
+    },
+    {
+      "bytes": 738,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/dependencies.ts",
+      "sha256": "6940a4aa7c4aca3e224cf5196b31fb17e201496bee5eb0fbd8f175d85f26a845"
+    },
+    {
+      "bytes": 606,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 4,
+      "path": "src/core/digest.ts",
+      "sha256": "74f20a3b6c2fa1b02914af150fea21564038da9fe4aa744a02de197ae881a8ac"
+    },
+    {
+      "bytes": 330,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/errors.ts",
+      "sha256": "908570826e7fc50729c224cd5cb89544a7bb7f4f3bbda158a1a532a63200dd4c"
+    },
+    {
+      "bytes": 883,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/evaluations.ts",
+      "sha256": "135998db1efa60b6b59a6baf692ac7cfc4954fc15da63e169a220677f3bdc556"
+    },
+    {
+      "bytes": 580,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/event-bus.ts",
+      "sha256": "6144a7dd8bbfb8c228d27859e152455480ad38f19f127e8ad7d8e1ed5313846f"
+    },
+    {
+      "bytes": 463,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/evidence-bundle.ts",
+      "sha256": "36364d5319bf1416a9f4ba878053e51354e2c1bd4f7236a3ed27dde390df469d"
+    },
+    {
+      "bytes": 342,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/evidence.ts",
+      "sha256": "e90b8e8409ec78c54baf204d28a21eb35e62e0500b34bfc4a9eb65746e5824e0"
+    },
+    {
+      "bytes": 605,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/experiments.ts",
+      "sha256": "c0357c7a2d3c11d6796d1d93e2446ffcd89f31e2e5d3df0ddb13f9d22ff67955"
+    },
+    {
+      "bytes": 845,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/health.ts",
+      "sha256": "516a4fc328ed55666b9ec80d2e517e5493892baa7840c9150b20723281665750"
+    },
+    {
+      "bytes": 901,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/idempotency.ts",
+      "sha256": "39e39bff5e7d2b5c1dce52b9a2c3afc85a8bb9d7ca289cb72bc4a95f41fa1782"
+    },
+    {
+      "bytes": 162,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/ids.ts",
+      "sha256": "4dd542636e6623e87dcb993d395831fc04b251ed15bb240a99af367af9f26956"
+    },
+    {
+      "bytes": 1118,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 2,
+      "path": "src/core/index.ts",
+      "sha256": "1f8ab0132eccd04035bf2d07aa41226fff18f079d35d3177ffdcf08086ce948b"
+    },
+    {
+      "bytes": 671,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/migrations.ts",
+      "sha256": "cd6876d29f1a194f932d9780ed07eec69bc10d0370fded6b94d04f59b3b0b513"
+    },
+    {
+      "bytes": 2564,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 87,
+      "path": "src/core/models.ts",
+      "sha256": "40643f6bd7c367d68ed170f26bc16f753a74faddba85346da7ac2adabe7fe9a9"
+    },
+    {
+      "bytes": 797,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/operators.ts",
+      "sha256": "372007a40e8fe9b6b5acca581433393d867471165468ab437ae7029235966b97"
+    },
+    {
+      "bytes": 685,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/outbox.ts",
+      "sha256": "e1ae89b845fddeac7eaff4bc6ac440fd1f740a2453a0f16b9af346c7c8b582a5"
+    },
+    {
+      "bytes": 583,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/policy.ts",
+      "sha256": "383189a912a1396306b833335199a47711bb95e2c7f8301a0420abf4f296cd9a"
+    },
+    {
+      "bytes": 5518,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 161,
+      "path": "src/core/provider-capabilities.ts",
+      "sha256": "a6e4c4c4c95ffc245f93a271b6b19749d7f12e4b79e8ae9b96847d729ca00073"
+    },
+    {
+      "bytes": 981,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/queue.ts",
+      "sha256": "4793737cf39757171a8ee446438e35576524587d559c36db68a5cb752b3961f1"
+    },
+    {
+      "bytes": 466,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/rate-limit.ts",
+      "sha256": "321d1219cec9aadf704ebf4bb91005368502ea7aaa81779adb2c65fa6e51427f"
+    },
+    {
+      "bytes": 537,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/retention.ts",
+      "sha256": "697b3d68a6e0b3db2978bf9f55329af66af6f76f9102052a5cb374f7eab84b96"
+    },
+    {
+      "bytes": 623,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/retry.ts",
+      "sha256": "43519dd7f94d9bae6298fe05ae69cdfdaf4c1813470d563bae72d5c0c3262b04"
+    },
+    {
+      "bytes": 810,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/runtime.ts",
+      "sha256": "91253302f36320e4b642c7842ca36c9ef28b45ca72dd6ede34a6e46054478d3e"
+    },
+    {
+      "bytes": 2417,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 66,
+      "path": "src/core/sandbox.ts",
+      "sha256": "4f077817196fe59f9a5da1f81cbfd86a75425d848dee07dcced6227658bfb414"
+    },
+    {
+      "bytes": 573,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/schema-registry.ts",
+      "sha256": "0881459c36d601f96edb1bf621e66b2ca1596cb178a1840f1a977f362cf1fa93"
+    },
+    {
+      "bytes": 778,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/secrets.ts",
+      "sha256": "c95622c52901bbaaaeb8c1215d1693e2731254cdea83468d462de2c23668f979"
+    },
+    {
+      "bytes": 1370,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 5,
+      "path": "src/core/state-machines.ts",
+      "sha256": "e46b00c84bfc784c3a686d84c4206730b0e3e1c95755cabe079ce50d5b9f8513"
+    },
+    {
+      "bytes": 337,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/tenancy.ts",
+      "sha256": "2de269ea6c8830d77d90325faa990cda1bf714ea6737ad97e3784ac9784f9029"
+    },
+    {
+      "bytes": 392,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/trace.ts",
+      "sha256": "d8ad7f76fabef141046ffb39eb68a1b2b71dd5cdf4bb82d14ea6f48efb8868a6"
+    },
+    {
+      "bytes": 1354,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 10,
+      "path": "src/core/types.ts",
+      "sha256": "cb4dc3e7c0eb4c14354cf41974e84a6782bab9618488257765bd59eff1758c4d"
+    },
+    {
+      "bytes": 411,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/core/validators.ts",
+      "sha256": "dce29e44c621698d270ebf31896cdb6b28514863261e811c561ef385298bd33d"
+    },
+    {
+      "bytes": 766,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/assets.ts",
+      "sha256": "05b210bc20bc40a94c2718794365eacddf5aa01754dea4e75dd8563384919720"
+    },
+    {
+      "bytes": 1956,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 70,
+      "path": "src/creation/c2pa.ts",
+      "sha256": "8b2ecebe5aa409702cbf573849bc62f505aee269e8db5354f9693f8852272ca4"
+    },
+    {
+      "bytes": 968,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/context.ts",
+      "sha256": "46680a6bedfe9de99df168866f3bb3551a06fc99a49ffd63f4c996ad5ae37a55"
+    },
+    {
+      "bytes": 569,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/continuity.ts",
+      "sha256": "e9b83303d932e4ca69b9dfbceb53652e3f85f65d8cd501f2f8c91b155b1b15b3"
+    },
+    {
+      "bytes": 202,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/index.ts",
+      "sha256": "54edb211974fc4e61b3c75ae998fe6fa1c6e488757130e2044a70b7d16647b6e"
+    },
+    {
+      "bytes": 491,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/repair.ts",
+      "sha256": "b82f3c2cccbf5bd8784e6a23aa94fbb9d923081ed908960b28723bd02bb69b62"
+    },
+    {
+      "bytes": 491,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/uct.ts",
+      "sha256": "01f98e05702a962b16a301a63dbcd921c677b367bbccbe753a911a69adc0c79f"
+    },
+    {
+      "bytes": 401,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/creation/verification.ts",
+      "sha256": "0a73101e418f6373657325d64787ff5d6ad32ee76e7e9bd71a890448e0c2afca"
+    },
+    {
+      "bytes": 3459,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 108,
+      "path": "src/decision/engine.ts",
+      "sha256": "45194dc3b4421aa9ea2a472c611e5ee6df885f2e19b4cce7271a4a8d2d25dbc0"
+    },
+    {
+      "bytes": 95,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 3,
+      "path": "src/decision/index.ts",
+      "sha256": "e885a93e3f3bd3983a81c5097cafa0dd29e819d03cf3179ab944bd0e7e5171d1"
+    },
+    {
+      "bytes": 2610,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 84,
+      "path": "src/decision/jev-provider.ts",
+      "sha256": "a4c24d0d59f61af56a86f53627f3448db8e8fd98ad1e2b9aa2e393ea02e10e88"
+    },
+    {
+      "bytes": 2081,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 72,
+      "path": "src/decision/types.ts",
+      "sha256": "2fbf099667fe695185035b8591ad42080f8effc22e3473cc3f2a2d4973aa16e2"
+    },
+    {
+      "bytes": 662,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/docx-adapter.ts",
+      "sha256": "1d7334f0862cbcca5deab7c73af9d09a894fe617fd41ef217cb9dbed4c04cc0c"
+    },
+    {
+      "bytes": 611,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/epub-adapter.ts",
+      "sha256": "4ad776f64346f0c1d355267bd1e4cfc59229fc0e64e9dd3adb170cb683058fd8"
+    },
+    {
+      "bytes": 243,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/index.ts",
+      "sha256": "61b5e79457538019287d0e119a51aa309d1d7c5ef3971a71bdc7409551e500f1"
+    },
+    {
+      "bytes": 326,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/json-renderer.ts",
+      "sha256": "eaa35a0854c77b30b23489948e9d1db0930154b17cf1167c69b2f780fa756779"
+    },
+    {
+      "bytes": 394,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/markdown-renderer.ts",
+      "sha256": "ceb8ca6daf0e5f6459f5f75d216b76ff6ee4351451b82ff877304e8c70770a0a"
+    },
+    {
+      "bytes": 910,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/pdf-adapter.ts",
+      "sha256": "a721529e79884835e4ddfde99313122365334c34d06240aee7474a303b558578"
+    },
+    {
+      "bytes": 387,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/render-registry.ts",
+      "sha256": "31a9adc11b48a060a657335780211d44f909808dd04fb68bac5d2c65562a7dbf"
+    },
+    {
+      "bytes": 812,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/documents/renderers.ts",
+      "sha256": "d4335bc23c00b11d8eac5a330f69f52f4d07143fa77999d18414ce48787478a7"
+    },
+    {
+      "bytes": 728,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/app-tool-factory.ts",
+      "sha256": "a5314609b18b98757358ee8db8552c0c327e2b068d2e9fa984e6159f1c8260c7"
+    },
+    {
+      "bytes": 777,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/audio-factory.ts",
+      "sha256": "8f207dcf8177443848d122e3da2a0bd48c702f53c54d7b445cc58b3743b19df6"
+    },
+    {
+      "bytes": 751,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/automation-factory.ts",
+      "sha256": "f6738ba25a63366a852310cb7de084485562cc22e4d6c090aa6b3cce2adc8679"
+    },
+    {
+      "bytes": 658,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/brand-factory.ts",
+      "sha256": "2265bbacce2bec5689c6bfadff84e6215421ad8f698f8e100ce02cffe06ed422"
+    },
+    {
+      "bytes": 852,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/campaign-factory.ts",
+      "sha256": "d168370679d6d87cfe28e6f1a9a1af3fbea5e2f4c7c127aa275aed59e8608f99"
+    },
+    {
+      "bytes": 560,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/contracts.ts",
+      "sha256": "014f999ea193c094d0cc816afb879852f1d2b5f492d3dd61c2a441a3543210bd"
+    },
+    {
+      "bytes": 794,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/course-factory.ts",
+      "sha256": "52ec68408ef4856eaa9de5a42b33c2f4b461dcf7e6861cb2bc1e4f8a13f0045b"
+    },
+    {
+      "bytes": 825,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/data-analytics-factory.ts",
+      "sha256": "e8f94ab9fdcb7f113aed2c39db35da50f4ebb00b08d700d519a3deca74cf8d5d"
+    },
+    {
+      "bytes": 1035,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/default-registry.ts",
+      "sha256": "f88d082cb30e1c4e6603df13d420cbf73c0f96494b5cd248ddb99c2ffe2692aa"
+    },
+    {
+      "bytes": 535,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/distribution.ts",
+      "sha256": "aaa474dba20cad1111e487e887d4263fb6d9bc68b0bb7f417f9feba9a27cc98c"
+    },
+    {
+      "bytes": 791,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/document-factory.ts",
+      "sha256": "45f43fbf2f5d4cbae24277144221b2e8f3c1b27aaad63c03060fef44b30dc67b"
+    },
+    {
+      "bytes": 952,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/export-engine.ts",
+      "sha256": "3a2d38dbaa43c5149e3a627003cae8340a12cbcbc3e44249bdd2373352596e24"
+    },
+    {
+      "bytes": 547,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/improvement.ts",
+      "sha256": "83e81a16583e8fc526323f03074b1e26e868d02c540dbc5cd3c35a7445a54047"
+    },
+    {
+      "bytes": 508,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/index.ts",
+      "sha256": "d444baf61f4326b571bb91632fe412f1e4d577f2a09bfbcd55ecf5b5ddff72d7"
+    },
+    {
+      "bytes": 522,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/measurement.ts",
+      "sha256": "c5081d9366697a4f25ecb535e9fd12e820995a67dfcf00e5060ed358e9f479d0"
+    },
+    {
+      "bytes": 1852,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 43,
+      "path": "src/factories/media-factory.ts",
+      "sha256": "4914e40bd6ce5f89e8e4c86685ed50a22979da558e8381b35aaddaeeccef6211"
+    },
+    {
+      "bytes": 602,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/offer-engine.ts",
+      "sha256": "6ceb70b7bd5b7e87257a6f9f78746f0f048e5d138faa5cedda2ef85d2f35866f"
+    },
+    {
+      "bytes": 702,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/package-engine.ts",
+      "sha256": "4576eef26d05cb5c93d86737f710d142025fee36b821bcabc094de424dbd62e4"
+    },
+    {
+      "bytes": 1027,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/product-factory.ts",
+      "sha256": "cf13b90e7f1e642ab99240c747a906ce0f4a32c0a1851459c5ea2f9ae2ae61b7"
+    },
+    {
+      "bytes": 746,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/product-intelligence.ts",
+      "sha256": "32ffd8c678fc57dd19cfcb7096a9f94c31a54407cec9f459acf8e41a764682eb"
+    },
+    {
+      "bytes": 1756,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/product-pipeline.ts",
+      "sha256": "bf1eb8b61aca8149636d0d54b42fc86eb90eec0ee8ba1c8bba3c438f5c906cec"
+    },
+    {
+      "bytes": 577,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/publishing.ts",
+      "sha256": "c43c168190925578c7973da950057e2945814215dc76363f6fb55a89ac447068"
+    },
+    {
+      "bytes": 321,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/quality-gate.ts",
+      "sha256": "aa2a3f443b547acff38bf44713335425d79de9e31ac3958ff49c77c75af1078a"
+    },
+    {
+      "bytes": 381,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/registry.ts",
+      "sha256": "e0c85c5a074c0a63ad30c805a2b8b4da359dde2e487b3145a179c4c9ca146c11"
+    },
+    {
+      "bytes": 951,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/research-factory.ts",
+      "sha256": "2476f958d55115e5ec6c63f50278f2ff1ee9f12e72a8a0e6cfe95e459fce7fe9"
+    },
+    {
+      "bytes": 797,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/factories/web-factory.ts",
+      "sha256": "3b8bce5254eb3b4a88de3073766059f97f64aa111154618b0fe115674456a7b2"
+    },
+    {
+      "bytes": 62,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/governance/index.ts",
+      "sha256": "ef34579b1a365a8356d48db2c2f628c5550180a09d0c5affe41fdf00b5cc5704"
+    },
+    {
+      "bytes": 616,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/governance/policy-packs.ts",
+      "sha256": "ee2dbd1a814713cb66ce898cb4a2c95ab69191c3ec80611a6cf9ca69678ffd3d"
+    },
+    {
+      "bytes": 610,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/governance/rights.ts",
+      "sha256": "c76343162a1a3b79f85a364218cf9b1b1d96b3e91608bdb30937fd4e0f10dac9"
+    },
+    {
+      "bytes": 1351,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 41,
+      "path": "src/identity/contracts.ts",
+      "sha256": "54c9b08ca7d8d3f491d4306765e94fad270cc3a859d4603fc6cc72d93e7b86f0"
+    },
+    {
+      "bytes": 33,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/identity/index.ts",
+      "sha256": "88aac9e125cbd8daad76a0ee85cc7ac44afb870c8ba60b2d0c095796cf2d2ce3"
+    },
+    {
+      "bytes": 596,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/knowledge/catalog.ts",
+      "sha256": "793fba932e5d303f69d145856ec5dc86144d18093c8a065ca147e1a4bc505063"
+    },
+    {
+      "bytes": 87,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/knowledge/index.ts",
+      "sha256": "66e967300ef2e616a2a9f5508569a58a4b7726a3e07c25b8573c98416fadb6f1"
+    },
+    {
+      "bytes": 526,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/knowledge/memory.ts",
+      "sha256": "d6cf2874d5a7bd059bc3ba5ddb964d841ec5c615dd7ae3add430ae1f9459dfdb"
+    },
+    {
+      "bytes": 898,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/knowledge/research.ts",
+      "sha256": "f4a98a8c47fdd2e6f232f1bdbacedc7e2372953bf18ea92924031f48bbd0b8c5"
+    },
+    {
+      "bytes": 2434,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 84,
+      "path": "src/media/editing.ts",
+      "sha256": "95f54a4fc2c30f9ca385f50e286a8c22dab52e5f568907dfc6dbaa9c684912f1"
+    },
+    {
+      "bytes": 31,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/media/index.ts",
+      "sha256": "cf2bad619d3d029737a1f601477be98fbb5f84380e3b0d735709c536765414c0"
+    },
+    {
+      "bytes": 34,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/objectives/index.ts",
+      "sha256": "57b04e4613a01fe7998baa79cbebb499fdae80d53d529cfb9f619b691d52f74a"
+    },
+    {
+      "bytes": 1947,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/objectives/orchestrator.ts",
+      "sha256": "e9edc077f2e2476d1b85ab673994cb9a1d5cd86cea3fbb715e8f7c6ef96de8ad"
+    },
+    {
+      "bytes": 60,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/persistence/index.ts",
+      "sha256": "d79d26d798628bcc53a74f8c06efb3878ac162a548694818ab7e0db159909ef9"
+    },
+    {
+      "bytes": 871,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/persistence/interfaces.ts",
+      "sha256": "29dc3e2ff2e1fcf140b4bba3bb084cada445aaddbe83cfae6396c9763e102c37"
+    },
+    {
+      "bytes": 1887,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/persistence/memory.ts",
+      "sha256": "1c3474e7fa14c9d8fa7b10b71d40fc1e9a559b90c33aea35ece1bec0fe259990"
+    },
+    {
+      "bytes": 1651,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 8,
+      "path": "src/persistence/schema.sql",
+      "sha256": "7624a7728de5ee59d45bbf379e4048839fc6730f59629667a45717b3048e9b9e"
+    },
+    {
+      "bytes": 774,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/persistence/sql-adapter.ts",
+      "sha256": "a5701ef4831cbe05edc45b785595a2219a3a37a6a94b2f1cbc9bb5449b299f84"
+    },
+    {
+      "bytes": 969,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/publishing/idempotency.ts",
+      "sha256": "fa493e9ab40588d393962c52f4fdd76b809b9dca61e773cfdb61e5c1b547103d"
+    },
+    {
+      "bytes": 64,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/publishing/index.ts",
+      "sha256": "2d57a769074ab1525231bc7631040ccf710ec7c46fe9b539f2376e57319c4725"
+    },
+    {
+      "bytes": 1081,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/publishing/reconcile.ts",
+      "sha256": "64b16e8d81ed77d90149337b61ccbb9567f820a6e50842b7b0e4eb3761794d1d"
+    },
+    {
+      "bytes": 650,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/adapters.ts",
+      "sha256": "ac42a81cf9907e8960f11df68ca4506c468aa25e20ea07182f72357ee2c2782c"
+    },
+    {
+      "bytes": 348,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/citations.ts",
+      "sha256": "f296b1aea1f2660d159346e0d317105ebb0c1ec246d4bf956bf5aed8d68540de"
+    },
+    {
+      "bytes": 986,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/http-reader.ts",
+      "sha256": "e5a91afc7bea47bd0b44c15876208eb09420a66d6f95b32482b13e0641d06f49"
+    },
+    {
+      "bytes": 30,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/index.ts",
+      "sha256": "18790776277776693d0b56401704ef5b293c54d1040496d0ad8f2150924e3148"
+    },
+    {
+      "bytes": 322,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/search-memory.ts",
+      "sha256": "8a9c61ff9a778f75ad32c2e34f057fd8f033030dad079f7460305cc0ea347694"
+    },
+    {
+      "bytes": 410,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/research/snapshots.ts",
+      "sha256": "2fc462c745a5f7c6748b70f71aac98acc727e28dd98032718d1d49fe4b223415"
+    },
+    {
+      "bytes": 1021,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/runtime/cineforge.ts",
+      "sha256": "bb442bfead9276d6ffcc4a9a1f2dddf3f104d55a471f62839649876d86265c3c"
+    },
+    {
+      "bytes": 1428,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/runtime/durable-adapter.ts",
+      "sha256": "a421180113c9df82c6b3dfbb15e11c571fa3c69391d43f687981d869f9378741"
+    },
+    {
+      "bytes": 106,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/runtime/index.ts",
+      "sha256": "0ee7c0fb89c8c14a6f4761d2f74770d68f410bfb3968c975d5a248d4d0abbdca"
+    },
+    {
+      "bytes": 463,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/runtime/outbox-publisher.ts",
+      "sha256": "6243eb8e64fa938efd6aa8cd800d990d0e0579424c898bb75c985c2cf05b456e"
+    },
+    {
+      "bytes": 700,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/security/audit.ts",
+      "sha256": "bc85edb4a95f99b4fe77a35f4f5113631858994e327a4b7cc2b634b7de6e7689"
+    },
+    {
+      "bytes": 117,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/security/index.ts",
+      "sha256": "e2089d5ad51274e2037f96e4c88127eb512812ddf87d1a5124312c986e64601a"
+    },
+    {
+      "bytes": 621,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/security/permissions.ts",
+      "sha256": "c931b3bb0d4b9cffb70d791fef289a2a4a3ca70e6535bcf768f2a04a049f7ac3"
+    },
+    {
+      "bytes": 383,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/security/redaction.ts",
+      "sha256": "63ff37b0efa22c48de5a61112648717f62c97d6d19b8d96a47831cc38ee6227f"
+    },
+    {
+      "bytes": 645,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/security/ssrf.ts",
+      "sha256": "9513714988403e3ae1c988d5821d6d17f6ed7015d293742d9bdf59e1e2f8f272"
+    },
+    {
+      "bytes": 627,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/storage/content-addressed.ts",
+      "sha256": "2040292d62e75de8a503e38abf2dfe883455b39c33f6f041bac390c404df8449"
+    },
+    {
+      "bytes": 74,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/storage/index.ts",
+      "sha256": "ab378dc6167622c6dad64bd89a82e72d2e1f6e9cc1b01f00b92c4bc358b9d3d6"
+    },
+    {
+      "bytes": 937,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/storage/s3-compatible.ts",
+      "sha256": "0eeff49ca70c4cd5a8eda2d33d095d8c37b3f39453bfde29f50f82823a4a5832"
+    },
+    {
+      "bytes": 30,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/templates/index.ts",
+      "sha256": "0b53ee3e6609fa4b482ad98c195c7ec47f50228f22ef45a61fc70f3b6b160e6e"
+    },
+    {
+      "bytes": 443,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/templates/packages.ts",
+      "sha256": "9750c068b4d093fb11d2712ffe91cd3dd6ef70f946d747e40998d87d34b594e0"
+    },
+    {
+      "bytes": 4046,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 112,
+      "path": "src/training/dataset-quality.ts",
+      "sha256": "4fe9d04b003740ae402a50424c39b8f12513e79cb0f99187c15747fbb576fe56"
+    },
+    {
+      "bytes": 68,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/training/index.ts",
+      "sha256": "657e61a6e9627c6da50aff42072d5a6d10becdd809825fae4e860c5675de5ae4"
+    },
+    {
+      "bytes": 682,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/training/lifecycle.ts",
+      "sha256": "10896fdd5279399c7b5de30eb476493ddf3b979aad6dbb117e6dde6e96992232"
+    },
+    {
+      "bytes": 446,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/html-validator.ts",
+      "sha256": "61813ac20cdb7e47623f846253fa5f7147c8b42f29dbb485da4b7faa8daac3ab"
+    },
+    {
+      "bytes": 170,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/index.ts",
+      "sha256": "2bce649828399aa8fefe445af40a27e7ae026e2fe62518510d6d2670b8f7e491"
+    },
+    {
+      "bytes": 333,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/json-validator.ts",
+      "sha256": "61d79d36134e4a3967b406a26f829c977c3624538875db367d9fb539d4a8779c"
+    },
+    {
+      "bytes": 351,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/pdf-validator.ts",
+      "sha256": "1475ae62a0db4a56ced53f8b83277a7a050d699f2baf977b595a7201b4c52a94"
+    },
+    {
+      "bytes": 467,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/runner.ts",
+      "sha256": "7d4a589aaa1108aef7ad64cade7ae76e83c38a8d9361dbf14b572544fa133b32"
+    },
+    {
+      "bytes": 343,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 1,
+      "path": "src/verification/zip-validator.ts",
+      "sha256": "4da6626a969df7cb4e35e33c9116b8d162c6221bcf32bdead4af5186d3ffb1fb"
+    },
+    {
+      "bytes": 2908,
+      "classification": "TRACKED_TEXT_READ",
+      "lines": 42,
+      "path": "supabase/migrations/0001_creation_os_core.sql",
+      "sha256": "c855ca32eed3d76ba8e52a46426d73035801222e199cc01a9a6350eae88cc84d"
+    },
+    {
+      "bytes": 2959,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 9,
+      "path": "test/artifact-verification.test.ts",
+      "sha256": "f26dd3b6116ffbf306c72a66f908b3698e2ae72deb56cb1dc0f58c180ce0d1a6"
+    },
+    {
+      "bytes": 3048,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 10,
+      "path": "test/beast-expansion-49-58.test.ts",
+      "sha256": "cded778dd284b4d1ee59f8ef30725b0ae3c5f5151e5ca47cd9cf1dc0496d2a01"
+    },
+    {
+      "bytes": 5556,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 15,
+      "path": "test/beast-wave-c.test.ts",
+      "sha256": "f7600869d5c8165c9b4895aa6bbad5289d828ea1b22d9d1c06ca0dd91b571c49"
+    },
+    {
+      "bytes": 942,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 28,
+      "path": "test/c2pa-draft.test.ts",
+      "sha256": "4a6da930d38bf00d9cb02db5fcfb9cfa05a195b81870f845fb6c1096a0c09f72"
+    },
+    {
+      "bytes": 1384,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 48,
+      "path": "test/campaign-intelligence.test.ts",
+      "sha256": "74b09b76fd26c57e3454228bad53e8c124588377bd8be1972fb302f287f69838"
+    },
+    {
+      "bytes": 2154,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 78,
+      "path": "test/cinema-contracts.test.ts",
+      "sha256": "36d969cdb484709716ab15db5181474736e899a42c000ff6765f046f6ea65b1f"
+    },
+    {
+      "bytes": 1633,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 47,
+      "path": "test/cinema-planner-editorial.test.ts",
+      "sha256": "374e6ab8816a7f0bd1565094502015564f04d0d9f7bcdf6a50b0f1f1dcf95548"
+    },
+    {
+      "bytes": 859,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 6,
+      "path": "test/core.test.ts",
+      "sha256": "42adbfa8740a7b745725638b277eba0bae5727c9a7b5ba4e88daf75a5cecf037"
+    },
+    {
+      "bytes": 2486,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 71,
+      "path": "test/create-loco-adapter.test.ts",
+      "sha256": "bf215e10864d0ae1e4727963a226e84c15b206f3910b290b090c6de265fc8c96"
+    },
+    {
+      "bytes": 1649,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 43,
+      "path": "test/dataset-identity.test.ts",
+      "sha256": "93da350a58effcec9b141d8fc8b808cf03fa3ae347378381d319ed22600eb935"
+    },
+    {
+      "bytes": 3860,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 107,
+      "path": "test/decision-engine.test.ts",
+      "sha256": "7eba451575d5a9c8268fe27ae6eb96383b97e9dd29bf06c40e8cec0889fefb46"
+    },
+    {
+      "bytes": 3023,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 14,
+      "path": "test/factories.test.ts",
+      "sha256": "86627b6d099fd7ec5812cd42d598b790ecfaf65bbbd2641dc453f8762147fb15"
+    },
+    {
+      "bytes": 1396,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 43,
+      "path": "test/media-editing.test.ts",
+      "sha256": "65a7f0663537ca2852837f68579e39ed147c676f6744e025cf796bc3f3acf45c"
+    },
+    {
+      "bytes": 1620,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 35,
+      "path": "test/media-forge-boundary.test.ts",
+      "sha256": "4acb6fee6b6e459a7e05df67b5fb3867847fcfcb05da7c67c4cb94cc4e8920ab"
+    },
+    {
+      "bytes": 2276,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 5,
+      "path": "test/objective-orchestrator.test.ts",
+      "sha256": "f184162a82c10da6cd3732bf21b7d7d2a5a9d9b1855666baaed05adc33cceb3d"
+    },
+    {
+      "bytes": 3948,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 13,
+      "path": "test/product-vertical.test.ts",
+      "sha256": "30e9d98e47fa2bfee2b2c8c4d355cbf83d8bcc13787c56c9a3e9ceb2e1370bbb"
+    },
+    {
+      "bytes": 4487,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 10,
+      "path": "test/production-boundary.test.ts",
+      "sha256": "193d0d47c9f36acf7a424d4859cd6f421052b3ad38fcef5ff6460d1bb1923095"
+    },
+    {
+      "bytes": 1649,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 62,
+      "path": "test/provider-capabilities.test.ts",
+      "sha256": "5d843b438a8c7a38d8e38c3fa5c5bbc40295431b2b39ed61043e0d9a42960ec8"
+    },
+    {
+      "bytes": 2089,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 60,
+      "path": "test/provider-registry.test.ts",
+      "sha256": "5d443635bd93bc6b12e3c36085a6bd1bd0060d1de22a8585e3add97090a16c06"
+    },
+    {
+      "bytes": 1950,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 5,
+      "path": "test/runtime-persistence.test.ts",
+      "sha256": "8a68ab50bef1bd4e35b664782c243f862b976c263fde7c30ae4175d13126ae89"
+    },
+    {
+      "bytes": 2689,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 10,
+      "path": "test/security-reliability-service.test.ts",
+      "sha256": "4ce1724d003cd156f8ed50debcdfe8e43f5cf4ffd7c28973c63bf4c624bc1164"
+    },
+    {
+      "bytes": 631,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 20,
+      "path": "test/spatial-contracts.test.ts",
+      "sha256": "3ac720c0bf85c71f5c379cfee37d418e80e9757c6448b4255c2b108318a58215"
+    },
+    {
+      "bytes": 3599,
+      "classification": "JS_OR_TS_TEXT_ANALYZED",
+      "lines": 15,
+      "path": "test/waves-ab.test.ts",
+      "sha256": "a79db5a0a55365b11c8ba873f82247143830bc70c1add7a4c71b7974357a7bf5"
+    },
+    {
+      "bytes": 256,
+      "classification": "VALID_JSON",
+      "lines": 7,
+      "path": "tsconfig.json",
+      "sha256": "f1568f12f0229e2d5197a36ebdf219446afa1446c3146100f874bd3ed1406a84"
+    }
+  ],
+  "audited_at": "2026-10-31",
+  "baseline_git_commit": "dcf3b7490a584d1701ac7c7b2f60cd452627519a",
+  "errors": [],
+  "flags_for_review": [
+    {
+      "count": 1,
+      "path": "BUILD-QUEUE.md",
+      "type": "STALE_SCOPE"
+    }
+  ],
+  "imports": [
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "fs",
+      0
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "path",
+      0
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "crypto",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/approvals.ts",
+      "drizzle-orm/pg-core",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/approvals.ts",
+      "drizzle-orm",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/approvals.ts",
+      "./auth",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "drizzle-orm/pg-core",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "drizzle-orm",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "./auth",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "drizzle-orm/pg-core",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "drizzle-orm",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "./auth",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "./approvals",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/hybrid.ts",
+      "drizzle-orm/pg-core",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/hybrid.ts",
+      "drizzle-orm",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/hybrid.ts",
+      "./auth",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "drizzle-orm/pg-core",
+      0
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "./auth",
+      0
+    ],
+    [
+      "src/adapters/in-memory.ts",
+      "./interfaces.js",
+      0
+    ],
+    [
+      "src/adapters/in-memory.ts",
+      "node:crypto",
+      0
+    ],
+    [
+      "src/adapters/index.ts",
+      "./interfaces.js",
+      0
+    ],
+    [
+      "src/adapters/index.ts",
+      "./in-memory.js",
+      0
+    ],
+    [
+      "src/adapters/index.ts",
+      "./create-loco.js",
+      0
+    ],
+    [
+      "src/agents/index.ts",
+      "./crew.js",
+      0
+    ],
+    [
+      "src/api/index.ts",
+      "./service.js",
+      0
+    ],
+    [
+      "src/api/service.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/api/service.ts",
+      "../core/idempotency.js",
+      0
+    ],
+    [
+      "src/api/service.ts",
+      "../objectives/orchestrator.js",
+      0
+    ],
+    [
+      "src/api/service.ts",
+      "../objectives/orchestrator.js",
+      0
+    ],
+    [
+      "src/bootstrap.ts",
+      "./factories/default-registry.js",
+      0
+    ],
+    [
+      "src/bootstrap.ts",
+      "./objectives/orchestrator.js",
+      0
+    ],
+    [
+      "src/bootstrap.ts",
+      "./api/service.js",
+      0
+    ],
+    [
+      "src/bootstrap.ts",
+      "./decision/engine.js",
+      0
+    ],
+    [
+      "src/bootstrap.ts",
+      "./decision/jev-provider.js",
+      0
+    ],
+    [
+      "src/campaign/index.ts",
+      "./creative-intelligence.js",
+      0
+    ],
+    [
+      "src/cinema/index.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/cinema/index.ts",
+      "./planner.js",
+      0
+    ],
+    [
+      "src/cinema/index.ts",
+      "./editorial.js",
+      0
+    ],
+    [
+      "src/cinema/index.ts",
+      "./spatial.js",
+      0
+    ],
+    [
+      "src/cinema/planner.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/collaboration/index.ts",
+      "./review.js",
+      0
+    ],
+    [
+      "src/core/approval.ts",
+      "./digest.js",
+      0
+    ],
+    [
+      "src/core/digest.ts",
+      "node:crypto",
+      0
+    ],
+    [
+      "src/core/event-bus.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/evidence-bundle.ts",
+      "./digest.js",
+      0
+    ],
+    [
+      "src/core/evidence.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/experiments.ts",
+      "node:crypto",
+      0
+    ],
+    [
+      "src/core/ids.ts",
+      "node:crypto",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./ids.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./digest.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./state-machines.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./event-bus.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./operators.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./policy.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./approval.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./outbox.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./cost.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./evidence.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./runtime.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./queue.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./checkpoints.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./compensation.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./models.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./provider-capabilities.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./connectors.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./tenancy.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./trace.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./sandbox.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./schema-registry.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./health.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./validators.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./migrations.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./evaluations.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./secrets.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./dependencies.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./experiments.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./retention.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./evidence-bundle.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./idempotency.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./rate-limit.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./retry.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "./errors.js",
+      0
+    ],
+    [
+      "src/core/index.ts",
+      "../decision/index.js",
+      0
+    ],
+    [
+      "src/core/outbox.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/policy.ts",
+      "./digest.js",
+      0
+    ],
+    [
+      "src/core/policy.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/runtime.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/core/runtime.ts",
+      "./state-machines.js",
+      0
+    ],
+    [
+      "src/core/state-machines.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/creation/assets.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/creation/c2pa.ts",
+      "./uct.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./assets.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./context.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./continuity.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./uct.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./verification.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./repair.js",
+      0
+    ],
+    [
+      "src/creation/index.ts",
+      "./c2pa.js",
+      0
+    ],
+    [
+      "src/creation/uct.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/decision/engine.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/decision/index.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/decision/index.ts",
+      "./engine.js",
+      0
+    ],
+    [
+      "src/decision/index.ts",
+      "./jev-provider.js",
+      0
+    ],
+    [
+      "src/decision/jev-provider.ts",
+      "./types.js",
+      0
+    ],
+    [
+      "src/documents/docx-adapter.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/epub-adapter.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./markdown-renderer.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./json-renderer.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./render-registry.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./pdf-adapter.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./docx-adapter.js",
+      0
+    ],
+    [
+      "src/documents/index.ts",
+      "./epub-adapter.js",
+      0
+    ],
+    [
+      "src/documents/json-renderer.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/markdown-renderer.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/pdf-adapter.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/documents/render-registry.ts",
+      "./renderers.js",
+      0
+    ],
+    [
+      "src/factories/app-tool-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/app-tool-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/audio-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/audio-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/automation-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/automation-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/brand-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/brand-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/campaign-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/campaign-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/course-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/course-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/data-analytics-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/data-analytics-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./registry.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./research-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./document-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./product-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./brand-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./automation-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./media-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./web-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./campaign-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./course-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./audio-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./app-tool-factory.js",
+      0
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "./data-analytics-factory.js",
+      0
+    ],
+    [
+      "src/factories/document-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/document-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/export-engine.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./registry.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./research-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./document-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./product-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./brand-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./automation-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./media-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./web-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./campaign-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./course-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./audio-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./app-tool-factory.js",
+      0
+    ],
+    [
+      "src/factories/index.ts",
+      "./data-analytics-factory.js",
+      0
+    ],
+    [
+      "src/factories/media-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/package-engine.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/product-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/product-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "./research-factory.js",
+      0
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "./document-factory.js",
+      0
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "./product-factory.js",
+      0
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/registry.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/research-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/research-factory.ts",
+      "../knowledge/research.js",
+      0
+    ],
+    [
+      "src/factories/web-factory.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/factories/web-factory.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/governance/index.ts",
+      "./rights.js",
+      0
+    ],
+    [
+      "src/governance/index.ts",
+      "./policy-packs.js",
+      0
+    ],
+    [
+      "src/governance/policy-packs.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/identity/index.ts",
+      "./contracts.js",
+      0
+    ],
+    [
+      "src/knowledge/catalog.ts",
+      "../core/tenancy.js",
+      0
+    ],
+    [
+      "src/knowledge/index.ts",
+      "./research.js",
+      0
+    ],
+    [
+      "src/knowledge/index.ts",
+      "./catalog.js",
+      0
+    ],
+    [
+      "src/knowledge/index.ts",
+      "./memory.js",
+      0
+    ],
+    [
+      "src/media/index.ts",
+      "./editing.js",
+      0
+    ],
+    [
+      "src/objectives/index.ts",
+      "./orchestrator.js",
+      0
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "../factories/contracts.js",
+      0
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "../factories/registry.js",
+      0
+    ],
+    [
+      "src/persistence/index.ts",
+      "./interfaces.js",
+      0
+    ],
+    [
+      "src/persistence/index.ts",
+      "./memory.js",
+      0
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "../core/types.js",
+      0
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "../creation/assets.js",
+      0
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "../creation/uct.js",
+      0
+    ],
+    [
+      "src/persistence/memory.ts",
+      "./interfaces.js",
+      0
+    ],
+    [
+      "src/persistence/memory.ts",
+      "../core/types.js",
+      0
+    ],
+    [
+      "src/persistence/memory.ts",
+      "../creation/assets.js",
+      0
+    ],
+    [
+      "src/persistence/memory.ts",
+      "../creation/uct.js",
+      0
+    ],
+    [
+      "src/publishing/index.ts",
+      "./idempotency.js",
+      0
+    ],
+    [
+      "src/publishing/index.ts",
+      "./reconcile.js",
+      0
+    ],
+    [
+      "src/publishing/reconcile.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/publishing/reconcile.ts",
+      "./idempotency.js",
+      0
+    ],
+    [
+      "src/research/http-reader.ts",
+      "./snapshots.js",
+      0
+    ],
+    [
+      "src/research/http-reader.ts",
+      "./adapters.js",
+      0
+    ],
+    [
+      "src/research/index.ts",
+      "./adapters.js",
+      0
+    ],
+    [
+      "src/research/search-memory.ts",
+      "./adapters.js",
+      0
+    ],
+    [
+      "src/research/snapshots.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/research/snapshots.ts",
+      "./adapters.js",
+      0
+    ],
+    [
+      "src/runtime/cineforge.ts",
+      "../core/types.js",
+      0
+    ],
+    [
+      "src/runtime/cineforge.ts",
+      "../persistence/interfaces.js",
+      0
+    ],
+    [
+      "src/runtime/index.ts",
+      "./cineforge.js",
+      0
+    ],
+    [
+      "src/runtime/index.ts",
+      "./outbox-publisher.js",
+      0
+    ],
+    [
+      "src/runtime/index.ts",
+      "./durable-adapter.js",
+      0
+    ],
+    [
+      "src/runtime/outbox-publisher.ts",
+      "../persistence/interfaces.js",
+      0
+    ],
+    [
+      "src/security/audit.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/security/index.ts",
+      "./redaction.js",
+      0
+    ],
+    [
+      "src/security/index.ts",
+      "./permissions.js",
+      0
+    ],
+    [
+      "src/security/index.ts",
+      "./audit.js",
+      0
+    ],
+    [
+      "src/security/index.ts",
+      "./ssrf.js",
+      0
+    ],
+    [
+      "src/storage/content-addressed.ts",
+      "node:crypto",
+      0
+    ],
+    [
+      "src/storage/content-addressed.ts",
+      "../adapters/interfaces.js",
+      0
+    ],
+    [
+      "src/storage/index.ts",
+      "./content-addressed.js",
+      0
+    ],
+    [
+      "src/storage/index.ts",
+      "./s3-compatible.js",
+      0
+    ],
+    [
+      "src/templates/index.ts",
+      "./packages.js",
+      0
+    ],
+    [
+      "src/templates/packages.ts",
+      "../core/digest.js",
+      0
+    ],
+    [
+      "src/training/index.ts",
+      "./lifecycle.js",
+      0
+    ],
+    [
+      "src/training/index.ts",
+      "./dataset-quality.js",
+      0
+    ],
+    [
+      "src/verification/html-validator.ts",
+      "../core/validators.js",
+      0
+    ],
+    [
+      "src/verification/index.ts",
+      "./json-validator.js",
+      0
+    ],
+    [
+      "src/verification/index.ts",
+      "./html-validator.js",
+      0
+    ],
+    [
+      "src/verification/index.ts",
+      "./runner.js",
+      0
+    ],
+    [
+      "src/verification/index.ts",
+      "./pdf-validator.js",
+      0
+    ],
+    [
+      "src/verification/index.ts",
+      "./zip-validator.js",
+      0
+    ],
+    [
+      "src/verification/json-validator.ts",
+      "../core/validators.js",
+      0
+    ],
+    [
+      "src/verification/pdf-validator.ts",
+      "../core/validators.js",
+      0
+    ],
+    [
+      "src/verification/runner.ts",
+      "../core/validators.js",
+      0
+    ],
+    [
+      "src/verification/zip-validator.ts",
+      "../core/validators.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/verification/index.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/publishing/index.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/research/snapshots.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/research/citations.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/documents/index.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/adapters/index.js",
+      0
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "../src/storage/index.js",
+      0
+    ],
+    [
+      "test/beast-expansion-49-58.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/beast-expansion-49-58.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/beast-expansion-49-58.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/beast-wave-c.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/beast-wave-c.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/beast-wave-c.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/c2pa-draft.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/c2pa-draft.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/c2pa-draft.test.ts",
+      "../src/creation/uct.js",
+      0
+    ],
+    [
+      "test/c2pa-draft.test.ts",
+      "../src/creation/c2pa.js",
+      0
+    ],
+    [
+      "test/campaign-intelligence.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/campaign-intelligence.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/campaign-intelligence.test.ts",
+      "../src/campaign/index.js",
+      0
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "../src/cinema/index.js",
+      0
+    ],
+    [
+      "test/cinema-planner-editorial.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/cinema-planner-editorial.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/cinema-planner-editorial.test.ts",
+      "../src/cinema/planner.js",
+      0
+    ],
+    [
+      "test/cinema-planner-editorial.test.ts",
+      "../src/cinema/editorial.js",
+      0
+    ],
+    [
+      "test/core.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/core.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/core.test.ts",
+      "../src/core/state-machines.js",
+      0
+    ],
+    [
+      "test/core.test.ts",
+      "../src/core/digest.js",
+      0
+    ],
+    [
+      "test/create-loco-adapter.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/create-loco-adapter.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/create-loco-adapter.test.ts",
+      "../src/adapters/create-loco.js",
+      0
+    ],
+    [
+      "test/dataset-identity.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/dataset-identity.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/dataset-identity.test.ts",
+      "../src/training/dataset-quality.js",
+      0
+    ],
+    [
+      "test/dataset-identity.test.ts",
+      "../src/identity/index.js",
+      0
+    ],
+    [
+      "test/decision-engine.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/decision-engine.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/decision-engine.test.ts",
+      "../src/decision/engine.js",
+      0
+    ],
+    [
+      "test/decision-engine.test.ts",
+      "../src/decision/jev-provider.js",
+      0
+    ],
+    [
+      "test/decision-engine.test.ts",
+      "../src/decision/types.js",
+      0
+    ],
+    [
+      "test/factories.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/factories.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/factories.test.ts",
+      "../src/factories/index.js",
+      0
+    ],
+    [
+      "test/media-editing.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/media-editing.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/media-editing.test.ts",
+      "../src/media/index.js",
+      0
+    ],
+    [
+      "test/media-forge-boundary.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/media-forge-boundary.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/media-forge-boundary.test.ts",
+      "../src/factories/media-factory.js",
+      0
+    ],
+    [
+      "test/objective-orchestrator.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/objective-orchestrator.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/objective-orchestrator.test.ts",
+      "../src/factories/index.js",
+      0
+    ],
+    [
+      "test/objective-orchestrator.test.ts",
+      "../src/objectives/index.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/product-pipeline.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/product-intelligence.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/export-engine.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/package-engine.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/offer-engine.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/publishing.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/measurement.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/improvement.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/distribution.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/factories/quality-gate.js",
+      0
+    ],
+    [
+      "test/product-vertical.test.ts",
+      "../src/adapters/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/persistence/sql-adapter.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/storage/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/research/http-reader.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/documents/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/verification/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/runtime/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/publishing/index.js",
+      0
+    ],
+    [
+      "test/production-boundary.test.ts",
+      "../src/security/index.js",
+      0
+    ],
+    [
+      "test/provider-capabilities.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/provider-capabilities.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/provider-capabilities.test.ts",
+      "../src/core/provider-capabilities.js",
+      0
+    ],
+    [
+      "test/provider-registry.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/provider-registry.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/provider-registry.test.ts",
+      "../src/core/provider-capabilities.js",
+      0
+    ],
+    [
+      "test/runtime-persistence.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/runtime-persistence.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/runtime-persistence.test.ts",
+      "../src/persistence/index.js",
+      0
+    ],
+    [
+      "test/runtime-persistence.test.ts",
+      "../src/runtime/index.js",
+      0
+    ],
+    [
+      "test/runtime-persistence.test.ts",
+      "../src/documents/index.js",
+      0
+    ],
+    [
+      "test/security-reliability-service.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/security-reliability-service.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/security-reliability-service.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/security-reliability-service.test.ts",
+      "../src/security/index.js",
+      0
+    ],
+    [
+      "test/security-reliability-service.test.ts",
+      "../src/bootstrap.js",
+      0
+    ],
+    [
+      "test/spatial-contracts.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/spatial-contracts.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/spatial-contracts.test.ts",
+      "../src/cinema/spatial.js",
+      0
+    ],
+    [
+      "test/waves-ab.test.ts",
+      "node:test",
+      0
+    ],
+    [
+      "test/waves-ab.test.ts",
+      "node:assert/strict",
+      0
+    ],
+    [
+      "test/waves-ab.test.ts",
+      "../src/core/index.js",
+      0
+    ],
+    [
+      "test/waves-ab.test.ts",
+      "../src/creation/index.js",
+      0
+    ],
+    [
+      "test/waves-ab.test.ts",
+      "../src/core/digest.js",
+      0
+    ]
+  ],
+  "js_ts_text_inspected_not_ast": 178,
+  "limitations": [
+    "Every tracked file was enumerated and hashed and readable text opened",
+    "Python AST parsed, JavaScript/typescript is text/static only; not full TypeScript AST or full dataflow",
+    "No semantic execution or proof of production integrations by this index",
+    "Does not include untracked/private files, branch history, remote deployed services or unmounted artifacts",
+    "An inventory of the BASE COMMIT; edit wave source files added later are deliberately not part of baseline",
+    "A file being parseable does not mean its implementation is correct or connected",
+    "Runtime, Blender, Godot, hosted auth and user acceptance still require separate proof"
+  ],
+  "markdown_files": 138,
+  "python_ast_parsed": 0,
+  "repo": "MGR-CREATE-Os",
+  "routes": [],
+  "schema": "mgr.beast.tracked-static-inventory.v1",
+  "symbols": [
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "parseLockFile",
+      48,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "extractLayers",
+      139,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "buildAccessModel",
+      198,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "buildUcosYaml",
+      224,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "yamlString",
+      317,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/scripts/migrate-locks-to-ucos.js",
+      "main",
+      326,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "BrandAssetBrandProfile",
+      27,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "is",
+      68,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/brand-face.ts",
+      "BrandFacePreference",
+      71,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "CreationNode",
+      188,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "NewCreationNode",
+      189,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "CreationEdge",
+      190,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "NewCreationEdge",
+      191,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "CreationPipelineStage",
+      229,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/creation-os.ts",
+      "CreationPipelineStageDefinition",
+      231,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "TrainingQueueItem",
+      118,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "TrainingJob",
+      119,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "TrainingRun",
+      120,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "TrainingActiveAdapter",
+      121,
+      "JS_DECLARATION"
+    ],
+    [
+      "legacy/mgr-agents/src/lib/db/schema/training.ts",
+      "TrainingSwarmRegistry",
+      122,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/create-loco.ts",
+      "CreateLocoReference",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/create-loco.ts",
+      "CreateLocoBuildRequest",
+      8,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/create-loco.ts",
+      "CreateLocoBuildResult",
+      30,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/create-loco.ts",
+      "CreateLocoTransport",
+      44,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/create-loco.ts",
+      "CreateLocoCapabilityAdapter",
+      48,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/in-memory.ts",
+      "MemoryObjectStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/in-memory.ts",
+      "MemorySearchIndex",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/in-memory.ts",
+      "MemoryTelemetry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/interfaces.ts",
+      "DurableEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/interfaces.ts",
+      "ObjectStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/interfaces.ts",
+      "SearchIndex",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/adapters/interfaces.ts",
+      "TelemetryAdapter",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/agents/crew.ts",
+      "AgentRole",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/agents/crew.ts",
+      "Delegation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/agents/crew.ts",
+      "validateDelegation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/agents/crew.ts",
+      "CrewPlan",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/api/service.ts",
+      "CreationOSService",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/bootstrap.ts",
+      "createCreationOS",
+      7,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "ProductClaim",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "ProductKnowledgeObject",
+      7,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "ShotRhythm",
+      24,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "CreativeDNA",
+      32,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "DeliveryContext",
+      61,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "PerformanceMetrics",
+      74,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "PerformanceObservation",
+      87,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "validatePerformanceObservation",
+      95,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/campaign/creative-intelligence.ts",
+      "derivedPerformance",
+      110,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "Vec3",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "Transform",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "SceneNode",
+      9,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "SceneGraph",
+      20,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "WorldVersion",
+      27,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "LensState",
+      37,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "CameraPose",
+      45,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "CameraMove",
+      51,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "FramingConstraint",
+      56,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "CameraKeyframe",
+      64,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "CameraTrajectory",
+      69,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "ShotIntent",
+      78,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "ShotValidationIssue",
+      90,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "validateSceneGraph",
+      102,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/contracts.ts",
+      "validateShot",
+      115,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/editorial.ts",
+      "EditorialClip",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/editorial.ts",
+      "EditorialTimeline",
+      11,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/editorial.ts",
+      "OtioLikeTimeline",
+      18,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/editorial.ts",
+      "toOtioLike",
+      33,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/editorial.ts",
+      "msToFrames",
+      79,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/planner.ts",
+      "LinearTrajectoryPlan",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/planner.ts",
+      "planLinearTrajectory",
+      14,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/planner.ts",
+      "lerp",
+      51,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/planner.ts",
+      "lerpVec3",
+      55,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/planner.ts",
+      "interpolateOptional",
+      63,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/spatial.ts",
+      "SpatialRepresentation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/spatial.ts",
+      "Bounds3D",
+      9,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/spatial.ts",
+      "SpatialAssetRef",
+      14,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/spatial.ts",
+      "SpatialConversionRecord",
+      28,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/cinema/spatial.ts",
+      "validateSpatialAsset",
+      38,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/collaboration/review.ts",
+      "Decision",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/collaboration/review.ts",
+      "Annotation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/collaboration/review.ts",
+      "VersionDecision",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/collaboration/review.ts",
+      "assertDecisionApplies",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/approval.ts",
+      "ApprovalStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/approval.ts",
+      "ApprovalRequest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/approval.ts",
+      "ApprovalStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/checkpoints.ts",
+      "Checkpoint",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/checkpoints.ts",
+      "ReplayBranch",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/checkpoints.ts",
+      "CheckpointStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/compensation.ts",
+      "Reversibility",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/compensation.ts",
+      "CompensationStep",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/compensation.ts",
+      "compensate",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/connectors.ts",
+      "CredentialReference",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/connectors.ts",
+      "ConnectorManifest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/connectors.ts",
+      "assertScopes",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/cost.ts",
+      "UsageEvent",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/cost.ts",
+      "CostLedger",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/dependencies.ts",
+      "Dependency",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/dependencies.ts",
+      "Resolution",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/dependencies.ts",
+      "resolveDependencies",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/dependencies.ts",
+      "visit",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/digest.ts",
+      "canonical",
+      2,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/digest.ts",
+      "sha256Canonical",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/digest.ts",
+      "actionDigest",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/errors.ts",
+      "ErrorKind",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/errors.ts",
+      "CreationOSError",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evaluations.ts",
+      "EvalCase",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evaluations.ts",
+      "EvalSuite",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evaluations.ts",
+      "EvalResult",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evaluations.ts",
+      "runEval",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/event-bus.ts",
+      "Handler",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/event-bus.ts",
+      "InMemoryEventBus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evidence-bundle.ts",
+      "EvidenceBundle",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evidence-bundle.ts",
+      "createEvidenceBundle",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/evidence.ts",
+      "EvidenceStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/experiments.ts",
+      "Variant",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/experiments.ts",
+      "Experiment",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/experiments.ts",
+      "assign",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/health.ts",
+      "CircuitState",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/health.ts",
+      "Health",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/health.ts",
+      "HealthRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/idempotency.ts",
+      "IdempotencyStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/idempotency.ts",
+      "IdempotencyRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/idempotency.ts",
+      "IdempotencyStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/ids.ts",
+      "id",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/ids.ts",
+      "now",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/migrations.ts",
+      "Migration",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/migrations.ts",
+      "MigrationRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "EvalSnapshot",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "CommercialUseStatus",
+      10,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "ModelRights",
+      16,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "ModelVersion",
+      23,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "RouteRequest",
+      38,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "ModelRouter",
+      48,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/models.ts",
+      "bestQuality",
+      84,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/operators.ts",
+      "SideEffectClass",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/operators.ts",
+      "OperatorContext",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/operators.ts",
+      "OperatorManifest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/operators.ts",
+      "OperatorRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/outbox.ts",
+      "OutboxRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/outbox.ts",
+      "InMemoryOutbox",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/policy.ts",
+      "PolicyRule",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/policy.ts",
+      "PolicyEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "CapabilityStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "ProviderRuntime",
+      2,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "ProviderCapabilitySnapshot",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "providerSnapshotIsFresh",
+      62,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "ProviderCapabilityRegistry",
+      72,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/provider-capabilities.ts",
+      "rankStatus",
+      153,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/queue.ts",
+      "WorkItem",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/queue.ts",
+      "Lease",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/queue.ts",
+      "WorkQueue",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/rate-limit.ts",
+      "RatePolicy",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/rate-limit.ts",
+      "TokenBucket",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/retention.ts",
+      "DeletionTarget",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/retention.ts",
+      "executeDeletion",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/retry.ts",
+      "RetryPolicy",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/retry.ts",
+      "retryDelay",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/retry.ts",
+      "withRetry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/runtime.ts",
+      "RuntimeStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/sandbox.ts",
+      "IsolationClass",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/sandbox.ts",
+      "NetworkPolicy",
+      2,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/sandbox.ts",
+      "SandboxProfile",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/sandbox.ts",
+      "SandboxRequest",
+      20,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/sandbox.ts",
+      "validateSandbox",
+      28,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/schema-registry.ts",
+      "Compatibility",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/schema-registry.ts",
+      "ContractSchema",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/schema-registry.ts",
+      "SchemaRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/secrets.ts",
+      "SecretGrant",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/secrets.ts",
+      "SecretBroker",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/state-machines.ts",
+      "canTransitionRun",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/state-machines.ts",
+      "canTransitionStage",
+      5,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/tenancy.ts",
+      "ScopedResource",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/tenancy.ts",
+      "ActorContext",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/tenancy.ts",
+      "assertScope",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/trace.ts",
+      "TraceEvent",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/trace.ts",
+      "TraceStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "Id",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "ISODate",
+      2,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "RunStatus",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "StageStatus",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "CreationRun",
+      5,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "StageRun",
+      6,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "EventEnvelope",
+      7,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "PolicyOutcome",
+      8,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "PolicyDecision",
+      9,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/types.ts",
+      "EvidenceRecord",
+      10,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/validators.ts",
+      "ArtifactValidator",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/core/validators.ts",
+      "ValidatorRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/assets.ts",
+      "AssetVersion",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/assets.ts",
+      "AssetRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/c2pa.ts",
+      "C2paAssertion",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/c2pa.ts",
+      "C2paManifestDraft",
+      8,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/c2pa.ts",
+      "uctToC2paDraft",
+      22,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/context.ts",
+      "LockType",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/context.ts",
+      "ContextLayer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/context.ts",
+      "Lock",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/context.ts",
+      "Conflict",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/context.ts",
+      "resolveContext",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/continuity.ts",
+      "Rule",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/continuity.ts",
+      "Violation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/continuity.ts",
+      "evaluateRules",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/repair.ts",
+      "Defect",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/repair.ts",
+      "RepairAttempt",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/repair.ts",
+      "shouldContinue",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/uct.ts",
+      "UCTRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/uct.ts",
+      "issueUCT",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/uct.ts",
+      "verifyArtifactDigest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/verification.ts",
+      "Criterion",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/creation/verification.ts",
+      "verify",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionAttempt",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionPolicy",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionProvider",
+      5,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionRequest",
+      6,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionResult",
+      7,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionTrace",
+      8,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "minimumConfidence",
+      11,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/engine.ts",
+      "DecisionEngine",
+      16,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/jev-provider.ts",
+      "JevWireResponse",
+      8,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/jev-provider.ts",
+      "JevProviderOptions",
+      14,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/jev-provider.ts",
+      "JevDecisionProvider",
+      22,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionQuestion",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionRequest",
+      6,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "NoulAnswer",
+      13,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "ChoiceAnswer",
+      14,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "ScoreAnswer",
+      20,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionAnswer",
+      27,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionResult",
+      29,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionProvider",
+      37,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionAttempt",
+      43,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionTrace",
+      51,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionObserver",
+      60,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "DecisionPolicy",
+      62,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/decision/types.ts",
+      "answerConfidence",
+      69,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/docx-adapter.ts",
+      "DocxEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/docx-adapter.ts",
+      "DocxRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/epub-adapter.ts",
+      "EpubEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/epub-adapter.ts",
+      "EpubRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/json-renderer.ts",
+      "JsonDocumentRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/markdown-renderer.ts",
+      "MarkdownRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/pdf-adapter.ts",
+      "PdfEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/pdf-adapter.ts",
+      "PdfRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/render-registry.ts",
+      "RendererRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/renderers.ts",
+      "RenderedDocument",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/renderers.ts",
+      "DocumentRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/documents/renderers.ts",
+      "HtmlRenderer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/app-tool-factory.ts",
+      "AppToolInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/app-tool-factory.ts",
+      "AppToolFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/audio-factory.ts",
+      "AudioInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/audio-factory.ts",
+      "AudioFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/automation-factory.ts",
+      "AutomationInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/automation-factory.ts",
+      "AutomationFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/brand-factory.ts",
+      "BrandInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/brand-factory.ts",
+      "BrandFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/campaign-factory.ts",
+      "CampaignInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/campaign-factory.ts",
+      "CampaignFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/contracts.ts",
+      "FactoryKind",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/contracts.ts",
+      "FactoryRequest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/contracts.ts",
+      "FactoryResult",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/contracts.ts",
+      "Factory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/course-factory.ts",
+      "CourseInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/course-factory.ts",
+      "CourseFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/data-analytics-factory.ts",
+      "AnalyticsInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/data-analytics-factory.ts",
+      "DataAnalyticsFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/default-registry.ts",
+      "defaultFactoryRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/distribution.ts",
+      "DistributionManifest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/distribution.ts",
+      "validateDistribution",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/document-factory.ts",
+      "DocumentInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/document-factory.ts",
+      "DocumentFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/export-engine.ts",
+      "ExportFormat",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/export-engine.ts",
+      "ExportRequest",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/export-engine.ts",
+      "ExportResult",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/export-engine.ts",
+      "exportArtifact",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/improvement.ts",
+      "ImprovementSignal",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/improvement.ts",
+      "ImprovementProposal",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/improvement.ts",
+      "proposals",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/measurement.ts",
+      "PerformanceEvent",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/measurement.ts",
+      "summarizePerformance",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/media-factory.ts",
+      "MediaInput",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/media-factory.ts",
+      "MediaFactory",
+      13,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/offer-engine.ts",
+      "Offer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/offer-engine.ts",
+      "validateOffer",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/package-engine.ts",
+      "PackageItem",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/package-engine.ts",
+      "ProductPackage",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/package-engine.ts",
+      "packageProduct",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-factory.ts",
+      "ProductInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-factory.ts",
+      "ProductFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-intelligence.ts",
+      "MarketSignal",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-intelligence.ts",
+      "Opportunity",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-intelligence.ts",
+      "rankOpportunities",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "ProductPipelineInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "ProductPipelineResult",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/product-pipeline.ts",
+      "runProductPipeline",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/publishing.ts",
+      "PublishStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/publishing.ts",
+      "PublishTarget",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/publishing.ts",
+      "PublishJob",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/publishing.ts",
+      "readyToPublish",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/quality-gate.ts",
+      "QualityCheck",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/quality-gate.ts",
+      "qualityGate",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/registry.ts",
+      "FactoryRegistry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/research-factory.ts",
+      "ResearchInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/research-factory.ts",
+      "ResearchFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/web-factory.ts",
+      "WebInput",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/factories/web-factory.ts",
+      "WebFactory",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/policy-packs.ts",
+      "PolicyRule",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/policy-packs.ts",
+      "PolicyPack",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/policy-packs.ts",
+      "evaluatePolicyPack",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/rights.ts",
+      "LicenseExpr",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/rights.ts",
+      "ConsentRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/rights.ts",
+      "consentAllows",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/governance/rights.ts",
+      "licenseIds",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/identity/contracts.ts",
+      "IdentityLock",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/identity/contracts.ts",
+      "VoiceIdentity",
+      12,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/identity/contracts.ts",
+      "validateIdentityLock",
+      23,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/identity/contracts.ts",
+      "canUseVoiceIdentity",
+      33,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/catalog.ts",
+      "CatalogRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/catalog.ts",
+      "Catalog",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/memory.ts",
+      "MemoryTier",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/memory.ts",
+      "MemoryItem",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/memory.ts",
+      "MemoryStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/research.ts",
+      "Source",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/research.ts",
+      "Claim",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/research.ts",
+      "Evidence",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/research.ts",
+      "Contradiction",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/knowledge/research.ts",
+      "ResearchLedger",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "MaskAsset",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "ObjectTrackFrame",
+      13,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "ObjectTrack",
+      20,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "EditOperationType",
+      30,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "EditOperation",
+      42,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "EditLocalityReport",
+      54,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "validateEditOperation",
+      62,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/media/editing.ts",
+      "editPassesLocality",
+      75,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "Workstream",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "ObjectivePlan",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "validatePlan",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "visit",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/objectives/orchestrator.ts",
+      "ObjectiveOrchestrator",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "CreationRepository",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "EventRepository",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "AssetRepository",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/interfaces.ts",
+      "ProvenanceRepository",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/memory.ts",
+      "MemoryRepository",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/sql-adapter.ts",
+      "SqlClient",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/persistence/sql-adapter.ts",
+      "SqlMigrationRunner",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/publishing/idempotency.ts",
+      "ExternalOperation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/publishing/idempotency.ts",
+      "ExternalOperationLedger",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/publishing/reconcile.ts",
+      "Publisher",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/publishing/reconcile.ts",
+      "publishOnce",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/publishing/reconcile.ts",
+      "reconcilePublish",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/adapters.ts",
+      "SearchResult",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/adapters.ts",
+      "SearchAdapter",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/adapters.ts",
+      "PageSnapshot",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/adapters.ts",
+      "PageReader",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/adapters.ts",
+      "ResearchCollector",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/citations.ts",
+      "Citation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/citations.ts",
+      "validateCitation",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/http-reader.ts",
+      "HttpResponse",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/http-reader.ts",
+      "HttpFetch",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/http-reader.ts",
+      "HttpPageReader",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/search-memory.ts",
+      "StaticSearchAdapter",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/snapshots.ts",
+      "createSnapshot",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/research/snapshots.ts",
+      "verifySnapshot",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/runtime/cineforge.ts",
+      "CineforgeEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/runtime/durable-adapter.ts",
+      "DurableStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/runtime/durable-adapter.ts",
+      "DurableRecord",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/runtime/durable-adapter.ts",
+      "MemoryDurableEngine",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/runtime/outbox-publisher.ts",
+      "OutboxPublisher",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/audit.ts",
+      "AuditEntry",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/audit.ts",
+      "AuditLog",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/permissions.ts",
+      "Permission",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/permissions.ts",
+      "RoleDefinition",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/permissions.ts",
+      "AuthorizationContext",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/permissions.ts",
+      "authorize",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/redaction.ts",
+      "redact",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/ssrf.ts",
+      "privateHost",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/security/ssrf.ts",
+      "assertSafeExternalUrl",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/storage/content-addressed.ts",
+      "ContentAddressedStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/storage/s3-compatible.ts",
+      "S3LikeClient",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/storage/s3-compatible.ts",
+      "S3CompatibleObjectStore",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/templates/packages.ts",
+      "TemplatePackage",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/templates/packages.ts",
+      "createTemplatePackage",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/dataset-quality.ts",
+      "DatasetItem",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/dataset-quality.ts",
+      "DatasetQualityReport",
+      18,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/dataset-quality.ts",
+      "evaluateDatasetQuality",
+      34,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/dataset-quality.ts",
+      "diversity",
+      104,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/dataset-quality.ts",
+      "clamp100",
+      110,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/lifecycle.ts",
+      "DatasetSnapshot",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/lifecycle.ts",
+      "TrainingStatus",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/lifecycle.ts",
+      "TrainingRun",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/lifecycle.ts",
+      "ModelArtifact",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/training/lifecycle.ts",
+      "ModelPromotion",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/verification/runner.ts",
+      "validateArtifact",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "src/verification/zip-validator.ts",
+      "zipSignatureValidator",
+      1,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/artifact-verification.test.ts",
+      "cannot",
+      4,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/campaign-intelligence.test.ts",
+      "PerformanceObservation",
+      6,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "CameraTrajectory",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "SceneGraph",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/cinema-contracts.test.ts",
+      "ShotIntent",
+      3,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/create-loco-adapter.test.ts",
+      "CreateLocoBuildRequest",
+      5,
+      "JS_DECLARATION"
+    ],
+    [
+      "test/create-loco-adapter.test.ts",
+      "CreateLocoTransport",
+      6,
+      "JS_DECLARATION"
+    ]
+  ],
+  "test_sources": 23,
+  "tracked_file_count": 365
+}

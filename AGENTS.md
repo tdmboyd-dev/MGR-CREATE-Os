@@ -1,5 +1,7 @@
 # MGR AI REPOSITORY BOOT
 
+- Read this source-grounded docs/CREATION-OS-ENGINEERING-HANDBOOK.md and evidence/audits/2026-10-31-baseline-static-inventory.json before adding any component. A roadmap cannot prove a module missing; perform source/tests/runtime verification and keep the ONE repo HANDOFF current.
+
 Before substantial work in this repository:
 1. Read the complete `MGR-Beast-Pack/MGR-BEAST-PACK.md` operating contract.
 2. Read this repository's JEV-READ-FIRST.md.
