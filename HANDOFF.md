@@ -1,5 +1,10 @@
 ## Authenticated owner project metadata and retained results — November 1, 2026
 
+## Permanent mixed-project connection verified — November 1, 2026
+
+Normal owner setup now runs ONEdd3d143 with Creationfd322d7. Consistent backups, preserved original2artifacts/29effects, actual protected mixed Forge+Creation project/two exact approvals/two native outputs, second normal restart and zero-redispatch replay passed. Configuration/selected/default models preserved; no new inference. [Nonprivate result](evidence/owner-projects-2026-11-01/permanent-owner-result.json). Supersedes the earlier pending-permanent-activation direction below; project UI, release/archive, remaining adapter paths/dynamic references and wider source/reuse/cost/production work stay open. Scope is local permanent backend acceptance, not whole-product completion.
+
+
 `prepareObjective` saves a plan with no native dispatch; `list` returns twenty scoped summaries. A read-only project retention guard protects referenced native artifacts across this owner's workspaces, including completed projects. Full Creation228/228 and TypeScript passed; receiving owner HTTP/retirement/conversation checks40/40 passed with injected model transport. [Evidence and explicit remaining work](evidence/owner-projects-2026-11-01/REPORT.md). This supersedes the prior statement that parent retention has no implementation; permanent activation, project UI, release/archive lifecycle and broader acceptance still need their own proof. Original product requirements remain open at their actual scope.
 
 # MGR Creation OS — Canonical Handoff
