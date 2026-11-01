@@ -1,5 +1,9 @@
 # MGR Creation OS — Canonical Handoff
 
+## Canonical Creation history and actual owner migration — November 1, 2026
+
+Creation's divergent canonical/native sources are joined and published at05c812f on repair/completion-2026-10-28; canonical Projects source now supplies Tevin's default launcher. Existing permanent document and Forge workflows survived consistent private backup, normal stop/start and exact replay with unchanged native rows/account configuration and zero new inference/creates. Six native defects repaired. Creation137/137, separate history migration1/1, normal consumer5/5, injected-conversation8/8 and APIaffected41/41 passed; do not sum scopes. [Evidence, source anchors, recovery and remaining work](evidence/creation-history-2026-11-01/CONSUMER-MIGRATION.md). Main branches are not promoted; full studio/ecosystem/production readiness remains Unassessed. Old checkout/history is retained for recovery and superseded only as the active default source.
+
 ## Current joined-source checkpoint — November 1, 2026
 
 Canonical multi-factory and original native-service histories are reconciled on `integrate/tevin-creation-native-20261101`, for delivery to `repair/completion-2026-10-28`; main is not promoted. TypeScript and **137/137** local tests pass. Separate actual two-source ONE approval/SDK/HTTP/SQLite migration/reopen test **1/1** passes, preserving original bytes, IDs and receipts with zero duplicate creates. Six reproduced credential/startup/text defects are repaired. [Exact evidence and remaining consumer migration](evidence/creation-history-2026-11-01/REPORT.md).
@@ -21,7 +25,7 @@ Creation OS remains a standalone optional multi-factory orchestrator, not a prer
 
 
 
-**Current checkpoint:** 2026-10-31, clean GitHub `main` checkout; remote baseline `67a7620b44188c0060f2a48227ab01fb103b544c`. This is the **one living handoff for Creation OS**. `WORK-STATE.md` is a historic work ledger, not another current authority.
+**Historical checkpoint:** 2026-10-31, clean GitHub `main` checkout; remote baseline `67a7620b44188c0060f2a48227ab01fb103b544c`. This is the **one living handoff for Creation OS**. `WORK-STATE.md` is a historic work ledger, not another current authority.
 
 ## What this product actually is
 
@@ -46,7 +50,7 @@ Creation OS is a standalone creation workflow/coordinator that people and other 
 
 ## Next safe batch
 
-1. Reproduce this repo's 122-test contract after any adapter changes.
+1. Reproduce the current joined-source typecheck/137-test contract after adapter changes; the 122-case figure above is historical.
 2. Build a genuine Forge capability client in Creation OS only for multi-factory projects; do not route stand-alone 3D through it.
 3. Require returned model hash, file reopen, legal rights and owner acceptance before `SUCCEEDED`.
 4. Check the older `BUILD-QUEUE.md` and `AUDIT-LEDGER.md` for outstanding media/continuity/customer-facing steps; preserve history.
