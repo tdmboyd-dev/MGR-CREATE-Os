@@ -1,5 +1,16 @@
 ## Accepted stage outputs and six-path native project qualification — November1,2026
 
+## Accepted dependency outputs and all-six native project paths — November1,2026
+
+Published source Creation687e980 and ONEee3c47b. Durable inputs now resolve exact request/artifact references from accepted direct-dependency checkpoints. Stored plan/digest remains immutable; original owner preview/approval binds the resolved command. Invalid references reject admission; missing selected output records known input failure without consumer dispatch; competing producer and changed checkpoint custody are preserved/refused. Runtime status now supplies actual tenant/project/Forge workspace and supported reference version, and the model tool documents the plan shape.
+
+Full Creation244/244 including16new; final affected consumer42/42 includes all6actual native project paths, generated-biome composition after pre-composition reopen, six exact approvals/effects, artifact acceptance, cold replay and retention. Seven changed-source hashes matched before/after. No live inference. Scopes overlap and are not summed; earlier243/native8 logs are predecessor evidence.
+
+Permanent normal-launcher source activation/new trial passed:2consistent SQLite backups; prior4artifacts/31effect rows/native document state/private configuration unchanged. Actual owner API generated biome -> accepted request reference -> original world composition -> document;3exact approvals/3native effects/3retained artifacts. Second normal restart recovered the completed project, exact artifacts and identical native job list/effect rows, zero redispatch/inference. Selected/default models/configuration preserved. Private snapshots stay ignored; public result is permanent-owner-result.json.
+
+This supersedes predecessor missing-dynamic-reference/remaining-four-native-path/permanent-adapter activation directions for this bounded local scope. Original requirements/counts unchanged. Broader asset quality, rights/likeness, arbitrary project graphs, project growth and release/archive lifecycle, UI, live model comprehension, full11tool source/capability/cost comparisons, backup restoration and hosted/device/provider/production remain open/Unassessed. No dollar savings claim, no extra brain/grant/job ledger/binary vault.
+
+
 Durable plans support exact declared-dependency request/artifact references with accepted checkpoint binding. Full244/244 and TypeScript; receiving owner consumer42/42 includes actual all-six native paths, generated-biome composition across pre-composition restart, exact original approvals, files, cold replay and retention. [Evidence, syntax and remaining work](evidence/stage-outputs-2026-11-01/REPORT.md). Supersedes prior missing-dynamic-reference/remaining-four-path implementation directions for this local adapter scope. Permanent activation needs its own receipt. Full product/source/quality/cost/production remains Unassessed; original requirement counts unchanged.
 
 ## Authenticated owner project metadata and retained results — November 1, 2026
