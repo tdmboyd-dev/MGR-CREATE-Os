@@ -97,3 +97,5 @@ Permanent compatibility acceptance:3consistent backups,3new artifacts/effects,2i
 ## November1 accepted artifact text checkpoint
 
 Before:only accepted IDs/references crossed stages. After:declared direct-dependency native text is verified before consumer approval, saved/reopened with exact source hash. Creation284/284,ONE120/120,4selected consumers;19new Creation cases,8stable changed inputs. Permanent exact-source activation pending; whole product Unassessed. Evidence: evidence/artifact-text-transfer-2026-11-01/REPORT.md. Original IDs/counts unchanged.
+
+Permanent accepted-text checkpoint:14old artifacts/41effects preserved,3new native approvals/artifacts and1SignMe version,2normal restarts,0replayredispatch/inference,source+SignMehashmatch,all3stagesretained. See evidence/artifact-text-transfer-2026-11-01/. Fullproduct/source/cost/production Unassessed.

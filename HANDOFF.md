@@ -1,8 +1,15 @@
 ## Accepted stage outputs and six-path native project qualification — November1,2026
 
+## Permanent owner acceptance — November1,2026
+
+Actual corrected source is active through the normal owner launcher. Three consistent SQLite backups passed quick_check; all14old artifacts and41old effects/config/models/native history were preserved. Actual Creation Markdown -> exact-byte SignMe draft -> Creation notes completed with3original approvals/effects/artifacts and1immutable SignMe version. Source and SignMe content hashes match. Consumer stayed waiting without its own approval, original plan/source references remained, and retention was denied for all3project stages. Two normal shutdown/start cycles verified actual old-process exit and a different live owner process. Completed project and all new/old artifacts reopened/replayed with0redispatches/duplicate native versions; no inference/provider charge/sign/send was invoked. Model choices/default/selected and private configuration unchanged. Public result/process/source receipts alongside report; private rows/config/backups ignored.
+
+This supersedes pending permanent activation and missing raw-native-text transfer directions only for this bounded path. Full original product/factory/source/quality/cost, binary/media transforms, legal rights/signing/delivery, live-model comprehension, browser/device/provider/hosted/production and backup restoration remain separate/open. The thirteen-repo goal stays active; no whole-product percentage or dollar savings invented.
+
+
 ## Actual accepted text transfer — November1,2026
 
-Existing project engine supports artifactTextReferenceVersion1, preserving reference version1. Accepted direct dependency text is re-read/verified through original native artifact custody and each exact consumer approval; no paths/URLs/newledger. Native Markdown->SignMe->Creation, pending approval cold recovery and completed replay passed. Creation284/284, ONE120/120,4selected project consumers,8stable inputs; zero skips. Held-read cancellation/close cannot start a consumer. Permanent exact-source activation remains pending. Evidence: evidence/artifact-text-transfer-2026-11-01/REPORT.md. This supersedes missing raw-native-text transfer in this bounded path; full original factories/rights/media/production/source/cost scope remains open.
+Existing project engine supports artifactTextReferenceVersion1, preserving reference version1. Accepted direct dependency text is re-read/verified through original native artifact custody and each exact consumer approval; no paths/URLs/newledger. Native Markdown->SignMe->Creation, pending approval cold recovery and completed replay passed. Creation284/284, ONE120/120,4selected project consumers,8stable inputs; zero skips. Held-read cancellation/close cannot start a consumer. Permanent exact-source activation/save/restart/replay passed; see the acceptance above. Evidence: evidence/artifact-text-transfer-2026-11-01/REPORT.md. This supersedes missing raw-native-text transfer in this bounded path; full original factories/rights/media/production/source/cost scope remains open.
 
 
 ## Permanent owner acceptance — November1,2026
