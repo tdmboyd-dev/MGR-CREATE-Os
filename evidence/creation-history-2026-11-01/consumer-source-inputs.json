@@ -6,7 +6,7 @@
   },
   "note": "ONE launcher source change qualified before its commit; exact working bytes below. These six anchors are not whole transitive-source audit coverage.",
   "anchors": {
-    "MGR-ONE/web/owner-departments.mjs": "fe0d1cb6c5a7dfc984a281af4b3b59aaf7eb395fb82981883df1ce3a5d050558",
+    "MGR-ONE/web/owner-departments.mjs": "edca1608c8e791173709d53e4dfb96032fdaa732aaef0e68395f2f759ada745e",
     "MGR-ONE/scripts/tevin-owner.mjs": "d4362a2d10125f74084755407a114329c448c44508b2f811197ef3c884ede22f",
     "MGR-API-MCP/src/department-gateway.ts": "3370a249725b58a1409e08783e06fa5614aa451326289b6473ceeec15bcfcb1f",
     "MGR-API-MCP/scripts/owner-department-client.ts": "d0e8df50075efc579f14de12136269c2870b4dffd016dbd2f2da693b3eea821d",
@@ -23,5 +23,6 @@
   "permanentOwnerRestartReplay": true,
   "newPermanentInferenceCalls": 0,
   "newPermanentNativeCreates": 0,
-  "productionAccepted": false
+  "productionAccepted": false,
+  "lineEndingNote": "Anchor hashes reflect LF-normalized edited metadata/launcher; semantic source unchanged. canonical-source-custody records all182 Creation Git/working identities."
 }
