@@ -1,5 +1,11 @@
 # MGR Creation OS — Canonical Handoff
 
+## Durable Creation runtime and native adapter — November1,2026
+
+Creation1b25299 is published/adopted: canonical typecheck/full220pass (44new included), actual public-bootstrap native creature+Markdown/approval/lost-reply/four-host-reopen/preapproval-cancel scenario1pass. Concrete scoped SQL persistence and reusable original-owner adapters now exist. Permanent owner reader received new handbook without inference/config/effect changes. [Exact evidence and remaining integration](evidence/durable-projects-2026-11-01/RECEIVING-REPORT.md).
+
+Next: connect the same runtime to permanent authenticated project controls and parent retention; verify four other new Forge paths and dynamic output references. Full studio/source/production remains Unassessed. No second brain/grant/native ledger/vault, no native ID/account migration or dollar-savings claim. Original counts/requirements and peer work preserved.
+
 ## Durable project runtime and reusable native adapter — November1,2026
 
 Public opt-in createCreationOS(projectRuntime) now uses the existing canonical SQL run/stage/events schema, actor-bound exact plans, producer/revision-fenced checkpoints and original graph scheduler. Reusable owner workflow factories cannot approve themselves; original ONE/API/native custody remains. Typecheck/full220/220pass (44new included), actual child-process/WAL recovery and separate real public-bootstrap Forge+document/unknown-reply/four-host-reopen qualification. [Exact source, failures, compatibility and unfinished integration](evidence/durable-projects-2026-11-01/REPORT.md).

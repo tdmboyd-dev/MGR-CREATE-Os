@@ -42,3 +42,9 @@ Public opt-in createCreationOS(projectRuntime) now uses the existing canonical S
 Permanent Tevin project startup/API/conversation controls are next, alongside parent-project retirement/storage protection, dynamic dependency references and the other four new Forge adapter paths. The default twelve factory families and their original requirements remain. Basic Forge remains independently callable. Earlier memory-only project statements are superseded only for the explicit durable bootstrap; memory utilities remain. No permanent account/config/data change, full studio/production or monetary-savings claim.
 
 Defined new local runtime/adapter regression scope44/44 (100% this scope), included in220. Separate selected native scenario1; new positive native operation coverage2/6. Permanent owner project interface and full product/production remain unverified/Unassessed.
+
+## Durable Creation runtime and native adapter — November1,2026
+
+Creation1b25299 is published/adopted: canonical typecheck/full220pass (44new included), actual public-bootstrap native creature+Markdown/approval/lost-reply/four-host-reopen/preapproval-cancel scenario1pass. Concrete scoped SQL persistence and reusable original-owner adapters now exist. Permanent owner reader received new handbook without inference/config/effect changes. [Exact evidence and remaining integration](../../evidence/durable-projects-2026-11-01/RECEIVING-REPORT.md).
+
+Next: connect the same runtime to permanent authenticated project controls and parent retention; verify four other new Forge paths and dynamic output references. Full studio/source/production remains Unassessed. No second brain/grant/native ledger/vault, no native ID/account migration or dollar-savings claim. Original counts/requirements and peer work preserved.
