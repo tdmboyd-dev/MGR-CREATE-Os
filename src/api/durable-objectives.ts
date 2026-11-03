@@ -43,6 +43,14 @@ export class DurableObjectiveService {
             throw Error("project service closed");
         return this.view(this.repo.readObjective(runId));
     }
+    readStageResult(runId: string, stageKey: string, requestId: string): FactoryResult | null {
+        if (this.closed)
+            throw Error("project service closed");
+        const checkpoint = this.repo.checkpoint(runId, stageKey);
+        if (checkpoint.requestId !== requestId)
+            throw Error("stage result not found");
+        return structuredClone(checkpoint.result);
+    }
     async cancel(runId: string) {
         if (this.closed)
             throw Error("project service closed");

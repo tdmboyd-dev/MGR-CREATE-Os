@@ -87,10 +87,14 @@ test('configured Web reconstruction keeps its original browser evidence after pr
     const reopened = open();
     try {
         assert.deepEqual(await reopened.service.resume(result.run.id), result);
-        const checkpoint = f.open().checkpoint(result.run.id, 'reconstruction');
-        assert.equal(checkpoint.requestId, result.operations[0]?.requestId);
-        assert.deepEqual(checkpoint.result?.evidenceRefs, [evidenceRef]);
-        assert.deepEqual(checkpoint.result && 'layerEvidence' in checkpoint.result && checkpoint.result.layerEvidence, layerEvidence);
+        const requestId = result.operations[0]!.requestId;
+        const saved = reopened.service.readStageResult(result.run.id, 'reconstruction', requestId);
+        assert.equal(saved?.requestId, requestId);
+        assert.deepEqual(saved?.evidenceRefs, [evidenceRef]);
+        assert.deepEqual(saved && 'layerEvidence' in saved && saved.layerEvidence, layerEvidence);
+        assert.throws(() => reopened.service.readStageResult(result.run.id, 'reconstruction', 'other-request'), /not found/);
+        const foreign = new DurableObjectiveService(f.open({ ...owner, actorId: 'other-owner' }), new FactoryRegistry());
+        assert.throws(() => foreign.readStageResult(result.run.id, 'reconstruction', requestId), /not found/);
         assert.equal(calls, 1);
         loseReply = true;
         const interrupted = await reopened.service.executeObjective('web-lost-reply', objective);
