@@ -118,7 +118,15 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
         if(req.method==='POST'&&(route[2]==='run'||route[2]==='cancel'))return json(res,200,await control(p,request,route[2]));
       }
       const artifact=url.pathname.match(/^\/v1\/creation\/artifacts\/([a-zA-Z0-9-]{1,128})$/);
-      if(req.method==="GET"&&artifact){const row=db.prepare("SELECT a.bytes,a.mime,a.sha256 FROM native_creation_artifacts a JOIN native_creation_jobs j ON j.tenantId=a.tenantId AND j.requestId=a.requestId AND j.artifactId=a.id WHERE a.id=? AND a.tenantId=? AND json_extract(j.spec,'$.input.actorId')=?").get(artifact[1],p.tenantId,p.actorId);if(!row)throw new HttpError(404,"Artifact not found");res.writeHead(200,{"content-type":String(row.mime),"x-content-sha256":String(row.sha256),"cache-control":"no-store"});res.end(row.bytes as Uint8Array);return;}
+      if(req.method==="GET"&&artifact){
+        const row=db.prepare("SELECT a.bytes,a.size,a.mime,a.sha256 FROM native_creation_artifacts a JOIN native_creation_jobs j ON j.tenantId=a.tenantId AND j.requestId=a.requestId AND j.artifactId=a.id WHERE a.id=? AND a.tenantId=? AND j.status='SUCCEEDED' AND json_extract(j.spec,'$.input.actorId')=?").get(artifact[1],p.tenantId,p.actorId);
+        if(!row)throw new HttpError(404,"Artifact not found");
+        if(!(row.bytes instanceof Uint8Array)||row.bytes.byteLength!==row.size||sha(row.bytes)!==row.sha256)
+          throw new HttpError(500,"Stored Creation artifact failed integrity verification");
+        res.writeHead(200,{"content-type":String(row.mime),"x-content-sha256":String(row.sha256),"cache-control":"no-store"});
+        res.end(row.bytes);
+        return;
+      }
       throw new HttpError(404,"Not found");
     }catch(error){json(res,error instanceof HttpError?error.status:500,{error:error instanceof HttpError?error.message:"Creation operation failed"});}
   });

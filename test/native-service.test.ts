@@ -34,5 +34,16 @@ test("native Creation service produces real bytes with tenant isolation, idempot
   assert.equal((await call("/v1/creation/jobs/cancel-1/run",{})).status,409);
   assert.equal((await call("/v1/creation/jobs/doc-1/cancel",{})).status,409);
   const db=new DatabaseSync(dbPath);assert.equal((db.prepare("SELECT count(*) n FROM native_creation_artifacts").get() as {n:number}).n,1);assert.equal((db.prepare("SELECT count(*) n FROM native_creation_audit WHERE event='artifact-produced'").get() as {n:number}).n,1);db.close();
+  await service.close();
+  const damaged=new DatabaseSync(dbPath);
+  try{
+   assert.equal(damaged.prepare("UPDATE native_creation_artifacts SET bytes=? WHERE id=?").run(Buffer.alloc(bytes.length,88),artifact.id).changes,1);
+  }finally{damaged.close();}
+  service=createNativeCreationService({dbPath,principals});origin=await listen();
+  const rejected=await call(artifact.downloadPath);
+  assert.equal(rejected.status,500);
+  assert.equal(rejected.headers.get("x-content-sha256"),null);
+  assert.deepEqual(await rejected.json(),{error:"Stored Creation artifact failed integrity verification"});
+  assert.deepEqual((await (await call("/v1/creation/jobs",spec)).json()).artifactRefs,first.artifactRefs);
  }finally{await service.close();rmSync(dir,{recursive:true,force:true});}
 });

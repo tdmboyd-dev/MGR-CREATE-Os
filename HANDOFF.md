@@ -1,3 +1,7 @@
+## Native Creation artifact integrity
+
+The native download endpoint verifies persisted artifact bytes against the stored size and SHA-256 and requires a succeeded owning job. The SQLite regression rejects same-length damage after restart and preserves the original job and artifact reference on replay. Type checking and all 284 Creation OS tests passed.
+
 ## Accepted stage outputs and six-path native project qualification — November1,2026
 
 ## Permanent owner acceptance — November1,2026

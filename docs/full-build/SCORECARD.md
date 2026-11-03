@@ -1,3 +1,7 @@
+## Native Creation artifact integrity
+
+The native download endpoint verifies persisted artifact bytes against the stored size and SHA-256 and requires a succeeded owning job. The SQLite regression rejects same-length damage after restart and preserves the original job and artifact reference on replay. Type checking and all 284 Creation OS tests passed.
+
 # Bounded repair scorecard — 2026-10-27
 
 Creation local test suite124/124 passed; TypeScript passed. Source product reading150/150 files. Generic factories without adapters are explicitly BLOCKED. Real native Markdown production is runtime verified locally.
