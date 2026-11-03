@@ -11,15 +11,16 @@ const baseRequest = (): CreateLocoBuildRequest => ({
   tenantId: "tenant-1",
   workspaceId: "workspace-1",
   objective: "reconstruct the approved landing page",
-  references: [{ id: "ref-1", kind: "screenshot", uri: "asset://ref-1", viewport: { width: 1440, height: 1200 } }],
+  references: [{ id: "ref-1", kind: "screenshot", uri: "asset://ref-1", viewport: { width: 1440, height: 1200, dpr: 2 }, role: "primary" }],
   target: {
     framework: "nextjs",
     routes: ["/"],
-    responsiveViewports: [{ width: 1440, height: 1200 }, { width: 390, height: 844 }],
+    responsiveViewports: [{ width: 1440, height: 1200 }, { width: 390, height: 844, dpr: 3 }],
   },
   locks: {
     preserveContinuousBackgrounds: true,
     textAsOverlay: true,
+    heroMediaBehindOverlay: true,
     brandLockIds: ["brand-1"],
   },
   acceptance: {
@@ -47,18 +48,25 @@ test("Create Loco adapter blocks underspecified reconstruction jobs before trans
 test("Create Loco adapter preserves request identity and evidence contract", async () => {
   const transport: CreateLocoTransport = {
     async execute(request) {
+      assert.equal(request.references[0]?.role, "primary");
+      assert.equal(request.references[0]?.viewport?.dpr, 2);
+      assert.equal(request.target.responsiveViewports[1]?.dpr, 3);
+      assert.equal(request.locks.heroMediaBehindOverlay, true);
       return {
         requestId: request.requestId,
         status: "SUCCEEDED",
         artifactRefs: ["web://build-1"],
         evidenceRefs: ["evidence://browser-1"],
-        defects: [],
+        defects: [{id: "defect-1",category: "GEOMETRY",observed: "20px",expected: "24px",targetRef: "hero",severity: "LOW",evidenceRefs: ["evidence://browser-1"]}],
       };
     },
   };
   const result = await new CreateLocoCapabilityAdapter(transport).execute(baseRequest());
   assert.equal(result.status, "SUCCEEDED");
   assert.deepEqual(result.evidenceRefs, ["evidence://browser-1"]);
+  assert.equal(result.defects[0]?.targetRef, "hero");
+  assert.equal(result.defects[0]?.severity, "LOW");
+  assert.deepEqual(result.defects[0]?.evidenceRefs, ["evidence://browser-1"]);
 });
 
 test("Create Loco adapter rejects a mismatched transport response", async () => {

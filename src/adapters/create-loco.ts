@@ -2,7 +2,8 @@ export interface CreateLocoReference {
   id: string;
   kind: "screenshot" | "image" | "url" | "existing_page";
   uri: string;
-  viewport?: { width: number; height: number };
+  viewport?: { width: number; height: number; dpr?: number };
+  role?: "primary" | "secondary" | "detail";
 }
 
 export interface CreateLocoBuildRequest {
@@ -14,11 +15,12 @@ export interface CreateLocoBuildRequest {
   target: {
     framework: "nextjs" | "react" | "static";
     routes: string[];
-    responsiveViewports: Array<{ width: number; height: number }>;
+    responsiveViewports: Array<{ width: number; height: number; dpr?: number }>;
   };
   locks: {
     preserveContinuousBackgrounds: boolean;
     textAsOverlay: boolean;
+    heroMediaBehindOverlay?: boolean;
     brandLockIds: string[];
   };
   acceptance: {
@@ -37,6 +39,9 @@ export interface CreateLocoBuildResult {
     category: string;
     observed: string;
     expected: string;
+    targetRef?: string;
+    severity?: "LOW" | "MEDIUM" | "HIGH";
+    evidenceRefs?: string[];
   }>;
   blockers?: string[];
 }
