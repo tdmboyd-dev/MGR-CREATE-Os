@@ -1,4 +1,4 @@
-import type { Factory, FactoryRequest, FactoryResult } from "./contracts.js";
+import type { FactoryRequest, FactoryResult, RecoverableFactory } from "./contracts.js";
 import { CreateLocoCapabilityAdapter, type CreateLocoBuildRequest, type CreateLocoTransport } from "../adapters/create-loco.js";
 
 export interface WebInput {
@@ -9,12 +9,21 @@ export interface WebInput {
   dataContracts: string[];
 }
 
-export class WebFactory implements Factory {
+export class WebFactory implements RecoverableFactory {
   readonly kind = "WEB" as const;
   private readonly reconstruction?: CreateLocoCapabilityAdapter;
 
   constructor(transport?: CreateLocoTransport) {
     if (transport) this.reconstruction = new CreateLocoCapabilityAdapter(transport);
+  }
+
+  async reconcile(req: FactoryRequest): Promise<FactoryResult> {
+    return {
+      requestId: req.id, kind: this.kind, status: "BLOCKED",
+      artifactRefs: [], evidenceRefs: [],
+      blockers: ["Original reconstruction outcome is unknown; producer status lookup is not configured"],
+      checkpoint: { state: "UNKNOWN", operationRef: req.id },
+    };
   }
 
   async execute(req: FactoryRequest): Promise<FactoryResult> {

@@ -9,6 +9,7 @@ import { DurableObjectiveService } from '../src/api/durable-objectives.js';
 import { FactoryRegistry } from '../src/factories/registry.js';
 import type { RecoverableFactory, FactoryRequest, FactoryResult } from '../src/factories/contracts.js';
 import type { ObjectivePlan } from '../src/objectives/orchestrator.js';
+import { createCreationOS } from '../src/bootstrap.js';
 const principal = (): ProjectPrincipal => ({ tenantId: 'tenant', workspaceId: 'workspace', actorId: 'owner' }), plan = (): ObjectivePlan => ({ id: 'objective', tenantId: 'tenant', workspaceId: 'workspace', outcomes: ['exact project'], maxBudget: 0, workstreams: [{ id: 'first', factory: 'RESEARCH', dependsOn: [], inputs: { text: 'first' }, acceptanceCriteria: ['accepted result'], budget: 0 }, { id: 'second', factory: 'DOCUMENT', dependsOn: ['first'], inputs: { text: 'second' }, acceptanceCriteria: ['accepted result'], budget: 0 }] }), ok = (q: FactoryRequest): FactoryResult => ({ requestId: q.id, kind: q.kind, status: 'SUCCEEDED', artifactRefs: ['native-' + q.id], evidenceRefs: ['receipt-' + q.id] }), wait = (q: FactoryRequest, state: 'WAITING_APPROVAL' | 'UNKNOWN' = 'WAITING_APPROVAL'): FactoryResult => ({ requestId: q.id, kind: q.kind, status: 'BLOCKED', artifactRefs: [], evidenceRefs: [], blockers: ['original operation waiting'], checkpoint: { state, operationRef: q.id } });
 function fixture(t: any) {
     const root = mkdtempSync(join(tmpdir(), 'creation-durable-')), path = join(root, 'creation.sqlite'), repos: SqliteCreationRepository[] = [];
@@ -33,6 +34,59 @@ test('actual SQLite plan, stages, output references and events survive close/reo
     }
     finally {
         db.close();
+    }
+});
+test('configured Web reconstruction keeps its original browser evidence after project restart', async t => {
+    const f = fixture(t), owner = principal();
+    const unused = () => { throw Error('Unexpected owner bridge call'); };
+    const projectRuntime = {
+        dbPath: f.path, principal: owner,
+        bridge: { tenantId: owner.tenantId, actorId: owner.actorId, assertCurrent() {},
+            preview: unused, execute: unused, status: unused, artifact: unused, cancel: unused },
+    };
+    const required = { frontId: 'title', backId: 'hero', x: 30, y: 40, viewport: { width: 900, height: 600 } };
+    const evidenceRef = 'capture://browser';
+    const layerEvidence = [{ ...required, status: 'FRONT_ABOVE' as const, evidenceRef }];
+    let calls = 0;
+    let loseReply = false;
+    const open = () => createCreationOS({
+        projectRuntime,
+        reconstructionTransport: { async execute(request) {
+            calls++;
+            if (loseReply) throw Error('reconstruction reply lost');
+            assert.deepEqual(request.acceptance.requiredLayerProbes, [required]);
+            return { requestId: request.requestId, status: 'SUCCEEDED', artifactRefs: ['web://original'],
+                evidenceRefs: [evidenceRef], layerEvidence, defects: [] };
+        } },
+    });
+    const objective: ObjectivePlan = { ...plan(), workstreams: [{
+        id: 'reconstruction', factory: 'WEB', dependsOn: [], budget: 0, acceptanceCriteria: ['browser proof'],
+        inputs: { operation: 'web.visual_reconstruction.v1', reconstruction: {
+            objective: 'reconstruct an owned reference', references: [{ id: 'ref', kind: 'image', uri: 'asset://ref' }],
+            target: { framework: 'static', routes: ['/'], responsiveViewports: [required.viewport] },
+            locks: { preserveContinuousBackgrounds: true, textAsOverlay: true, brandLockIds: [] },
+            acceptance: { journeys: ['open /'], requiredLayerProbes: [required] },
+        } },
+    }] };
+    const initial = open();
+    const result = await initial.service.executeObjective('web', objective).finally(() => initial.close());
+    assert.equal(result.run.status, 'COMPLETED');
+    assert.deepEqual(result.stages[0]?.outputRefs, ['web://original']);
+    const reopened = open();
+    try {
+        assert.deepEqual(await reopened.service.resume(result.run.id), result);
+        const checkpoint = f.open().checkpoint(result.run.id, 'reconstruction');
+        assert.equal(checkpoint.requestId, result.operations[0]?.requestId);
+        assert.deepEqual(checkpoint.result?.evidenceRefs, [evidenceRef]);
+        assert.deepEqual(checkpoint.result && 'layerEvidence' in checkpoint.result && checkpoint.result.layerEvidence, layerEvidence);
+        assert.equal(calls, 1);
+        loseReply = true;
+        const interrupted = await reopened.service.executeObjective('web-lost-reply', objective);
+        assert.equal(interrupted.run.status, 'WAITING_RESOURCE');
+        assert.equal((await reopened.service.resume(interrupted.run.id)).operations[0]?.progress, 'UNKNOWN');
+        assert.equal(calls, 2);
+    } finally {
+        await reopened.close();
     }
 });
 test('changed same-key plan is denied before a factory call', async (t) => { const f = fixture(t), r = f.open(); r.openObjective('same', plan()); const p = plan(); p.workstreams[0].inputs = { text: 'changed' }; assert.throws(() => r.openObjective('same', p), /conflict/); });
