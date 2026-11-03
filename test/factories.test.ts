@@ -12,3 +12,19 @@ test("audio requires qc",async()=>assert.equal((await new AudioFactory().execute
 test("automation side effects require compensation",async()=>assert.equal((await new AutomationFactory().execute(base("AUTOMATION",{trigger:"x",steps:[{operator:"send",sideEffect:true}],rollbackDefined:false}))).status,"BLOCKED"));
 test("app requires acceptance tests",async()=>assert.equal((await new AppToolFactory().execute(base("APP_TOOL",{requirements:["x"],acceptanceTests:[]}))).status,"BLOCKED"));
 test("analytics requires metric/data quality definitions",async()=>assert.equal((await new DataAnalyticsFactory().execute(base("DATA_ANALYTICS",{eventContracts:["e"],metricDefinitions:[],qualityChecks:[]}))).status,"BLOCKED"));
+
+test("web returns actionable blockers for missing or malformed planning inputs", async () => {
+  const factory = new WebFactory();
+  const missing = await factory.execute(base("WEB", null));
+  assert.deepEqual(missing.blockers, ["no routes", "no browser acceptance journeys", "no responsive targets"]);
+  const malformed = await factory.execute(base("WEB", {
+    routes: "/", responsiveViewports: [""], acceptanceJourneys: ["open /"],
+  }));
+  assert.deepEqual(malformed.blockers, ["no routes", "no responsive targets"]);
+  const ready = await factory.execute(base("WEB", {
+    routes: ["/"], responsiveViewports: ["desktop"], acceptanceJourneys: ["open /"],
+  }));
+  assert.equal(ready.status, "BLOCKED");
+  assert.deepEqual(ready.artifactRefs, []);
+  assert.deepEqual(ready.blockers, ["Web artifact production adapter is not configured"]);
+});

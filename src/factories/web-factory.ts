@@ -1,1 +1,31 @@
-import type {Factory,FactoryRequest,FactoryResult} from "./contracts.js";import {sha256Canonical} from "../core/digest.js";export interface WebInput{routes:string[];interactions:string[];responsiveViewports:string[];acceptanceJourneys:string[];dataContracts:string[]}export class WebFactory implements Factory{kind="WEB" as const;async execute(req:FactoryRequest):Promise<FactoryResult>{const plan=await this.plan(req);return plan.status==="SUCCEEDED"?{...plan,status:"BLOCKED",artifactRefs:[],blockers:["Artifact production adapter is not configured; validated planning input is not a produced artifact. Use the native document.markdown service for real document bytes."]}:plan}private async plan(req:FactoryRequest):Promise<FactoryResult>{const x=req.inputs as WebInput;const b=[];if(!x.routes.length)b.push("no routes");if(!x.acceptanceJourneys.length)b.push("no browser acceptance journeys");if(!x.responsiveViewports.length)b.push("no responsive targets");return{requestId:req.id,kind:this.kind,status:b.length?"BLOCKED":"SUCCEEDED",artifactRefs:b.length?[]:["web_"+sha256Canonical(x).slice(0,20)],evidenceRefs:[],blockers:b.length?b:undefined}}}
+import type { Factory, FactoryRequest, FactoryResult } from "./contracts.js";
+
+export interface WebInput {
+  routes: string[];
+  interactions: string[];
+  responsiveViewports: string[];
+  acceptanceJourneys: string[];
+  dataContracts: string[];
+}
+
+export class WebFactory implements Factory {
+  readonly kind = "WEB" as const;
+
+  async execute(req: FactoryRequest): Promise<FactoryResult> {
+    const input = req.inputs as Partial<WebInput> | null | undefined;
+    const blockers: string[] = [];
+    if (!hasEntries(input?.routes)) blockers.push("no routes");
+    if (!hasEntries(input?.acceptanceJourneys)) blockers.push("no browser acceptance journeys");
+    if (!hasEntries(input?.responsiveViewports)) blockers.push("no responsive targets");
+    if (!blockers.length) blockers.push("Web artifact production adapter is not configured");
+    return {
+      requestId: req.id, kind: this.kind, status: "BLOCKED",
+      artifactRefs: [], evidenceRefs: [], blockers,
+    };
+  }
+}
+
+function hasEntries(values: unknown): boolean {
+  return Array.isArray(values) && values.length > 0 &&
+    values.every(value => typeof value === "string" && value.trim().length > 0);
+}

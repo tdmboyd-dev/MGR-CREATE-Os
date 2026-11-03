@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+The default Web Factory now returns specific blockers for incomplete or malformed planning input. A valid plan reports that the artifact production adapter is unconfigured and returns no artifact reference. The authenticated native service currently registers Markdown only. Type checking and all 289 local tests passed. A reconstruction producer and its job and artifact integration still need to be implemented.
+
 Creation OS now enforces the required layer checks for callers of its own adapter. A successful response needs exactly one matching passing capture with a listed evidence reference for each required check. Type checking and all 288 local tests passed. The injected transport proved result handling. The registered runner and browser journey remain open.
 
 The result contract now carries viewport-scoped layer evidence. Create Loco accepts a required check only when the response contains exactly one matching passing capture with a reference in the result's evidence list. A failed check preserves the returned evidence for review. The registered runner still needs to capture and persist these results.
