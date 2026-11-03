@@ -1,3 +1,7 @@
+## Create Loco reconstruction adapter
+
+The existing web.visual_reconstruction.v1 adapter requires artifact and evidence references on successful replies and rejects success with outstanding blockers. The regression used an injected transport. Type checking and 286 tests passed. The adapter still needs an authenticated reconstruction backend and independent browser artifact verification before this capability can be enrolled for Tevin execution.
+
 ## Native running job cancellation
 
 Creation OS commits cancellation and its audit event together and clears the producer token. A held native renderer resumed after two cancellation requests. It published zero artifacts, the database retained one cancellation event, and reopening preserved cancellation. Type checking and all 285 tests passed. The isolated [Tevin owner route regression](https://github.com/tdmboyd-dev/MGR-ONE/commit/33dfd2b93098fbb4cecf1a6c0042ad3dbd353e2d) verified running cancellation using Creation OS d248e3f5781ba973d675a28dabe190b30dbd2919 and shared API ae796eca904397670270efe76a811fffc32851a7. The test paused the real renderer, sent one authenticated cancellation, let the renderer finish, and recovered the cancelled job after restart with zero artifacts. Everyday desktop and hosted acceptance remain open.

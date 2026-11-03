@@ -69,3 +69,18 @@ test("Create Loco adapter rejects a mismatched transport response", async () => 
   };
   await assert.rejects(() => new CreateLocoCapabilityAdapter(transport).execute(baseRequest()));
 });
+
+test("Create Loco adapter rejects unsubstantiated or blocked success", async () => {
+  for (const fields of [
+    { artifactRefs: [], evidenceRefs: ["evidence://browser-1"] },
+    { artifactRefs: ["web://build-1"], evidenceRefs: [" "] },
+    { artifactRefs: ["web://build-1"], evidenceRefs: ["evidence://browser-1"], blockers: ["Browser unavailable"] },
+  ]) {
+    const adapter = new CreateLocoCapabilityAdapter({
+      async execute(request) {
+        return { requestId: request.requestId, status: "SUCCEEDED", defects: [], ...fields };
+      },
+    });
+    await assert.rejects(() => adapter.execute(baseRequest()), /success requires|success cannot/);
+  }
+});

@@ -72,6 +72,14 @@ export class CreateLocoCapabilityAdapter {
     if (result.requestId !== request.requestId) {
       throw new Error("Create Loco transport returned a mismatched request id");
     }
+    if (result.status === "SUCCEEDED") {
+      for (const refs of [result.artifactRefs, result.evidenceRefs]) {
+        if (!Array.isArray(refs) || !refs.length || refs.some(ref => typeof ref !== "string" || !ref.trim())) {
+          throw new Error("Create Loco success requires artifact and evidence references");
+        }
+      }
+      if (result.blockers?.length) throw new Error("Create Loco success cannot contain blockers");
+    }
     return result;
   }
 }
