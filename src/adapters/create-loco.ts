@@ -99,6 +99,24 @@ export class CreateLocoCapabilityAdapter {
       if (result.defects.some(defect => defect.severity === "HIGH")) {
         return { ...result, status: "FAILED", blockers: ["High-severity reconstruction defects remain"] };
       }
+      const captures = Array.isArray(result.layerEvidence) ? result.layerEvidence : [];
+      const unverified = (request.acceptance.requiredLayerProbes ?? []).filter(required => {
+        const matches = captures.filter(capture =>
+          capture?.frontId === required.frontId && capture.backId === required.backId &&
+          capture.x === required.x && capture.y === required.y &&
+          capture.viewport?.width === required.viewport.width && capture.viewport?.height === required.viewport.height &&
+          (capture.viewport?.dpr ?? 1) === (required.viewport.dpr ?? 1));
+        const capture = matches[0];
+        return matches.length !== 1 || capture?.status !== "FRONT_ABOVE" ||
+          !result.evidenceRefs.includes(capture.evidenceRef);
+      });
+      if (unverified.length) {
+        return {
+          ...result, status: "FAILED",
+          blockers: unverified.map(probe =>
+            `Required layer check for ${probe.frontId} above ${probe.backId} at (${probe.x}, ${probe.y}) lacks passing evidence`),
+        };
+      }
     }
     return result;
   }

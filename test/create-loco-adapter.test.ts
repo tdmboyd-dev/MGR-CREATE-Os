@@ -59,6 +59,8 @@ test("Create Loco adapter preserves request identity and evidence contract", asy
         status: "SUCCEEDED",
         artifactRefs: ["web://build-1"],
         evidenceRefs: ["evidence://browser-1"],
+        layerEvidence: [{ ...request.acceptance.requiredLayerProbes![0]!,
+          status: "FRONT_ABOVE", evidenceRef: "evidence://browser-1" }],
         defects: [{id: "defect-1",category: "GEOMETRY",observed: "20px",expected: "24px",targetRef: "hero",severity: "LOW",evidenceRefs: ["evidence://browser-1"]}],
       };
     },
@@ -111,4 +113,24 @@ test("Create Loco adapter preserves repair evidence when severe defects invalida
   assert.deepEqual(await adapter.execute(baseRequest()), {
     ...result, status: "FAILED", blockers: ["High-severity reconstruction defects remain"],
   });
+});
+
+test("Create Loco adapter requires matching evidence for direct Creation OS callers", async () => {
+  const request = baseRequest();
+  const required = request.acceptance.requiredLayerProbes![0]!;
+  const capture = { ...required, status: "FRONT_ABOVE" as const, evidenceRef: "evidence://browser-1" };
+  for (const layerEvidence of [[], [capture, capture],
+    [{ ...capture, viewport: { ...capture.viewport, dpr: 1 } }],
+    [{ ...capture, evidenceRef: "evidence://unlisted" }]]) {
+    const adapter = new CreateLocoCapabilityAdapter({
+      async execute() {
+        return { requestId: request.requestId, status: "SUCCEEDED", artifactRefs: ["web://build-1"],
+          evidenceRefs: [capture.evidenceRef], defects: [], layerEvidence };
+      },
+    });
+    const result = await adapter.execute(request);
+    assert.equal(result.status, "FAILED");
+    assert.deepEqual(result.layerEvidence, layerEvidence);
+    assert.match(result.blockers?.[0] ?? "", /lacks passing evidence/);
+  }
 });
