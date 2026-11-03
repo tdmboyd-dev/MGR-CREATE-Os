@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+The Web Factory can now reconcile an interrupted job through the configured transport's read-only result lookup. It passes the original scoped request, applies the same result checks as execution and stays unknown while no settled result is available. The SQLite test recovered a settled result after restart with no additional execution. Type checking and all 291 local tests passed. The production producer must still implement this lookup and authenticated byte readback.
+
 The Web Factory can now run in the durable project service. The SQLite restart test recovered the original artifact reference, evidence reference and layer evidence without dispatching again. A simulated lost response stayed unknown and was not replayed. Type checking and all 291 local tests passed, followed by a focused lost-response check. Producer status lookup and authenticated artifact-byte readback remain open.
 
 Creation OS bootstrap can now configure the existing Web Factory with a trusted reconstruction transport. The explicit reconstruction operation takes request, tenant and workspace from the factory envelope and runs through the evidence-checking adapter. The local bootstrap test verified dispatch, scope binding and the unconfigured result. Type checking and all 290 tests passed. The native HTTP capability remains unregistered, and the real producer and authenticated readback still need qualification.

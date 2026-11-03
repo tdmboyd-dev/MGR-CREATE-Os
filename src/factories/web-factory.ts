@@ -9,6 +9,11 @@ export interface WebInput {
   dataContracts: string[];
 }
 
+type WebFactoryInput = Partial<WebInput> & {
+  operation?: string;
+  reconstruction?: Omit<CreateLocoBuildRequest, "requestId" | "tenantId" | "workspaceId">;
+};
+
 export class WebFactory implements RecoverableFactory {
   readonly kind = "WEB" as const;
   private readonly reconstruction?: CreateLocoCapabilityAdapter;
@@ -18,19 +23,21 @@ export class WebFactory implements RecoverableFactory {
   }
 
   async reconcile(req: FactoryRequest): Promise<FactoryResult> {
+    const input = req.inputs as WebFactoryInput | null | undefined;
+    if (input?.operation === "web.visual_reconstruction.v1" && input.reconstruction) {
+      const result = await this.reconstruction?.readResult(this.scoped(req, input.reconstruction));
+      if (result) return { ...result, kind: this.kind };
+    }
     return {
       requestId: req.id, kind: this.kind, status: "BLOCKED",
       artifactRefs: [], evidenceRefs: [],
-      blockers: ["Original reconstruction outcome is unknown; producer status lookup is not configured"],
+      blockers: ["Original reconstruction outcome is unknown; no settled producer result was available"],
       checkpoint: { state: "UNKNOWN", operationRef: req.id },
     };
   }
 
   async execute(req: FactoryRequest): Promise<FactoryResult> {
-    const input = req.inputs as (Partial<WebInput> & {
-      operation?: string;
-      reconstruction?: Omit<CreateLocoBuildRequest, "requestId" | "tenantId" | "workspaceId">;
-    }) | null | undefined;
+    const input = req.inputs as WebFactoryInput | null | undefined;
     const blockers: string[] = [];
     if (input?.operation === "web.visual_reconstruction.v1") {
       const spec = input.reconstruction;
@@ -40,9 +47,7 @@ export class WebFactory implements RecoverableFactory {
           !spec.locks || typeof spec.objective !== "string" || !spec.objective.trim()) {
         blockers.push("Reconstruction requires references, a target, design locks and browser acceptance journeys");
       } else {
-        const result = await this.reconstruction.execute({
-          ...spec, requestId: req.id, tenantId: req.tenantId, workspaceId: req.workspaceId,
-        });
+        const result = await this.reconstruction.execute(this.scoped(req, spec));
         return { ...result, kind: this.kind };
       }
     } else {
@@ -55,6 +60,10 @@ export class WebFactory implements RecoverableFactory {
       requestId: req.id, kind: this.kind, status: "BLOCKED",
       artifactRefs: [], evidenceRefs: [], blockers,
     };
+  }
+
+  private scoped(req: FactoryRequest, spec: NonNullable<WebFactoryInput["reconstruction"]>): CreateLocoBuildRequest {
+    return { ...spec, requestId: req.id, tenantId: req.tenantId, workspaceId: req.workspaceId };
   }
 }
 

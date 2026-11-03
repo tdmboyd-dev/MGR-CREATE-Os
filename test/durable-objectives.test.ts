@@ -49,13 +49,25 @@ test('configured Web reconstruction keeps its original browser evidence after pr
     const layerEvidence = [{ ...required, status: 'FRONT_ABOVE' as const, evidenceRef }];
     let calls = 0;
     let loseReply = false;
+    let settled = false;
+    let interruptedRequestId: string | undefined;
     const open = () => createCreationOS({
         projectRuntime,
         reconstructionTransport: { async execute(request) {
             calls++;
-            if (loseReply) throw Error('reconstruction reply lost');
+            if (loseReply) {
+                interruptedRequestId = request.requestId;
+                throw Error('reconstruction reply lost');
+            }
             assert.deepEqual(request.acceptance.requiredLayerProbes, [required]);
             return { requestId: request.requestId, status: 'SUCCEEDED', artifactRefs: ['web://original'],
+                evidenceRefs: [evidenceRef], layerEvidence, defects: [] };
+        }, async readResult(request) {
+            assert.equal(request.requestId, interruptedRequestId);
+            assert.equal(request.tenantId, owner.tenantId);
+            assert.equal(request.workspaceId, owner.workspaceId);
+            if (!settled) return undefined;
+            return { requestId: request.requestId, status: 'SUCCEEDED', artifactRefs: ['web://recovered'],
                 evidenceRefs: [evidenceRef], layerEvidence, defects: [] };
         } },
     });
@@ -84,6 +96,15 @@ test('configured Web reconstruction keeps its original browser evidence after pr
         const interrupted = await reopened.service.executeObjective('web-lost-reply', objective);
         assert.equal(interrupted.run.status, 'WAITING_RESOURCE');
         assert.equal((await reopened.service.resume(interrupted.run.id)).operations[0]?.progress, 'UNKNOWN');
+        settled = true;
+        const recovery = open();
+        try {
+            const recovered = await recovery.service.resume(interrupted.run.id);
+            assert.equal(recovered.run.status, 'COMPLETED');
+            assert.deepEqual(recovered.stages[0]?.outputRefs, ['web://recovered']);
+        } finally {
+            await recovery.close();
+        }
         assert.equal(calls, 2);
     } finally {
         await reopened.close();

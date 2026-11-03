@@ -59,6 +59,8 @@ export interface CreateLocoBuildResult {
 
 export interface CreateLocoTransport {
   execute(request: CreateLocoBuildRequest): Promise<CreateLocoBuildResult>;
+  /** Read the original scoped result without dispatching work. */
+  readResult?(request: CreateLocoBuildRequest): Promise<CreateLocoBuildResult | undefined>;
 }
 
 export class CreateLocoCapabilityAdapter {
@@ -84,7 +86,15 @@ export class CreateLocoCapabilityAdapter {
       };
     }
 
-    const result = await this.transport.execute(request);
+    return this.checkResult(request, await this.transport.execute(request));
+  }
+
+  async readResult(request: CreateLocoBuildRequest): Promise<CreateLocoBuildResult | undefined> {
+    const result = await this.transport.readResult?.(request);
+    return result === undefined ? undefined : this.checkResult(request, result);
+  }
+
+  private checkResult(request: CreateLocoBuildRequest, result: CreateLocoBuildResult): CreateLocoBuildResult {
     if (result.requestId !== request.requestId) {
       throw new Error("Create Loco transport returned a mismatched request id");
     }
