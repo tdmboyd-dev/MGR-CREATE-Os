@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+The result contract now carries viewport-scoped layer evidence. Create Loco accepts a required check only when the response contains exactly one matching passing capture with a reference in the result's evidence list. A failed check preserves the returned evidence for review. The registered runner still needs to capture and persist these results.
+
 The reconstruction request now carries required layer probes through Creation OS, including the viewport and pixel ratio. Create Loco blocks probes outside a declared viewport before dispatch. The adapter tests verify the fields survive translation and forwarding. Runner execution and saved-evidence readback remain open.
 
 The Creation OS adapter now classifies a response with unresolved high-severity defects as failed and retains artifact references, evidence and defect details. Low-severity findings can still accompany a successful result. Type checking and all 287 local tests passed. Create Loco already translates the two request shapes. The native service still needs a registered reconstruction runner and independent browser verification.

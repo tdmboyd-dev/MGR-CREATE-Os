@@ -41,6 +41,10 @@ export interface CreateLocoBuildResult {
   status: "SUCCEEDED" | "FAILED" | "BLOCKED";
   artifactRefs: string[];
   evidenceRefs: string[];
+  layerEvidence?: Array<NonNullable<CreateLocoBuildRequest["acceptance"]["requiredLayerProbes"]>[number] & {
+    status: "FRONT_ABOVE" | "BACK_ABOVE" | "INCONCLUSIVE";
+    evidenceRef: string;
+  }>;
   defects: Array<{
     id: string;
     category: string;
