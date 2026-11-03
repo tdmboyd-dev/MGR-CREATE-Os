@@ -25,6 +25,13 @@ export interface CreateLocoBuildRequest {
   };
   acceptance: {
     journeys: string[];
+    requiredLayerProbes?: Array<{
+      frontId: string;
+      backId: string;
+      x: number;
+      y: number;
+      viewport: { width: number; height: number; dpr?: number };
+    }>;
     maxVisualDelta?: number;
   };
 }

@@ -26,6 +26,7 @@ const baseRequest = (): CreateLocoBuildRequest => ({
   acceptance: {
     journeys: ["open / and compare desktop/mobile renders"],
     maxVisualDelta: 0.05,
+    requiredLayerProbes: [{ frontId: "title", backId: "image", x: 25, y: 35, viewport: { width: 390, height: 844, dpr: 3 } }],
   },
 });
 
@@ -52,6 +53,7 @@ test("Create Loco adapter preserves request identity and evidence contract", asy
       assert.equal(request.references[0]?.viewport?.dpr, 2);
       assert.equal(request.target.responsiveViewports[1]?.dpr, 3);
       assert.equal(request.locks.heroMediaBehindOverlay, true);
+      assert.deepEqual(request.acceptance.requiredLayerProbes, baseRequest().acceptance.requiredLayerProbes);
       return {
         requestId: request.requestId,
         status: "SUCCEEDED",
