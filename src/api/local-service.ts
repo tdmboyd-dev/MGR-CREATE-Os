@@ -60,7 +60,19 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
   const get=(tenant:string,request:string)=>db.prepare("SELECT * FROM native_creation_jobs WHERE tenantId=? AND requestId=?").get(tenant,request) as unknown as Job|undefined;
   const owns=(job:Job,p:CreationPrincipal)=>JSON.parse(job.spec).input?.actorId===p.actorId;
   const owned=(p:CreationPrincipal,request:string)=>{const job=get(p.tenantId,request);if(!job||!owns(job,p))throw new HttpError(404,"Job not found");return job;};
-  const describe=(job:Job)=>{const artifact=job.artifactId?db.prepare("SELECT id,sha256,size,mime,rightsRefs FROM native_creation_artifacts WHERE id=? AND tenantId=?").get(job.artifactId,job.tenantId):undefined;return {requestId:job.requestId,status:job.status,inputDigest:job.digest,artifactRefs:artifact?[job.artifactId]:[],evidenceRefs:[job.receiptId],artifacts:artifact?[{...artifact,bytes:artifact.size,downloadPath:`/v1/creation/artifacts/${job.artifactId}`}]:[],rightsStatus:"caller-declared; not legal clearance",providerCost:0};};
+  const describe=(job:Job)=>{
+    const artifact=job.status==="SUCCEEDED"&&job.artifactId
+      ?db.prepare("SELECT id,sha256,size,mime,rightsRefs FROM native_creation_artifacts WHERE id=? AND tenantId=? AND requestId=?")
+        .get(job.artifactId,job.tenantId,job.requestId)
+      :undefined;
+    if(job.status==="SUCCEEDED"&&!artifact)throw new HttpError(500,"Stored Creation artifact binding failed verification");
+    return {
+      requestId:job.requestId,status:job.status,inputDigest:job.digest,
+      artifactRefs:artifact?[artifact.id]:[],evidenceRefs:[job.receiptId],
+      artifacts:artifact?[{...artifact,bytes:artifact.size,downloadPath:`/v1/creation/artifacts/${artifact.id}`}]:[],
+      rightsStatus:"caller-declared; not legal clearance",providerCost:0
+    };
+  };
   const produce=async(tenant:string,request:string)=>{
     let job=get(tenant,request);if(!job)throw new HttpError(404,"Job not found");
     if(job.status!=="QUEUED")return describe(job);

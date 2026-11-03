@@ -45,5 +45,16 @@ test("native Creation service produces real bytes with tenant isolation, idempot
   assert.equal(rejected.headers.get("x-content-sha256"),null);
   assert.deepEqual(await rejected.json(),{error:"Stored Creation artifact failed integrity verification"});
   assert.deepEqual((await (await call("/v1/creation/jobs",spec)).json()).artifactRefs,first.artifactRefs);
+  await service.close();
+  const rebound=new DatabaseSync(dbPath);
+  try{
+   assert.equal(rebound.prepare("UPDATE native_creation_artifacts SET requestId=? WHERE id=?").run("different-job",artifact.id).changes,1);
+  }finally{rebound.close();}
+  service=createNativeCreationService({dbPath,principals});origin=await listen();
+  for(const result of [await call("/v1/creation/jobs/doc-1"),await call("/v1/creation/jobs",spec)]){
+   assert.equal(result.status,500);
+   assert.deepEqual(await result.json(),{error:"Stored Creation artifact binding failed verification"});
+  }
+  assert.equal((await call(artifact.downloadPath)).status,404);
  }finally{await service.close();rmSync(dir,{recursive:true,force:true});}
 });
