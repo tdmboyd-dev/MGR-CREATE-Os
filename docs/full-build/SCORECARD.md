@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+Creation OS bootstrap can now configure the existing Web Factory with a trusted reconstruction transport. The explicit reconstruction operation takes request, tenant and workspace from the factory envelope and runs through the evidence-checking adapter. The local bootstrap test verified dispatch, scope binding and the unconfigured result. Type checking and all 290 tests passed. The native HTTP capability remains unregistered, and the real producer and authenticated readback still need qualification.
+
 The default Web Factory now returns specific blockers for incomplete or malformed planning input. A valid plan reports that the artifact production adapter is unconfigured and returns no artifact reference. The authenticated native service currently registers Markdown only. Type checking and all 289 local tests passed. A reconstruction producer and its job and artifact integration still need to be implemented.
 
 Creation OS now enforces the required layer checks for callers of its own adapter. A successful response needs exactly one matching passing capture with a listed evidence reference for each required check. Type checking and all 288 local tests passed. The injected transport proved result handling. The registered runner and browser journey remain open.

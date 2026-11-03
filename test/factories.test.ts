@@ -1,5 +1,34 @@
 import test from "node:test";import assert from "node:assert/strict";import {ResearchFactory,DocumentFactory,ProductFactory,MediaFactory,WebFactory,CampaignFactory,CourseFactory,BrandFactory,AudioFactory,AutomationFactory,AppToolFactory,DataAnalyticsFactory} from "../src/factories/index.js";
 const base=(kind:any,inputs:any)=>({id:"x",kind,tenantId:"t",workspaceId:"w",inputs,acceptanceCriteria:[]});
+import { createCreationOS } from "../src/bootstrap.js";
+
+test("configured Creation OS dispatches Web reconstruction with factory-owned scope", async () => {
+  const request = base("WEB", {
+    operation: "web.visual_reconstruction.v1",
+    reconstruction: {
+      requestId: "untrusted", tenantId: "untrusted", workspaceId: "untrusted",
+      objective: "Reconstruct the landing page",
+      references: [{ id: "ref", kind: "image", uri: "asset://ref" }],
+      target: { framework: "static", routes: ["/"], responsiveViewports: [{ width: 900, height: 600 }] },
+      locks: { preserveContinuousBackgrounds: true, textAsOverlay: true, brandLockIds: [] },
+      acceptance: { journeys: ["open the reconstructed page"] },
+    },
+  });
+  assert.equal((await createCreationOS().factories.get("WEB").execute(request)).status, "BLOCKED");
+  const configured = createCreationOS({
+    reconstructionTransport: {
+      async execute(input) {
+        assert.deepEqual([input.requestId, input.tenantId, input.workspaceId], ["x", "t", "w"]);
+        return { requestId: input.requestId, status: "SUCCEEDED", artifactRefs: ["web://result"],
+          evidenceRefs: ["evidence://browser"], defects: [] };
+      },
+    },
+  });
+  const result = await configured.factories.get("WEB").execute(request);
+  assert.equal(result.status, "SUCCEEDED");
+  assert.deepEqual(result.artifactRefs, ["web://result"]);
+  assert.deepEqual(result.evidenceRefs, ["evidence://browser"]);
+});
 test("research blocks unsupported claims",async()=>assert.equal((await new ResearchFactory().execute(base("RESEARCH",{questions:[],sources:[],claims:[{id:"c",text:"claim",confidence:1,sourceIds:[]}]}))).status,"BLOCKED"));
 test("document requires content",async()=>assert.equal((await new DocumentFactory().execute(base("DOCUMENT",{title:"",sections:[],formats:["PDF"]}))).status,"BLOCKED"));
 test("product requires opportunity evidence",async()=>assert.equal((await new ProductFactory().execute(base("PRODUCT",{opportunityEvidenceRefs:[],title:"x",audience:"a",problem:"p",deliverables:["pdf"],sourceRefs:[]}))).status,"BLOCKED"));

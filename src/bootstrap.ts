@@ -6,7 +6,10 @@ import { JevDecisionProvider } from "./decision/jev-provider.js";
 import { SqliteCreationRepository, type ProjectPrincipal } from "./persistence/sqlite.js";
 import { DurableObjectiveService } from "./api/durable-objectives.js";
 import { OwnerWorkflowFactory, type OwnerWorkflowBridge } from "./factories/owner-workflow-factory.js";
+import { WebFactory } from "./factories/web-factory.js";
+import type { CreateLocoTransport } from "./adapters/create-loco.js";
 export interface CreationOSOptions {
+    reconstructionTransport?: CreateLocoTransport;
     projectRuntime?: {
         dbPath: string;
         principal: ProjectPrincipal;
@@ -23,14 +26,20 @@ export interface CreationOS<T extends CreationOSService | DurableObjectiveServic
 }
 export function createCreationOS(options: {
     projectRuntime: NonNullable<CreationOSOptions['projectRuntime']>;
+    reconstructionTransport?: CreateLocoTransport;
 }): CreationOS<DurableObjectiveService>;
 export function createCreationOS(options?: {
     projectRuntime?: undefined;
+    reconstructionTransport?: CreateLocoTransport;
 }): CreationOS<CreationOSService>;
 export function createCreationOS(options: CreationOSOptions): CreationOS<CreationOSService | DurableObjectiveService>;
 export function createCreationOS(options: CreationOSOptions = {}): CreationOS<CreationOSService | DurableObjectiveService> {
     const runtime = options.projectRuntime;
-    const factories = defaultFactoryRegistry(runtime ? [new OwnerWorkflowFactory('DOCUMENT', runtime.principal, runtime.bridge), ...(runtime.forgeWorkspaceId ? [new OwnerWorkflowFactory('MEDIA', runtime.principal, runtime.bridge, runtime.forgeWorkspaceId)] : [])] : []);
+    const factories = defaultFactoryRegistry([
+        ...(runtime ? [new OwnerWorkflowFactory('DOCUMENT', runtime.principal, runtime.bridge),
+            ...(runtime.forgeWorkspaceId ? [new OwnerWorkflowFactory('MEDIA', runtime.principal, runtime.bridge, runtime.forgeWorkspaceId)] : [])] : []),
+        ...(options.reconstructionTransport ? [new WebFactory(options.reconstructionTransport)] : []),
+    ]);
     const objectives = new ObjectiveOrchestrator(factories);
     const decision = new DecisionEngine([new JevDecisionProvider()]);
     const repository = runtime ? new SqliteCreationRepository(runtime.dbPath, runtime.principal) : undefined;
