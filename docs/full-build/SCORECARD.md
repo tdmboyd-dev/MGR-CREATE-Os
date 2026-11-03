@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+The Creation OS adapter now classifies a response with unresolved high-severity defects as failed and retains artifact references, evidence and defect details. Low-severity findings can still accompany a successful result. Type checking and all 287 local tests passed. Create Loco already translates the two request shapes. The native service still needs a registered reconstruction runner and independent browser verification.
+
 The existing web.visual_reconstruction.v1 adapter requires artifact and evidence references on successful replies and rejects success with outstanding blockers. The regression used an injected transport. The typed contract now carries Create Loco reference roles, viewport pixel ratios, the hero layering lock, and defect targets, severity and evidence. The four focused adapter tests and type checking passed. Translating the two request shapes and running the real browser workflow remain open. Type checking and 286 tests passed. The adapter still needs an authenticated reconstruction backend and independent browser artifact verification before this capability can be enrolled for Tevin execution.
 
 ## Native running job cancellation

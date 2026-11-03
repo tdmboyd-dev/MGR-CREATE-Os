@@ -84,6 +84,10 @@ export class CreateLocoCapabilityAdapter {
         }
       }
       if (result.blockers?.length) throw new Error("Create Loco success cannot contain blockers");
+      if (!Array.isArray(result.defects)) throw new Error("Create Loco success requires a defect list");
+      if (result.defects.some(defect => defect.severity === "HIGH")) {
+        return { ...result, status: "FAILED", blockers: ["High-severity reconstruction defects remain"] };
+      }
     }
     return result;
   }

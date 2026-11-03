@@ -92,3 +92,21 @@ test("Create Loco adapter rejects unsubstantiated or blocked success", async () 
     await assert.rejects(() => adapter.execute(baseRequest()), /success requires|success cannot/);
   }
 });
+
+test("Create Loco adapter preserves repair evidence when severe defects invalidate success", async () => {
+  const result = {
+    requestId: "req-1",
+    status: "SUCCEEDED" as const,
+    artifactRefs: ["web://build-1"],
+    evidenceRefs: ["evidence://browser-1"],
+    defects: [{
+      id: "layer:hero", category: "GEOMETRY", targetRef: "hero",
+      observed: "text behind image", expected: "text above image",
+      severity: "HIGH" as const, evidenceRefs: ["evidence://browser-1"],
+    }],
+  };
+  const adapter = new CreateLocoCapabilityAdapter({ async execute() { return result; } });
+  assert.deepEqual(await adapter.execute(baseRequest()), {
+    ...result, status: "FAILED", blockers: ["High-severity reconstruction defects remain"],
+  });
+});
