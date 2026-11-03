@@ -61,6 +61,8 @@ export interface CreateLocoTransport {
   execute(request: CreateLocoBuildRequest): Promise<CreateLocoBuildResult>;
   /** Read the original scoped result without dispatching work. */
   readResult?(request: CreateLocoBuildRequest): Promise<CreateLocoBuildResult | undefined>;
+  readArtifactBytes?(scope: { id: string; tenantId: string; workspaceId: string },
+    reference: string, format: "html" | "png"): Promise<Uint8Array>;
 }
 
 export class CreateLocoCapabilityAdapter {

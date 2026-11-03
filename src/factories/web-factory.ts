@@ -18,8 +18,14 @@ export class WebFactory implements RecoverableFactory {
   readonly kind = "WEB" as const;
   private readonly reconstruction?: CreateLocoCapabilityAdapter;
 
-  constructor(transport?: CreateLocoTransport) {
+  constructor(private readonly transport?: CreateLocoTransport) {
     if (transport) this.reconstruction = new CreateLocoCapabilityAdapter(transport);
+  }
+
+  async readArtifactBytes(scope: Pick<FactoryRequest, "id" | "tenantId" | "workspaceId">,
+    reference: string, format: "html" | "png"): Promise<Uint8Array> {
+    if (!this.transport?.readArtifactBytes) throw Error("Web producer artifact readback is unavailable");
+    return this.transport.readArtifactBytes(scope, reference, format);
   }
 
   async reconcile(req: FactoryRequest): Promise<FactoryResult> {

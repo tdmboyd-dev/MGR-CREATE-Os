@@ -26,6 +26,8 @@ export interface Factory {
     execute(req: FactoryRequest): Promise<FactoryResult>;
 }
 export interface RecoverableFactory extends Factory {
+    readArtifactBytes?(scope: Pick<FactoryRequest, "id" | "tenantId" | "workspaceId">,
+        reference: string, format: "html" | "png"): Promise<Uint8Array>;
     readArtifactText?(requestId:string,artifactRef:string):Promise<string>;
     reconcile(req: FactoryRequest, options?: {
         dispatchAllowed: boolean;

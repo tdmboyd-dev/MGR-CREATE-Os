@@ -1,5 +1,7 @@
 ## Create Loco reconstruction adapter
 
+The durable project service can now read HTML or PNG bytes through the configured Web producer for an artifact reference listed in the original successful stage. The producer verifies its saved bundle hash and scope. The cross-repo Chrome test reopened both formats after restarting Creation OS and rejected an unrelated reference. Tevin's authenticated HTTP delivery and normal owner registration remain open.
+
 The durable project service now exposes a read-only stage result keyed by run, stage and original request. The SQLite restart test read the original evidence through this method and rejected a wrong request and a different actor. Type checking and all 291 tests passed. Tevin transport wiring and authenticated retrieval of producer artifact bytes remain open.
 
 The Web Factory can now reconcile an interrupted job through the configured transport's read-only result lookup. It passes the original scoped request, applies the same result checks as execution and stays unknown while no settled result is available. The SQLite test recovered a settled result after restart with no additional execution. Type checking and all 291 local tests passed. The production producer must still implement this lookup and authenticated byte readback.

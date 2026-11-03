@@ -51,6 +51,20 @@ export class DurableObjectiveService {
             throw Error("stage result not found");
         return structuredClone(checkpoint.result);
     }
+    async readStageArtifact(runId: string, stageKey: string, requestId: string, reference: string, format: "html" | "png") {
+        if (format !== "html" && format !== "png") throw Error("unsupported stage artifact format");
+        const result = this.readStageResult(runId, stageKey, requestId);
+        if (result?.status !== "SUCCEEDED" || !result.artifactRefs.includes(reference))
+            throw Error("stage artifact not found");
+        const { plan } = this.repo.readObjective(runId);
+        const factory = this.factories.get(result.kind) as RecoverableFactory;
+        if (!factory.readArtifactBytes) throw Error("stage artifact readback is unavailable");
+        const bytes = await factory.readArtifactBytes(
+            { id: requestId, tenantId: plan.tenantId, workspaceId: plan.workspaceId }, reference, format);
+        const current = this.readStageResult(runId, stageKey, requestId);
+        if (sha256Canonical(current) !== sha256Canonical(result)) throw Error("saved stage result changed during read");
+        return bytes;
+    }
     async cancel(runId: string) {
         if (this.closed)
             throw Error("project service closed");
