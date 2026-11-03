@@ -97,9 +97,17 @@ export function createNativeCreationService(options:{dbPath:string;principals:Cr
   const control=async(p:CreationPrincipal,request:string,action:'run'|'cancel')=>{
     const job=owned(p,request);
     if(action==='run'){if(job.status==='CANCELLED')throw new HttpError(409,'Job cancelled');return produce(p.tenantId,job.requestId);}
-    if(job.status==='SUCCEEDED')throw new HttpError(409,'Completed artifact cannot be cancelled');
-    if(job.status==='CANCELLED')return describe(job);
-    db.prepare("UPDATE native_creation_jobs SET status='CANCELLED' WHERE tenantId=? AND requestId=?").run(p.tenantId,job.requestId);audit(p.tenantId,job.requestId,'cancelled');return describe(get(p.tenantId,job.requestId)!);
+    db.exec("BEGIN IMMEDIATE");
+    try{
+      const current=owned(p,request);
+      if(current.status==="CANCELLED"){db.exec("COMMIT");return describe(current);}
+      if(current.status!=="QUEUED"&&current.status!=="RUNNING")throw new HttpError(409,"Only queued or running jobs can be cancelled");
+      db.prepare("UPDATE native_creation_jobs SET status='CANCELLED',producerToken=NULL WHERE tenantId=? AND requestId=?").run(p.tenantId,request);
+      audit(p.tenantId,request,"cancelled");
+      const result=describe(get(p.tenantId,request)!);
+      db.exec("COMMIT");
+      return result;
+    }catch(error){if(db.isTransaction)db.exec("ROLLBACK");throw error;}
   };
   const server=createServer(async(req,res)=>{
     try{

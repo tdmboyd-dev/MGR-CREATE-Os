@@ -1,3 +1,7 @@
+## Native running job cancellation
+
+Creation OS commits cancellation and its audit event together and clears the producer token. A held native renderer resumed after two cancellation requests. It published zero artifacts, the database retained one cancellation event, and reopening preserved cancellation. Type checking and all 285 tests passed. Tevin owner route acceptance for running cancellation and hosted acceptance remain open.
+
 ## Native Creation artifact integrity
 
 The native download endpoint verifies persisted artifact bytes against the stored size and SHA-256 and requires a succeeded owning job. The SQLite regression rejects same-length damage after restart and preserves the original job and artifact reference on replay. Status and replay also verify that the saved artifact belongs to the same tenant and request. After an isolated restart with a mismatched artifact binding, both routes returned an integrity error and the download returned 404. Type checking and all 284 Creation OS tests passed.

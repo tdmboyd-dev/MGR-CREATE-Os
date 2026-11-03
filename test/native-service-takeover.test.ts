@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync,rmSync} from 'node:fs';
+import {mkdtempSync,realpathSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
-import {join} from 'node:path';
+import {basename,dirname,join} from 'node:path';
 import {DatabaseSync} from 'node:sqlite';
 import {createNativeCreationService} from '../src/api/local-service.js';
 import {MarkdownRenderer} from '../src/documents/markdown-renderer.js';
@@ -24,4 +24,48 @@ for(const staleFailure of [false,true])test(`restarted producer fences stale ${s
   assert.equal((await call(second,accepted.artifacts[0].downloadPath)).status,200);
   const db=new DatabaseSync(dbPath);try{assert.equal((db.prepare('SELECT count(*) n FROM native_creation_artifacts').get() as {n:number}).n,1);assert.equal((db.prepare("SELECT count(*) n FROM native_creation_audit WHERE event='artifact-produced'").get() as {n:number}).n,1);}finally{db.close();}
  }finally{release?.();MarkdownRenderer.prototype.render=original;for(const s of instances)await s.close();rmSync(dir,{recursive:true,force:true});}
+});
+
+test('running cancellation fences the renderer and survives reopen',async()=>{
+ const dir=mkdtempSync(join(tmpdir(),'creation-running-cancel-')),dbPath=join(dir,'fixture.sqlite');
+ const principal={token:'fixture-running-cancel-token-long',tenantId:'tenant',actorId:'owner'};
+ const original=MarkdownRenderer.prototype.render;
+ let release!:()=>void,entered!:()=>void;
+ const gate=new Promise<void>(resolve=>release=resolve),started=new Promise<void>(resolve=>entered=resolve);
+ MarkdownRenderer.prototype.render=async function(input){entered();await gate;return original.call(this,input);};
+ let service=createNativeCreationService({dbPath,principals:[principal]});
+ async function open(){
+  await new Promise<void>(resolve=>service.server.listen(0,'127.0.0.1',resolve));
+  return 'http://127.0.0.1:'+(service.server.address() as {port:number}).port;
+ }
+ let origin=await open();
+ const call=(path:string,body?:unknown)=>fetch(origin+path,{method:body===undefined?'GET':'POST',headers:{authorization:'Bearer '+principal.token,'content-type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});
+ const job='/v1/creation/jobs/running-cancel';
+ try{
+  const pending=call('/v1/creation/jobs',{requestId:'running-cancel',tenantId:'tenant',workspaceId:'workspace',capability:'document.markdown',input:{payload:{title:'Held render',sections:[{heading:'Proof',body:'Output must be discarded'}],rightsRefs:['owned']}},acceptanceCriteria:['durable Markdown'],maxCost:0});
+  await started;
+  assert.equal((await (await call(job)).json()).status,'RUNNING');
+  const replies=await Promise.all([call(job+'/cancel',{}),call(job+'/cancel',{})]);
+  for(const reply of replies)assert.equal((await reply.json()).status,'CANCELLED');
+  release();
+  assert.deepEqual((await (await pending).json()).artifactRefs,[]);
+  await service.close();
+  service=createNativeCreationService({dbPath,principals:[principal]});
+  origin=await open();
+  assert.equal((await (await call(job)).json()).status,'CANCELLED');
+  assert.equal((await call(job+'/run',{})).status,409);
+  const db=new DatabaseSync(dbPath,{readOnly:true});
+  try{
+   assert.equal(db.prepare('SELECT count(*) n FROM native_creation_artifacts').get()?.n,0);
+   assert.equal(db.prepare("SELECT count(*) n FROM native_creation_audit WHERE event='cancelled'").get()?.n,1);
+  }finally{db.close();}
+ }finally{
+  release();
+  MarkdownRenderer.prototype.render=original;
+  await service.close();
+  const actual=realpathSync(dir);
+  assert.equal(dirname(actual),realpathSync(tmpdir()));
+  assert.ok(basename(actual).startsWith('creation-running-cancel-'));
+  rmSync(actual,{recursive:true,force:true});
+ }
 });
