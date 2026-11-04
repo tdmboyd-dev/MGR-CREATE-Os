@@ -183,3 +183,7 @@ Creation OS is a standalone creation workflow/coordinator that people and other 
 ## Native Imagination Forge, separate product (2026-10-31)
 
 Sibling MGR-3D-FORGE now has executable CPU original creature mesh generation and morphing, and an *uninstalled* optional generative neural-model candidate registry. An earlier creature GLB (1 mesh, 2,528 faces, 5 materials, no rig) was imported independently; Forge has since added a locally verified 19-bone, 3,840 weighted-vertex, animated, independently reimported creature GLB, but artistic fidelity remains rough and unapproved and is NOT artistically approved. Creation OS should only coordinate that existing standalone Forge service for cross-factory projects, not copy its model/asset vault or force its dependency. See Forge `docs/IMAGINATION-FORGE-ROADMAP.md`.
+
+## Complete Tevin manual readback
+
+Authenticated local Tevin readback verified all 52 indexed operating documents and 158 pages against Git revision 1856147fdedfb75c8c7fd81c0a98c8541edee6a0, with zero jobs. [Pinned verification evidence](https://github.com/tdmboyd-dev/MGR-ONE/blob/8c9338fe85918d8b8487927f6f1c324ef72eebcc/evidence/tool-manual-transport-20261103/CREATION-FULL-TEXT.json). This covers manual delivery. Runtime and production acceptance remain tracked separately.
